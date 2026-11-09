@@ -1,10 +1,10 @@
 # Screenshot the built page and report page errors and horizontal overflow.
 # Usage: uv run --with playwright python page_check.py ballot-flow.html out.png WIDTH
-import sys, asyncio
+import os, sys, asyncio
 from playwright.async_api import async_playwright
 async def main(src, out, width):
     async with async_playwright() as p:
-        b = await p.chromium.launch(executable_path='/home/dataiku/.cache/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-linux64/chrome-headless-shell')
+        b = await p.chromium.launch(executable_path=os.environ.get('PW_CHROMIUM') or None)  # set PW_CHROMIUM to use a specific browser binary
         pg = await b.new_page(viewport={'width': int(width), 'height': 1000}, device_scale_factor=1); pg.on('pageerror', lambda e: print('PAGE ERROR', e)); pg.on('console', lambda m: m.type=='error' and print('CONSOLE', m.text))
         html = open(src).read()
         html = '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>' + html + '</body></html>'

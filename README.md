@@ -34,8 +34,9 @@ Scripts declare their dependencies inline; run them with [uv](https://docs.astra
    - `uv run senate_minor.py`: how each Senate first-choice group voted down the ticket
    - `uv run panels.py`: vote shares by area
    - `uv run --with pandas python claims/<script>.py`: the Sullivan Jr. and Heikes ranking sorts, confusion rates by ballot type and the Bush premium
+   - `uv run --with pandas python claims/late_2024.py`: Peltola's 2024 late ballots against early-counted ones, by type and district (needs the 2024 count snapshots, the state's CVR exports of 10, 12, 13 and 14 Nov 2024 and the final, tabulated together into `2026-11-04_23-57_rctab_cvr.csv`)
 3. House forecast: `uv run revised.py`, `uv run crossover.py`, `uv run flow_data.py`, then `python3 build_page.py`.
-4. Check a page renders without sideways scrolling: `uv run --with playwright python page_check.py <page.html> out.png 1280` (and `400`).
+4. Check a page renders without sideways scrolling: `uv run --with playwright python page_check.py <page.html> out.png 1280` (and `400`). Run `playwright install chromium` first, or set `PW_CHROMIUM` to a browser binary.
 
 Known gap: on the 2024 House final file, `rcv.py` puts about 2,000 more ballots in the final round than the official result. The cause has not been found.
 
