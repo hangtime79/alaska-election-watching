@@ -249,6 +249,7 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
 .notes li { min-width: 0; overflow-wrap: anywhere; }
 .notes code { word-break: break-all; }
 .notes ol { grid-template-columns: minmax(0, 1fr); }
+table.sens td.flip { font-weight: 700; background: var(--hi); }
 </style>
 
 <main>
@@ -280,7 +281,7 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
     </tbody>
   </table></div>
   <p class="es-line">Confusion between the two Sullivans does not change the winner, even under the stress test. Trump's method changes the projected winner only by <a role="link" tabindex="0" data-go="claim">adding both Sullivan Jr. and Heikes ballots to Sullivan</a>, regardless of how those voters ranked. Either one alone leaves Peltola ahead: Heikes only, 8,579 − 4,091 == +4,488; Sullivan Jr. only, 8,579 − 5,079 == +3,500.</p>
-  <p class="note">The projection is a model, not a count. It assumes the roughly 69,000 uncounted ballots vote like counted ballots of the same type (<a role="link" tabindex="0" data-go="reality">step 3</a>). <a role="link" tabindex="0" data-go="count">On the ballots counted so far</a>, Sullivan leads by 329 under Alaska's rules, the campaign's 328.</p>
+  <p class="note">The projection is a model, not a count. It assumes the roughly 69,000 uncounted ballots vote like counted ballots of the same type (<a role="link" tabindex="0" data-go="reality">step 3</a>). The stress test holds unless late ballots run about 5 points worse for Peltola than counted ballots of the same type; <a role="link" tabindex="0" data-go="late-sensitivity">in 2024 they did not</a>. <a role="link" tabindex="0" data-go="count">On the ballots counted so far</a>, Sullivan leads by 329 under Alaska's rules, the campaign's 328.</p>
 </section>
 
 
@@ -531,6 +532,46 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
     </tbody>
   </table></div>
 
+  <h3 id="late-sensitivity" class="walk">Late-ballot sensitivity: what if late ballots vote differently</h3>
+  <p>Every scenario above assumes uncounted ballots vote like counted ballots of the same type. If late ballots run worse for Peltola, every scenario shrinks. Each point of two-way margin across the roughly 67,400 remaining two-way votes moves the final by about 674 votes.</p>
+  <div class="tw"><table class="wide sens">
+    <thead><tr><th style="text-align:left">Late ballots, against counted ballots of the same type</th><th style="text-align:left">Formula</th><th>Alaska's rules</th><th>Broad confusion</th><th>Stress test</th></tr></thead>
+    <tbody>
+      <tr><th>Vote the same (the projection above)</th><td class="f">scenario − 67,402 × 0 ÷ 100</td><td class="n cd">+8,579</td><td class="n cd">+5,282</td><td class="n cd">+3,439</td></tr>
+      <tr><th>2.5 points worse for Peltola</th><td class="f">scenario − 67,402 × 2.5 ÷ 100 == scenario − 1,685</td><td class="n cd">+6,894</td><td class="n cd">+3,597</td><td class="n cd">+1,754</td></tr>
+      <tr><th>5 points worse</th><td class="f">scenario − 3,370</td><td class="n cd">+5,209</td><td class="n cd">+1,912</td><td class="n cd">+69</td></tr>
+      <tr><th>7.5 points worse</th><td class="f">scenario − 5,055</td><td class="n cd">+3,524</td><td class="n cd">+227</td><td class="n cr flip">−1,616</td></tr>
+      <tr><th>10 points worse</th><td class="f">scenario − 6,740</td><td class="n cd">+1,839</td><td class="n cr flip">−1,458</td><td class="n cr flip">−3,301</td></tr>
+      <tr class="tot"><th>Shift that flips the winner</th><td class="f">scenario ÷ 674.02</td><td class="n">12.7 pts</td><td class="n">7.8 pts</td><td class="n">5.1 pts</td></tr>
+    </tbody>
+  </table></div>
+  <p class="es-line">The stress test holds only if late ballots run less than about 5 points worse for Peltola than counted ballots of the same type.</p>
+
+  <h3>What 2024 says about the size of a late shift</h3>
+  <p>The 2024 count snapshots show how ballots counted after 10 Nov voted against ballots of the same type counted by 10 Nov. The measure is Begich's first-choice share in the House race, at the precincts and districts 2026 has reported.</p>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">2024 ballot type</th><th>Counted by 10 Nov</th><th>Counted later</th><th style="text-align:left">Formula, values (later share)</th><th>Shift in Begich share, Democrat-positive</th><th>Shift, two-way margin for the Democrat</th></tr></thead>
+    <tbody>
+      <tr><th>Early</th><td class="n">53.0% of 49,761</td><td class="n">47.97% of 21,165</td><td class="f">(70,926 × 51.5 − 49,761 × 53.0) ÷ 21,165</td><td class="n cd">+5.0</td><td class="n cd">about +10.0</td></tr>
+      <tr><th>Absentee</th><td class="n">39.2% of 18,544</td><td class="n">41.43% of 25,839</td><td class="f">(44,383 × 40.5 − 18,544 × 39.2) ÷ 25,839</td><td class="n cr">−2.2</td><td class="n cr">about −4.4</td></tr>
+    </tbody>
+  </table></div>
+  <div class="vars">
+    <div><h3>Variables</h3><ul>
+      <li><code>early_two_way</code>: remaining early two-way votes (21,969 × 0.9869)</li>
+      <li><code>absentee_two_way</code>: remaining absentee two-way votes (38,563 × 0.9828)</li>
+      <li><code>early_shift</code>, <code>absentee_shift</code>: 2024's late shift as two-way margin</li>
+    </ul></div>
+    <div><h3>Values</h3><ul>
+      <li><code>early_two_way = 21,681</code></li><li><code>absentee_two_way = 37,900</code></li><li><code>early_shift = +0.100</code>, <code>absentee_shift = −0.044</code></li>
+    </ul></div>
+  </div>
+  <div class="chain">
+    <div>early_two_way × early_shift + absentee_two_way × absentee_shift  ==  21,681 × 0.100 + 37,900 × (−0.044)  ==  2,168 − 1,668  ==  <strong class="cd">+500</strong></div>
+    <div>Alaska's rules: 8,579 + 500 == <strong class="cd">+9,079</strong>      stress test: 3,439 + 500 == <strong class="cd">+3,939</strong></div>
+  </div>
+  <p class="note">In 2024 the late early ballots ran more Democratic and the late absentees more Republican, and the two nearly cancel. 2024 gives no sign of a 5-point late swing against the Democrat. It is one election, a House race with Peltola on the ballot, and first choices only; the two-way shift is taken as twice the share shift, which assumes a two-candidate race.</p>
+
   <h3>The ballots we cannot see yet</h3>
   <p>These are the 10,930 rural ballots counted but not yet in the CVR, plus every uncounted ballot. Their rankings are unknown. The confusion rates of counted ballots of the same type stand in for them.</p>
   <div class="tw"><table class="wide">
@@ -625,8 +666,8 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
 
 <!-- 6. Peltola by area -->
 <details class="sec det" id="bush">
-  <summary><span class="kicker">Step 6</span><h2>Peltola in the Bush, and everywhere else</h2><span class="take">Peltola runs about nine points ahead of her ticket in the Bush, or 14 points on a two-way margin basis, and the Bush is already counted.</span><span class="more"></span></summary>
-  <p>Share of all votes for the Democratic side, every ballot type, in eight areas defined precinct by precinct (the Bush is old HD37–40 plus the off-road Interior villages). The Bush matters to the claim because it is already counted. Its precincts sit inside the −329, so the late ballots still to come are not rural. In the cities and on the road system, Peltola runs 0.8 to 3.8 points behind her ticket-mates. In the Bush she runs about nine points ahead of Kreiss-Tomkins on the same ballots. Her 2026 Bush share ranks third of 17 Democratic-side statewide races since 2014, behind her own 2022 (74.46) and Mark Begich's 2014 Senate race (69.37).</p>
+  <summary><span class="kicker">Step 6</span><h2>Peltola in the Bush, and everywhere else</h2><span class="take">Peltola runs about nine points ahead of her ticket in the Bush, or 14 points on a two-way margin basis, and the Bush's election-day precincts are already counted.</span><span class="more"></span></summary>
+  <p>Share of all votes for the Democratic side, every ballot type, in eight areas defined precinct by precinct (the Bush is old HD37–40 plus the off-road Interior villages). The Bush matters to the claim because it is already counted. Its election-day precincts sit inside the −329, so the ballots still to come are not rural election-day ballots. Rural early and absentee ballots may still be outstanding; the state gives no district breakdown. In the cities and on the road system, Peltola runs 0.8 to 3.8 points behind her ticket-mates. In the Bush she runs about nine points ahead of Kreiss-Tomkins on the same ballots. Her 2026 Bush share ranks third of 17 Democratic-side statewide races since 2014, behind her own 2022 (74.46) and Mark Begich's 2014 Senate race (69.37).</p>
   <div class="tw"><table class="wide">
     <thead><tr><th style="text-align:left">Area</th><th>Peltola, 2026 Senate</th><th>Kreiss-Tomkins, 2026 governor</th><th>Hill + Hafner, 2026 House</th><th>Peltola, 2024 House</th><th>Harris, 2024</th><th>Peltola, 2022 House</th><th>Peltola − Kreiss-Tomkins, 2026<br><small>positive == Peltola stronger</small></th></tr></thead>
     <tbody>
