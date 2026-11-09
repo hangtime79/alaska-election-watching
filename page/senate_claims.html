@@ -250,6 +250,8 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
 .notes code { word-break: break-all; }
 .notes ol { grid-template-columns: minmax(0, 1fr); }
 table.sens td.flip { font-weight: 700; background: var(--hi); }
+table.outcome td.big2 { font-family: var(--f-num); font-size: 1.45rem; }
+table.outcome thead th:nth-child(5) { white-space: nowrap; }
 </style>
 
 <main>
@@ -272,16 +274,16 @@ table.sens td.flip { font-weight: 700; background: var(--hi); }
   <h2>Executive summary</h2>
   <p class="es-q">A claim about votes matters only if it changes the winner. Here is the projected final under each reading of the ballots:</p>
   <div class="tw"><table class="outcome">
-    <thead><tr><th style="text-align:left">If the ballots are read as…</th><th style="text-align:left">Formula</th><th>Projected final</th><th style="text-align:left">Winner</th></tr></thead>
+    <thead><tr><th style="text-align:left">If the ballots are read as…</th><th style="text-align:left">Formula</th><th>Projected final</th><th style="text-align:left">Winner</th><th>2024 late pattern</th><th style="text-align:left">Winner</th></tr></thead>
     <tbody>
-      <tr><th><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked</a></th><td class="f">count as it stands + ballots still to count == −329 + 8,908</td><td class="n big cd">+8,579</td><td class="w cd">Peltola</td></tr>
-      <tr><th><a role="link" tabindex="0" data-go="ceiling">Broad confusion: every Republican or mixed Sullivan Jr. voter meant Sullivan</a></th><td class="f">8,579 − 3,297</td><td class="n big cd">+5,282</td><td class="w cd">Peltola</td></tr>
-      <tr><th><a role="link" tabindex="0" data-go="stress-test">Every Sullivan Jr. voter meant Sullivan</a></th><td class="f">5,282 − 1,843</td><td class="n big cd">+3,439</td><td class="w cd">Peltola</td></tr>
-      <tr class="trump"><th><a role="link" tabindex="0" data-go="claim">Trump's method: every Sullivan Jr. <em>and Heikes</em> vote to Sullivan</a></th><td class="f">8,579 − 5,079 (Sullivan Jr.) − 4,091 (Heikes)</td><td class="n big cr">−591</td><td class="w cr">Sullivan</td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked</a></th><td class="f">count as it stands + ballots still to count == −329 + 8,908</td><td class="n big cd">+8,579</td><td class="w cd">Peltola</td><td class="n big2 cd">+6,046</td><td class="w cd">Peltola</td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="ceiling">Broad confusion: every Republican or mixed Sullivan Jr. voter meant Sullivan</a></th><td class="f">8,579 − 3,297</td><td class="n big cd">+5,282</td><td class="w cd">Peltola</td><td class="n big2 cd">+2,749</td><td class="w cd">Peltola</td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="stress-test">Every Sullivan Jr. voter meant Sullivan</a></th><td class="f">5,282 − 1,843</td><td class="n big cd">+3,439</td><td class="w cd">Peltola</td><td class="n big2 cd">+906</td><td class="w cd">Peltola</td></tr>
+      <tr class="trump"><th><a role="link" tabindex="0" data-go="claim">Trump's method: every Sullivan Jr. <em>and Heikes</em> vote to Sullivan</a></th><td class="f">8,579 − 5,079 (Sullivan Jr.) − 4,091 (Heikes)</td><td class="n big cr">−591</td><td class="w cr">Sullivan</td><td class="n big2 cr">−3,124</td><td class="w cr">Sullivan</td></tr>
     </tbody>
   </table></div>
   <p class="es-line">Confusion between the two Sullivans does not change the winner, even under the stress test. Trump's method changes the projected winner only by <a role="link" tabindex="0" data-go="claim">adding both Sullivan Jr. and Heikes ballots to Sullivan</a>, regardless of how those voters ranked. Either one alone leaves Peltola ahead: Heikes only, 8,579 − 4,091 == +4,488; Sullivan Jr. only, 8,579 − 5,079 == +3,500.</p>
-  <p class="note">The projection is a model, not a count. It assumes the roughly 69,000 uncounted ballots vote like counted ballots of the same type (<a role="link" tabindex="0" data-go="reality">step 3</a>). The stress test holds unless late ballots run about 5 points worse for Peltola than counted ballots of the same type. <a role="link" tabindex="0" data-go="late-2024">On Peltola's own 2024 late-ballot pattern</a>, she still leads in every scenario, by about 900 in the stress test. <a role="link" tabindex="0" data-go="count">On the ballots counted so far</a>, Sullivan leads by 329 under Alaska's rules, the campaign's 328.</p>
+  <p class="note">The last two columns apply Peltola's own 2024 pattern of late ballots against early-counted ones (<a role="link" tabindex="0" data-go="late-2024">step 3</a>): 2,533 fewer for Peltola in every row, for example 8,579 − 2,533 == 6,046. The projection is a model, not a count. It assumes the roughly 69,000 uncounted ballots vote like counted ballots of the same type (<a role="link" tabindex="0" data-go="reality">step 3</a>). The stress test holds unless late ballots run about 5 points worse for Peltola than counted ballots of the same type. <a role="link" tabindex="0" data-go="late-2024">On Peltola's own 2024 late-ballot pattern</a>, she still leads in every scenario, by about 900 in the stress test. <a role="link" tabindex="0" data-go="count">On the ballots counted so far</a>, Sullivan leads by 329 under Alaska's rules, the campaign's 328.</p>
 </section>
 
 
@@ -577,6 +579,10 @@ table.sens td.flip { font-weight: 700; background: var(--hi); }
       <tr><th>Raw gaps<small>21,681 × 0.0767 + 37,900 × (−0.0816) == −1,430</small></th><td class="f">scenario − 1,430</td><td class="n cd">+7,149</td><td class="n cd">+3,852</td><td class="n cd">+2,009</td></tr>
     </tbody>
   </table></div>
+  <div class="chart" tabindex="0" data-name="2024-late-pattern" title="Click to enlarge" role="img" aria-label="Projected final under each scenario, as projected and with Peltola's 2024 late-ballot pattern: Alaska's rules 8,579 and 6,046; broad confusion 5,282 and 2,749; stress test 3,439 and 906; Trump's method minus 591 and minus 3,124.">
+    <svg id="gb-late" viewBox="0 0 1000 360"></svg>
+    <div class="legend"><span style="--c:var(--dem)">as projected (late ballots vote like counted ones)</span><span style="--c:var(--dem2)">with Peltola's 2024 late-ballot pattern</span><span style="--c:var(--rep)">Sullivan ahead</span></div>
+  </div>
   <p class="es-line">On 2024's late-ballot pattern, Peltola still leads in every scenario. The stress test narrows to about 900.</p>
   <p class="note">Not a perfect match. 2026 has counted far fewer of its absentees (about 18%) than 2024 had by 10 Nov (40.9%), so 2026's counted absentees may be an earlier, different slice than 2024's. And the 2024 race was Peltola against Begich, not Sullivan.</p>
 
@@ -656,7 +662,7 @@ table.sens td.flip { font-weight: 700; background: var(--hi); }
   <p>Two years ago the same kinds of ballots arrived late, in the same order. Begich's final-round lead shrank by 6,231 between 10 Nov and the final count. The last batch, 14 Nov to final, gave him 41.0% of first choices, against 50.24% on 10 Nov. On election night he held 50.02% of first choices with 296 of 403 precincts in. The rounds below come from the state's CVR export at each date.</p>
   <div class="chart" tabindex="0" data-name="2024-vs-2026-count" title="Click to enlarge" role="img" aria-label="Final-round margin against ballots counted: 2024 House, Peltola minus Begich, moving from minus 14,109 to minus 7,878; 2026 Senate, Peltola minus Sullivan, moving from minus 4,685 to minus 329, projected plus 8,579.">
     <svg id="tl" viewBox="0 0 1000 340"></svg>
-    <div class="legend"><span style="--c:var(--fg2)">2024 House, Peltola − Begich</span><span style="--c:var(--dem)">2026 Senate, Peltola − Sullivan (dashed = projected)</span></div>
+    <div class="legend"><span style="--c:var(--fg2)">2024 House, Peltola − Begich</span><span style="--c:var(--dem)">2026 Senate, Peltola − Sullivan (dashed = projected)</span><span style="--c:var(--dem2)">projected with Peltola's 2024 late-ballot pattern</span></div>
   </div>
   <div class="tw"><table class="wide">
     <thead><tr><th style="text-align:left">2024 House count</th><th>Ballots</th><th>Begich, final round</th><th>Peltola, final round</th><th>Peltola − Begich</th><th>Change since 10 Nov</th></tr></thead>
@@ -802,6 +808,29 @@ table.sens td.flip { font-weight: 700; background: var(--hi); }
     { from: 11, to: 13, label: "Scenario 3: stress test" }
   ]);
 
+
+  // grouped bars: scenarios, as projected vs 2024 late pattern
+  (function () {
+    const svg = document.getElementById("gb-late"); if (!svg) return;
+    const W = 1000, H = 360, L = 70, R = 16, T = 24, B = 58, lo = -4000, hi = 10000;
+    const y = v => T + (hi - v) / (hi - lo) * (H - T - B);
+    const g = el("g", { class: "grid" }, svg);
+    for (let v = -4000; v <= 10000; v += 2000) { el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v) }, g); el("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end" }, svg).textContent = fmt(v); }
+    el("line", { x1: L, x2: W - R, y1: y(0), y2: y(0), class: "zero" }, svg);
+    const cats = [["Alaska's rules", 8579, 6046], ["Broad confusion", 5282, 2749], ["Stress test", 3439, 906], ["Trump's method", -591, -3124]];
+    const cw = (W - L - R) / cats.length, bw = cw * 0.3;
+    cats.forEach((c, i) => {
+      [c[1], c[2]].forEach((v, j) => {
+        const x = L + i * cw + cw * 0.18 + j * (bw + cw * 0.04);
+        const top = y(Math.max(0, v)), h = Math.abs(y(v) - y(0));
+        const fill = v < 0 ? "var(--rep)" : (j ? "var(--dem2)" : "var(--dem)");
+        el("rect", { x, y: top, width: bw, height: Math.max(1.5, h), fill, opacity: j && v < 0 ? 0.6 : 0.95, rx: 2 }, svg);
+        el("text", { x: x + bw / 2, y: v >= 0 ? top - 6 : y(v) + 15, "text-anchor": "middle", style: "fill:var(--fg);font-weight:700" }, svg).textContent = fmt(v);
+      });
+      el("text", { x: L + i * cw + cw / 2, y: H - B + 22, "text-anchor": "middle" }, svg).textContent = c[0];
+    });
+    el("text", { x: W - R, y: 352, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
+  })();
   // Timeline
   const tl = document.getElementById("tl");
   const TW = 1000, TH = 340, TL = 64, TR = 20, TT = 20, TB = 44;
@@ -831,6 +860,9 @@ table.sens td.flip { font-weight: 700; background: var(--hi); }
     el("text", { x: X(p[0]) + (i ? 8 : -12), y: Y(p[1]) + 22, "text-anchor": "start", style: "fill:var(--dem)" }, tl).textContent = p[2] + " " + fmt(p[1]); });
   el("circle", { cx: X(284444), cy: Y(8579), r: 5, fill: "var(--bg)", stroke: "var(--dem)", "stroke-width": 2.5 }, tl);
   el("text", { x: X(284444) + 10, y: Y(8579) + 4, style: "fill:var(--dem);font-weight:700" }, tl).textContent = "central +8,579";
+  el("path", { d: `M${X(215912)} ${Y(-329)} L${X(284444)} ${Y(6046)}`, fill: "none", stroke: "var(--dem2)", "stroke-width": 2, "stroke-dasharray": "3 4" }, tl);
+  el("circle", { cx: X(284444), cy: Y(6046), r: 5, fill: "var(--bg)", stroke: "var(--dem2)", "stroke-width": 2.5 }, tl);
+  el("text", { x: X(284444) + 10, y: Y(6046) + 4, style: "fill:var(--dem2);font-weight:700" }, tl).textContent = "2024 late pattern +6,046";
 })();
 </script>
 <script>
