@@ -252,6 +252,21 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
 table.sens td.flip { font-weight: 700; background: var(--hi); }
 table.outcome td.big2 { font-family: var(--f-num); font-size: 1.45rem; }
 table.outcome thead th:nth-child(5) { white-space: nowrap; }
+table.outcome { min-width: 0; }
+table.outcome tbody th { width: 60%; }
+table.outcome small.fx { display: block; font-family: var(--f-mono); font-size: 12px; color: var(--fg2); margin-top: 4px; font-weight: 400; }
+table.outcome td.res { text-align: right; vertical-align: middle; white-space: nowrap; }
+table.outcome td.res .v { display: block; font-family: var(--f-num); font-size: 2rem; line-height: 1.05; }
+table.outcome td.res.alt .v { font-size: 1.5rem; }
+table.outcome td.res .w { display: block; font-family: var(--f-title); font-weight: 700; font-size: 1rem; }
+table.outcome thead th:nth-child(n+2) { text-align: right; white-space: nowrap; }
+@media (max-width: 560px) {
+  table.outcome thead th:nth-child(n+2) { white-space: normal; }
+  table.outcome tbody th { width: auto; }
+  table.outcome td.res .v { font-size: 1.3rem; } table.outcome td.res.alt .v { font-size: 1.1rem; }
+  table.outcome td.res .w { font-size: .85rem; }
+  table.outcome th, table.outcome td { padding: 8px 6px; }
+}
 </style>
 
 <main>
@@ -274,12 +289,12 @@ table.outcome thead th:nth-child(5) { white-space: nowrap; }
   <h2>Executive summary</h2>
   <p class="es-q">A claim about votes matters only if it changes the winner. Here is the projected final under each reading of the ballots:</p>
   <div class="tw"><table class="outcome">
-    <thead><tr><th style="text-align:left">If the ballots are read as…</th><th style="text-align:left">Formula</th><th>Projected final</th><th style="text-align:left">Winner</th><th>2024 late pattern</th><th style="text-align:left">Winner</th></tr></thead>
+    <thead><tr><th style="text-align:left">If the ballots are read as…</th><th>Projected final</th><th>If late ballots follow 2024</th></tr></thead>
     <tbody>
-      <tr><th><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked</a></th><td class="f">count as it stands + ballots still to count == −329 + 8,908</td><td class="n big cd">+8,579</td><td class="w cd">Peltola</td><td class="n big2 cd">+6,046</td><td class="w cd">Peltola</td></tr>
-      <tr><th><a role="link" tabindex="0" data-go="ceiling">Broad confusion: every Republican or mixed Sullivan Jr. voter meant Sullivan</a></th><td class="f">8,579 − 3,297</td><td class="n big cd">+5,282</td><td class="w cd">Peltola</td><td class="n big2 cd">+2,749</td><td class="w cd">Peltola</td></tr>
-      <tr><th><a role="link" tabindex="0" data-go="stress-test">Every Sullivan Jr. voter meant Sullivan</a></th><td class="f">5,282 − 1,843</td><td class="n big cd">+3,439</td><td class="w cd">Peltola</td><td class="n big2 cd">+906</td><td class="w cd">Peltola</td></tr>
-      <tr class="trump"><th><a role="link" tabindex="0" data-go="claim">Trump's method: every Sullivan Jr. <em>and Heikes</em> vote to Sullivan</a></th><td class="f">8,579 − 5,079 (Sullivan Jr.) − 4,091 (Heikes)</td><td class="n big cr">−591</td><td class="w cr">Sullivan</td><td class="n big2 cr">−3,124</td><td class="w cr">Sullivan</td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked</a><small class="fx">count as it stands + ballots still to count == −329 + 8,908</small></th><td class="res cd"><span class="v">+8,579</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+6,046</span><span class="w">Peltola</span></td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="ceiling">Broad confusion: every Republican or mixed Sullivan Jr. voter meant Sullivan</a><small class="fx">8,579 − 3,297</small></th><td class="res cd"><span class="v">+5,282</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+2,749</span><span class="w">Peltola</span></td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="stress-test">Every Sullivan Jr. voter meant Sullivan</a><small class="fx">5,282 − 1,843</small></th><td class="res cd"><span class="v">+3,439</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+906</span><span class="w">Peltola</span></td></tr>
+      <tr class="trump"><th><a role="link" tabindex="0" data-go="claim">Trump's method: every Sullivan Jr. <em>and Heikes</em> vote to Sullivan</a><small class="fx">8,579 − 5,079 (Sullivan Jr.) − 4,091 (Heikes)</small></th><td class="res cr"><span class="v">−591</span><span class="w">Sullivan</span></td><td class="res alt cr"><span class="v">−3,124</span><span class="w">Sullivan</span></td></tr>
     </tbody>
   </table></div>
   <p class="es-line">Confusion between the two Sullivans does not change the winner, even under the stress test. Trump's method changes the projected winner only by <a role="link" tabindex="0" data-go="claim">adding both Sullivan Jr. and Heikes ballots to Sullivan</a>, regardless of how those voters ranked. Either one alone leaves Peltola ahead: Heikes only, 8,579 − 4,091 == +4,488; Sullivan Jr. only, 8,579 − 5,079 == +3,500.</p>
