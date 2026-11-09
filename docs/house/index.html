@@ -1,0 +1,1007 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Alaska House Count Check</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600&display=swap">
+<style>
+/* Layout: title + headline number, executive summary, then the claim walked step by step to the likely result, then the supporting sections, notes at the bottom. Full-width text and tables on one left edge. ACI type. */
+:root {
+  --bg: #fbfbfa; --panel: #f2f2ef; --fg: #15151a; --fg2: #46464e; --muted: #7d7d85; --rule: #d9d9d3;
+  --rep: #c8352b; --dem: #2a6fd6; --dem2: #7fb0f0; --ind: #6f42a8; --tagbg: #e4e4de; --hi: #fff3c4; --band: rgba(110,110,130,.22); --card: #ffffff; --crc: #c47f0e; --cc: #4f8494; --tagRbg: #f6e3c0; --tagCbg: #d6e6ea; --tagDbg: #dbe7f8;
+  --f-title: "Zilla Slab", Georgia, serif; --f-num: "Playfair Display", Georgia, serif; --f-mono: "Space Mono", ui-monospace, Menlo, monospace; --f-body: "Outfit", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #18181b; --panel: #222226; --fg: #efeff1; --fg2: #c6c6cc; --muted: #8e8e96; --rule: #3a3a40; --rep: #e8574c; --dem: #4a8ae8; --dem2: #8fbaf2; --ind: #a684d8; --tagbg: #33333a; --hi: #3d3720; --band: rgba(200,200,220,.2); --card: #232328; --crc: #e5a640; --cc: #7fb3c2; --tagRbg: #4a3712; --tagCbg: #1f3a42; --tagDbg: #1e3150; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #18181b; --panel: #222226; --fg: #efeff1; --fg2: #c6c6cc; --muted: #8e8e96; --rule: #3a3a40; --rep: #e8574c; --dem: #4a8ae8; --dem2: #8fbaf2; --ind: #a684d8; --tagbg: #33333a; --hi: #3d3720; --band: rgba(200,200,220,.2); --card: #232328; --crc: #e5a640; --cc: #7fb3c2; --tagRbg: #4a3712; --tagCbg: #1f3a42; --tagDbg: #1e3150; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 56px; }
+main { max-width: 1200px; margin: 0 auto; display: grid; gap: 38px; }
+h1 { font-family: var(--f-title); font-size: 2.2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--f-title); font-size: 1.55rem; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 8px 0 0; font-weight: 700; }
+p { margin: 0; }
+a { color: var(--dem); }
+a:focus-visible { outline: 2px solid var(--dem); outline-offset: 2px; }
+.lede { color: var(--fg2); margin-top: 10px; }
+.head { display: flex; gap: 28px; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; }
+.head > div { min-width: 0; flex: 1 1 520px; }
+.big { display: grid; gap: 2px; text-align: right; }
+.big .num { font-family: var(--f-num); font-size: 3.4rem; line-height: 1; color: var(--dem); font-variant-numeric: tabular-nums; }
+.big .lab { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.exec { background: var(--panel); border-radius: 10px; padding: 18px 20px; display: grid; gap: 10px; }
+.exec ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.sec { display: grid; gap: 14px; min-width: 0; border-top: 2px solid var(--fg); padding-top: 20px; }
+.kicker { font-family: var(--f-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.quote { border-left: 4px solid var(--rep); padding: 4px 0 4px 14px; display: grid; gap: 4px; }
+.quote p { font-family: var(--f-title); font-size: 1.2rem; line-height: 1.35; }
+.quote .who { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 18px; }
+.tw { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 14.5px; }
+th, td { padding: 6px 8px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; vertical-align: top; }
+thead th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); font-weight: 400; white-space: normal; vertical-align: bottom; }
+tbody th { text-align: left; font-weight: 500; color: var(--fg2); white-space: normal; min-width: 180px; }
+tbody th small { display: block; font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); font-weight: 400; }
+td.n { font-family: var(--f-mono); font-size: 14px; }
+td.f { font-family: var(--f-mono); font-size: 12.5px; color: var(--fg2); text-align: left; white-space: normal; min-width: 220px; }
+tr.key td, tr.key th { background: var(--hi); }
+tr.tot td, tr.tot th { font-weight: 700; border-top: 2px solid var(--fg); }
+table.wide { min-width: 760px; }
+table.mini2 { width: auto; min-width: min(100%, 420px); }
+.cr { color: var(--rep); } .cd { color: var(--dem); } .ci { color: var(--ind); } .cd2 { color: var(--dem2); }
+.note { font-size: 14px; color: var(--fg2); }
+.vars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; background: var(--panel); border-radius: 10px; padding: 14px 16px; }
+.vars div { min-width: 0; display: grid; gap: 4px; }
+.vars ul { margin: 0; padding-left: 18px; font-size: 14px; }
+.vars code, .chain { font-family: var(--f-mono); font-size: 13px; }
+.chain { background: var(--panel); border-radius: 10px; padding: 12px 16px; display: grid; gap: 6px; overflow-x: auto; }
+.chain div { white-space: nowrap; }
+.chart { background: var(--panel); border-radius: 10px; padding: 12px; overflow-x: auto; }
+.chart svg { display: block; width: 100%; min-width: 620px; height: auto; }
+.chart text { fill: var(--fg2); font-family: var(--f-mono); font-size: 11px; }
+.chart .grid line { stroke: var(--rule); }
+.chart .zero { stroke: var(--fg); stroke-width: 1.2; }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; font-family: var(--f-mono); font-size: 12px; color: var(--fg2); padding: 4px 4px 0; }
+.legend span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+.notes { font-size: 14px; color: var(--fg2); }
+.notes ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.src { font-size: 13.5px; color: var(--muted); }
+.cc { color: var(--cc); } .crc { color: var(--crc); }
+.tagX { background: var(--tagRbg); color: var(--crc); outline: 1px dashed var(--crc); }
+.tagR, .tagC, .tagD, .tagX { display: inline-block; font-family: var(--f-mono); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; border-radius: 999px; padding: 1px 8px; margin-right: 4px; white-space: nowrap; }
+.tagR { background: var(--tagRbg); color: var(--crc); } .tagC { background: var(--tagCbg); color: var(--cc); } .tagD { background: var(--tagDbg); color: var(--dem); }
+tr.callR th { box-shadow: inset 4px 0 0 var(--crc); } tr.callR td.n:nth-of-type(2) { color: var(--crc); }
+tr.callC th { box-shadow: inset 4px 0 0 var(--cc); }
+tr.callD th { box-shadow: inset 4px 0 0 var(--muted); } tr.callD td.n:nth-of-type(2) { color: var(--muted); } tr.callC td.n:nth-of-type(2) { color: var(--cc); }
+.assume { background: var(--panel); border-radius: 10px; padding: 12px 16px; font-size: 14.5px; }
+.assume ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.key-list { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 6px; font-size: 15px; }
+h3.walk { font-family: var(--f-title); font-size: 1.3rem; letter-spacing: 0; text-transform: none; color: var(--fg); margin-top: 14px; }
+.toc { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 10px 0; font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .05em; text-transform: uppercase; }
+.toc a { color: var(--fg); text-decoration: none; border-bottom: 2px solid transparent; }
+.toc a:hover, .toc a:focus-visible { border-bottom-color: var(--dem); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.sec, .es, h3[id] { scroll-margin-top: 56px; }
+table.outcome { min-width: 640px; }
+table.outcome th, table.outcome td { padding: 10px 10px; vertical-align: middle; }
+table.outcome tbody th { font-size: 15px; color: var(--fg); }
+table.outcome td.big { font-family: var(--f-num); font-size: 1.9rem; }
+table.outcome td.w { text-align: left; font-family: var(--f-title); font-size: 1.15rem; font-weight: 700; }
+table.outcome tr.trump th, table.outcome tr.trump td { background: var(--hi); }
+.es-q { font-size: 1.1rem; }
+.tiles3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
+.box.claim { border: 2px solid var(--rep); }
+.es-line { font-size: 1.05rem; font-weight: 500; }
+.proj { display: grid; gap: 6px; border-top: 1px solid var(--rule); padding-top: 12px; font-size: 15px; }
+.detail-head { border-top: 2px solid var(--fg); padding-top: 20px; display: grid; gap: 6px; }
+details.det { border-top: 1px solid var(--rule); padding-top: 14px; }
+details.det > summary { list-style: none; cursor: pointer; display: grid; gap: 4px; }
+details.det > summary::-webkit-details-marker { display: none; }
+details.det > summary h2 { font-size: 1.3rem; }
+details.det > summary .take { color: var(--fg2); }
+details.det > summary .more { font-family: var(--f-mono); font-size: 12px; color: var(--dem); text-transform: uppercase; letter-spacing: .05em; }
+details.det > summary .more::before { content: "Show detail ▸"; }
+details.det[open] > summary .more::before { content: "Hide detail ▾"; }
+details.det[open] { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+details.det > * { min-width: 0; }
+details.det > summary:focus-visible { outline: 2px solid var(--dem); outline-offset: 4px; }
+.es { display: grid; gap: 18px; }
+.tiles { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr); gap: 16px; align-items: stretch; }
+.stat { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.slab { font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--fg); font-weight: 700; }
+.box { flex: 1; background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; min-width: 0; }
+.box .num { font-family: var(--f-num); font-size: 2.6rem; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.box .sub { font-size: 14px; color: var(--fg2); line-height: 1.4; }
+.box.hero { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; }
+.box.hero .num { font-size: 3.4rem; }
+.box.hero .sub { flex: 1 1 260px; font-size: 15px; }
+.pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 10px; row-gap: 8px; min-width: 0; }
+.pair .l1, .pair .l2 { padding-left: 10px; }
+.frame { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-auto-flow: column; grid-template-rows: 1fr; gap: 10px; padding: 8px; border: 2px solid var(--rep); border-radius: 14px; }
+.frame .inner { display: none; }
+.frame .box:first-of-type { border: 2px solid var(--rep); }
+@media (max-width: 900px) { .tiles { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .pair .l1, .pair .l2 { display: none; }
+  .frame { grid-template-columns: 1fr; grid-auto-flow: row; grid-template-rows: none; }
+  .frame .inner { display: block; }
+}
+.tile { background: var(--panel); border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.tile > .lab:first-child { min-height: 2.7em; }
+.tile.claim { outline: 3px solid var(--rep); outline-offset: -3px; }
+.tile .num { font-family: var(--f-num); font-size: 2.5rem; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.tile .lab { font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.aci { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 22px; background: var(--panel); border-radius: 10px; padding: 18px 20px; border-left: 5px solid var(--rep); }
+.aci-num { display: grid; align-content: start; gap: 4px; }
+.aci-num .num { font-family: var(--f-num); font-size: 3.6rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.aci-num .lab { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.aci-body { display: grid; gap: 12px; min-width: 0; }
+.aci .vars, .aci .chain { background: var(--bg); }
+tr.grp th { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--fg); font-weight: 700; padding-top: 14px; }
+tr.sub th, tr.sub td { font-weight: 700; border-top: 1px solid var(--fg2); }
+@media (max-width: 700px) { .aci { grid-template-columns: 1fr; } }
+.src ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 3px; }
+@media (max-width: 560px) { h1 { font-size: 1.75rem; } .big { text-align: left; } .big .num { font-size: 2.6rem; } }
+
+/* ---- Typst-matched layout (ACI briefing): parchment page, measured column, slab section titles with a rule ---- */
+:root { --bg: #F7F2EB; --panel: #FDFBF8; --card: #FDFBF8; --fg: #2E2B28; --fg2: #5d5853; --muted: #8C8782; --rule: #E2DCD3;
+  --accent: #C25A22; --accent-light: #E8955E; --thead: #244E78; --thead-fg: #FDFBF8; --stripe: #F1EBE2; --hi: #FBE9C8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #1c1a18; --panel: #262320; --card: #262320; --fg: #EFE9E1; --fg2: #c9c2b9; --muted: #9a938b; --rule: #3a3530;
+  --accent: #E8955E; --accent-light: #b8693a; --thead: #2f4a66; --thead-fg: #EFE9E1; --stripe: #2b2825; --hi: #4a3b1c; } }
+:root[data-theme="dark"] { --bg: #1c1a18; --panel: #262320; --card: #262320; --fg: #EFE9E1; --fg2: #c9c2b9; --muted: #9a938b; --rule: #3a3530;
+  --accent: #E8955E; --accent-light: #b8693a; --thead: #2f4a66; --thead-fg: #EFE9E1; --stripe: #2b2825; --hi: #4a3b1c; }
+body { font-size: 16.5px; line-height: 1.62; padding-block: 44px 72px; }
+main { max-width: 880px; gap: 56px; }
+h1 { font-family: var(--f-num); font-size: 2.85rem; line-height: 1.08; font-weight: 700; letter-spacing: -.005em; }
+.lede { font-size: 1.08rem; color: var(--fg2); margin-top: 16px; }
+.sec { border-top: 0; padding-top: 0; gap: 18px; }
+.sec > h2, .es > h2, .detail-head > h2 { font-family: var(--f-title); font-size: 2rem; font-weight: 600; line-height: 1.15; color: var(--fg);
+  padding-bottom: 8px; border-bottom: 1.5px solid var(--accent-light); }
+.kicker { font-size: 11px; letter-spacing: .18em; color: var(--accent); font-weight: 700; margin-bottom: -10px; }
+h3 { font-size: 11px; letter-spacing: .16em; color: var(--muted); margin-top: 12px; }
+h3.walk { font-family: var(--f-title); font-size: 1.45rem; font-weight: 700; color: var(--fg); letter-spacing: 0; text-transform: none;
+  margin-top: 26px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+.note { font-size: 14.5px; line-height: 1.55; }
+.toc { font-size: 11px; letter-spacing: .16em; padding: 12px 0; gap: 6px 22px; border-bottom: 1px solid var(--rule); }
+.quote { border-left: 4px solid var(--accent); }
+.quote p { font-family: var(--f-num); font-style: italic; font-weight: 400; font-size: 1.12rem; line-height: 1.45; }
+.vars, .assume, .chain, .chart, .exec, .aci { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; }
+.aci { border-left: 6px solid var(--rep); }
+.aci .vars, .aci .chain { background: var(--bg); }
+.chart { padding: 16px; }
+.box { border-radius: 6px; }
+/* tables: header band and striped rows, as aci-table */
+table { font-size: 14.5px; }
+thead th { background: var(--thead); color: var(--thead-fg); font-weight: 700; font-size: 10.5px; letter-spacing: .08em; padding: 9px 8px; border-bottom: 0; }
+thead th .tagR, thead th .tagC, thead th .tagD { color: inherit; background: rgba(255,255,255,.16); }
+thead th .cr, thead th .cd, thead th .ci, thead th .cd2 { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+:where(tbody tr:nth-child(even)) > * { background: var(--stripe); }
+th, td { padding: 8px 9px; border-bottom: 1px solid var(--rule); }
+tbody th { color: var(--fg); }
+table.outcome td.big { font-size: 2rem; }
+.es { gap: 20px; }
+.es-q { font-size: 1.12rem; }
+.es-line { font-size: 1.12rem; font-weight: 600; line-height: 1.5; }
+.detail-head { border-top: 0; padding-top: 0; }
+details.det { border-top: 1px solid var(--rule); padding-top: 18px; }
+details.det > summary h2 { font-size: 1.5rem; }
+.chart text { font-size: 12.5px; }
+.legend { font-size: 12px; }
+.claims { grid-template-columns: 1fr; gap: 14px; }
+
+/* layout pass: wider column, tighter top block, real-looking links, lightbox */
+main { max-width: 1120px; gap: 52px; }
+h1, h2, h3 { text-wrap: wrap; }
+.top { display: grid; gap: 22px; }
+.running { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: -24px; }
+.running.foot { border-bottom: 0; border-top: 1px solid var(--rule); padding: 10px 0 0; margin: 0; }
+.toc { padding: 10px 0; gap: 8px; border-bottom: 0; }
+.toc a { display: inline-block; padding: 6px 12px; border: 1px solid var(--thead); border-radius: 999px; color: var(--thead); background: var(--card); text-decoration: none; }
+.toc a:hover, .toc a:focus-visible { background: var(--thead); color: var(--thead-fg); border-bottom-color: var(--thead); }
+.es a, .es-line a, table.outcome th a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent-light); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.es a:hover, table.outcome th a:hover { color: var(--accent); }
+table.outcome th a::after { content: " →"; color: var(--accent); text-decoration: none; display: inline-block; }
+tr[id] { scroll-margin-top: 80px; }
+.chart { cursor: zoom-in; position: relative; }
+.chart:focus-visible { outline: 2px solid var(--thead); outline-offset: 3px; }
+.chart .wm { fill: var(--muted); font-size: 11px; letter-spacing: .03em; }
+.lb { position: fixed; inset: 0; z-index: 50; background: rgba(20,18,16,.72); display: grid; place-items: center;
+  padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.lb[hidden] { display: none !important; }
+.lb-inner { background: var(--card); border-radius: 8px; width: min(1600px, 100%); max-height: 100%; overflow: auto; padding: 14px 18px; display: grid; gap: 10px; }
+.lb-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.lb-title { font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-right: auto; }
+.lb-btn { font: 600 13px var(--f-body); padding: 7px 14px; border-radius: 999px; border: 1px solid var(--thead); background: var(--card); color: var(--thead); cursor: pointer; }
+.lb-btn:hover, .lb-btn:focus-visible { background: var(--thead); color: var(--thead-fg); }
+.lb-fig { overflow-x: auto; }
+.lb-fig svg { display: block; width: 100%; min-width: 900px; height: auto; }
+.lb-fig text { fill: var(--fg2); font-family: var(--f-mono); font-size: 12.5px; }
+.lb-fig .grid line { stroke: var(--rule); } .lb-fig .zero { stroke: var(--fg); stroke-width: 1.2; } .lb-fig .wm { fill: var(--muted); font-size: 11px; }
+.lb-msg { font-size: 14px; color: var(--fg2); min-height: 1.2em; }
+@media (prefers-reduced-motion: no-preference) { .lb-inner { animation: lbIn .16s ease-out; } @keyframes lbIn { from { transform: scale(.98); opacity: .6; } } }
+main { gap: 44px; }
+.top + .es { margin-top: -8px; }
+.top + .es { margin-top: -26px; }
+table.outcome thead th:nth-child(3) { white-space: nowrap; }
+table.outcome td.f { white-space: nowrap; min-width: 0; }
+table.outcome tbody th { white-space: normal; }
+@keyframes flashBg { from { background-color: var(--hi); } to { background-color: transparent; } }
+.flash, .flash > * { animation: flashBg 1.6s ease-out; }
+.detail-head, [id] { scroll-margin-top: 64px; }
+tr[id] { scroll-margin-top: 80px; }
+[data-go] { cursor: pointer; }
+.toc a[data-go] { cursor: pointer; }
+th.grph { text-align: center; border-bottom: 1px solid rgba(255,255,255,.35); }
+
+tbody.scen { outline: 2.5px solid var(--accent); outline-offset: -1px; }
+tbody.scen tr.scen-title th { color: var(--accent); }
+table.grouped th.grph { text-align: center; }
+table.grouped thead tr:nth-child(2) th { text-align: center; }
+table.grouped thead tr:nth-child(1) th:nth-child(n+3),
+table.grouped thead tr:nth-child(2) th:nth-child(1), table.grouped thead tr:nth-child(2) th:nth-child(3),
+table.grouped thead tr:nth-child(2) th:nth-child(7), table.grouped thead tr:nth-child(2) th:nth-child(9),
+table.grouped tbody td:nth-of-type(2), table.grouped tbody td:nth-of-type(4),
+table.grouped tbody td:nth-of-type(8), table.grouped tbody td:nth-of-type(10) { border-left: 2px solid var(--thead); }
+table.grouped tbody td { text-align: center; }
+table.grouped tbody td:nth-of-type(1) { text-align: right; }
+table.grouped { border-right: 2px solid var(--thead); border-bottom: 2px solid var(--thead); }
+th.rangenote { font-family: var(--f-body); font-size: 13.5px; font-weight: 400; color: var(--fg2); white-space: normal; text-transform: none; letter-spacing: 0; }
+table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 13px; } table.hashes td { text-align: left; } table.hashes code { font-size: 11.5px; }
+.notes li { min-width: 0; overflow-wrap: anywhere; }
+.notes code { word-break: break-all; }
+.notes ol { grid-template-columns: minmax(0, 1fr); }
+table.sens td.flip { font-weight: 700; background: var(--hi); }
+table.outcome td.big2 { font-family: var(--f-num); font-size: 1.45rem; }
+table.outcome thead th:nth-child(5) { white-space: nowrap; }
+table.outcome { min-width: 0; }
+table.outcome tbody th { width: 60%; }
+table.outcome small.fx { display: block; font-family: var(--f-mono); font-size: 12px; color: var(--fg2); margin-top: 4px; font-weight: 400; }
+table.outcome td.res { text-align: right; vertical-align: middle; white-space: nowrap; }
+table.outcome td.res .v { display: block; font-family: var(--f-num); font-size: 2rem; line-height: 1.05; }
+table.outcome td.res.alt .v { font-size: 1.5rem; }
+table.outcome td.res .w { display: block; font-family: var(--f-title); font-weight: 700; font-size: 1rem; }
+table.outcome thead th:nth-child(n+2) { text-align: right; white-space: nowrap; }
+@media (max-width: 560px) {
+  table.outcome thead th:nth-child(n+2) { white-space: normal; }
+  table.outcome tbody th { width: auto; }
+  table.outcome td.res .v { font-size: 1.3rem; } table.outcome td.res.alt .v { font-size: 1.1rem; }
+  table.outcome td.res .w { font-size: .85rem; }
+  table.outcome th, table.outcome td { padding: 8px 6px; }
+}
+table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb, var(--dem) 8%, transparent); }
+/* House page additions */
+table.grouped2 thead tr:nth-child(1) th.grph, table.grouped3 thead tr:nth-child(1) th.grph { border-left: 2px solid var(--thead-fg); }
+table.grouped2 thead tr:nth-child(2) th:nth-child(1), table.grouped2 thead tr:nth-child(2) th:nth-child(4),
+table.grouped2 tbody td:nth-of-type(2), table.grouped2 tbody td:nth-of-type(5) { border-left: 2px solid var(--thead); }
+table.grouped3 thead tr:nth-child(2) th:nth-child(1), table.grouped3 thead tr:nth-child(2) th:nth-child(4), table.grouped3 thead tr:nth-child(2) th:nth-child(6),
+table.grouped3 tbody td:nth-of-type(2), table.grouped3 tbody td:nth-of-type(5), table.grouped3 tbody td:nth-of-type(7) { border-left: 2px solid var(--thead); }
+table.grouped2 thead tr:nth-child(2) th, table.grouped3 thead tr:nth-child(2) th { text-align: center; }
+.cd2 { color: var(--dem2); }
+tr.callD th { box-shadow: inset 4px 0 0 var(--dem); } tr.callD td.n:nth-of-type(2) { color: var(--dem); }
+.running a { color: inherit; }
+</style>
+
+<main>
+<div class="running"><span>Grant Case - grant@aicriticalityindex.com</span><span>Alaska House count check · 9 Nov 2026</span></div>
+<div class="top">
+
+<header class="head">
+  <div>
+    <h1>Alaska House: is Begich's lead safe?</h1>
+    <p class="lede">Nobody disputes the count here. The question is simpler: does any reading of the ballots, counted or still to come, put Hill ahead of Begich, and what would it take? Every signed number is Hill minus Begich: <strong class="cd">positive is Hill ahead</strong>, <strong class="cr">negative is Begich ahead</strong>. Hill is an independent endorsed by the Democrats, so he is the Democratic side.</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <a role="link" tabindex="0" data-go="summary">Who wins</a><a role="link" tabindex="0" data-go="count">Count</a><a role="link" tabindex="0" data-go="hafner">Hafner</a><a role="link" tabindex="0" data-go="ceiling">Stopped ballots</a><a role="link" tabindex="0" data-go="reality">Projection</a><a role="link" tabindex="0" data-go="scenarios">Scenarios</a><a role="link" tabindex="0" data-go="detail">Detail</a>
+</nav>
+</div>
+
+<section class="es" id="summary" aria-label="Executive summary">
+  <h2>Executive summary</h2>
+  <p class="es-q">Begich leads on every reading the count supports. Each bar runs from Model B, where late ballots follow the pattern of Peltola's 2024 race against Begich, to Model A, where late ballots vote like counted ballots of the same type. The dot is the midpoint. Only one bar reaches a Hill win, and it rests on ballots Alaska's rules count for no one.</p>
+  <div class="chart" tabindex="0" data-name="where-it-lands" title="Click to enlarge" role="img" aria-label="Projected final under each reading, Model B to Model A. Stopped ballots follow their Senate vote, minus 756 to plus 1,812, the only Hill win. Both sides with the Senate final-round test, minus 5,581 to minus 3,040. Every unreturned absentee arrives plus overseas ballots, minus 11,087 to minus 7,593. Every unreturned absentee arrives, minus 11,209 to minus 7,715. Both sides with the Senate first-choice test, minus 10,225 to minus 7,728. Alaska's rules, minus 10,982 to minus 8,590, the best guess. No unreturned absentee arrives and questioned ballots follow 2024, minus 11,315 to minus 9,658.">
+    <svg id="rp-summary" viewBox="0 0 1000 420"></svg>
+    <div class="legend"><span style="--c:var(--rep)">Begich ahead</span><span style="--c:var(--dem)">Hill ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span><span style="--c:var(--hi)">best guess: Alaska's rules, between the two late-ballot models</span></div>
+  </div>
+  <p>The table gives each figure and links to where it is worked out. Rows run from the reading best for Hill to the reading best for Begich, under Model A.</p>
+  <div class="tw"><table class="outcome">
+    <thead><tr><th style="text-align:left">If the ballots are read as…</th><th>Model A: late ballots vote like counted ones</th><th>Model B: late ballots follow 2024</th></tr></thead>
+    <tbody>
+      <tr class="trump"><th><a role="link" tabindex="0" data-go="ceiling">Every stopped ballot follows its Senate vote (not a count)</a><small class="fx">count −5,779 + remaining +7,591; Model B 1,812 − 2,568</small></th><td class="res cd"><span class="v">+1,812</span><span class="w">Hill</span></td><td class="res alt cr"><span class="v">−756</span><span class="w">Begich</span></td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="ceiling">Both sides, Senate final-round test: stopped ballots follow their Senate vote, Hill voters who chose Sullivan come off</a><small class="fx">count −9,899 + remaining +6,859; Model B −3,040 − 2,541</small></th><td class="res cr"><span class="v">−3,040</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−5,581</span><span class="w">Begich</span></td></tr>
+      <tr class="pos"><th><a role="link" tabindex="0" data-go="scenarios">Every unreturned absentee arrives, with overseas ballots at 2024's volume</a><small class="fx">−7,715 + 268 × (0.5308 − 0.0771) == −7,715 + 122; Model B −11,209 + 122</small></th><td class="res cr"><span class="v">−7,593</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−11,087</span><span class="w">Begich</span></td></tr>
+      <tr class="pos"><th><a role="link" tabindex="0" data-go="scenarios">Every unreturned absentee arrives</a><small class="fx">−13,347 + 5,633; Model B −7,715 − 3,495</small></th><td class="res cr"><span class="v">−7,715</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−11,209</span><span class="w">Begich</span></td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="ceiling">Both sides, Senate first-choice test: stopped ballots follow their Senate vote, Hill voters outside the Democratic ticket come off</a><small class="fx">count −13,635 + remaining +5,907; Model B −7,728 − 2,497</small></th><td class="res cr"><span class="v">−7,728</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−10,225</span><span class="w">Begich</span></td></tr>
+      <tr class="key"><th><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked (best guess)</a><small class="fx">count as it stands + ballots still to count == −13,347 + 4,757; Model B −8,590 − 2,392</small></th><td class="res cr"><span class="v">−8,590</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−10,982</span><span class="w">Begich</span></td></tr>
+      <tr><th><a role="link" tabindex="0" data-go="scenarios">No unreturned absentee arrives, and questioned ballots follow 2024</a><small class="fx">−9,174 − 484; Model B −10,831 − 484</small></th><td class="res cr"><span class="v">−9,658</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−11,315</span><span class="w">Begich</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="es-line">Best guess: Begich by 8,590 to 10,982, centre about 9,800. To win under Alaska's rules, Hill needs the remaining ballots to run about 13 points better for him than counted ballots of the same type (<a role="link" tabindex="0" data-go="late-sensitivity">sensitivity</a>). In 2024, Peltola's late early and absentee ballots combined ran worse for her than the ones counted first (<a role="link" tabindex="0" data-go="late-2024">step 3</a>).</p>
+  <p class="es-line">About half of Begich's counted lead, 6,635 of 13,347, comes from <a role="link" tabindex="0" data-go="hafner">Hafner ballots that stopped</a>. 7,228 Hafner ballots ranked no one still in the race, and 94.5% of those voters chose Peltola in the Senate final round. If every stopped ballot had followed its Senate vote, Hill would lead under Model A and trail by 756 under Model B.</p>
+  <p class="es-line">Hill's column has its own outside votes. Taking off the Hill voters who chose Sullivan in the Senate final round leaves Begich ahead by 3,040 to 5,581. Taking off every Hill voter outside the Democratic ticket, as the main both-sides row does, leaves him ahead by 7,728 to 10,225 (<a role="link" tabindex="0" data-go="ceiling">walk 2</a>).</p>
+  <p class="note">The projection is a model, not a count. It covers the roughly 69,000 ballots not yet counted (<a role="link" tabindex="0" data-go="reality">step 3</a>). Model B uses this same race in 2024, with Begich as the Republican, comparing ballots counted after 10 Nov 2024 with those counted by then. Under Model B, late absentees run about 10 points more Republican than counted ones, so every extra absentee helps Begich. That is why the absentee rows sit lower than Alaska's rules in the Model B column. <a role="link" tabindex="0" data-go="count">On the ballots counted so far</a>, Begich leads by 13,347.</p>
+</section>
+
+
+<!-- 1. The count as it stands -->
+<section class="sec" id="claims">
+  <span class="kicker">Step 1</span>
+  <h2>The count as it stands, and where the minor candidates' votes go</h2>
+  <p>This step covers the ballots counted so far. Walk 1 runs the count under Alaska's rules, with no judgment calls. The tables after it follow every Hafner and McDermott ballot to where it ends up and show how the same voters marked the Senate, governor and legislative races.</p>
+
+  <h3 id="count" class="walk">Walk 1: the count as it stands</h3>
+  <p>Alaska counts each ballot by its rankings. When a candidate drops out, each ballot moves to that voter's next choice, or <strong>stops</strong> if the voter ranked no one else still in the race. A ballot that reaches the final round for Hill or Begich is a <strong>two-way</strong> vote. A two-way margin is (Hill − Begich) ÷ two-way votes.</p>
+  <div class="chart" tabindex="0" data-name="count-as-it-stands" title="Click to enlarge" role="img" aria-label="Waterfall of the count as it stands: first choices minus 21,319, write-ins out plus 39, McDermott out minus 26, Hafner out plus 5,875, CVR final minus 15,431, rural precincts plus 2,084, count minus 13,347.">
+    <svg id="wf-count" viewBox="0 0 1000 360"></svg>
+    <div class="legend"><span style="--c:var(--dem)">moves toward Hill</span><span style="--c:var(--rep)">moves toward Begich</span><span style="--c:var(--fg2)">subtotal</span></div>
+  </div>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Step</th><th style="text-align:left">Formula, values</th><th>Change</th><th>Running total</th></tr></thead>
+    <tbody>
+      <tr><th>Round 1: first choices<small>CVR, 4 Nov, 204,530 ballots; 1,717 blank or invalid for the House, counted for no one</small></th><td class="f">Hill − Begich == 80,606 − 101,925</td><td class="n cr">−21,319</td><td class="n cr">−21,319</td></tr>
+      <tr><th>Round 2: write-ins out<small>305 ballots: 67 to Hill, 28 to Begich, 41 to the minor candidates, 169 stop</small></th><td class="f">to Hill − to Begich == 67 − 28</td><td class="n cd">+39</td><td class="n cr">−21,280</td></tr>
+      <tr><th>Round 3: McDermott out<small>5,471 ballots: 1,517 to Hill, 1,543 to Begich, 658 to Hafner, 1,753 stop</small></th><td class="f">1,517 − 1,543</td><td class="n cr">−26</td><td class="n cr">−21,306</td></tr>
+      <tr><th>Round 4: Hafner out<small>15,205 ballots: 6,926 to Hill, 1,051 to Begich, 7,228 stop</small></th><td class="f">6,926 − 1,051</td><td class="n cd">+5,875</td><td class="n cr">−15,431</td></tr>
+      <tr class="sub"><th>CVR final round<small>193,663 two-way votes; stopped: 1,717 + 169 + 1,753 + 7,228 == 10,867</small></th><td class="f">89,116 − 104,547</td><td></td><td class="n cr">−15,431</td></tr>
+      <tr><th>Election-day precincts counted but not yet in the CVR<small>mostly rural; 10,541 first choices, Hill 51.4%, Begich 35.3%, Hafner 9.7%</small></th><td class="f">two-way × margin == 9,897 × 0.2106</td><td class="n cd">+2,084</td><td class="n cr">−13,347</td></tr>
+      <tr class="tot"><th>The count as it stands</th><td class="f">−15,431 + 2,084</td><td></td><td class="n cr">−13,347</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note"><strong>The rural batch, read two ways.</strong> The official count holds 10,541 election-day first choices that the CVR does not. Hill and Begich first choices count for themselves. Each other first choice takes the final-round rate of election-day ballots with the same first choice. With statewide election-day rates: 5,417 − 3,722 + 1,020 × 0.3666 + 342 × 0.0329 + 40 × 0.0917 == 1,695 + 374 + 11 + 4 == <strong class="cd">+2,084</strong>. With rates from the 2,782 rural (HD37–40) election-day ballots in the CVR: 1,695 + 1,020 × 0.3080 + 342 × 0.1852 + 40 × (−0.125) == 1,695 + 314 + 63 − 5 == <strong class="cd">+2,067</strong>. Seventeen votes separate the two. The page uses +2,084, the Senate page's method.</p>
+
+  <h3 id="hafner" class="walk">The Hafner ballots that stop</h3>
+  <div class="aci" style="border-left-color:var(--dem2)">
+    <div class="aci-num"><span class="lab">Hafner ballots that stop before the final round</span><span class="num cd2">7,228</span><span class="lab">47.5% of the 15,205 he held when he was eliminated</span></div>
+    <div class="aci-body">
+      <p><strong>Who they are.</strong> On the same ballots, 94.5% of these voters chose Peltola in the Senate final round and 90.1% chose Kreiss-Tomkins for governor. Hill's own final-round voters: 94.3% and 92.7%. In every other race on the ballot, the Hafner voters who stop look like Hill voters. 6,544 of them ranked Hafner and no one else at all.</p>
+      <div class="vars">
+        <div><h3>Variables</h3><ul>
+          <li><code>to_peltola</code>: stopped Hafner ballots whose Senate final-round vote was Peltola</li>
+          <li><code>to_sullivan</code>: the same, Sullivan</li>
+          <li><code>cvr_final</code>: Hill − Begich in the CVR's final round</li>
+        </ul></div>
+        <div><h3>Values (4 Nov CVR)</h3><ul>
+          <li><code>to_peltola = 6,831</code></li><li><code>to_sullivan = 196</code></li><li><code>cvr_final = −15,431</code></li>
+        </ul></div>
+      </div>
+      <div class="chain">
+        <div>to_peltola − to_sullivan  ==  6,831 − 196  ==  <strong class="cd">+6,635</strong></div>
+        <div>cvr_final + (to_peltola − to_sullivan)  ==  −15,431 + 6,635  ==  <strong class="cr">−8,796</strong></div>
+      </div>
+      <p>If each of these ballots had followed its Senate vote, they would be worth 6,635 to Hill: about half of Begich's counted lead of 13,347. Begich would still lead on the CVR ballots, by 8,796. The other 3,639 stopped ballots and the uncounted ballots carry the rest (<a role="link" tabindex="0" data-go="ceiling">walk 2</a>).</p>
+      <p class="note">This is not an error in the count. A voter who ranks one candidate has made a choice, and Alaska's rules count that ballot for no one once the candidate is out. The figure measures how much of Begich's lead comes from that choice. The 201 stopped ballots with no Senate final-round vote stay out.</p>
+    </div>
+  </div>
+
+  <h3>Every House final-round group, and how the same ballots voted in the other races</h3>
+  <div class="tw"><table class="wide grouped2">
+    <thead>
+      <tr><th rowspan="2" style="text-align:left">House ballots that…</th><th rowspan="2">Ballots</th><th colspan="3" class="grph">Senate final round</th><th colspan="2" class="grph">Governor, first choice</th></tr>
+      <tr><th>Peltola</th><th>Sullivan</th><th>Neither</th><th>JKT - Dem</th><th>Republican</th></tr>
+    </thead>
+    <tbody>
+<tr><th><span class="ci">Hill</span>, final round (all)</th><td class="n">89,116</td><td class="n">94.3%</td><td class="n">4.3%</td><td class="n">1.4%</td><td class="n">92.7%</td><td class="n">6.1%</td></tr>
+<tr><th><span class="cr">Begich</span>, final round (all)</th><td class="n">104,547</td><td class="n">5.0%</td><td class="n">93.1%</td><td class="n">1.9%</td><td class="n">6.9%</td><td class="n">91.5%</td></tr>
+<tr class="grp"><th colspan="7">Hafner ballots when he was eliminated: 15,205</th></tr>
+<tr><th>…go on to Hill</th><td class="n">6,926</td><td class="n">97.4%</td><td class="n">2.1%</td><td class="n">0.5%</td><td class="n">94.2%</td><td class="n">4.4%</td></tr>
+<tr><th>…go on to Begich</th><td class="n">1,051</td><td class="n">80.2%</td><td class="n">18.6%</td><td class="n">1.2%</td><td class="n">69.3%</td><td class="n">28.3%</td></tr>
+<tr class="key"><th>…stop</th><td class="n">7,228</td><td class="n">94.5%</td><td class="n">2.7%</td><td class="n">2.8%</td><td class="n">90.1%</td><td class="n">6.6%</td></tr>
+<tr><th>&nbsp;&nbsp;of which ranked only Hafner</th><td class="n">6,544</td><td class="n">94.7%</td><td class="n">2.7%</td><td class="n">2.7%</td><td class="n">90.3%</td><td class="n">6.4%</td></tr>
+<tr class="grp"><th colspan="7">McDermott ballots when he was eliminated: 5,471</th></tr>
+<tr><th>…end with Hill</th><td class="n">1,892</td><td class="n">74.0%</td><td class="n">21.0%</td><td class="n">5.0%</td><td class="n">64.1%</td><td class="n">31.9%</td></tr>
+<tr><th>…end with Begich</th><td class="n">1,661</td><td class="n">19.6%</td><td class="n">77.7%</td><td class="n">2.7%</td><td class="n">17.2%</td><td class="n">79.8%</td></tr>
+<tr><th>…stop</th><td class="n">1,918</td><td class="n">44.6%</td><td class="n">29.3%</td><td class="n">26.1%</td><td class="n">43.3%</td><td class="n">50.5%</td></tr>
+<tr><th>&nbsp;&nbsp;of which ranked only McDermott</th><td class="n">1,722</td><td class="n">40.8%</td><td class="n">31.7%</td><td class="n">27.5%</td><td class="n">40.0%</td><td class="n">54.0%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">JKT is Kreiss-Tomkins, the Democratic candidate for governor. Republican == Wilson, Bronson or Taylor. "Neither" in the Senate column means the ballot stopped before the Senate final round. Hafner's voters split cleanly: those who stop and those who go on to Hill vote alike, and 80.2% of the 1,051 who go on to Begich still chose Peltola for the Senate. McDermott's voters split three ways, and the ballots of his that stop lean slightly Republican for governor.</p>
+
+  <h3>Every way Hafner's voters ranked, with how they voted in the other races</h3>
+  <p>Each row is one ranking order from Hafner onward, with blank ranks and repeats removed. A few ballots ranked a write-in or McDermott ahead of Hafner; they sit in the row their order after Hafner matches. Legislature shares count ballots whose legislative first choices were all one party.</p>
+  <div class="tw"><table class="wide grouped3">
+    <thead>
+      <tr><th rowspan="2" style="text-align:left">Ranking</th><th rowspan="2">Ballots</th><th colspan="3" class="grph">Senate final round</th><th colspan="2" class="grph">Governor</th><th colspan="2" class="grph">Legislature</th></tr>
+      <tr><th>Peltola</th><th>Sullivan</th><th>Neither</th><th>JKT - Dem</th><th>Republican</th><th>D</th><th>R</th></tr>
+    </thead>
+    <tbody>
+<tr class="grp"><th colspan="9">Stops: counted for no one: 7,228 ballots</th></tr>
+<tr class="key"><th>Hafner, and no one after</th><td class="n">6,709</td><td class="n">94.5%</td><td class="n">2.8%</td><td class="n">2.7%</td><td class="n">90.1%</td><td class="n">6.6%</td><td class="n">78.6%</td><td class="n">21.4%</td></tr>
+<tr><th>Hafner &gt; McDermott</th><td class="n">430</td><td class="n">96.0%</td><td class="n">1.4%</td><td class="n">2.6%</td><td class="n">92.3%</td><td class="n">4.9%</td><td class="n">77.5%</td><td class="n">22.5%</td></tr>
+<tr><th>Hafner &gt; Write-in</th><td class="n">30</td><td class="n">83.3%</td><td class="n">10.0%</td><td class="n">6.7%</td><td class="n">80.0%</td><td class="n">13.3%</td><td class="n">90.5%</td><td class="n">9.5%</td></tr>
+<tr><th>Hafner &gt; overvote</th><td class="n">24</td><td class="n">70.8%</td><td class="n">8.3%</td><td class="n">20.8%</td><td class="n">70.8%</td><td class="n">16.7%</td><td class="n">75.0%</td><td class="n">25.0%</td></tr>
+<tr><th>Hafner &gt; Begich</th><td class="n">20</td><td class="n">100.0%</td><td class="n">0.0%</td><td class="n">0.0%</td><td class="n">90.0%</td><td class="n">5.0%</td><td class="n">76.5%</td><td class="n">23.5%</td></tr>
+<tr><th>9 smaller orders</th><td class="n">15</td><td class="n">100.0%</td><td class="n">0.0%</td><td class="n">0.0%</td><td class="n">86.7%</td><td class="n">13.3%</td><td class="n">76.9%</td><td class="n">23.1%</td></tr>
+<tr class="sub"><th>All that stop</th><td class="n">7,228</td><td class="n">94.5%</td><td class="n">2.7%</td><td class="n">2.8%</td><td class="n">90.1%</td><td class="n">6.6%</td><td class="n">78.6%</td><td class="n">21.4%</td></tr>
+<tr class="grp"><th colspan="9">Ends with Hill: 6,926 ballots</th></tr>
+<tr><th>Hafner &gt; Hill</th><td class="n">2,417</td><td class="n">98.6%</td><td class="n">0.7%</td><td class="n">0.7%</td><td class="n">96.4%</td><td class="n">2.2%</td><td class="n">80.7%</td><td class="n">19.3%</td></tr>
+<tr><th>Hafner &gt; Hill &gt; McDermott &gt; Begich</th><td class="n">1,611</td><td class="n">97.5%</td><td class="n">2.2%</td><td class="n">0.3%</td><td class="n">93.9%</td><td class="n">4.3%</td><td class="n">75.1%</td><td class="n">24.9%</td></tr>
+<tr><th>Hafner &gt; Hill &gt; McDermott</th><td class="n">1,060</td><td class="n">99.0%</td><td class="n">0.9%</td><td class="n">0.1%</td><td class="n">96.8%</td><td class="n">2.5%</td><td class="n">80.7%</td><td class="n">19.3%</td></tr>
+<tr><th>Hafner &gt; McDermott &gt; Hill &gt; Begich</th><td class="n">632</td><td class="n">95.9%</td><td class="n">3.6%</td><td class="n">0.5%</td><td class="n">91.5%</td><td class="n">6.8%</td><td class="n">74.5%</td><td class="n">25.5%</td></tr>
+<tr><th>Hafner &gt; McDermott &gt; Hill</th><td class="n">417</td><td class="n">98.1%</td><td class="n">1.7%</td><td class="n">0.2%</td><td class="n">96.6%</td><td class="n">2.9%</td><td class="n">80.4%</td><td class="n">19.6%</td></tr>
+<tr><th>Hafner &gt; Hill &gt; Begich</th><td class="n">310</td><td class="n">88.4%</td><td class="n">11.3%</td><td class="n">0.3%</td><td class="n">81.0%</td><td class="n">17.1%</td><td class="n">62.2%</td><td class="n">37.8%</td></tr>
+<tr><th>Hafner &gt; Hill &gt; Begich &gt; McDermott</th><td class="n">254</td><td class="n">93.7%</td><td class="n">5.5%</td><td class="n">0.8%</td><td class="n">85.0%</td><td class="n">14.6%</td><td class="n">65.9%</td><td class="n">34.1%</td></tr>
+<tr><th>25 smaller orders</th><td class="n">225</td><td class="n">96.9%</td><td class="n">2.2%</td><td class="n">0.9%</td><td class="n">91.6%</td><td class="n">4.4%</td><td class="n">83.3%</td><td class="n">16.7%</td></tr>
+<tr class="sub"><th>All that end with Hill</th><td class="n">6,926</td><td class="n">97.4%</td><td class="n">2.1%</td><td class="n">0.5%</td><td class="n">94.2%</td><td class="n">4.4%</td><td class="n">77.4%</td><td class="n">22.6%</td></tr>
+<tr class="grp"><th colspan="9">Ends with Begich: 1,051 ballots</th></tr>
+<tr><th>Hafner &gt; Begich</th><td class="n">277</td><td class="n">78.3%</td><td class="n">19.5%</td><td class="n">2.2%</td><td class="n">66.4%</td><td class="n">29.6%</td><td class="n">52.6%</td><td class="n">47.4%</td></tr>
+<tr><th>Hafner &gt; Begich &gt; Hill &gt; McDermott</th><td class="n">187</td><td class="n">80.7%</td><td class="n">18.7%</td><td class="n">0.5%</td><td class="n">69.5%</td><td class="n">28.9%</td><td class="n">60.2%</td><td class="n">39.8%</td></tr>
+<tr><th>Hafner &gt; Begich &gt; McDermott &gt; Hill</th><td class="n">185</td><td class="n">82.7%</td><td class="n">16.2%</td><td class="n">1.1%</td><td class="n">69.2%</td><td class="n">27.6%</td><td class="n">59.9%</td><td class="n">40.1%</td></tr>
+<tr><th>Hafner &gt; Begich &gt; Hill</th><td class="n">146</td><td class="n">69.9%</td><td class="n">28.8%</td><td class="n">1.4%</td><td class="n">60.3%</td><td class="n">37.7%</td><td class="n">53.7%</td><td class="n">46.3%</td></tr>
+<tr><th>Hafner &gt; McDermott &gt; Begich &gt; Hill</th><td class="n">135</td><td class="n">91.1%</td><td class="n">8.1%</td><td class="n">0.7%</td><td class="n">77.8%</td><td class="n">21.5%</td><td class="n">73.7%</td><td class="n">26.3%</td></tr>
+<tr><th>Hafner &gt; McDermott &gt; Begich</th><td class="n">65</td><td class="n">86.2%</td><td class="n">13.8%</td><td class="n">0.0%</td><td class="n">86.2%</td><td class="n">13.8%</td><td class="n">64.4%</td><td class="n">35.6%</td></tr>
+<tr><th>15 smaller orders</th><td class="n">56</td><td class="n">73.2%</td><td class="n">25.0%</td><td class="n">1.8%</td><td class="n">66.1%</td><td class="n">30.4%</td><td class="n">53.1%</td><td class="n">46.9%</td></tr>
+<tr class="sub"><th>All that end with Begich</th><td class="n">1,051</td><td class="n">80.2%</td><td class="n">18.6%</td><td class="n">1.2%</td><td class="n">69.3%</td><td class="n">28.3%</td><td class="n">59.0%</td><td class="n">41.0%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">The highlighted row holds the ballots that matter most to Hill: 6,709 with Hafner and no one after him, 94.5% Peltola for the Senate. 6,544 of them ranked only Hafner; the other 165 ranked a write-in or McDermott first. The 20 "Hafner &gt; Begich" ballots that stop skipped two or more rankings in a row before Begich, which ends a ballot under Alaska's rules.</p>
+
+  <h3>Every way McDermott's voters ranked</h3>
+  <div class="tw"><table class="wide grouped3">
+    <thead>
+      <tr><th rowspan="2" style="text-align:left">Ranking</th><th rowspan="2">Ballots</th><th colspan="3" class="grph">Senate final round</th><th colspan="2" class="grph">Governor</th><th colspan="2" class="grph">Legislature</th></tr>
+      <tr><th>Peltola</th><th>Sullivan</th><th>Neither</th><th>JKT - Dem</th><th>Republican</th><th>D</th><th>R</th></tr>
+    </thead>
+    <tbody>
+<tr class="grp"><th colspan="9">Stops: counted for no one: 1,918 ballots</th></tr>
+<tr class="key"><th>McDermott, and no one after</th><td class="n">1,724</td><td class="n">40.8%</td><td class="n">31.7%</td><td class="n">27.6%</td><td class="n">39.9%</td><td class="n">54.0%</td><td class="n">33.6%</td><td class="n">66.4%</td></tr>
+<tr><th>McDermott &gt; Hafner</th><td class="n">161</td><td class="n">88.8%</td><td class="n">6.2%</td><td class="n">5.0%</td><td class="n">82.0%</td><td class="n">14.3%</td><td class="n">67.5%</td><td class="n">32.5%</td></tr>
+<tr><th>McDermott &gt; Write-in</th><td class="n">14</td><td class="n">21.4%</td><td class="n">14.3%</td><td class="n">64.3%</td><td class="n">28.6%</td><td class="n">42.9%</td><td class="n">11.1%</td><td class="n">88.9%</td></tr>
+<tr><th>7 smaller orders</th><td class="n">19</td><td class="n">36.8%</td><td class="n">21.1%</td><td class="n">42.1%</td><td class="n">31.6%</td><td class="n">47.4%</td><td class="n">53.8%</td><td class="n">46.2%</td></tr>
+<tr class="sub"><th>All that stop</th><td class="n">1,918</td><td class="n">44.6%</td><td class="n">29.3%</td><td class="n">26.1%</td><td class="n">43.3%</td><td class="n">50.5%</td><td class="n">36.4%</td><td class="n">63.6%</td></tr>
+<tr class="grp"><th colspan="9">Ends with Hill: 1,892 ballots</th></tr>
+<tr><th>McDermott &gt; Hill</th><td class="n">510</td><td class="n">72.7%</td><td class="n">15.1%</td><td class="n">12.2%</td><td class="n">68.8%</td><td class="n">25.5%</td><td class="n">49.5%</td><td class="n">50.5%</td></tr>
+<tr><th>McDermott &gt; Hill &gt; Hafner &gt; Begich</th><td class="n">331</td><td class="n">87.6%</td><td class="n">12.1%</td><td class="n">0.3%</td><td class="n">68.0%</td><td class="n">28.1%</td><td class="n">57.1%</td><td class="n">42.9%</td></tr>
+<tr><th>McDermott &gt; Hill &gt; Begich &gt; Hafner</th><td class="n">236</td><td class="n">54.2%</td><td class="n">44.5%</td><td class="n">1.3%</td><td class="n">38.6%</td><td class="n">58.9%</td><td class="n">36.3%</td><td class="n">63.7%</td></tr>
+<tr><th>McDermott &gt; Hill &gt; Begich</th><td class="n">222</td><td class="n">45.5%</td><td class="n">50.5%</td><td class="n">4.1%</td><td class="n">34.7%</td><td class="n">64.0%</td><td class="n">27.6%</td><td class="n">72.4%</td></tr>
+<tr><th>McDermott &gt; Hafner &gt; Hill &gt; Begich</th><td class="n">212</td><td class="n">86.8%</td><td class="n">12.7%</td><td class="n">0.5%</td><td class="n">77.8%</td><td class="n">19.8%</td><td class="n">60.1%</td><td class="n">39.9%</td></tr>
+<tr><th>McDermott &gt; Hill &gt; Hafner</th><td class="n">163</td><td class="n">86.5%</td><td class="n">9.8%</td><td class="n">3.7%</td><td class="n">81.0%</td><td class="n">16.6%</td><td class="n">55.6%</td><td class="n">44.4%</td></tr>
+<tr><th>McDermott &gt; Hafner &gt; Hill</th><td class="n">147</td><td class="n">91.8%</td><td class="n">5.4%</td><td class="n">2.7%</td><td class="n">87.1%</td><td class="n">10.2%</td><td class="n">71.9%</td><td class="n">28.1%</td></tr>
+<tr><th>McDermott &gt; Hill &gt; Write-in</th><td class="n">12</td><td class="n">75.0%</td><td class="n">0.0%</td><td class="n">25.0%</td><td class="n">66.7%</td><td class="n">8.3%</td><td class="n">62.5%</td><td class="n">37.5%</td></tr>
+<tr><th>20 smaller orders</th><td class="n">59</td><td class="n">71.2%</td><td class="n">20.3%</td><td class="n">8.5%</td><td class="n">59.3%</td><td class="n">23.7%</td><td class="n">55.8%</td><td class="n">44.2%</td></tr>
+<tr class="sub"><th>All that end with Hill</th><td class="n">1,892</td><td class="n">74.0%</td><td class="n">21.0%</td><td class="n">5.0%</td><td class="n">64.1%</td><td class="n">31.9%</td><td class="n">50.3%</td><td class="n">49.7%</td></tr>
+<tr class="grp"><th colspan="9">Ends with Begich: 1,661 ballots</th></tr>
+<tr><th>McDermott &gt; Begich</th><td class="n">885</td><td class="n">10.8%</td><td class="n">85.3%</td><td class="n">3.8%</td><td class="n">10.8%</td><td class="n">86.2%</td><td class="n">6.8%</td><td class="n">93.2%</td></tr>
+<tr><th>McDermott &gt; Begich &gt; Hill</th><td class="n">236</td><td class="n">14.0%</td><td class="n">85.2%</td><td class="n">0.8%</td><td class="n">15.3%</td><td class="n">82.6%</td><td class="n">11.9%</td><td class="n">88.1%</td></tr>
+<tr><th>McDermott &gt; Begich &gt; Hill &gt; Hafner</th><td class="n">201</td><td class="n">27.4%</td><td class="n">72.1%</td><td class="n">0.5%</td><td class="n">20.9%</td><td class="n">78.1%</td><td class="n">18.1%</td><td class="n">81.9%</td></tr>
+<tr><th>McDermott &gt; Begich &gt; Hafner &gt; Hill</th><td class="n">134</td><td class="n">38.8%</td><td class="n">60.4%</td><td class="n">0.7%</td><td class="n">30.6%</td><td class="n">64.2%</td><td class="n">29.6%</td><td class="n">70.4%</td></tr>
+<tr><th>McDermott &gt; Hafner &gt; Begich &gt; Hill</th><td class="n">84</td><td class="n">61.9%</td><td class="n">36.9%</td><td class="n">1.2%</td><td class="n">46.4%</td><td class="n">50.0%</td><td class="n">47.8%</td><td class="n">52.2%</td></tr>
+<tr><th>13 smaller orders</th><td class="n">121</td><td class="n">30.6%</td><td class="n">64.5%</td><td class="n">5.0%</td><td class="n">25.6%</td><td class="n">68.6%</td><td class="n">19.8%</td><td class="n">80.2%</td></tr>
+<tr class="sub"><th>All that end with Begich</th><td class="n">1,661</td><td class="n">19.6%</td><td class="n">77.7%</td><td class="n">2.7%</td><td class="n">17.2%</td><td class="n">79.8%</td><td class="n">13.3%</td><td class="n">86.7%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">McDermott's 1,722 one-name ballots (the 1,724 in the first row include 2 that ranked a write-in first) split 40.8% Peltola, 31.7% Sullivan and 27.5% neither in the Senate. Their stopping costs neither side much: across all 1,918 McDermott ballots that stop, 856 − 562 == +294 for Hill if each followed its Senate vote.</p>
+</section>
+
+<!-- 2. Stopped ballots -->
+<section class="sec" id="adjust">
+  <span class="kicker">Step 2</span>
+  <h2>The stopped ballots, and the other side of them</h2>
+
+  <h3 id="ceiling" class="walk">Walk 2: if every stopped ballot followed its Senate vote</h3>
+  <p>This walk does not change the count. Alaska's rules count stopped ballots for no one. It asks a narrower question: how much of Begich's lead comes from ballots that stopped, and how many of Hill's voters sit outside the Democratic ticket? Each stopped House ballot takes the side of the same ballot's Senate final-round vote. Then, for the second half, Hill voters outside the Democratic ticket come off. The colours mark each judgment call:</p>
+  <ul class="key-list">
+    <li><span class="tagD">To Hill</span> stopped House ballot whose Senate final-round vote was Peltola. Judgment call: the Senate vote stands in for the House preference the voter did not mark.</li>
+    <li><span class="tagR">To Begich</span> stopped House ballot whose Senate final-round vote was Sullivan. Same judgment call.</li>
+    <li><span class="tagR">Off Hill</span> Hill final-round voter outside the Democratic ticket. Judgment call: Senate first choice not Peltola, or governor first choice blank, a write-in or an overvote. A narrower test, the same one the stopped ballots use, takes off only Hill voters who chose Sullivan in the Senate final round (note below).</li>
+    <li>Stopped ballots with no Senate final-round vote (1,240) stay out. That is a fact, not a call.</li>
+  </ul>
+  <div class="chart" tabindex="0" data-name="hill-ceiling" title="Click to enlarge" role="img" aria-label="Waterfall from the CVR final round at minus 15,431. Stopped Hafner ballots to Hill plus 6,831, to Begich minus 196; other stopped ballots to Hill plus 1,530, to Begich minus 1,070; Hill's ceiling minus 8,336. Hill voters outside the Democratic ticket come off: Senate Sullivan minus 3,025, Sullivan Jr. minus 1,562, Heikes minus 1,400, Senate write-in or blank minus 536, Peltola but governor blank or write-in minus 724; both sides minus 15,583.">
+    <svg id="wf-ceiling" viewBox="0 0 1000 360"></svg>
+    <div class="legend"><span style="--c:var(--dem)">stopped ballot to Hill</span><span style="--c:var(--crc)">stopped ballot to Begich, or Hill voter taken off</span><span style="--c:var(--fg2)">count / subtotal</span></div>
+  </div>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Step, on the 4 Nov CVR</th><th style="text-align:left">Formula, values</th><th>Change</th><th>Running total</th></tr></thead>
+    <tbody>
+      <tr><th>CVR final round</th><td class="f">walk 1</td><td></td><td class="n cr">−15,431</td></tr>
+      <tr class="callD"><th><span class="tagD">To Hill</span> stopped Hafner ballots, Senate Peltola</th><td class="f">6,831 × (+1)</td><td class="n cd">+6,831</td><td class="n cr">−8,600</td></tr>
+      <tr class="callR"><th><span class="tagR">To Begich</span> stopped Hafner ballots, Senate Sullivan</th><td class="f">196 × (−1)</td><td class="n">−196</td><td class="n cr">−8,796</td></tr>
+      <tr class="callD"><th><span class="tagD">To Hill</span> other stopped ballots, Senate Peltola<small>McDermott, write-in, and ballots blank or invalid in round 1</small></th><td class="f">(8,361 − 6,831) × (+1)</td><td class="n cd">+1,530</td><td class="n cr">−7,266</td></tr>
+      <tr class="callR"><th><span class="tagR">To Begich</span> other stopped ballots, Senate Sullivan</th><td class="f">(1,266 − 196) × (−1)</td><td class="n">−1,070</td><td class="n cr">−8,336</td></tr>
+      <tr class="tot" id="ceiling-row"><th>On the CVR ballots: every stopped ballot follows its Senate vote<small>203,290 two-way votes</small></th><td class="f">−15,431 + 8,361 − 1,266</td><td></td><td class="n cr">−8,336</td></tr>
+      <tr class="callR"><th><span class="tagR">Off Hill</span> Senate first choice Sullivan</th><td class="f">3,025 × (−1)</td><td class="n">−3,025</td><td class="n cr">−11,361</td></tr>
+      <tr class="callR"><th><span class="tagR">Off Hill</span> Senate first choice Sullivan Jr.<small>1,069 of them chose Kreiss-Tomkins for governor</small></th><td class="f">1,562 × (−1)</td><td class="n">−1,562</td><td class="n cr">−12,923</td></tr>
+      <tr class="callR"><th><span class="tagR">Off Hill</span> Senate first choice Heikes<small>542 of them chose Kreiss-Tomkins for governor</small></th><td class="f">1,400 × (−1)</td><td class="n">−1,400</td><td class="n cr">−14,323</td></tr>
+      <tr class="callR"><th><span class="tagR">Off Hill</span> Senate write-in (268) or blank (268)</th><td class="f">(268 + 268) × (−1)</td><td class="n">−536</td><td class="n cr">−14,859</td></tr>
+      <tr class="callR"><th><span class="tagR">Off Hill</span> Senate Peltola, but governor blank (561), write-in (142) or overvote (21)</th><td class="f">(561 + 142 + 21) × (−1)</td><td class="n">−724</td><td class="n cr">−15,583</td></tr>
+      <tr class="tot" id="both"><th>Both sides, on the CVR ballots<small>3,025 + 1,562 + 1,400 + 536 + 724 == 7,247 Hill voters off</small></th><td class="f">−8,336 − 7,247</td><td></td><td class="n cr">−15,583</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note"><strong>Carried to the count as it stands.</strong> The rural batch adds +2,557 under this reading, against +2,084 under the rules, because its Hafner first choices now follow their Senate vote: −8,336 + 2,557 == −5,779. For both sides, −15,583 + 1,948 == −13,635. Step 3 carries all three readings through the uncounted ballots.</p>
+  <p class="note"><strong>Why the two halves use different tests, and what a matched test gives.</strong> The off-Hill definition reads the Senate first choice and the governor vote, so it catches Sullivan Jr., Heikes and write-in voters whose Senate ballots later reached Peltola. Read with the Senate final round on both halves, only the 3,792 Hill voters who chose Sullivan come off.</p>
+  <div class="chain">
+    <div>CVR:  −8,336 − 3,792  ==  −12,128;   count:  −12,128 + 2,229 (rural batch)  ==  −9,899</div>
+    <div>Model A:  −9,899 + 6,859  ==  <strong class="cr">−3,040</strong>;   Model B:  −3,040 − 2,541  ==  <strong class="cr">−5,581</strong></div>
+  </div>
+  <p class="note"><strong>Protest voters.</strong> 1,611 of the 7,247 chose Sullivan Jr. or Heikes for the Senate and Kreiss-Tomkins for governor (1,069 + 542). Leaving them with Hill: CVR −15,583 + 1,611 == −13,972; count −13,972 + 2,078 == −11,894; Model A −11,894 + 6,307 == <strong class="cr">−5,587</strong>; Model B −5,587 − 2,513 == <strong class="cr">−8,100</strong>. The remaining-ballot rates move with the definition, so the projected change is not exactly 1,611.</p>
+  <p class="note"><strong>Normal stopping.</strong> Ballots always stop. In 2024, stopped House ballots that followed their presidential vote would have moved the House two-way margin by <strong class="cr">−1.74</strong> points. In 2026 they move it by <strong class="cd">+3.87</strong> (two-way margin −7.97 as counted against −4.10 continued). The difference comes from who stopped. In 2024 the stopped ballots leaned Republican (9,199 followed Trump, 3,094 Harris). In 2026 they lean Democratic (8,361 Peltola, 1,266 Sullivan), mostly Hafner's.</p>
+</section>
+
+<!-- 3. Projection -->
+<section class="sec" id="reality">
+  <span class="kicker">Step 3</span>
+  <h2>The projection: what the uncounted ballots could add</h2>
+  <p>This step is a model, not a count. It starts from the count as it stands and adds each type of uncounted ballot two ways. <strong>Model A:</strong> each type votes like counted ballots of the same type. <strong>Model B:</strong> Model A, adjusted by how ballots counted after 10 Nov 2024 differed from those counted by then, in the same race with Begich as the Republican. The best guess is the range between them under Alaska's rules.</p>
+  <div class="assume">
+    <h3>Assumptions, and how each was tested</h3>
+    <ul>
+      <li><strong>Uncounted early ballots vote like the 48,292 counted early ballots, and uncounted absentees like the 8,350 counted absentees</strong> (Model A). Tested on 2024 below: on early and absentee ballots, the same method from the 10 Nov 2024 count erred 1,604 votes toward Peltola. Model B corrects in that direction. Its central version (−2,392) uses same-district gaps; the raw gaps, the backtest's own measure, give −1,333.</li>
+      <li><strong>40% of the 18,919 unreturned absentees arrive.</strong> An assumed value, not an estimate. 0% and 100% are shown in every table.</li>
+      <li><strong>About 8,000 questioned ballots</strong>, at 2024's 3.0% of all ballots, voting like all counted ballots. In 2024, questioned ballots ran 6.39 points more Republican than everything counted by 10 Nov. That is a <a role="link" tabindex="0" data-go="scenarios">Begich-positive scenario</a>, worth −484.</li>
+      <li><strong>The 130 overseas ballots stay out of the absentee rate.</strong> They run Hill +0.53 per ballot against +0.08 for absentees, so leaving them out is cautious for Hill.</li>
+      <li><strong>The rural batch reads the same with rural or statewide election-day rates</strong> (+2,067 against +2,084, step 1).</li>
+      <li><strong>Model B assumes 2026's late ballots differ from its early-counted ones as 2024's did.</strong> The race and the Republican are the same; the Democratic candidate is not. Nothing on this page tests the pattern for 2026 until more ballots are counted.</li>
+    </ul>
+  </div>
+  <div class="chart" tabindex="0" data-name="projection" title="Click to enlarge" role="img" aria-label="Waterfall from the count as it stands at minus 13,347: early plus 2,387, absentees received plus 2,391, later absentees plus 584, questioned minus 604, Model A minus 8,590; the 2024 late pattern minus 2,392 gives Model B minus 10,982.">
+    <svg id="wf-real" viewBox="0 0 1000 380"></svg>
+    <div class="legend"><span style="--c:var(--dem)">moves toward Hill</span><span style="--c:var(--rep)">moves toward Begich</span><span style="--c:var(--fg2)">subtotal</span></div>
+  </div>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Step</th><th style="text-align:left">Formula, values</th><th>Change</th><th>Running total</th></tr></thead>
+    <tbody class="scen">
+      <tr class="grp scen-title"><th colspan="4">Alaska's rules, each ballot counted as ranked</th></tr>
+      <tr><th>The count as it stands</th><td class="f">step 1</td><td></td><td class="n cr">−13,347</td></tr>
+      <tr><th>Early votes</th><td class="f">21,969 × 0.10863</td><td class="n cd">+2,387</td><td class="n cr">−10,960</td></tr>
+      <tr><th>Absentees received</th><td class="f">30,995 × 0.07713</td><td class="n cd">+2,391</td><td class="n cr">−8,569</td></tr>
+      <tr><th>Absentees still to arrive (40% of 18,919)</th><td class="f">7,568 × 0.07713</td><td class="n cd">+584</td><td class="n cr">−7,985</td></tr>
+      <tr><th>Questioned (about 8,000 assumed)</th><td class="f">8,000 × (−0.07545)</td><td class="n cr">−604</td><td class="n cr">−8,589</td></tr>
+      <tr class="sub key" id="central"><th>Model A: late ballots vote like counted ones<small>a scenario, not a count</small></th><td class="f">−13,347 + 4,757; arrivals only: none of the unreturned absentees (−584) to all of them (+875 more)</td><td></td><td class="n cr">−8,590<br><small>−9,174 to −7,715</small></td></tr>
+      <tr><th>Peltola's 2024 late-ballot pattern<small>table below</small></th><td class="f">21,116 × 0.0641 + 36,189 × (−0.1035)</td><td class="n cr">−2,392</td><td class="n cr">−10,982</td></tr>
+      <tr class="sub key"><th>Model B: late ballots follow 2024</th><td class="f">−8,590 − 2,392; arrivals only: −10,831 to −11,209</td><td></td><td class="n cr">−10,982</td></tr>
+      <tr><th colspan="4" class="rangenote">The ranges move only the absentee return rate. They are not confidence intervals. Under Model B, more absentees arriving helps Begich, because late absentees run a two-way margin of 8.22 − 10.35 == −2.13. The rounded rows sum to 4,758; the unrounded total is 4,757.</th></tr>
+    </tbody>
+  </table></div>
+
+  <h3 id="late-2024">Apples to apples: Peltola's 2024 late ballots against Begich</h3>
+  <p>In 2024 Peltola faced Begich, and the count ran the same way: early and absentee ballots kept arriving after election night. Every ballot in the 2024 final CVR can be traced to whether it was already counted in each 2024 export. For each ballot type, compare ballots counted by the export with ballots counted later, on the same measure the projection uses (final-round two-way margin, Peltola minus Begich). Then hold the district mix fixed: compute the gap inside each district and weight it by that district's late ballots.</p>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">2024 ballot type, cut at</th><th>Share counted by the cut</th><th>Two-way margin, counted by the cut</th><th>Two-way margin, counted later</th><th>Gap, raw</th><th>Gap, same districts</th></tr></thead>
+    <tbody>
+      <tr class="key"><th>Early, 10 Nov<small>2026 has counted 68.7% of early ballots (48,292 of 70,261), close to 2024's 70.2%</small></th><td class="n">70.2%</td><td class="n cr">−10.24<br><small>48,672 two-way</small></td><td class="n cr">−2.56<br><small>20,298 two-way</small></td><td class="n cd">+7.67</td><td class="n cd">+6.41</td></tr>
+      <tr class="key"><th>Absentee, 10 Nov<small>2026 has counted about 18% of expected absentees (8,480 of about 47,000)</small></th><td class="n">40.9%</td><td class="n cd">+21.55<br><small>27,310 two-way</small></td><td class="n cd">+13.39<br><small>38,743 two-way</small></td><td class="n cr">−8.16</td><td class="n cr">−10.35</td></tr>
+      <tr><th>Early, 12 Nov<small>only 3,867 late two-way votes</small></th><td class="n">94.3%</td><td class="n cr">−9.74</td><td class="n cd">+21.70</td><td class="n cd">+31.44</td><td class="n cr">−1.07</td></tr>
+      <tr><th>Early, 13 Nov<small>only 1,523 late two-way votes</small></th><td class="n">97.7%</td><td class="n cr">−8.15</td><td class="n cr">−0.46</td><td class="n cd">+7.69</td><td class="n cd">+3.31</td></tr>
+      <tr><th>Absentee, 12 Nov</th><td class="n">63.4%</td><td class="n cd">+19.55</td><td class="n cd">+11.85<br><small>23,910 two-way</small></td><td class="n cr">−7.70</td><td class="n cr">−8.75</td></tr>
+      <tr><th>Absentee, 13 Nov</th><td class="n">67.3%</td><td class="n cd">+18.94</td><td class="n cd">+12.19<br><small>21,324 two-way</small></td><td class="n cr">−6.75</td><td class="n cr">−8.66</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note"><strong>The weak spot, tested.</strong> 2026 has counted a smaller share of its absentees (about 18%) than 2024 had by 10 Nov (40.9%), so 2026's late absentees are a larger slice. If the gap shrank as the slice grew, Model B would overstate it. The absentee gap does not shrink much: cut at 10, 12 and 13 Nov it is −10.35, −8.75 and −8.66. No 2024 cut reaches 18% counted, so the test stops there. The early gap is noisy: +6.41, −1.07 and +3.31, on late samples that fall from 20,298 two-way votes to 1,523. Model B's early term (+1,354) is the less certain half. Late early ballots ran more Democratic, late absentees more Republican. Election-day ballots are left out: 2024's late election-day ballots were the rural precincts, which 2026 has already counted (<code>claims/late_2024_snapshots.py</code>).</p>
+  <div class="vars">
+    <div><h3>Variables</h3><ul>
+      <li><code>early_two_way</code>: remaining 2026 early two-way votes (21,969 × 0.9612 two-way per ballot)</li>
+      <li><code>absentee_two_way</code>: remaining 2026 absentee two-way votes, received plus 40% of unreturned (38,563 × 0.9384)</li>
+      <li><code>early_gap</code>, <code>absentee_gap</code>: 2024's late-against-early gap at 10 Nov, same districts</li>
+    </ul></div>
+    <div><h3>Values</h3><ul>
+      <li><code>early_two_way = 21,116</code></li><li><code>absentee_two_way = 36,189</code></li><li><code>early_gap = +0.0641</code>, <code>absentee_gap = −0.1035</code></li>
+    </ul></div>
+  </div>
+  <div class="chain">
+    <div>early_two_way × early_gap + absentee_two_way × absentee_gap  ==  21,116 × 0.0641 + 36,189 × (−0.1035)  ==  1,354 − 3,746  ==  <strong class="cr">−2,392</strong></div>
+    <div>With raw gaps: 21,116 × 0.0767 + 36,189 × (−0.0816)  ==  1,620 − 2,953  ==  <strong class="cr">−1,333</strong>, giving −8,590 − 1,333 == −9,923</div>
+  </div>
+  <h3>The 2024 backtest: the same method, run from the 10 Nov 2024 count</h3>
+  <p>Run on the 10 Nov 2024 count with 2024's final ballot numbers, Model A projected −10,152. My tabulation of the final CVR gives −7,878. The miss, actual minus projected, is −7,878 − (−10,152) == +2,274: Model A was too kind to Begich. The miss breaks down by ballot type as gap × late two-way votes:</p>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">2024 late ballots</th><th style="text-align:left">Formula, values</th><th>Miss, Peltola minus Begich</th></tr></thead>
+    <tbody>
+      <tr><th>Election day (late rural precincts)<small>2026 has already counted these</small></th><td class="f">11,617 × 0.3577</td><td class="n cd">+4,155</td></tr>
+      <tr><th>Early</th><td class="f">20,298 × 0.0767</td><td class="n cd">+1,557</td></tr>
+      <tr><th>Absentee</th><td class="f">38,743 × (−0.0816)</td><td class="n cr">−3,161</td></tr>
+      <tr><th>Judicial-split, questioned and overseas</th><td class="f">remainder: 2,274 − (4,155 + 1,557 − 3,161)</td><td class="n cr">−277</td></tr>
+      <tr class="tot"><th>Total miss</th><td class="f">−7,878 − (−10,152)</td><td class="n cd">+2,274</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">The whole miss, and more, came from late rural election-day precincts. On the two types still outstanding in 2026, early and absentee, the method erred the other way: 1,557 − 3,161 == −1,604, too kind to Peltola. That is the direction Model B corrects for. The backtest's method and ballot counts are in <code>project.py</code>; the gaps are the raw 10 Nov gaps above.</p>
+
+  <h3 id="late-sensitivity" class="walk">Late-ballot sensitivity: what if late ballots vote differently</h3>
+  <p class="note"><strong>Hypothetical, not a scenario.</strong> This table asks how far the remaining ballots would have to move, against counted ballots of the same type, to change the winner. Each point of two-way margin across the remaining two-way votes moves the final by about 650 to 680 votes, depending on the reading.</p>
+  <div class="tw"><table class="wide sens">
+    <thead><tr><th style="text-align:left">Late ballots, against counted ballots of the same type</th><th style="text-align:left">Formula</th><th>Alaska's rules</th><th>Both sides</th><th>Stopped follow Senate</th></tr></thead>
+    <tbody>
+      <tr><th>15 points better for Hill</th><td class="f">Model A + two-way × 15 ÷ 100</td><td class="n cd flip">+1,142</td><td class="n cd flip">+2,257</td><td class="n cd">+12,049</td></tr>
+      <tr><th>10 points better for Hill</th><td class="f">Model A + two-way × 10 ÷ 100</td><td class="n cr">−2,102</td><td class="n cr">−1,072</td><td class="n cd">+8,637</td></tr>
+      <tr><th>5 points better for Hill</th><td class="f">Model A + two-way × 5 ÷ 100</td><td class="n cr">−5,346</td><td class="n cr">−4,400</td><td class="n cd">+5,224</td></tr>
+      <tr><th>Vote the same (Model A)</th><td class="f">Model A</td><td class="n cr">−8,590</td><td class="n cr">−7,728</td><td class="n cd">+1,812</td></tr>
+      <tr><th>2.5 points worse for Hill</th><td class="f">Model A − two-way × 2.5 ÷ 100</td><td class="n cr">−10,212</td><td class="n cr">−9,392</td><td class="n cd">+106</td></tr>
+      <tr><th>5 points worse for Hill</th><td class="f">Model A − two-way × 5 ÷ 100</td><td class="n cr">−11,834</td><td class="n cr">−11,056</td><td class="n cr flip">−1,600</td></tr>
+      <tr><th>Remaining two-way votes (40% arrive)</th><td class="f">from step 3</td><td class="n">64,879</td><td class="n">66,565</td><td class="n">68,249</td></tr>
+      <tr class="tot"><th>Shift that flips the winner, from Model A</th><td class="f">−Model A ÷ (two-way ÷ 100)</td><td class="n">+13.2 (toward Hill)<br><small>−(−8,590) ÷ 648.79</small></td><td class="n">+11.6 (toward Hill)<br><small>−(−7,728) ÷ 665.65</small></td><td class="n">−2.7 (toward Begich)<br><small>−1,812 ÷ 682.49</small></td></tr>
+      <tr class="tot"><th>Shift that flips the winner, from Model B</th><td class="f">−Model B ÷ (two-way ÷ 100)</td><td class="n">+16.9 (toward Hill)<br><small>−(−10,982) ÷ 648.79</small></td><td class="n">+15.4 (toward Hill)<br><small>−(−10,225) ÷ 665.65</small></td><td class="n">+1.1 (toward Hill)<br><small>−(−756) ÷ 682.49</small></td></tr>
+    </tbody>
+  </table></div>
+  <p class="es-line">Under Alaska's rules, Hill needs the remaining ballots to run about 13 points better for him than counted ballots of the same type, or about 17 points better than Peltola's 2024 late pattern. Counted early ballots run Hill +11.30 and counted absentees +8.22, so the remaining ballots would have to run two to three times as Democratic as the ones already in.</p>
+  <div class="chart" tabindex="0" data-name="three-readings" title="Click to enlarge" role="img" aria-label="Projected final under four readings, Model A and Model B: stopped ballots follow their Senate vote plus 1,812 and minus 756; both sides with the Senate final-round test minus 3,040 and minus 5,581; both sides with the Senate first-choice test minus 7,728 and minus 10,225; Alaska's rules minus 8,590 and minus 10,982.">
+    <svg id="gb-late" viewBox="0 0 1000 360"></svg>
+    <div class="legend"><span style="--c:var(--rep)">Begich ahead, Model A</span><span style="--c:color-mix(in srgb, var(--rep) 55%, transparent)">Begich ahead, Model B (2024 late pattern)</span><span style="--c:var(--dem)">Hill ahead</span></div>
+  </div>
+
+  <h3>Each reading carried to the final count</h3>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Reading</th><th>CVR final round</th><th>Rural batch</th><th>Count as it stands</th><th>Remaining, Model A (0 / 40 / 100% arrive)</th><th>Model A</th><th>2024 pattern</th><th>Model B</th></tr></thead>
+    <tbody>
+      <tr><th>Alaska's rules</th><td class="n cr">−15,431</td><td class="n cd">+2,084</td><td class="n cr">−13,347</td><td class="n cd">+4,173 / +4,757 / +5,633</td><td class="n cr">−8,590<br><small>−9,174 to −7,715</small></td><td class="n cr">−2,392</td><td class="n cr">−10,982<br><small>−10,831 to −11,209</small></td></tr>
+      <tr class="trump"><th>Stopped ballots follow their Senate vote</th><td class="n cr">−8,336</td><td class="n cd">+2,557</td><td class="n cr">−5,779</td><td class="n cd">+6,635 / +7,591 / +9,025</td><td class="n cd">+1,812<br><small>+856 to +3,246</small></td><td class="n cr">−2,568</td><td class="n cr">−756<br><small>−932 to −491</small></td></tr>
+      <tr><th>Both sides, Senate final-round test</th><td class="n cr">−12,128</td><td class="n cd">+2,229</td><td class="n cr">−9,899</td><td class="n cd">+5,978 / +6,859 / +8,181</td><td class="n cr">−3,040<br><small>−3,921 to −1,719</small></td><td class="n cr">−2,541</td><td class="n cr">−5,581<br><small>−5,690 to −5,418</small></td></tr>
+      <tr><th>Both sides, Senate first-choice test</th><td class="n cr">−15,583</td><td class="n cd">+1,948</td><td class="n cr">−13,635</td><td class="n cd">+5,139 / +5,907 / +7,060</td><td class="n cr">−7,728<br><small>−8,496 to −6,575</small></td><td class="n cr">−2,497</td><td class="n cr">−10,225<br><small>−10,234 to −10,213</small></td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Each reading recomputes every rate on its own definition of the final round: the rural batch, the per-ballot rates by type and the two-way counts. When stopped ballots follow their Senate vote, counted early ballots run +0.1386 per ballot and absentees +0.1263, against +0.10863 and +0.07713 under the rules. The 2024 gaps are applied to each reading's own two-way counts (<code>claims/house_check.py</code>).</p>
+</section>
+
+<!-- 4. Scenarios -->
+<section class="sec" id="scenarios">
+  <span class="kicker">Step 4</span>
+  <h2>Scenarios that help each side</h2>
+  <p>Every scenario here has data behind it. Each starts from Alaska's rules and moves one input to a value the record supports. Hypothetical shifts stay in the sensitivity table above. Under Model B, more absentees help Begich, so the absentee rows help Hill only under Model A.</p>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Scenario</th><th style="text-align:left">Evidence</th><th style="text-align:left">Formula, values</th><th>Model A</th><th>Model B</th></tr></thead>
+    <tbody>
+      <tr class="grp"><th colspan="5">Helps Hill</th></tr>
+      <tr><th>Every unreturned absentee arrives</th><td class="f">the 18,919 unreturned absentees are due by 13 Nov; 100% is the upper bound</td><td class="f">−13,347 + 5,633; Model B −7,715 − 3,495</td><td class="n cr">−7,715</td><td class="n cr">−11,209</td></tr>
+      <tr><th>…with overseas ballots at 2024's volume</th><td class="f">398 overseas ballots in 2024 against 130 counted so far. The 268 more already sit inside the unreturned absentees at the absentee rate, so only the difference in rate is added: counted overseas ballots run 69 ÷ 130 == +0.5308 per ballot, absentees +0.0771</td><td class="f">268 × (0.5308 − 0.0771) == +122</td><td class="n cr">−7,593</td><td class="n cr">−11,087</td></tr>
+      <tr><th>Stopped ballots follow their Senate vote</th><td class="f">step 2; not a count</td><td class="f">walk 2, carried through step 3</td><td class="n cd">+1,812</td><td class="n cr">−756</td></tr>
+      <tr><th>Both sides, Senate final-round test</th><td class="f">step 2: only Hill voters who chose Sullivan in the Senate final round come off</td><td class="f">−9,899 + 6,859; Model B −3,040 − 2,541</td><td class="n cr">−3,040</td><td class="n cr">−5,581</td></tr>
+      <tr><th>Both sides, protest voters stay with Hill</th><td class="f">1,611 Sullivan Jr. or Heikes voters who chose Kreiss-Tomkins</td><td class="f">−11,894 + 6,307; Model B −5,587 − 2,513</td><td class="n cr">−5,587</td><td class="n cr">−8,100</td></tr>
+      <tr class="grp"><th colspan="5">Helps Begich</th></tr>
+      <tr><th>Late ballots follow 2024 (Model B)<small>also the Begich edge of the best guess</small></th><td class="f">same race, same Republican, step 3</td><td class="f">−8,590 − 2,392</td><td class="n cr" colspan="2" style="text-align:center">−10,982</td></tr>
+      <tr><th>No unreturned absentee arrives</th><td class="f">0% is the lower bound</td><td class="f">−13,347 + 4,173; Model B −9,174 − 1,657</td><td class="n cr">−9,174</td><td class="n cr">−10,831</td></tr>
+      <tr><th>…and questioned ballots follow 2024</th><td class="f">2024 questioned ballots ran −12.36 against −5.97 for everything counted by 10 Nov (−14,109 ÷ 236,507): a gap of −6.39, on 8,000 × 0.9469 == 7,575 two-way votes</td><td class="f">7,575 × (−0.0639) == −484</td><td class="n cr">−9,658</td><td class="n cr">−11,315</td></tr>
+    </tbody>
+  </table></div>
+  <p class="es-line">No scenario with data behind it puts Hill ahead under Alaska's rules. The closest, every absentee arriving with overseas ballots at 2024's volume, leaves Begich ahead by about 7,600 under Model A.</p>
+</section>
+
+<div class="detail-head" id="detail"><span class="kicker">Detail and evidence</span><h2>The supporting evidence</h2><p class="take">Each section opens on a click. The argument above stands without them. They hold the evidence underneath it.</p></div>
+
+<!-- 5. Outstanding -->
+<details class="sec det" id="outstanding">
+  <summary><span class="kicker">Step 5</span><h2>Where the votes are outstanding</h2><span class="take">About 69,000 early, absentee and questioned ballots remain. Counted ballots of those types ran Hill +11.3 (early) and +8.2 (absentee) on a two-way basis.</span><span class="more"></span></summary>
+  <p>The Division of Elections' Combined Ballot Report (4 Nov, 11:06 a.m.) lists accepted ballots statewide by type. Subtract what the count already holds and what remains is mostly early and absentee ballots. Hill leads both types among the ballots already counted. Election-day ballots, where Begich leads, are almost all in. The report gives no district breakdown, so this table works by type only.</p>
+  <div class="vars">
+    <div><h3>Variables</h3><ul>
+      <li><code>remaining</code>: ballots of that type not yet counted</li>
+      <li><code>net_per_ballot</code>: final-round Hill minus Begich, per counted ballot of that type (it already includes each ballot's ranked transfers)</li>
+    </ul></div>
+    <div><h3>Example, early votes</h3><ul>
+      <li><code>accepted = 70,261</code>, <code>counted = 48,292</code></li>
+      <li><code>remaining = 70,261 − 48,292 = 21,969</code></li>
+      <li><code>net_per_ballot = 5,246 ÷ 48,292 = 0.10863</code></li>
+    </ul></div>
+    <div><h3>Evaluated</h3><ul>
+      <li><code>remaining × net_per_ballot</code></li>
+      <li><code>== 21,969 × 0.10863</code></li>
+      <li><code>== +2,387</code></li>
+    </ul></div>
+  </div>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Ballot type</th><th>Accepted</th><th>Counted</th><th>Remaining</th><th>Two-way margin of counted ballots of this type<br><small>net ÷ ballots reaching Hill or Begich</small></th><th style="text-align:left">Formula, values</th><th>Net</th></tr></thead>
+    <tbody>
+      <tr><th>Early vote</th><td class="n">70,261</td><td class="n">48,292</td><td class="n">21,969</td><td class="n cd">+11.30<br><small>5,246 ÷ 46,416</small></td><td class="f">21,969 × 0.10863</td><td class="n cd">+2,387</td></tr>
+      <tr><th>Absentee, received</th><td class="n">39,475</td><td class="n">8,480<br><small>8,350 absentee + 130 overseas</small></td><td class="n">30,995</td><td class="n cd">+8.22<br><small>644 ÷ 7,836</small></td><td class="f">30,995 × 0.07713</td><td class="n cd">+2,391</td></tr>
+      <tr><th>Absentee, not yet returned<small>sent − received − undeliverable: 13,825 mail + 5,083 online + 11 fax == 18,919. Due 13 Nov (overseas 18 Nov)</small></th><td class="n">—</td><td class="n">—</td><td class="n">0 / 7,568 / 18,919<br><small>if 0 / 40 / 100% arrive</small></td><td class="n cd">+8.22</td><td class="f">0 / 7,568 / 18,919 × 0.07713</td><td class="n cd">0 / +584 / +1,459</td></tr>
+      <tr><th>Questioned<small>2024 ran 3.0% of all ballots (10,114 ÷ 335,853). Ballots counted or accepted so far: 215,912 + 21,969 + 30,995 == 268,876, and 0.030 × 268,876 == 8,066, rounded to 8,000</small></th><td class="n">—</td><td class="n">—</td><td class="n">8,000</td><td class="n cr">−7.97<br><small>all counted ballots</small></td><td class="f">8,000 × (−0.07545)</td><td class="n cr">−604</td></tr>
+      <tr class="tot"><th>All remaining</th><td></td><td></td><td class="n">60,964 / 68,532 / 79,883</td><td class="n cd">+7.22 / +7.33 / +7.46<br><small>4,173 ÷ 57,778; 4,757 ÷ 64,879; 5,633 ÷ 75,532</small></td><td class="f">sum of the rows</td><td class="n cd">+4,173 / +4,757 / +5,633</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">The per-ballot rates: early 5,246 ÷ 48,292 == 0.10863; absentee 644 ÷ 8,350 == 0.07713; all ballots −15,431 ÷ 204,530 == −0.07545, used for questioned ballots. A two-way margin divides the net by two-way votes instead of ballots: early 5,246 ÷ 46,416 == +11.30.</p>
+</details>
+
+<!-- 6. 2024 -->
+<details class="sec det" id="y2024">
+  <summary><span class="kicker">Step 6</span><h2>Begich against Peltola, 2024: how a count moves after election night</h2><span class="take">In 2024, Begich's final-round lead shrank by 6,231 after 10 Nov. In 2026 the projection shrinks his lead by 4,757 from the count as it stands under Model A, and by 2,365 under Model B.</span><span class="more"></span></summary>
+  <div class="assume"><h3>Two cautions before reading this section</h3><ul>
+    <li>My 2024 tabulation has about 2,000 more ballots in the final round than the official result, a gap not yet traced.</li>
+    <li>Much of 2024's late shift came from rural election-day precincts that reported late (+4,155 of the backtest miss, step 3). In 2026 those precincts are already counted. So 2024's late shift is not a guide to 2026's size; only its early and absentee pattern is used, in Model B.</li>
+  </ul></div>
+  <p>Two years ago the same kinds of ballots arrived late, in the same order, in this same race. Begich's final-round lead shrank by 6,231 between 10 Nov and the final count. The rounds below come from the state's CVR export at each date.</p>
+  <div class="chart" tabindex="0" data-name="2024-vs-2026-count" title="Click to enlarge" role="img" aria-label="Final-round margin against ballots counted: 2024 House, Peltola minus Begich, moving from minus 14,109 to minus 7,878; 2026 House, Hill minus Begich, minus 15,431 in the CVR and minus 13,347 with the rural precincts, projected minus 8,590 under Model A and minus 10,982 under Model B.">
+    <svg id="tl" viewBox="0 0 1000 340"></svg>
+    <div class="legend"><span style="--c:var(--fg2)">2024 House, Peltola − Begich</span><span style="--c:var(--rep)">2026 House, Hill − Begich (dashed = projected, Model A)</span><span style="--c:color-mix(in srgb, var(--rep) 55%, transparent)">projected, Model B</span></div>
+  </div>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">2024 House count</th><th>Ballots</th><th>Begich, final round</th><th>Peltola, final round</th><th>Peltola − Begich</th><th>Change since 10 Nov</th></tr></thead>
+    <tbody>
+      <tr><th>10 Nov</th><td class="n">245,611</td><td class="n">125,308</td><td class="n">111,199</td><td class="n cr">−14,109</td><td class="n">—</td></tr>
+      <tr><th>12 Nov</th><td class="n">288,059</td><td class="n">144,573</td><td class="n">132,431</td><td class="n cr">−12,142</td><td class="n cd">+1,967</td></tr>
+      <tr><th>13 Nov</th><td class="n">296,319</td><td class="n">148,465</td><td class="n">136,384</td><td class="n cr">−12,081</td><td class="n cd">+2,028</td></tr>
+      <tr><th>14 Nov</th><td class="n">296,558</td><td class="n">148,590</td><td class="n">136,465</td><td class="n cr">−12,125</td><td class="n cd">+1,984</td></tr>
+      <tr class="tot"><th>Final</th><td class="n">335,853</td><td class="n">164,870</td><td class="n">156,992</td><td class="n cr">−7,878</td><td class="n cd">+6,231</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">The chart's x-axis counts ballots cast: 215,912 in the official count, which also includes ballots blank for the House (the rural batch has 10,541 House first choices). The end point, 284,444, adds the remaining early, absentee (40% of unreturned) and questioned ballots. Ballots counted after 10 Nov ran Peltola +7.3: (156,992 − 111,199) − (164,870 − 125,308) == 45,793 − 39,562 == +6,231 on 85,355 two-way votes. The official final was 164,117 to 155,763 (−8,354). The 2026 shrink: −8,590 − (−13,347) == +4,757 under Model A; −10,982 − (−13,347) == +2,365 under Model B.</p>
+</details>
+
+<!-- 7. Hill by area -->
+<details class="sec det" id="area">
+  <summary><span class="kicker">Step 7</span><h2>Hill's vote by area</h2><span class="take">Hill and Hafner together carry Anchorage, Juneau and the Bush, as Peltola did in 2024. Begich carries Fairbanks narrowly, and Mat-Su, Kenai and the rest of the state.</span><span class="more"></span></summary>
+  <p>Share of all House votes, every ballot type, in eight areas defined precinct by precinct (the Bush is old HD37–40 plus the off-road Interior villages). The table pairs Hill with Hafner as the Democratic side because the area data counts first choices. Hafner ballots that ranked someone still in the race went mostly to Hill (6,926 of 7,977). The Bush's election-day precincts are already in the count as it stands, so the ballots still to come are not rural election-day ballots. Rural early and absentee ballots may still be outstanding; the state gives no district breakdown.</p>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Area</th><th>Hill + Hafner, 2026</th><th>Begich, 2026</th><th>Peltola, 2024</th><th>Begich, 2024</th><th>2026 House votes counted<br><small>all candidates</small></th></tr></thead>
+    <tbody>
+      <tr><th>Anchorage</th><td class="n">53.84</td><td class="n">43.77</td><td class="n">53.10</td><td class="n">42.72</td><td class="n">84,022</td></tr>
+      <tr><th>Fairbanks</th><td class="n">47.44</td><td class="n">49.21</td><td class="n">44.14</td><td class="n">49.82</td><td class="n">28,551</td></tr>
+      <tr><th>Juneau</th><td class="n">68.30</td><td class="n">29.42</td><td class="n">66.16</td><td class="n">30.11</td><td class="n">9,964</td></tr>
+      <tr class="key"><th>Cities (the three)</th><td class="n">53.53</td><td class="n">43.87</td><td class="n">52.27</td><td class="n">43.18</td><td class="n">122,538</td></tr>
+      <tr><th>Bush</th><td class="n">63.98</td><td class="n">32.42</td><td class="n">61.79</td><td class="n">30.36</td><td class="n">12,688</td></tr>
+      <tr><th>Mat-Su</th><td class="n">29.63</td><td class="n">67.57</td><td class="n">27.87</td><td class="n">66.09</td><td class="n">36,129</td></tr>
+      <tr><th>Kenai</th><td class="n">36.36</td><td class="n">61.04</td><td class="n">35.22</td><td class="n">59.43</td><td class="n">21,861</td></tr>
+      <tr><th>Rest of state</th><td class="n">46.55</td><td class="n">50.61</td><td class="n">46.00</td><td class="n">47.98</td><td class="n">19,793</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Shares carry no sign. Both sides gained share in most areas from 2024 because 2024 had a third major candidate (Howe) and 2026's minor candidates drew less. 2026 shares come from the official precinct count as of the 4 Nov release and will move as the absentees are counted.</p>
+</details>
+
+
+<section class="sec notes" id="notes">
+  <h2>Notes</h2>
+  <ol>
+    <li><strong>Data.</strong> All tabulations are my own, on unofficial data. Ballot-level figures come from the 4 Nov US House CVR (export of 4 Nov 1:20 p.m., 204,530 ballots, tabulated with RCTab and checked against Alaska's ranked-choice rules), joined on the same ballot ID to the Senate, governor and legislative races. The 130 overseas ballots carry only federal races; they have no governor vote and are not counted as blank for the governor. The official first-choice count is the Election Summary Report of 4 Nov, 1:09 p.m. The ballot counts are from the Combined Ballot Report of 4 Nov, 11:06 a.m.</li>
+    <li><strong>The counted ranked-choice result.</strong> The CVR's final round is −15,431. The official count also holds 10,541 election-day first choices the CVR does not (mostly rural precincts). Each first-choice group takes the final-round rate of election-day ballots with the same first choice. That puts 9,897 of the 10,541 into the final round as two-way votes and nets +2,084, a two-way margin of 2,084 ÷ 9,897 == 0.2106. So −15,431 + 2,084 == −13,347.</li>
+    <li><strong>Two counts of the minor candidates.</strong> Hafner had 14,530 first choices and held 15,205 ballots when he was eliminated, after transfers from write-ins and McDermott. The tables follow the 15,205. McDermott had 5,447 first choices and 5,471 at elimination. The Round 3 stop count for McDermott (1,753) is lower than the 1,918 McDermott ballots that end up stopped, because 165 of his ballots passed through Hafner first.</li>
+    <li><strong>The stopped-ballot readings.</strong> Both halves are always applied together. Stopped ballots: 10,867 in all, of which 7,228 were Hafner's when he went out and 3,639 had stopped earlier. Their Senate final-round votes: 8,361 Peltola, 1,266 Sullivan, 1,240 neither. Hill voters outside the Democratic ticket: 7,247 by the first-choice test, 3,792 by the final-round test. The first figure matches <code>hill_adjustments.py</code>. That script reports the both-sides net as +0.02 points of two-way margin because the denominator grows from 193,663 to 196,043; in votes it is −152.</li>
+    <li><strong>2024 snapshots</strong> are the CVR exports of 10, 12, 13 and 14 Nov 2024 and the final, each run through the same ranked-choice code. My final has about 2,000 more ballots in the final round than the official result, a gap not yet traced. The backtest and Model B use the CVR on both sides, so the gap affects both the same way.</li>
+    <li><strong>Areas</strong> are defined precinct by precinct, so they cover the same places on both legislative maps. Absentee, early and questioned votes are reported by district. Where a district is split between areas, each candidate's votes are divided by that candidate's election-day split.</li>
+    <li><strong>Reproducing this.</strong> Ranked-choice rounds were tabulated with RCTab 2.1.0 (<a href="https://github.com/BrightSpots/rcv">github.com/BrightSpots/rcv</a>) from the Dominion export of 4 Nov, then checked with my own round-by-round code. Source reports: the Alaska Division of Elections (<a href="https://www.elections.alaska.gov/">elections.alaska.gov</a>) Election Summary Report (4 Nov, 1:09 p.m.) and Combined Ballot Report (4 Nov, 11:06 a.m.). Input files and SHA-256 checksums:
+      <div class="tw"><table class="hashes"><tbody>
+        <tr><th>US House CVR, 4 Nov export</th><td><code>2026-11-04_23-33_rctab_cvr.csv</code></td><td><code>423249dcf844431e2458b484bb2bbe9f8c82f99a6f84c8b93ca949041776a20f</code></td></tr>
+        <tr><th>Senate CVR, same export (Source Filepath column shortened to alaska-2026)</th><td><code>2026-11-05_00-56_rctab_cvr-senate.csv</code></td><td><code>ef97840cc14b4c54da91912a2dcf091b9cc6a2d3c1918e1581427fca8726d9d9</code></td></tr>
+        <tr><th>Governor CVR, same export</th><td><code>2026-11-05_14-36_rctab_cvr-2026-governor.csv</code></td><td><code>dcf52e34f0eb1ac7679bc35748c8ed8b55f3df6e23571ebe44ad737895832196</code></td></tr>
+        <tr><th>2024 House CVRs, 10–14 Nov and final</th><td><code>2026-11-04_23-57_rctab_cvr.csv</code></td><td><code>0e3e0e87fdca0c0b11c3e33d017c18492ba0a908c41c2942ba2f471de8751ae5</code></td></tr>
+        <tr><th>Combined Ballot Report, 4 Nov</th><td><code>combined-ballot-report-20261104.html</code></td><td><code>7d3fde3736a28088d088127168e7697ec3d0c6161bfbe65bcecec0e43f7af443</code></td></tr>
+        <tr><th>Election Summary Report, 4 Nov</th><td><code>election-summary-2026-11-05.pdf</code></td><td><code>bc7dfef149d52331f8c8d760fbef0f2bc6c76d0daaf1877c868d367d10a11c4f</code></td></tr>
+        <tr><th>First choices from that report</th><td><code>release_20261104_1309.json</code></td><td><code>3fa1c94837adffa3fd11416176076b9e4c55d18c7d1e35ab4c24df37fa666b15</code></td></tr>
+      </tbody></table></div>
+      Commands, from the repository root: <code>uv run rcv.py 2026-11-04_23-33_rctab_cvr.csv</code> (walk 1 rounds); <code>uv run revised.py release_20261104_1309.json</code> (counted −13,347 and Model A); <code>uv run claims/house_check.py</code> (every number in steps 1–4: the minor-candidate tables, the Hill adjustment, both models for each reading, the scenarios); <code>uv run --with pandas python claims/late_2024_snapshots.py</code> (the 2024 gaps at each cut and the questioned-ballot gap); <code>uv run rcv.py 2026-11-04_23-57_rctab_cvr.csv --snapshot 20241110</code> and the other dates (step 6); <code>uv run project.py</code> (the backtest); <code>uv run panels.py</code> (step 7). All scripts, the checksummed inputs above and the derived data are public at <a href="https://github.com/hangtime79/alaska-election-watching">github.com/hangtime79/alaska-election-watching</a>; the raw Dominion exports come from the Division of Elections.</li>
+    <li><strong>Signs.</strong> Every signed number is Hill (the Democratic side; Peltola in 2024) minus Begich. Shares carry no sign.</li>
+  </ol>
+</section>
+
+<div class="running foot"><span>Grant Case - grant@aicriticalityindex.com</span><span>Unofficial tabulation of public election data · <a href="https://hangtime79.github.io/alaska-election-watching/">Senate count check</a></span></div>
+</main>
+
+<script>
+(function () {
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+  const fmt = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(Math.round(v)).toLocaleString("en-US");
+  const WMT = "Grant Case - grant@aicriticalityindex.com";
+
+  function waterfall(id, steps, lo, hi, tick, groups) {
+    const svg = document.getElementById(id); if (!svg) return;
+    const W = 1000, H = +svg.viewBox.baseVal.height, L = 72, R = 12, T = 24, B = 70;
+    const y = v => T + (hi - v) / (hi - lo) * (H - T - B);
+    const g = el("g", { class: "grid" }, svg);
+    for (let v = Math.ceil(lo / tick) * tick; v <= hi; v += tick) {
+      el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v) }, g);
+      el("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end" }, svg).textContent = fmt(v);
+    }
+    el("line", { x1: L, x2: W - R, y1: y(0), y2: y(0), class: "zero" }, svg);
+    const bw = (W - L - R) / steps.length;
+    (groups || []).forEach(gr => {
+      const gx = L + gr.from * bw + 3, gw = (gr.to - gr.from + 1) * bw - 6;
+      el("rect", { x: gx, y: 4, width: gw, height: H - B + 2, fill: "none", stroke: "var(--accent)", "stroke-width": 2, rx: 4 }, svg);
+      el("text", { x: gx + 8, y: 17, style: "fill:var(--accent);font-weight:700;font-size:11px" }, svg).textContent = gr.label;
+    });
+    el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = WMT;
+    let run = 0;
+    steps.forEach((s, i) => {
+      const [lab, d, kind] = s;
+      const x = L + i * bw + bw * 0.14, w = bw * 0.72;
+      let a, b, fill;
+      if (kind === "start") { a = 0; b = d; run = d; fill = "var(--fg2)"; }
+      else if (kind === "total") { if (d) run = d; a = 0; b = run; fill = "var(--fg2)"; }
+      else { a = run; b = run + d; run = b; fill = s[3] || (d >= 0 ? "var(--dem)" : "var(--rep)"); }
+      const top = y(Math.max(a, b)), h = Math.max(1.5, Math.abs(y(a) - y(b)));
+      el("rect", { x, y: top, width: w, height: h, fill, opacity: 0.9, rx: 2 }, svg);
+      const nx = steps[i + 1];
+      if (nx && nx[2] !== "start") el("line", { x1: x + w, x2: x + bw, y1: y(run), y2: y(run), stroke: "var(--fg2)", "stroke-dasharray": "3 3" }, svg);
+      const tot = kind === "start" || kind === "total";
+      const val = tot ? run : d;
+      // labels go outside the bar, on the side away from the zero line
+      const below = tot ? true : d < 0;
+      let ly = below ? top + h + 14 : top - 6;
+      if (ly > y(0) - 4 && ly < y(0) + 14) ly = below ? top - 6 : top + h + 14;
+      el("text", { x: x + w / 2, y: ly, "text-anchor": "middle", style: "fill:var(--fg);font-weight:700" }, svg).textContent = fmt(val);
+      const t = el("text", { x: x + w / 2, y: H - B + 18, "text-anchor": "middle", style: steps.length > 10 ? "font-size:11px" : "" }, svg);
+      lab.split("|").forEach((ln, k) => { el("tspan", { x: x + w / 2, dy: k ? 13 : 0 }, t).textContent = ln; });
+    });
+  }
+  const RC = "var(--crc)";
+  waterfall("wf-count", [
+    ["CVR first|choices", -21319, "start"], ["Write-ins|out", 39], ["McDermott|out", -26], ["Hafner|out", 5875], ["CVR final", 0, "total"],
+    ["Rural|precincts", 2084], ["Count as|it stands", 0, "total"]
+  ], -24000, 4000, 4000);
+  waterfall("wf-ceiling", [
+    ["CVR|final", -15431, "start"], ["Hafner|stopped|to Hill", 6831], ["Hafner|stopped|to Begich", -196, null, RC], ["Other|stopped|to Hill", 1530], ["Other|stopped|to Begich", -1070, null, RC], ["Stopped|follow|Senate", 0, "total"],
+    ["Off Hill:|Senate|Sullivan", -3025, null, RC], ["Off Hill:|Sullivan Jr.", -1562, null, RC], ["Off Hill:|Heikes", -1400, null, RC], ["Off Hill:|write-in|or blank", -536, null, RC], ["Off Hill:|no gov.|vote", -724, null, RC], ["Both|sides", 0, "total"]
+  ], -18000, 2000, 2000, [{ from: 0, to: 5, label: "Stopped ballots follow their Senate vote" }, { from: 6, to: 11, label: "Hill voters outside the Democratic ticket come off" }]);
+  waterfall("wf-real", [
+    ["Count|now", -13347, "start"], ["Early", 2387], ["Absentee|received", 2391], ["Later|absentee", 584], ["Questioned", -604], ["Model A", -8590, "total"],
+    ["2024 late|pattern", -2392], ["Model B", -10982, "total"]
+  ], -16000, 2000, 2000, [{ from: 0, to: 5, label: "Model A: late ballots vote like counted ones" }, { from: 6, to: 7, label: "Model B" }]);
+
+  // grouped bars: three readings, Model A and Model B
+  (function () {
+    const svg = document.getElementById("gb-late"); if (!svg) return;
+    const W = 1000, H = 360, L = 72, R = 16, T = 24, B = 58, lo = -12000, hi = 4000;
+    const y = v => T + (hi - v) / (hi - lo) * (H - T - B);
+    const g = el("g", { class: "grid" }, svg);
+    for (let v = lo; v <= hi; v += 2000) { el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v) }, g); el("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end" }, svg).textContent = fmt(v); }
+    el("line", { x1: L, x2: W - R, y1: y(0), y2: y(0), class: "zero" }, svg);
+    const cats = [["Stopped follow Senate", 1812, -756], ["Both sides, final round", -3040, -5581], ["Both sides, first choice", -7728, -10225], ["Alaska's rules", -8590, -10982]];
+    const cw = (W - L - R) / cats.length, bw = cw * 0.3;
+    cats.forEach((c, i) => {
+      [c[1], c[2]].forEach((v, j) => {
+        const x = L + i * cw + cw * 0.18 + j * (bw + cw * 0.04);
+        const top = y(Math.max(0, v)), h = Math.abs(y(v) - y(0));
+        el("rect", { x, y: top, width: bw, height: Math.max(1.5, h), fill: v < 0 ? "var(--rep)" : "var(--dem)", opacity: j ? 0.55 : 0.95, rx: 2 }, svg);
+        el("text", { x: x + bw / 2, y: v >= 0 ? top - 6 : y(v) + 15, "text-anchor": "middle", style: "fill:var(--fg);font-weight:700" }, svg).textContent = fmt(v);
+        el("text", { x: x + bw / 2, y: v >= 0 ? y(0) + 15 : y(0) - 6, "text-anchor": "middle", style: "font-size:11px" }, svg).textContent = j ? "Model B" : "Model A";
+      });
+      el("text", { x: L + i * cw + cw / 2, y: H - B + 22, "text-anchor": "middle", style: "fill:var(--fg);font-weight:700" }, svg).textContent = c[0];
+    });
+    el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = WMT;
+  })();
+
+  // summary range plot
+  (function () {
+    const svg = document.getElementById("rp-summary"); if (!svg) return;
+    const W = 1000, H = 420, L = 360, R = 40, T = 34, B = 44, lo = -14000, hi = 4000;
+    const x = v => L + (v - lo) / (hi - lo) * (W - L - R);
+    const g = el("g", { class: "grid" }, svg);
+    for (let v = lo; v <= hi; v += 2000) { el("line", { x1: x(v), x2: x(v), y1: T - 8, y2: H - B }, g); el("text", { x: x(v), y: H - B + 18, "text-anchor": "middle" }, svg).textContent = fmt(v); }
+    el("rect", { x: x(-10982), y: T - 8, width: x(-8590) - x(-10982), height: H - B - T + 8, fill: "var(--hi)", opacity: 0.9 }, svg);
+    el("text", { x: (x(-10982) + x(-8590)) / 2, y: T - 16, "text-anchor": "middle", style: "fill:var(--fg2);font-weight:700;font-size:11px" }, svg).textContent = "best guess: −10,982 to −8,590, centre about −9,800";
+    el("line", { x1: x(0), x2: x(0), y1: T - 8, y2: H - B, class: "zero" }, svg);
+    el("text", { x: x(0) - 8, y: T - 16, "text-anchor": "end", style: "fill:var(--rep);font-weight:700" }, svg).textContent = "← Begich wins";
+    el("text", { x: x(0) + 8, y: T - 16, style: "fill:var(--dem);font-weight:700" }, svg).textContent = "Hill wins →";
+    const rows = [
+      ["Stopped ballots follow Senate vote", -756, 1812],
+      ["Both sides, Senate final-round test", -5581, -3040],
+      ["All absentees arrive, plus overseas", -11087, -7593],
+      ["All unreturned absentees arrive", -11209, -7715],
+      ["Both sides, Senate first-choice test", -10225, -7728],
+      ["Alaska's rules (40% arrive)", -10982, -8590],
+      ["No more absentees, questioned as 2024", -11315, -9658]
+    ];
+    const rh = (H - B - T) / rows.length;
+    rows.forEach((r, i) => {
+      const yy = T + rh * i + rh * 0.62, a = r[1], b = r[2], mid = (a + b) / 2, c = mid < 0 ? "var(--rep)" : "var(--dem)";
+      el("text", { x: L - 14, y: yy + 4, "text-anchor": "end", style: "fill:var(--fg)" }, svg).textContent = r[0];
+      if (a < 0 && b > 0) {
+        el("rect", { x: x(a), y: yy - 5, width: x(0) - x(a), height: 10, fill: "var(--rep)", opacity: 0.45 }, svg);
+        el("rect", { x: x(0), y: yy - 5, width: x(b) - x(0), height: 10, fill: "var(--dem2)" }, svg);
+      } else el("rect", { x: x(a), y: yy - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: "var(--rep)", opacity: 0.45 }, svg);
+      el("circle", { cx: x(mid), cy: yy, r: 6, fill: c }, svg);
+      const cross = a < 0 && b > 0;
+      el("text", { x: cross ? x(a) - 10 : x(mid), y: cross ? yy + 4 : yy - 12, "text-anchor": cross ? "end" : "middle", style: "fill:" + c + ";font-weight:700" }, svg).textContent = fmt(a) + " to " + fmt(b);
+    });
+    el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = WMT;
+  })();
+
+  // Timeline
+  (function () {
+    const tl = document.getElementById("tl"); if (!tl) return;
+    const TW = 1000, TH = 340, TL = 72, TR = 20, TT = 20, TB = 44;
+    const x0 = 190000, x1 = 345000, ylo = -18000, yhi = 2000;
+    const X = v => TL + (v - x0) / (x1 - x0) * (TW - TL - TR);
+    const Y = v => TT + (yhi - v) / (yhi - ylo) * (TH - TT - TB);
+    const g2 = el("g", { class: "grid" }, tl);
+    for (let v = -16000; v <= 0; v += 4000) { el("line", { x1: TL, x2: TW - TR, y1: Y(v), y2: Y(v) }, g2); el("text", { x: TL - 6, y: Y(v) + 4, "text-anchor": "end" }, tl).textContent = fmt(v); }
+    for (let v = 200000; v <= 340000; v += 20000) el("text", { x: X(v), y: TH - TB + 18, "text-anchor": "middle" }, tl).textContent = (v / 1000) + "k";
+    el("text", { x: (TL + TW - TR) / 2, y: TH - 6, "text-anchor": "middle" }, tl).textContent = "ballots counted";
+    el("text", { x: TW - TR, y: TH - 6, "text-anchor": "end", class: "wm" }, tl).textContent = WMT;
+    el("line", { x1: TL, x2: TW - TR, y1: Y(0), y2: Y(0), class: "zero" }, tl);
+    const s24 = [[245611, -14109, "10 Nov 2024 −14,109", 18], [288059, -12142], [296319, -12081], [296558, -12125], [335853, -7878, "Final −7,878", -10]];
+    const path = pts => pts.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1)).join(" ");
+    el("path", { d: path(s24), fill: "none", stroke: "var(--fg2)", "stroke-width": 2.5 }, tl);
+    s24.forEach(p => { el("circle", { cx: X(p[0]), cy: Y(p[1]), r: 4, fill: "var(--fg2)" }, tl);
+      if (p[2]) el("text", { x: X(p[0]) - (p[0] > 300000 ? 6 : 0), y: Y(p[1]) + p[3], "text-anchor": p[0] > 300000 ? "end" : "middle" }, tl).textContent = p[2]; });
+    const c0 = [204530, -15431], c1 = [215912, -13347], E = 284444;
+    el("path", { d: path([c0, c1]), fill: "none", stroke: "var(--rep)", "stroke-width": 2.5 }, tl);
+    el("path", { d: `M${X(c1[0])} ${Y(c1[1])} L${X(E)} ${Y(-8590)}`, fill: "none", stroke: "var(--rep)", "stroke-width": 2.5, "stroke-dasharray": "7 5" }, tl);
+    el("path", { d: `M${X(c1[0])} ${Y(c1[1])} L${X(E)} ${Y(-10982)}`, fill: "none", stroke: "var(--rep)", "stroke-opacity": 0.55, "stroke-width": 2, "stroke-dasharray": "3 4" }, tl);
+    el("line", { x1: X(E), x2: X(E), y1: Y(-9174), y2: Y(-7715), stroke: "var(--rep)", "stroke-width": 2 }, tl);
+    [c0, c1].forEach(p => el("circle", { cx: X(p[0]), cy: Y(p[1]), r: 4, fill: "var(--rep)" }, tl));
+    el("text", { x: X(c0[0]) - 12, y: Y(c0[1]) + 22, style: "fill:var(--rep)" }, tl).textContent = "CVR −15,431";
+    el("text", { x: X(c1[0]) - 8, y: Y(c1[1]) - 10, "text-anchor": "end", style: "fill:var(--rep)" }, tl).textContent = "counted −13,347";
+    el("circle", { cx: X(E), cy: Y(-8590), r: 5, fill: "var(--bg)", stroke: "var(--rep)", "stroke-width": 2.5 }, tl);
+    el("text", { x: X(E) + 10, y: Y(-8590) + 4, style: "fill:var(--rep);font-weight:700" }, tl).textContent = "A −8,590";
+    el("circle", { cx: X(E), cy: Y(-10982), r: 5, fill: "var(--bg)", stroke: "var(--rep)", "stroke-opacity": 0.55, "stroke-width": 2.5 }, tl);
+    el("text", { x: X(E) + 10, y: Y(-10982) + 4, style: "fill:var(--rep);font-weight:700;opacity:.7" }, tl).textContent = "B −10,982";
+  })();
+})();
+</script>
+<script>
+(function () {
+  const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function go(id, smooth) {
+    let t = null; try { t = document.getElementById(id); } catch (e) {}
+    if (!t) return false;
+    const d = t.closest("details"); if (d) d.open = true;
+    if (t.tagName === "DETAILS") t.open = true;
+    t.scrollIntoView({ block: "start", behavior: smooth && !reduce ? "smooth" : "auto" });
+    t.classList.remove("flash"); void t.offsetWidth; t.classList.add("flash");
+    return true;
+  }
+  function act(e) {
+    const a = e.target.closest("[data-go]"); if (!a) return;
+    if (e.type === "keydown" && e.key !== "Enter" && e.key !== " ") return;
+    e.preventDefault(); go(a.dataset.go, true);
+  }
+  document.addEventListener("click", act);
+  document.addEventListener("keydown", act);
+  function fromHash() { if (location.hash.length > 1) go(decodeURIComponent(location.hash.slice(1)), false); }
+  window.addEventListener("hashchange", fromHash); fromHash();
+})();
+</script>
+<script>
+(function () {
+  const NS = "http://www.w3.org/2000/svg";
+  const WM = "Grant Case - grant@aicriticalityindex.com";
+  const box = document.createElement("div");
+  box.className = "lb"; box.hidden = true;
+  box.innerHTML = '<div class="lb-inner" role="dialog" aria-modal="true" aria-label="Enlarged chart"><div class="lb-bar"><span class="lb-title"></span><button type="button" class="lb-btn" data-fmt="png">Download PNG</button><button type="button" class="lb-btn" data-fmt="svg">Download SVG</button><button type="button" class="lb-btn lb-close">Close</button></div><div class="lb-fig"></div><p class="lb-msg" aria-live="polite"></p></div>';
+  document.body.appendChild(box);
+  const fig = box.querySelector(".lb-fig"), msg = box.querySelector(".lb-msg"), title = box.querySelector(".lb-title");
+  let cur = null, lastFocus = null;
+  const PROPS = ["fill", "stroke", "stroke-width", "stroke-dasharray", "opacity", "font-family", "font-size", "font-weight", "font-style"];
+  function standalone(svg) {
+    const c = svg.cloneNode(true);
+    const a = svg.querySelectorAll("*"), b = c.querySelectorAll("*");
+    a.forEach((el, i) => { const cs = getComputedStyle(el); PROPS.forEach(pr => { const v = cs.getPropertyValue(pr); if (v) b[i].style.setProperty(pr, v); }); });
+    const vb = svg.viewBox.baseVal;
+    c.setAttribute("xmlns", NS); c.setAttribute("width", vb.width * 2); c.setAttribute("height", vb.height * 2);
+    const bg = document.createElementNS(NS, "rect");
+    bg.setAttribute("x", vb.x); bg.setAttribute("y", vb.y); bg.setAttribute("width", vb.width); bg.setAttribute("height", vb.height);
+    bg.setAttribute("fill", getComputedStyle(svg.closest(".chart")).backgroundColor);
+    c.insertBefore(bg, c.firstChild);
+    return c;
+  }
+  function svgBlob(svg) { return new Blob([new XMLSerializer().serializeToString(standalone(svg))], { type: "image/svg+xml" }); }
+  function pngBlob(svg) {
+    return new Promise((res, rej) => {
+      const vb = svg.viewBox.baseVal, url = URL.createObjectURL(svgBlob(svg)), img = new Image();
+      img.onload = () => { const cv = document.createElement("canvas"); cv.width = vb.width * 2; cv.height = vb.height * 2; cv.getContext("2d").drawImage(img, 0, 0, cv.width, cv.height); URL.revokeObjectURL(url); cv.toBlob(b => b ? res(b) : rej(new Error("png")), "image/png"); };
+      img.onerror = () => { URL.revokeObjectURL(url); rej(new Error("img")); };
+      img.src = url;
+    });
+  }
+  async function save(name, blob) {
+    msg.textContent = "";
+    if (window.claude && window.claude.use) {
+      let d = null; try { d = await window.claude.use("downloads"); } catch (e) {}
+      if (!d) { msg.textContent = "Downloads are not available in this view. Right-click the chart to save it."; return; }
+      try { const r = await d.save({ filename: name, data: blob }); if (r && r.status === "saved") msg.textContent = "Saved " + name + "."; }
+      catch (e) { msg.textContent = e && e.code === "declined" ? "Download cancelled." : "Download is not available in this view."; }
+    } else {
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    }
+  }
+  function open(chart) {
+    cur = chart; lastFocus = document.activeElement;
+    const svg = chart.querySelector("svg");
+    fig.innerHTML = ""; fig.appendChild(svg.cloneNode(true));
+    const leg = chart.querySelector(".legend"); if (leg) fig.appendChild(leg.cloneNode(true));
+    title.textContent = (chart.dataset.name || "chart").replace(/-/g, " ");
+    msg.textContent = ""; box.hidden = false; document.body.style.overflow = "hidden";
+    box.querySelector(".lb-close").focus();
+  }
+  function close() { box.hidden = true; fig.innerHTML = ""; document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); cur = null; }
+  document.querySelectorAll(".chart").forEach(ch => {
+    ch.addEventListener("click", () => open(ch));
+    ch.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(ch); } });
+  });
+  box.addEventListener("click", async e => {
+    if (e.target === box || e.target.closest(".lb-close")) { close(); return; }
+    const b = e.target.closest(".lb-btn[data-fmt]"); if (!b || !cur) return;
+    const svg = cur.querySelector("svg"), base = "alaska-house-" + (cur.dataset.name || "chart");
+    try { if (b.dataset.fmt === "svg") await save(base + ".svg", svgBlob(svg)); else await save(base + ".png", await pngBlob(svg)); }
+    catch (err) { msg.textContent = "Could not build the image in this browser."; }
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !box.hidden) close(); });
+})();
+</script>
+
+</body></html>

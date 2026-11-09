@@ -1,0 +1,90 @@
+{
+ "cuts": {
+  "20241110": {
+   "Early Voting": {
+    "share_counted": 70.2,
+    "early_margin": -10.24,
+    "late_margin": -2.56,
+    "late_two": 20298,
+    "raw_gap": 7.67,
+    "gap": 6.41,
+    "districts": 36
+   },
+   "Absentee": {
+    "share_counted": 40.9,
+    "early_margin": 21.55,
+    "late_margin": 13.39,
+    "late_two": 38743,
+    "raw_gap": -8.16,
+    "gap": -10.35,
+    "districts": 36
+   }
+  },
+  "20241112": {
+   "Early Voting": {
+    "share_counted": 94.3,
+    "early_margin": -9.74,
+    "late_margin": 21.7,
+    "late_two": 3867,
+    "raw_gap": 31.44,
+    "gap": -1.07,
+    "districts": 35
+   },
+   "Absentee": {
+    "share_counted": 63.4,
+    "early_margin": 19.55,
+    "late_margin": 11.85,
+    "late_two": 23910,
+    "raw_gap": -7.7,
+    "gap": -8.75,
+    "districts": 36
+   }
+  },
+  "20241113": {
+   "Early Voting": {
+    "share_counted": 97.7,
+    "early_margin": -8.15,
+    "late_margin": -0.46,
+    "late_two": 1523,
+    "raw_gap": 7.69,
+    "gap": 3.31,
+    "districts": 35
+   },
+   "Absentee": {
+    "share_counted": 67.3,
+    "early_margin": 18.94,
+    "late_margin": 12.19,
+    "late_two": 21324,
+    "raw_gap": -6.75,
+    "gap": -8.66,
+    "districts": 36
+   }
+  },
+  "20241114": {
+   "Early Voting": {
+    "share_counted": 97.7,
+    "early_margin": -8.15,
+    "late_margin": -0.46,
+    "late_two": 1523,
+    "raw_gap": 7.69,
+    "gap": 3.31,
+    "districts": 35
+   },
+   "Absentee": {
+    "share_counted": 67.3,
+    "early_margin": 18.94,
+    "late_margin": 12.19,
+    "late_two": 21324,
+    "raw_gap": -6.75,
+    "gap": -8.66,
+    "districts": 36
+   }
+  }
+ },
+ "question": {
+  "all_margin": -2.44,
+  "question_margin": -12.36,
+  "question_two": 9185,
+  "gap": -9.91
+ }
+}

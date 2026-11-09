@@ -60,4 +60,5 @@ def main():
         print(f"{'':13} share counted by 10 Nov: {len(d[d.in10]) / len(d):.1%}")
 
 
-main()
+if __name__ == "__main__":
+    main()
