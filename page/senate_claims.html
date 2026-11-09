@@ -688,7 +688,7 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
   const fmt = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(Math.round(v)).toLocaleString("en-US");
 
   // Waterfalls
-  function waterfall(id, steps, lo, hi, tick) {
+  function waterfall(id, steps, lo, hi, tick, groups) {
     const svg = document.getElementById(id);
     const W = 1000, H = 360, L = 64, R = 12, T = 22, B = 70;
     const y = v => T + (hi - v) / (hi - lo) * (H - T - B);
@@ -698,6 +698,12 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
       el("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end" }, svg).textContent = fmt(v);
     }
     el("line", { x1: L, x2: W - R, y1: y(0), y2: y(0), class: "zero" }, svg);
+    const gbw = (W - L - R) / steps.length;
+    (groups || []).forEach(g => {
+      const gx = L + g.from * gbw + 3, gw = (g.to - g.from + 1) * gbw - 6;
+      el("rect", { x: gx, y: 4, width: gw, height: H - B + 2, fill: "none", stroke: "var(--accent)", "stroke-width": 2, rx: 4 }, svg);
+      el("text", { x: gx + 8, y: 17, class: "scen-lab", style: "fill:var(--accent);font-weight:700;font-size:11px" }, svg).textContent = g.label;
+    });
     el("text", { x: W - R, y: 356, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
     const bw = (W - L - R) / steps.length;
     let run = 0;
@@ -740,7 +746,11 @@ table.hashes { margin: 8px 0; font-size: 12.5px; } table.hashes th { font-size: 
     ["Count|now", -329, "start"], ["Early", 3401], ["Absentee|received", 4573], ["Later|absentee", 1117], ["Questioned", -183], ["Central|projection", 0, "total"],
     ["Clearly R|counted", -984, null, null, RC], ["Both|Sullivans", -71, null, null, XC], ["Contested|counted", -1357, null, null, CC], ["Unseen|estimate", -885, null, null, CC], ["Broad|total", 0, "total"],
     ["Clearly D|counted", -1367, null, null, DC], ["Unseen|rest", -476, null, null, DC], ["Stress|test", 0, "total"]
-  ], -2000, 10000, 2000);
+  ], -2000, 10000, 2000, [
+    { from: 0, to: 5, label: "Scenario 1: Alaska's rules" },
+    { from: 6, to: 10, label: "Scenario 2: broad confusion" },
+    { from: 11, to: 13, label: "Scenario 3: stress test" }
+  ]);
 
   // Timeline
   const tl = document.getElementById("tl");
