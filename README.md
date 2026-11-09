@@ -8,7 +8,7 @@ All tabulations are unofficial, from public data released by the Alaska Division
 
 | File | What it shows |
 |---|---|
-| `page/senate_claims.html` | Alaska Senate count check: the claim, the count as it stands, how far name confusion could move it, and the projection. Self-contained; open in a browser. |
+| `page/senate_claims.html` | Alaska Senate count check (published at https://hangtime79.github.io/alaska-election-watching/ from `docs/`, built by `build_site.py`): the claim, the count as it stands, how far name confusion could move it, and the projection. Self-contained; open in a browser. |
 | `page/head.html` + `page/body.html` | The House forecast page, assembled by `build_page.py` |
 | `page/vote_share_panels.html`, `page/city_shares_dem.html`, `page/city_shares_rep.html`, `page/beta_spray.html` | Supporting charts (data embedded in each file) |
 
