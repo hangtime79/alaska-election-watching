@@ -267,6 +267,7 @@ table.outcome thead th:nth-child(n+2) { text-align: right; white-space: nowrap; 
   table.outcome td.res .w { font-size: .85rem; }
   table.outcome th, table.outcome td { padding: 8px 6px; }
 }
+table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb, var(--dem) 8%, transparent); }
 </style>
 
 <main>
@@ -287,10 +288,17 @@ table.outcome thead th:nth-child(n+2) { text-align: right; white-space: nowrap; 
 
 <section class="es" id="summary" aria-label="Executive summary">
   <h2>Executive summary</h2>
-  <p class="es-q">A claim about votes matters only if it changes the winner. Here is the projected final under each reading of the ballots:</p>
+  <p class="es-q">A claim about votes matters only if it changes the winner. Each bar runs from the projection on Peltola's own 2024 late-ballot pattern to the projection where late ballots vote like counted ones; the dot is the midpoint. Only one reading crosses into a Sullivan win.</p>
+  <div class="chart" tabindex="0" data-name="where-it-lands" title="Click to enlarge" role="img" aria-label="Projected final under each scenario. Peltola-positive: every unreturned absentee arrives plus overseas ballots at 2024 volume, 6,811 to 10,498; every unreturned absentee arrives, 6,566 to 10,253. Alaska's rules 6,046 to 8,579. Broad confusion 2,749 to 5,282. Stress test 906 to 3,439. Trump's method minus 3,124 to minus 591, the only Sullivan win.">
+    <svg id="rp-summary" viewBox="0 0 1000 380"></svg>
+    <div class="legend"><span style="--c:var(--dem)">Peltola ahead</span><span style="--c:var(--rep)">Sullivan ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span></div>
+  </div>
+  <p>The table gives each figure and links to where it is worked out.</p>
   <div class="tw"><table class="outcome">
     <thead><tr><th style="text-align:left">If the ballots are read as…</th><th>Projected final</th><th>If late ballots follow 2024</th></tr></thead>
     <tbody>
+      <tr class="pos"><th><a role="link" tabindex="0" data-go="reality">Peltola-positive: every unreturned absentee arrives, plus overseas ballots at 2024's volume</a><small class="fx">10,253 + (398 − 130) × 0.915 == 10,253 + 245; with the 2024 pattern 6,566 + 245</small></th><td class="res cd"><span class="v">+10,498</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+6,811</span><span class="w">Peltola</span></td></tr>
+      <tr class="pos"><th><a role="link" tabindex="0" data-go="reality">Peltola-positive: every unreturned absentee arrives</a><small class="fx">−329 + 10,582; with the 2024 pattern 10,253 − 3,687</small></th><td class="res cd"><span class="v">+10,253</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+6,566</span><span class="w">Peltola</span></td></tr>
       <tr><th><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked</a><small class="fx">count as it stands + ballots still to count == −329 + 8,908</small></th><td class="res cd"><span class="v">+8,579</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+6,046</span><span class="w">Peltola</span></td></tr>
       <tr><th><a role="link" tabindex="0" data-go="ceiling">Broad confusion: every Republican or mixed Sullivan Jr. voter meant Sullivan</a><small class="fx">8,579 − 3,297</small></th><td class="res cd"><span class="v">+5,282</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+2,749</span><span class="w">Peltola</span></td></tr>
       <tr><th><a role="link" tabindex="0" data-go="stress-test">Every Sullivan Jr. voter meant Sullivan</a><small class="fx">5,282 − 1,843</small></th><td class="res cd"><span class="v">+3,439</span><span class="w">Peltola</span></td><td class="res alt cd"><span class="v">+906</span><span class="w">Peltola</span></td></tr>
@@ -550,10 +558,12 @@ table.outcome thead th:nth-child(n+2) { text-align: right; white-space: nowrap; 
   </table></div>
 
   <h3 id="late-sensitivity" class="walk">Late-ballot sensitivity: what if late ballots vote differently</h3>
-  <p>Every scenario above assumes uncounted ballots vote like counted ballots of the same type. If late ballots run worse for Peltola, every scenario shrinks. Each point of two-way margin across the roughly 67,400 remaining two-way votes moves the final by about 674 votes.</p>
+  <p>Every scenario above assumes uncounted ballots vote like counted ballots of the same type. Late ballots could run better or worse for Peltola. In 2024 her late early ballots ran better and her late absentees worse. Each point of two-way margin across the roughly 67,400 remaining two-way votes moves the final by about 674 votes.</p>
   <div class="tw"><table class="wide sens">
     <thead><tr><th style="text-align:left">Late ballots, against counted ballots of the same type</th><th style="text-align:left">Formula</th><th>Alaska's rules</th><th>Broad confusion</th><th>Stress test</th></tr></thead>
     <tbody>
+      <tr><th>5 points better for Peltola</th><td class="f">scenario + 3,370</td><td class="n cd">+11,949</td><td class="n cd">+8,652</td><td class="n cd">+6,809</td></tr>
+      <tr><th>2.5 points better for Peltola</th><td class="f">scenario + 67,402 × 2.5 ÷ 100 == scenario + 1,685</td><td class="n cd">+10,264</td><td class="n cd">+6,967</td><td class="n cd">+5,124</td></tr>
       <tr><th>Vote the same (the projection above)</th><td class="f">scenario − 67,402 × 0 ÷ 100</td><td class="n cd">+8,579</td><td class="n cd">+5,282</td><td class="n cd">+3,439</td></tr>
       <tr><th>2.5 points worse for Peltola</th><td class="f">scenario − 67,402 × 2.5 ÷ 100 == scenario − 1,685</td><td class="n cd">+6,894</td><td class="n cd">+3,597</td><td class="n cd">+1,754</td></tr>
       <tr><th>5 points worse</th><td class="f">scenario − 3,370</td><td class="n cd">+5,209</td><td class="n cd">+1,912</td><td class="n cd">+69</td></tr>
@@ -845,6 +855,37 @@ table.outcome thead th:nth-child(n+2) { text-align: right; white-space: nowrap; 
       el("text", { x: L + i * cw + cw / 2, y: H - B + 22, "text-anchor": "middle" }, svg).textContent = c[0];
     });
     el("text", { x: W - R, y: 352, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
+  })();
+
+  // summary range plot
+  (function () {
+    const svg = document.getElementById("rp-summary"); if (!svg) return;
+    const W = 1000, H = 380, L = 330, R = 70, T = 30, B = 40, lo = -4000, hi = 11000;
+    const x = v => L + (v - lo) / (hi - lo) * (W - L - R);
+    const g = el("g", { class: "grid" }, svg);
+    for (let v = -4000; v <= 10000; v += 2000) { el("line", { x1: x(v), x2: x(v), y1: T - 8, y2: H - B }, g); el("text", { x: x(v), y: H - B + 18, "text-anchor": "middle" }, svg).textContent = fmt(v); }
+    el("rect", { x: x(lo), y: T - 8, width: x(0) - x(lo), height: H - B - T + 8, fill: "var(--rep)", opacity: 0.07 }, svg);
+    el("line", { x1: x(0), x2: x(0), y1: T - 8, y2: H - B, class: "zero" }, svg);
+    el("text", { x: x(0) - 8, y: T - 14, "text-anchor": "end", style: "fill:var(--rep);font-weight:700" }, svg).textContent = "← Sullivan wins";
+    el("text", { x: x(0) + 8, y: T - 14, style: "fill:var(--dem);font-weight:700" }, svg).textContent = "Peltola wins →";
+    const rows = [
+      ["All absentees arrive, plus overseas", 6811, 10498],
+      ["All unreturned absentees arrive", 6566, 10253],
+      ["Alaska's rules (40% arrive)", 6046, 8579],
+      ["Broad confusion", 2749, 5282],
+      ["Stress test: all Sullivan Jr.", 906, 3439],
+      ["Trump's method: Sullivan Jr. + Heikes", -3124, -591]
+    ];
+    const rh = (H - B - T) / rows.length;
+    rows.forEach((r, i) => {
+      const yy = T + rh * i + rh * 0.62, a = r[1], b = r[2], c = r[2] < 0 ? "var(--rep)" : "var(--dem)", mid = (a + b) / 2;
+      const lx = b < 0 ? x(b) + 10 : (a > 7000 ? x(a) - 10 : x(b) + 10), anchor = (b >= 0 && a > 7000) ? "end" : "start";
+      el("text", { x: L - 14, y: yy + 4, "text-anchor": "end", style: "fill:var(--fg)" }, svg).textContent = r[0];
+      if (a !== b) el("rect", { x: x(a), y: yy - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: c, opacity: 0.35 }, svg);
+      el("circle", { cx: x(mid), cy: yy, r: 6, fill: c }, svg);
+      el("text", { x: b < 0 ? x(a) : x(mid), y: yy - 12, "text-anchor": b < 0 ? "start" : "middle", style: "fill:" + c + ";font-weight:700" }, svg).textContent = fmt(a) + " to " + fmt(b);
+    });
+    el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
   })();
   // Timeline
   const tl = document.getElementById("tl");
