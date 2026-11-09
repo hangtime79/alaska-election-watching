@@ -291,7 +291,7 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
   <p class="es-q">A claim about votes matters only if it changes the winner. Each bar runs from the projection on Peltola's own 2024 late-ballot pattern to the projection where late ballots vote like counted ones; the dot is the midpoint. Only one reading crosses into a Sullivan win.</p>
   <div class="chart" tabindex="0" data-name="where-it-lands" title="Click to enlarge" role="img" aria-label="Projected final under each scenario. Peltola-positive: every unreturned absentee arrives plus overseas ballots at 2024 volume, 6,811 to 10,498; every unreturned absentee arrives, 6,566 to 10,253. Alaska's rules 6,046 to 8,579. Broad confusion 2,749 to 5,282. Stress test 906 to 3,439. Trump's method minus 3,124 to minus 591, the only Sullivan win.">
     <svg id="rp-summary" viewBox="0 0 1000 380"></svg>
-    <div class="legend"><span style="--c:var(--dem)">Peltola ahead</span><span style="--c:var(--rep)">Sullivan ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span><span style="--c:color-mix(in srgb, var(--dem) 25%, transparent)">best guess: Alaska's rules, between the two late-ballot models</span></div>
+    <div class="legend"><span style="--c:var(--dem)">Peltola ahead</span><span style="--c:var(--rep)">Sullivan ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span><span style="--c:var(--hi)">best guess: Alaska's rules, between the two late-ballot models</span></div>
   </div>
   <p>The table gives each figure and links to where it is worked out.</p>
   <div class="tw"><table class="outcome">
@@ -864,8 +864,8 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
     const x = v => L + (v - lo) / (hi - lo) * (W - L - R);
     const g = el("g", { class: "grid" }, svg);
     for (let v = -4000; v <= 10000; v += 2000) { el("line", { x1: x(v), x2: x(v), y1: T - 8, y2: H - B }, g); el("text", { x: x(v), y: H - B + 18, "text-anchor": "middle" }, svg).textContent = fmt(v); }
-    el("rect", { x: x(6046), y: T - 8, width: x(8579) - x(6046), height: H - B - T + 8, fill: "var(--dem)", opacity: 0.10 }, svg);
-    el("text", { x: (x(6046) + x(8579)) / 2, y: H - B - 6, "text-anchor": "middle", style: "fill:var(--dem);font-weight:700;font-size:11px" }, svg).textContent = "best guess: +6,046 to +8,579, centre about +7,300";
+    el("rect", { x: x(6046), y: T - 8, width: x(8579) - x(6046), height: H - B - T + 8, fill: "var(--hi)", opacity: 0.9 }, svg);
+    el("text", { x: (x(6046) + x(8579)) / 2, y: H - B - 6, "text-anchor": "middle", style: "fill:var(--fg2);font-weight:700;font-size:11px" }, svg).textContent = "best guess: +6,046 to +8,579, centre about +7,300";
     el("line", { x1: x(0), x2: x(0), y1: T - 8, y2: H - B, class: "zero" }, svg);
     el("text", { x: x(0) - 8, y: T - 14, "text-anchor": "end", style: "fill:var(--rep);font-weight:700" }, svg).textContent = "← Sullivan wins";
     el("text", { x: x(0) + 8, y: T - 14, style: "fill:var(--dem);font-weight:700" }, svg).textContent = "Peltola wins →";
@@ -882,7 +882,7 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
       const yy = T + rh * i + rh * 0.62, a = r[1], b = r[2], c = r[2] < 0 ? "var(--rep)" : "var(--dem)", mid = (a + b) / 2;
       const lx = b < 0 ? x(b) + 10 : (a > 7000 ? x(a) - 10 : x(b) + 10), anchor = (b >= 0 && a > 7000) ? "end" : "start";
       el("text", { x: L - 14, y: yy + 4, "text-anchor": "end", style: "fill:var(--fg)" }, svg).textContent = r[0];
-      if (a !== b) el("rect", { x: x(a), y: yy - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: c, opacity: 0.35 }, svg);
+      if (a !== b) el("rect", { x: x(a), y: yy - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: b < 0 ? "var(--rep)" : "var(--dem2)", opacity: b < 0 ? 0.45 : 1 }, svg);
       el("circle", { cx: x(mid), cy: yy, r: 6, fill: c }, svg);
       el("text", { x: b < 0 ? x(a) : x(mid), y: yy - 12, "text-anchor": b < 0 ? "start" : "middle", style: "fill:" + c + ";font-weight:700" }, svg).textContent = fmt(a) + " to " + fmt(b);
     });
