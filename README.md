@@ -40,6 +40,10 @@ Scripts declare their dependencies inline; run them with [uv](https://docs.astra
 
 Known gap: on the 2024 House final file, `rcv.py` puts about 2,000 more ballots in the final round than the official result. The cause has not been found.
 
+## Copyright and use
+
+The code (`*.py`, `claims/`, `rctab-configs/`) is MIT-licensed. The pages in `page/` and the written analysis are copyright Grant Case, all rights reserved: view and quote with attribution, but ask before any other use. Election data is public record. See `LICENSE`.
+
 ## Contact
 
 Grant Case - grant@aicriticalityindex.com
