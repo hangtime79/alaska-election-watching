@@ -281,7 +281,7 @@ table.sens td.flip { font-weight: 700; background: var(--hi); }
     </tbody>
   </table></div>
   <p class="es-line">Confusion between the two Sullivans does not change the winner, even under the stress test. Trump's method changes the projected winner only by <a role="link" tabindex="0" data-go="claim">adding both Sullivan Jr. and Heikes ballots to Sullivan</a>, regardless of how those voters ranked. Either one alone leaves Peltola ahead: Heikes only, 8,579 − 4,091 == +4,488; Sullivan Jr. only, 8,579 − 5,079 == +3,500.</p>
-  <p class="note">The projection is a model, not a count. It assumes the roughly 69,000 uncounted ballots vote like counted ballots of the same type (<a role="link" tabindex="0" data-go="reality">step 3</a>). The stress test holds unless late ballots run about 5 points worse for Peltola than counted ballots of the same type; <a role="link" tabindex="0" data-go="late-sensitivity">in 2024 they did not</a>. <a role="link" tabindex="0" data-go="count">On the ballots counted so far</a>, Sullivan leads by 329 under Alaska's rules, the campaign's 328.</p>
+  <p class="note">The projection is a model, not a count. It assumes the roughly 69,000 uncounted ballots vote like counted ballots of the same type (<a role="link" tabindex="0" data-go="reality">step 3</a>). The stress test holds unless late ballots run about 5 points worse for Peltola than counted ballots of the same type. <a role="link" tabindex="0" data-go="late-2024">On Peltola's own 2024 late-ballot pattern</a>, she still leads in every scenario, by about 900 in the stress test. <a role="link" tabindex="0" data-go="count">On the ballots counted so far</a>, Sullivan leads by 329 under Alaska's rules, the campaign's 328.</p>
 </section>
 
 
@@ -547,30 +547,38 @@ table.sens td.flip { font-weight: 700; background: var(--hi); }
   </table></div>
   <p class="es-line">The stress test holds only if late ballots run less than about 5 points worse for Peltola than counted ballots of the same type.</p>
 
-  <h3>What 2024 says about the size of a late shift</h3>
-  <p>The 2024 count snapshots show how ballots counted after 10 Nov voted against ballots of the same type counted by 10 Nov. The measure is Begich's first-choice share in the House race, at the precincts and districts 2026 has reported.</p>
+  <h3 id="late-2024">Apples to apples: Peltola's 2024 late ballots against Begich</h3>
+  <p>In 2024 Peltola faced Begich, and the count ran the same way: early and absentee ballots kept arriving after election night. Every ballot in the 2024 final CVR can be traced to whether it was already counted in the 10 Nov export. For each ballot type, compare ballots counted by 10 Nov with ballots counted later, on the same measure the projection uses (final-round two-way margin, Peltola minus Begich). Then hold the district mix fixed: compute the gap inside each district and weight it by that district's late ballots.</p>
   <div class="tw"><table class="wide">
-    <thead><tr><th style="text-align:left">2024 ballot type</th><th>Counted by 10 Nov</th><th>Counted later</th><th style="text-align:left">Formula, values (later share)</th><th>Shift in Begich share, Democrat-positive</th><th>Shift, two-way margin for the Democrat</th></tr></thead>
+    <thead><tr><th style="text-align:left">2024 ballot type</th><th>Share counted by 10 Nov</th><th>Two-way margin, counted by 10 Nov</th><th>Two-way margin, counted later</th><th>Gap, raw</th><th>Gap, same districts</th></tr></thead>
     <tbody>
-      <tr><th>Early</th><td class="n">53.0% of 49,761</td><td class="n">47.97% of 21,165</td><td class="f">(70,926 × 51.5 − 49,761 × 53.0) ÷ 21,165</td><td class="n cd">+5.0</td><td class="n cd">about +10.0</td></tr>
-      <tr><th>Absentee</th><td class="n">39.2% of 18,544</td><td class="n">41.43% of 25,839</td><td class="f">(44,383 × 40.5 − 18,544 × 39.2) ÷ 25,839</td><td class="n cr">−2.2</td><td class="n cr">about −4.4</td></tr>
+      <tr><th>Early<small>2026 has counted 68.7% of early ballots (48,292 of 70,261), close to 2024's 70.2%</small></th><td class="n">70.2%</td><td class="n cr">−10.24<br><small>48,672 two-way</small></td><td class="n cr">−2.56<br><small>20,298 two-way</small></td><td class="n cd">+7.67</td><td class="n cd">+6.41</td></tr>
+      <tr><th>Absentee<small>2026 has counted only about 18% of expected absentees (8,480 of about 47,000), against 2024's 40.9%</small></th><td class="n">40.9%</td><td class="n cd">+21.55<br><small>27,310 two-way</small></td><td class="n cd">+13.39<br><small>38,743 two-way</small></td><td class="n cr">−8.16</td><td class="n cr">−10.35</td></tr>
     </tbody>
   </table></div>
+  <p class="note">Late early ballots ran more Democratic, late absentees more Republican. The absentee gap is the larger one. Election-day ballots are left out: 2024's late election-day ballots were the rural precincts, which 2026 has already counted. A ballot's side is the first of Peltola or Begich it ranks (<code>claims/late_2024.py</code>).</p>
   <div class="vars">
     <div><h3>Variables</h3><ul>
-      <li><code>early_two_way</code>: remaining early two-way votes (21,969 × 0.9869)</li>
-      <li><code>absentee_two_way</code>: remaining absentee two-way votes (38,563 × 0.9828)</li>
-      <li><code>early_shift</code>, <code>absentee_shift</code>: 2024's late shift as two-way margin</li>
+      <li><code>early_two_way</code>: remaining 2026 early two-way votes (21,969 × 0.9869)</li>
+      <li><code>absentee_two_way</code>: remaining 2026 absentee two-way votes, received plus 40% of unreturned (38,563 × 0.9828)</li>
+      <li><code>early_gap</code>, <code>absentee_gap</code>: 2024's late-against-early gap, same districts</li>
     </ul></div>
     <div><h3>Values</h3><ul>
-      <li><code>early_two_way = 21,681</code></li><li><code>absentee_two_way = 37,900</code></li><li><code>early_shift = +0.100</code>, <code>absentee_shift = −0.044</code></li>
+      <li><code>early_two_way = 21,681</code></li><li><code>absentee_two_way = 37,900</code></li><li><code>early_gap = +0.0641</code>, <code>absentee_gap = −0.1035</code></li>
     </ul></div>
   </div>
   <div class="chain">
-    <div>early_two_way × early_shift + absentee_two_way × absentee_shift  ==  21,681 × 0.100 + 37,900 × (−0.044)  ==  2,168 − 1,668  ==  <strong class="cd">+500</strong></div>
-    <div>Alaska's rules: 8,579 + 500 == <strong class="cd">+9,079</strong>      stress test: 3,439 + 500 == <strong class="cd">+3,939</strong></div>
+    <div>early_two_way × early_gap + absentee_two_way × absentee_gap  ==  21,681 × 0.0641 + 37,900 × (−0.1035)  ==  1,390 − 3,923  ==  <strong class="cr">−2,533</strong></div>
   </div>
-  <p class="note">In 2024 the late early ballots ran more Democratic and the late absentees more Republican, and the two nearly cancel. 2024 gives no sign of a 5-point late swing against the Democrat. It is one election, a House race with Peltola on the ballot, and first choices only; the two-way shift is taken as twice the share shift, which assumes a two-candidate race.</p>
+  <div class="tw"><table class="wide sens">
+    <thead><tr><th style="text-align:left">If 2026's late ballots follow 2024's pattern</th><th style="text-align:left">Formula</th><th>Alaska's rules</th><th>Broad confusion</th><th>Stress test</th></tr></thead>
+    <tbody>
+      <tr><th>Same districts (central)</th><td class="f">scenario − 2,533</td><td class="n cd">+6,046</td><td class="n cd">+2,749</td><td class="n cd">+906</td></tr>
+      <tr><th>Raw gaps<small>21,681 × 0.0767 + 37,900 × (−0.0816) == −1,430</small></th><td class="f">scenario − 1,430</td><td class="n cd">+7,149</td><td class="n cd">+3,852</td><td class="n cd">+2,009</td></tr>
+    </tbody>
+  </table></div>
+  <p class="es-line">On 2024's late-ballot pattern, Peltola still leads in every scenario. The stress test narrows to about 900.</p>
+  <p class="note">Not a perfect match. 2026 has counted far fewer of its absentees (about 18%) than 2024 had by 10 Nov (40.9%), so 2026's counted absentees may be an earlier, different slice than 2024's. And the 2024 race was Peltola against Begich, not Sullivan.</p>
 
   <h3>The ballots we cannot see yet</h3>
   <p>These are the 10,930 rural ballots counted but not yet in the CVR, plus every uncounted ballot. Their rankings are unknown. The confusion rates of counted ballots of the same type stand in for them.</p>
