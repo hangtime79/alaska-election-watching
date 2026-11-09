@@ -1,0 +1,79 @@
+{
+  "tabulatorVersion": "2.1.0",
+  "outputSettings": {
+    "contestName": "Alaska house special 2022",
+    "outputDirectory": "/opt/github/election-watching/rctab-output/alaska-2022special-house",
+    "contestDate": "",
+    "contestJurisdiction": "",
+    "contestOffice": "",
+    "tabulateByBatch": false,
+    "tabulateByPrecinct": false,
+    "generateCdfJson": false
+  },
+  "cvrFileSources": [
+    {
+      "filePath": "../data/alaska-2022-special",
+      "contestId": "69",
+      "firstVoteColumnIndex": "",
+      "firstVoteRowIndex": "",
+      "idColumnIndex": "",
+      "batchColumnIndex": "",
+      "precinctColumnIndex": "",
+      "overvoteDelimiter": "",
+      "provider": "dominion",
+      "overvoteLabel": "",
+      "undeclaredWriteInLabel": "",
+      "treatBlankAsUndeclaredWriteIn": false
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Begich, Nick",
+      "excluded": false,
+      "aliases": [
+        "215"
+      ]
+    },
+    {
+      "name": "Palin, Sarah",
+      "excluded": false,
+      "aliases": [
+        "217"
+      ]
+    },
+    {
+      "name": "Peltola, Mary S.",
+      "excluded": false,
+      "aliases": [
+        "218"
+      ]
+    },
+    {
+      "name": "Write-in",
+      "excluded": false,
+      "aliases": [
+        "214"
+      ]
+    }
+  ],
+  "rules": {
+    "tiebreakMode": "random",
+    "overvoteRule": "exhaustImmediately",
+    "winnerElectionMode": "singleWinnerMajority",
+    "randomSeed": "5656",
+    "numberOfWinners": "1",
+    "multiSeatBottomsUpPercentageThreshold": "",
+    "decimalPlacesForVoteArithmetic": "4",
+    "maxSkippedRanksAllowed": "1",
+    "maxRankingsAllowed": "max",
+    "nonIntegerWinningThreshold": false,
+    "doesFirstRoundDetermineThreshold": false,
+    "hareQuota": false,
+    "batchElimination": false,
+    "cutoffElimination": false,
+    "continueUntilTwoCandidatesRemain": false,
+    "stopTabulationEarlyAfterRound": "",
+    "exhaustOnDuplicateCandidate": false,
+    "rulesDescription": ""
+  }
+}

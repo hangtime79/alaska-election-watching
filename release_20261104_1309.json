@@ -1,0 +1,29 @@
+{
+ "house": {
+  "Election Day": {
+   "Begich": 80989,
+   "Hafner": 11628,
+   "Hill": 57209,
+   "McDermott": 4956,
+   "Write-in": 280
+  }
+ },
+ "senate": {
+  "Election Day": {
+   "Heikes": 4335,
+   "Peltola": 69984,
+   "Sullivan Jr.": 2791,
+   "Sullivan": 78326,
+   "Write-in": 593
+  }
+ },
+ "governor": {
+  "Election Day": {
+   "Bronson": 24168,
+   "Kreiss-Tomkins": 70779,
+   "Taylor": 12392,
+   "Wilson": 46139,
+   "Write-in": 501
+  }
+ }
+}

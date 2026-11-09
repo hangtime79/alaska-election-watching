@@ -1,0 +1,148 @@
+year,office,dem,note,view,group,D,R,other,total,d_pct,r_pct
+2014,Senate,Begich (Mark),,A election day,Anchorage,38028,39330,4298,81656,46.57,48.17
+2014,Senate,Begich (Mark),,A election day,Fairbanks,9799,12866,1500,24165,40.55,53.24
+2014,Senate,Begich (Mark),,A election day,Juneau,5506,3479,487,9472,58.13,36.73
+2014,Senate,Begich (Mark),,A election day,Cities (all three),53333,55675,6285,115293,46.26,48.29
+2014,Senate,Begich (Mark),,A election day,Rest of state,34254,40817,6376,81447,42.06,50.11
+2014,Senate,Begich (Mark),,B all ballots,Whole-city districts,74150,71793,8226,154169,48.1,46.57
+2014,Senate,Begich (Mark),,B all ballots,Statewide,129431,135445,17524,282400,45.83,47.96
+2014,Governor,Walker/Mallott,independent with Democratic running mate (unity ticket),A election day,Anchorage,39215,37448,4207,80870,48.49,46.31
+2014,Governor,Walker/Mallott,independent with Democratic running mate (unity ticket),A election day,Fairbanks,11806,10935,1250,23991,49.21,45.58
+2014,Governor,Walker/Mallott,independent with Democratic running mate (unity ticket),A election day,Juneau,5242,3793,408,9443,55.51,40.17
+2014,Governor,Walker/Mallott,independent with Democratic running mate (unity ticket),A election day,Cities (all three),56263,52176,5865,114304,49.22,45.65
+2014,Governor,Walker/Mallott,independent with Democratic running mate (unity ticket),A election day,Rest of state,35912,39278,5810,81000,44.34,48.49
+2014,Governor,Walker/Mallott,independent with Democratic running mate (unity ticket),B all ballots,Whole-city districts,76060,68085,8413,152558,49.86,44.63
+2014,Governor,Walker/Mallott,independent with Democratic running mate (unity ticket),B all ballots,Statewide,134658,128435,16865,279958,48.1,45.88
+2014,House,Dunbar,,A election day,Anchorage,36376,39134,5366,80876,44.98,48.39
+2014,House,Dunbar,,A election day,Fairbanks,8346,12964,2616,23926,34.88,54.18
+2014,House,Dunbar,,A election day,Juneau,5145,3621,619,9385,54.82,38.58
+2014,House,Dunbar,,A election day,Cities (all three),49867,55719,8601,114187,43.67,48.8
+2014,House,Dunbar,,A election day,Rest of state,27137,46745,6954,80836,33.57,57.83
+2014,House,Dunbar,,B all ballots,Whole-city districts,68751,72245,11570,152566,45.06,47.35
+2014,House,Dunbar,,B all ballots,Statewide,114602,142572,22567,279741,40.97,50.97
+2016,President,Clinton,,A election day,Anchorage,32130,39942,9606,81678,39.34,48.9
+2016,President,Clinton,,A election day,Fairbanks,7567,14123,3386,25076,30.18,56.32
+2016,President,Clinton,,A election day,Juneau,4273,3161,1149,8583,49.78,36.83
+2016,President,Clinton,,A election day,Cities (all three),43970,57226,14141,115337,38.12,49.62
+2016,President,Clinton,,A election day,Rest of state,25127,46231,11229,82587,30.42,55.98
+2016,President,Clinton,,B all ballots,Whole-city districts,70032,81847,20690,172569,40.58,47.43
+2016,President,Clinton,,B all ballots,Statewide,116454,163387,38767,318608,36.55,51.28
+2016,Senate,Metcalfe,no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote,A election day,Anchorage,9341,36723,35241,81305,11.49,45.17
+2016,Senate,Metcalfe,no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote,A election day,Fairbanks,2140,11085,11676,24901,8.59,44.52
+2016,Senate,Metcalfe,no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote,A election day,Juneau,1379,3697,3460,8536,16.16,43.31
+2016,Senate,Metcalfe,no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote,A election day,Cities (all three),12860,51505,50377,114742,11.21,44.89
+2016,Senate,Metcalfe,no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote,A election day,Rest of state,6742,36349,39022,82113,8.21,44.27
+2016,Senate,Metcalfe,no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote,B all ballots,Whole-city districts,21912,75943,70841,168696,12.99,45.02
+2016,Senate,Metcalfe,no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote,B all ballots,Statewide,36200,138149,137092,311441,11.62,44.36
+2016,House,Lindbeck,,A election day,Anchorage,31279,39518,9779,80576,38.82,49.04
+2016,House,Lindbeck,,A election day,Fairbanks,8314,12552,3774,24640,33.74,50.94
+2016,House,Lindbeck,,A election day,Juneau,4084,3317,1012,8413,48.54,39.43
+2016,House,Lindbeck,,A election day,Cities (all three),43677,55387,14565,113629,38.44,48.74
+2016,House,Lindbeck,,A election day,Rest of state,23597,45315,12259,81171,29.07,55.83
+2016,House,Lindbeck,,B all ballots,Whole-city districts,66925,79110,21072,167107,40.05,47.34
+2016,House,Lindbeck,,B all ballots,Statewide,111019,155088,42091,308198,36.02,50.32
+2018,Governor,Begich (Mark)/Call,Walker withdrew but stayed on the ballot,A election day,Anchorage,35503,38291,2339,76133,46.63,50.29
+2018,Governor,Begich (Mark)/Call,Walker withdrew but stayed on the ballot,A election day,Fairbanks,9336,12975,963,23274,40.11,55.75
+2018,Governor,Begich (Mark)/Call,Walker withdrew but stayed on the ballot,A election day,Juneau,4517,3304,291,8112,55.68,40.73
+2018,Governor,Begich (Mark)/Call,Walker withdrew but stayed on the ballot,A election day,Cities (all three),49356,54570,3593,107519,45.9,50.75
+2018,Governor,Begich (Mark)/Call,Walker withdrew but stayed on the ballot,A election day,Rest of state,31598,45802,3866,81266,38.88,56.36
+2018,Governor,Begich (Mark)/Call,Walker withdrew but stayed on the ballot,B all ballots,Whole-city districts,72427,72472,5587,150486,48.13,48.16
+2018,Governor,Begich (Mark)/Call,Walker withdrew but stayed on the ballot,B all ballots,Statewide,125739,145631,11764,283134,44.41,51.44
+2018,House,Galvin,"independent, Democratic nominee",A election day,Anchorage,36926,38695,274,75895,48.65,50.98
+2018,House,Galvin,"independent, Democratic nominee",A election day,Fairbanks,10039,13029,130,23198,43.28,56.16
+2018,House,Galvin,"independent, Democratic nominee",A election day,Juneau,4908,3164,15,8087,60.69,39.12
+2018,House,Galvin,"independent, Democratic nominee",A election day,Cities (all three),51873,54888,419,107180,48.4,51.21
+2018,House,Galvin,"independent, Democratic nominee",A election day,Rest of state,31982,48497,400,80879,39.54,59.96
+2018,House,Galvin,"independent, Democratic nominee",B all ballots,Whole-city districts,76114,73346,569,150029,50.73,48.89
+2018,House,Galvin,"independent, Democratic nominee",B all ballots,Statewide,131199,149779,1188,282166,46.5,53.08
+2020,President,Biden,,A election day,Anchorage,17843,34313,2298,54454,32.77,63.01
+2020,President,Biden,,A election day,Fairbanks,5861,14945,1172,21978,26.67,68.0
+2020,President,Biden,,A election day,Juneau,1712,2222,224,4158,41.17,53.44
+2020,President,Biden,,A election day,Cities (all three),25416,51480,3694,80590,31.54,63.88
+2020,President,Biden,,A election day,Rest of state,20985,50557,3451,74993,27.98,67.42
+2020,President,Biden,,B all ballots,Whole-city districts,92214,91595,7317,191126,48.25,47.92
+2020,President,Biden,,B all ballots,Statewide,153778,189951,13840,357569,43.01,53.12
+2020,Senate,Gross,"independent, Democratic nominee",A election day,Anchorage,16945,35133,2505,54583,31.04,64.37
+2020,Senate,Gross,"independent, Democratic nominee",A election day,Fairbanks,5850,14831,1318,21999,26.59,67.42
+2020,Senate,Gross,"independent, Democratic nominee",A election day,Juneau,1706,2233,223,4162,40.99,53.65
+2020,Senate,Gross,"independent, Democratic nominee",A election day,Cities (all three),24501,52197,4046,80744,30.34,64.65
+2020,Senate,Gross,"independent, Democratic nominee",A election day,Rest of state,19540,49649,5536,74725,26.15,66.44
+2020,Senate,Gross,"independent, Democratic nominee",B all ballots,Whole-city districts,87338,94630,7502,189470,46.1,49.94
+2020,Senate,Gross,"independent, Democratic nominee",B all ballots,Statewide,146068,191112,16806,353986,41.26,53.99
+2020,House,Galvin,"independent, Democratic nominee",A election day,Anchorage,19622,34639,0,54261,36.16,63.84
+2020,House,Galvin,"independent, Democratic nominee",A election day,Fairbanks,7054,14759,0,21813,32.34,67.66
+2020,House,Galvin,"independent, Democratic nominee",A election day,Juneau,1936,2201,0,4137,46.8,53.2
+2020,House,Galvin,"independent, Democratic nominee",A election day,Cities (all three),28612,51599,0,80211,35.67,64.33
+2020,House,Galvin,"independent, Democratic nominee",A election day,Rest of state,22720,51463,0,74183,30.63,69.37
+2020,House,Galvin,"independent, Democratic nominee",B all ballots,Whole-city districts,95309,93196,0,188505,50.56,49.44
+2020,House,Galvin,"independent, Democratic nominee",B all ballots,Statewide,159856,192126,0,351982,45.42,54.58
+2022,House,Peltola,first choices,A election day,Anchorage,31289,30486,1087,62862,49.77,48.5
+2022,House,Peltola,first choices,A election day,Fairbanks,8875,11818,723,21416,41.44,55.18
+2022,House,Peltola,first choices,A election day,Juneau,4453,2382,115,6950,64.07,34.27
+2022,House,Peltola,first choices,A election day,Cities (all three),44617,44686,1925,91228,48.91,48.98
+2022,House,Peltola,first choices,A election day,Rest of state,29108,43064,1526,73698,39.5,58.43
+2022,House,Peltola,first choices,B all ballots,Whole-city districts,76512,62901,3012,142425,53.72,44.16
+2022,House,Peltola,first choices,B all ballots,Statewide,128401,129296,5674,263371,48.75,49.09
+2022,Senate,Chesbro,first choices; no real Democratic side (Murkowski took most Democrats),A election day,Anchorage,6309,54493,1494,62296,10.13,87.47
+2022,Senate,Chesbro,first choices; no real Democratic side (Murkowski took most Democrats),A election day,Fairbanks,1993,18319,919,21231,9.39,86.28
+2022,Senate,Chesbro,first choices; no real Democratic side (Murkowski took most Democrats),A election day,Juneau,890,5730,171,6791,13.11,84.38
+2022,Senate,Chesbro,first choices; no real Democratic side (Murkowski took most Democrats),A election day,Cities (all three),9192,78542,2584,90318,10.18,86.96
+2022,Senate,Chesbro,first choices; no real Democratic side (Murkowski took most Democrats),A election day,Rest of state,5060,64972,3054,73086,6.92,88.9
+2022,Senate,Chesbro,first choices; no real Democratic side (Murkowski took most Democrats),B all ballots,Whole-city districts,17028,119808,4488,141324,12.05,84.78
+2022,Senate,Chesbro,first choices; no real Democratic side (Murkowski took most Democrats),B all ballots,Statewide,27133,224760,9575,261468,10.38,85.96
+2022,Governor,Gara,first choices,A election day,Anchorage,17203,34389,11467,63059,27.28,54.53
+2022,Governor,Gara,first choices,A election day,Fairbanks,3505,12808,5106,21419,16.36,59.8
+2022,Governor,Gara,first choices,A election day,Juneau,1536,2589,2810,6935,22.15,37.33
+2022,Governor,Gara,first choices,A election day,Cities (all three),22244,49786,19383,91413,24.33,54.46
+2022,Governor,Gara,first choices,A election day,Rest of state,12106,49222,12532,73860,16.39,66.64
+2022,Governor,Gara,first choices,B all ballots,Whole-city districts,40549,70037,31986,142572,28.44,49.12
+2022,Governor,Gara,first choices,B all ballots,Statewide,63814,144286,55413,263513,24.22,54.75
+2022,Governor,Gara + Walker,first choices; Walker independent,A election day,Anchorage,28592,34389,78,63059,45.34,54.53
+2022,Governor,Gara + Walker,first choices; Walker independent,A election day,Fairbanks,8591,12808,20,21419,40.11,59.8
+2022,Governor,Gara + Walker,first choices; Walker independent,A election day,Juneau,4337,2589,9,6935,62.54,37.33
+2022,Governor,Gara + Walker,first choices; Walker independent,A election day,Cities (all three),41520,49786,107,91413,45.42,54.46
+2022,Governor,Gara + Walker,first choices; Walker independent,A election day,Rest of state,24484,49222,154,73860,33.15,66.64
+2022,Governor,Gara + Walker,first choices; Walker independent,B all ballots,Whole-city districts,72171,70037,364,142572,50.62,49.12
+2022,Governor,Gara + Walker,first choices; Walker independent,B all ballots,Statewide,118445,144286,782,263513,44.95,54.75
+2024,President,Harris,first choices,A election day,Anchorage,29863,34227,3026,67116,44.49,51.0
+2024,President,Harris,first choices,A election day,Fairbanks,8511,14538,1075,24124,35.28,60.26
+2024,President,Harris,first choices,A election day,Juneau,3576,2643,334,6553,54.57,40.33
+2024,President,Harris,first choices,A election day,Cities (all three),41950,51408,4435,97793,42.9,52.57
+2024,President,Harris,first choices,A election day,Rest of state,23415,48750,3792,75957,30.83,64.18
+2024,President,Harris,first choices,B all ballots,Whole-city districts,86789,89694,7311,183794,47.22,48.8
+2024,President,Harris,first choices,B all ballots,Statewide,139926,184393,13655,337974,41.4,54.56
+2024,House,Peltola,first choices,A election day,Anchorage,33296,30125,3212,66633,49.97,45.21
+2024,House,Peltola,first choices,A election day,Fairbanks,9858,12476,1596,23930,41.2,52.14
+2024,House,Peltola,first choices,A election day,Juneau,4038,2173,311,6522,61.91,33.32
+2024,House,Peltola,first choices,A election day,Cities (all three),47192,44774,5119,97085,48.61,46.12
+2024,House,Peltola,first choices,A election day,Rest of state,28276,41266,5434,74976,37.71,55.04
+2024,House,Peltola,first choices,B all ballots,Whole-city districts,92806,77931,8183,178920,51.87,43.56
+2024,House,Peltola,first choices,B all ballots,Statewide,152702,159500,17157,329359,46.36,48.43
+2026,Senate,Peltola,first choices; partial count,A election day,Anchorage,29972,27346,2104,59422,50.44,46.02
+2026,Senate,Peltola,first choices; partial count,A election day,Fairbanks,8892,11049,1017,20958,42.43,52.72
+2026,Senate,Peltola,first choices; partial count,A election day,Juneau,3352,1978,241,5571,60.17,35.51
+2026,Senate,Peltola,first choices; partial count,A election day,Cities (all three),42216,40373,3362,85951,49.12,46.97
+2026,Senate,Peltola,first choices; partial count,A election day,Rest of state,27777,37966,3787,69530,39.95,54.6
+2026,Senate,Peltola,first choices; partial count,B all ballots,Whole-city districts,62700,50579,3850,117129,53.53,43.18
+2026,Senate,Peltola,first choices; partial count,B all ballots,Statewide,102962,102325,8446,213733,48.17,47.88
+2026,Governor,Kreiss-Tomkins,first choices; partial count,A election day,Anchorage,30597,28247,0,58844,52.0,48.0
+2026,Governor,Kreiss-Tomkins,first choices; partial count,A election day,Fairbanks,9296,11477,0,20773,44.75,55.25
+2026,Governor,Kreiss-Tomkins,first choices; partial count,A election day,Juneau,3554,1937,0,5491,64.72,35.28
+2026,Governor,Kreiss-Tomkins,first choices; partial count,A election day,Cities (all three),43447,41661,0,85108,51.05,48.95
+2026,Governor,Kreiss-Tomkins,first choices; partial count,A election day,Rest of state,27343,41087,0,68430,39.96,60.04
+2026,Governor,Kreiss-Tomkins,first choices; partial count,B all ballots,Whole-city districts,63906,52219,0,116125,55.03,44.97
+2026,Governor,Kreiss-Tomkins,first choices; partial count,B all ballots,Statewide,103837,107500,0,211337,49.13,50.87
+2026,House,Hill,"first choices; partial count; independent, Democratic-endorsed",A election day,Anchorage,24176,27990,7055,59221,40.82,47.26
+2026,House,Hill,"first choices; partial count; independent, Democratic-endorsed",A election day,Fairbanks,7715,11145,2127,20987,36.76,53.1
+2026,House,Hill,"first choices; partial count; independent, Democratic-endorsed",A election day,Juneau,2881,2050,597,5528,52.12,37.08
+2026,House,Hill,"first choices; partial count; independent, Democratic-endorsed",A election day,Cities (all three),34772,41185,9779,85736,40.56,48.04
+2026,House,Hill,"first choices; partial count; independent, Democratic-endorsed",A election day,Rest of state,22461,39836,6830,69127,32.49,57.63
+2026,House,Hill,"first choices; partial count; independent, Democratic-endorsed",B all ballots,Whole-city districts,52714,51666,12476,116856,45.11,44.21
+2026,House,Hill,"first choices; partial count; independent, Democratic-endorsed",B all ballots,Statewide,86023,105647,21339,213009,40.38,49.6
+2026,House,Hill + Hafner,first choices; partial count,A election day,Anchorage,29551,27990,1680,59221,49.9,47.26
+2026,House,Hill + Hafner,first choices; partial count,A election day,Fairbanks,9020,11145,822,20987,42.98,53.1
+2026,House,Hill + Hafner,first choices; partial count,A election day,Juneau,3307,2050,171,5528,59.82,37.08
+2026,House,Hill + Hafner,first choices; partial count,A election day,Cities (all three),41878,41185,2673,85736,48.85,48.04
+2026,House,Hill + Hafner,first choices; partial count,A election day,Rest of state,26997,39836,2294,69127,39.05,57.63
+2026,House,Hill + Hafner,first choices; partial count,B all ballots,Whole-city districts,62146,51666,3044,116856,53.18,44.21
+2026,House,Hill + Hafner,first choices; partial count,B all ballots,Statewide,101573,105647,5789,213009,47.68,49.6

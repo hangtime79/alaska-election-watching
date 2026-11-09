@@ -1,0 +1,63 @@
+{
+ "fits": {
+  "top of ticket, all contested": {
+   "incumbency": 7.81,
+   "se": 1.47,
+   "contests": 53,
+   "resid_sd": 8.98
+  },
+  "top of ticket, clean only": {
+   "incumbency": 5.41,
+   "se": 1.16,
+   "contests": 29,
+   "resid_sd": 5.36
+  },
+  "US House baseline, all contested": {
+   "incumbency": 7.79,
+   "se": 1.41,
+   "contests": 53,
+   "resid_sd": 8.6
+  },
+  "both baselines, all contested": {
+   "incumbency": 7.8,
+   "se": 1.01,
+   "contests": 106,
+   "resid_sd": 8.75
+  },
+  "2022 top of ticket": {
+   "incumbency": 7.17,
+   "se": 2.66,
+   "contests": 21,
+   "resid_sd": 9.13
+  },
+  "2024 top of ticket": {
+   "incumbency": 9.73,
+   "se": 3.06,
+   "contests": 15,
+   "resid_sd": 10.78
+  },
+  "2026 top of ticket": {
+   "incumbency": 6.57,
+   "se": 2.01,
+   "contests": 17,
+   "resid_sd": 7.23
+  }
+ },
+ "means": [
+  {
+   "status": "D incumbent",
+   "count": 20,
+   "mean": 5.05
+  },
+  {
+   "status": "R incumbent",
+   "count": 18,
+   "mean": -10.7
+  },
+  {
+   "status": "open or both",
+   "count": 15,
+   "mean": -4.6
+  }
+ ]
+}

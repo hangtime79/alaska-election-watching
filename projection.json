@@ -1,0 +1,282 @@
+{
+ "mix24": {
+  "Election Day": 175330,
+  "Early Voting": 70926,
+  "Judicial-split": 10447,
+  "Absentee": 68638,
+  "Question": 10114,
+  "Overseas": 398
+ },
+ "growth24": {
+  "Election Day": 1.075,
+  "Early Voting": 1.425,
+  "Judicial-split": 2.372
+ },
+ "backtest": {
+  "A": {
+   "abs_share_2024": 23.57,
+   "final_total": 284267,
+   "rows": [
+    {
+     "type": "Election Day",
+     "counted": 163109,
+     "final": 163109,
+     "remaining": 0,
+     "rates_from": "Election Day",
+     "begich_r1_pct": 51.3,
+     "begich_final_pct": 54.7
+    },
+    {
+     "type": "Early Voting",
+     "counted": 49761,
+     "final": 49761,
+     "remaining": 0,
+     "rates_from": "Early Voting",
+     "begich_r1_pct": 53.5,
+     "begich_final_pct": 55.1
+    },
+    {
+     "type": "Judicial-split",
+     "counted": 4404,
+     "final": 4404,
+     "remaining": 0,
+     "rates_from": "Judicial-split",
+     "begich_r1_pct": 54.8,
+     "begich_final_pct": 57.3
+    },
+    {
+     "type": "Absentee",
+     "counted": 28087,
+     "final": 58095,
+     "remaining": 30008,
+     "rates_from": "Absentee",
+     "begich_r1_pct": 38.0,
+     "begich_final_pct": 39.2
+    },
+    {
+     "type": "Question",
+     "counted": 0,
+     "final": 8561,
+     "remaining": 8561,
+     "rates_from": "all counted so far",
+     "begich_r1_pct": 50.2,
+     "begich_final_pct": 53.0
+    },
+    {
+     "type": "Overseas",
+     "counted": 250,
+     "final": 337,
+     "remaining": 87,
+     "rates_from": "Overseas",
+     "begich_r1_pct": 13.4,
+     "begich_final_pct": 14.9
+    }
+   ],
+   "r1_pct": 48.93,
+   "final_pct": 51.51,
+   "final_margin": 8253,
+   "now_r1_pct": 50.24,
+   "now_final_pct": 52.98
+  },
+  "B": {
+   "abs_share_2024": 23.57,
+   "final_total": 335853,
+   "rows": [
+    {
+     "type": "Election Day",
+     "counted": 163109,
+     "final": 175330,
+     "remaining": 12221,
+     "rates_from": "Election Day",
+     "begich_r1_pct": 51.3,
+     "begich_final_pct": 54.7
+    },
+    {
+     "type": "Early Voting",
+     "counted": 49761,
+     "final": 70926,
+     "remaining": 21165,
+     "rates_from": "Early Voting",
+     "begich_r1_pct": 53.5,
+     "begich_final_pct": 55.1
+    },
+    {
+     "type": "Judicial-split",
+     "counted": 4404,
+     "final": 10447,
+     "remaining": 6043,
+     "rates_from": "Judicial-split",
+     "begich_r1_pct": 54.8,
+     "begich_final_pct": 57.3
+    },
+    {
+     "type": "Absentee",
+     "counted": 28087,
+     "final": 68638,
+     "remaining": 40551,
+     "rates_from": "Absentee",
+     "begich_r1_pct": 38.0,
+     "begich_final_pct": 39.2
+    },
+    {
+     "type": "Question",
+     "counted": 0,
+     "final": 10114,
+     "remaining": 10114,
+     "rates_from": "all counted so far",
+     "begich_r1_pct": 50.2,
+     "begich_final_pct": 53.0
+    },
+    {
+     "type": "Overseas",
+     "counted": 250,
+     "final": 398,
+     "remaining": 148,
+     "rates_from": "Overseas",
+     "begich_r1_pct": 13.4,
+     "begich_final_pct": 14.9
+    }
+   ],
+   "r1_pct": 49.07,
+   "final_pct": 51.57,
+   "final_margin": 10152,
+   "now_r1_pct": 50.24,
+   "now_final_pct": 52.98
+  },
+  "actual_r1_pct": 48.4,
+  "actual_final_pct": 51.22
+ },
+ "y2026": {
+  "A": {
+   "abs_share_2024": 23.57,
+   "final_total": 256499,
+   "rows": [
+    {
+     "type": "Election Day",
+     "counted": 145938,
+     "final": 145938,
+     "remaining": 0,
+     "rates_from": "Election Day",
+     "begich_r1_pct": 53.5,
+     "begich_final_pct": 57.8
+    },
+    {
+     "type": "Early Voting",
+     "counted": 48292,
+     "final": 48292,
+     "remaining": 0,
+     "rates_from": "Early Voting",
+     "begich_r1_pct": 42.1,
+     "begich_final_pct": 44.3
+    },
+    {
+     "type": "Judicial-split",
+     "counted": 1820,
+     "final": 1820,
+     "remaining": 0,
+     "rates_from": "Judicial-split",
+     "begich_r1_pct": 47.3,
+     "begich_final_pct": 49.4
+    },
+    {
+     "type": "Absentee",
+     "counted": 8350,
+     "final": 52420,
+     "remaining": 44070,
+     "rates_from": "Absentee",
+     "begich_r1_pct": 42.7,
+     "begich_final_pct": 45.9
+    },
+    {
+     "type": "Question",
+     "counted": 0,
+     "final": 7724,
+     "remaining": 7724,
+     "rates_from": "all counted so far",
+     "begich_r1_pct": 50.3,
+     "begich_final_pct": 54.0
+    },
+    {
+     "type": "Overseas",
+     "counted": 130,
+     "final": 304,
+     "remaining": 174,
+     "rates_from": "Overseas",
+     "begich_r1_pct": 3.9,
+     "begich_final_pct": 9.4
+    }
+   ],
+   "r1_pct": 48.93,
+   "final_pct": 52.58,
+   "final_margin": 12522,
+   "now_r1_pct": 50.26,
+   "now_final_pct": 53.98
+  },
+  "B": {
+   "abs_share_2024": 23.57,
+   "final_total": 300944,
+   "rows": [
+    {
+     "type": "Election Day",
+     "counted": 145938,
+     "final": 156872,
+     "remaining": 10934,
+     "rates_from": "Election Day",
+     "begich_r1_pct": 53.5,
+     "begich_final_pct": 57.8
+    },
+    {
+     "type": "Early Voting",
+     "counted": 48292,
+     "final": 68832,
+     "remaining": 20540,
+     "rates_from": "Early Voting",
+     "begich_r1_pct": 42.1,
+     "begich_final_pct": 44.3
+    },
+    {
+     "type": "Judicial-split",
+     "counted": 1820,
+     "final": 4317,
+     "remaining": 2497,
+     "rates_from": "Judicial-split",
+     "begich_r1_pct": 47.3,
+     "begich_final_pct": 49.4
+    },
+    {
+     "type": "Absentee",
+     "counted": 8350,
+     "final": 61504,
+     "remaining": 53154,
+     "rates_from": "Absentee",
+     "begich_r1_pct": 42.7,
+     "begich_final_pct": 45.9
+    },
+    {
+     "type": "Question",
+     "counted": 0,
+     "final": 9063,
+     "remaining": 9063,
+     "rates_from": "all counted so far",
+     "begich_r1_pct": 50.3,
+     "begich_final_pct": 54.0
+    },
+    {
+     "type": "Overseas",
+     "counted": 130,
+     "final": 357,
+     "remaining": 227,
+     "rates_from": "Overseas",
+     "begich_r1_pct": 3.9,
+     "begich_final_pct": 9.4
+    }
+   ],
+   "r1_pct": 48.42,
+   "final_pct": 51.97,
+   "final_margin": 11238,
+   "now_r1_pct": 50.26,
+   "now_final_pct": 53.98
+  },
+  "opponent": "Hill"
+ }
+}

@@ -1,0 +1,558 @@
+{
+ "ranked_bloc": [
+  {
+   "group": "Statewide",
+   "ballots": 261464,
+   "peltola": 128544,
+   "palin_begich": 132920,
+   "gara_walker": 118005,
+   "dunleavy_pierce": 143459,
+   "house_margin": -1.67,
+   "governor_margin": -9.74,
+   "premium": 8.06
+  },
+  {
+   "group": "Everywhere else",
+   "ballots": 248290,
+   "peltola": 118792,
+   "palin_begich": 129498,
+   "gara_walker": 111111,
+   "dunleavy_pierce": 137179,
+   "house_margin": -4.31,
+   "governor_margin": -10.5,
+   "premium": 6.19
+  },
+  {
+   "group": "Rural HD37-40",
+   "ballots": 13174,
+   "peltola": 9752,
+   "palin_begich": 3422,
+   "gara_walker": 6894,
+   "dunleavy_pierce": 6280,
+   "house_margin": 48.05,
+   "governor_margin": 4.66,
+   "premium": 43.39
+  }
+ ],
+ "first_choice": [
+  {
+   "group": "Statewide",
+   "ballots": 255300,
+   "peltola": 126952,
+   "palin_begich": 128348,
+   "gara_walker": 115888,
+   "dunleavy_pierce": 139412,
+   "house_margin": -0.55,
+   "governor_margin": -9.21,
+   "premium": 8.67
+  },
+  {
+   "group": "Everywhere else",
+   "ballots": 242435,
+   "peltola": 117347,
+   "palin_begich": 125088,
+   "gara_walker": 109141,
+   "dunleavy_pierce": 133294,
+   "house_margin": -3.19,
+   "governor_margin": -9.96,
+   "premium": 6.77
+  },
+  {
+   "group": "Rural HD37-40",
+   "ballots": 12865,
+   "peltola": 9605,
+   "palin_begich": 3260,
+   "gara_walker": 6747,
+   "dunleavy_pierce": 6118,
+   "house_margin": 49.32,
+   "governor_margin": 4.89,
+   "premium": 44.43
+  }
+ ],
+ "by_district": [
+  {
+   "group": 1,
+   "ballots": 6651,
+   "peltola": 2953,
+   "palin_begich": 3698,
+   "gara_walker": 2847,
+   "dunleavy_pierce": 3804,
+   "house_margin": -11.2,
+   "governor_margin": -14.39,
+   "premium": 3.19
+  },
+  {
+   "group": 2,
+   "ballots": 7393,
+   "peltola": 4337,
+   "palin_begich": 3056,
+   "gara_walker": 4280,
+   "dunleavy_pierce": 3113,
+   "house_margin": 17.33,
+   "governor_margin": 15.79,
+   "premium": 1.54
+  },
+  {
+   "group": 3,
+   "ballots": 8691,
+   "peltola": 5504,
+   "palin_begich": 3187,
+   "gara_walker": 5487,
+   "dunleavy_pierce": 3204,
+   "house_margin": 26.66,
+   "governor_margin": 26.27,
+   "premium": 0.39
+  },
+  {
+   "group": 4,
+   "ballots": 7588,
+   "peltola": 5757,
+   "palin_begich": 1831,
+   "gara_walker": 5618,
+   "dunleavy_pierce": 1970,
+   "house_margin": 51.74,
+   "governor_margin": 48.08,
+   "premium": 3.66
+  },
+  {
+   "group": 5,
+   "ballots": 5792,
+   "peltola": 2973,
+   "palin_begich": 2819,
+   "gara_walker": 2947,
+   "dunleavy_pierce": 2845,
+   "house_margin": 2.66,
+   "governor_margin": 1.76,
+   "premium": 0.9
+  },
+  {
+   "group": 6,
+   "ballots": 9668,
+   "peltola": 4535,
+   "palin_begich": 5133,
+   "gara_walker": 4356,
+   "dunleavy_pierce": 5312,
+   "house_margin": -6.19,
+   "governor_margin": -9.89,
+   "premium": 3.7
+  },
+  {
+   "group": 7,
+   "ballots": 7337,
+   "peltola": 2313,
+   "palin_begich": 5024,
+   "gara_walker": 2070,
+   "dunleavy_pierce": 5267,
+   "house_margin": -36.95,
+   "governor_margin": -43.57,
+   "premium": 6.62
+  },
+  {
+   "group": 8,
+   "ballots": 8587,
+   "peltola": 2429,
+   "palin_begich": 6158,
+   "gara_walker": 2213,
+   "dunleavy_pierce": 6374,
+   "house_margin": -43.43,
+   "governor_margin": -48.46,
+   "premium": 5.03
+  },
+  {
+   "group": 9,
+   "ballots": 10130,
+   "peltola": 5358,
+   "palin_begich": 4772,
+   "gara_walker": 5125,
+   "dunleavy_pierce": 5005,
+   "house_margin": 5.78,
+   "governor_margin": 1.18,
+   "premium": 4.6
+  },
+  {
+   "group": 10,
+   "ballots": 7031,
+   "peltola": 3621,
+   "palin_begich": 3410,
+   "gara_walker": 3316,
+   "dunleavy_pierce": 3715,
+   "house_margin": 3.0,
+   "governor_margin": -5.67,
+   "premium": 8.68
+  },
+  {
+   "group": 11,
+   "ballots": 8112,
+   "peltola": 4130,
+   "palin_begich": 3982,
+   "gara_walker": 3769,
+   "dunleavy_pierce": 4343,
+   "house_margin": 1.82,
+   "governor_margin": -7.08,
+   "premium": 8.9
+  },
+  {
+   "group": 12,
+   "ballots": 6683,
+   "peltola": 3819,
+   "palin_begich": 2864,
+   "gara_walker": 3427,
+   "dunleavy_pierce": 3256,
+   "house_margin": 14.29,
+   "governor_margin": 2.56,
+   "premium": 11.73
+  },
+  {
+   "group": 13,
+   "ballots": 5670,
+   "peltola": 3074,
+   "palin_begich": 2596,
+   "gara_walker": 2827,
+   "dunleavy_pierce": 2843,
+   "house_margin": 8.43,
+   "governor_margin": -0.28,
+   "premium": 8.71
+  },
+  {
+   "group": 14,
+   "ballots": 6040,
+   "peltola": 3967,
+   "palin_begich": 2073,
+   "gara_walker": 3755,
+   "dunleavy_pierce": 2285,
+   "house_margin": 31.36,
+   "governor_margin": 24.34,
+   "premium": 7.02
+  },
+  {
+   "group": 15,
+   "ballots": 7612,
+   "peltola": 4032,
+   "palin_begich": 3580,
+   "gara_walker": 3710,
+   "dunleavy_pierce": 3902,
+   "house_margin": 5.94,
+   "governor_margin": -2.52,
+   "premium": 8.46
+  },
+  {
+   "group": 16,
+   "ballots": 7957,
+   "peltola": 5020,
+   "palin_begich": 2937,
+   "gara_walker": 4761,
+   "dunleavy_pierce": 3196,
+   "house_margin": 26.18,
+   "governor_margin": 19.67,
+   "premium": 6.51
+  },
+  {
+   "group": 17,
+   "ballots": 6257,
+   "peltola": 4434,
+   "palin_begich": 1823,
+   "gara_walker": 4337,
+   "dunleavy_pierce": 1920,
+   "house_margin": 41.73,
+   "governor_margin": 38.63,
+   "premium": 3.1
+  },
+  {
+   "group": 18,
+   "ballots": 2248,
+   "peltola": 1252,
+   "palin_begich": 996,
+   "gara_walker": 1163,
+   "dunleavy_pierce": 1085,
+   "house_margin": 11.39,
+   "governor_margin": 3.47,
+   "premium": 7.92
+  },
+  {
+   "group": 19,
+   "ballots": 3645,
+   "peltola": 2448,
+   "palin_begich": 1197,
+   "gara_walker": 2195,
+   "dunleavy_pierce": 1450,
+   "house_margin": 34.32,
+   "governor_margin": 20.44,
+   "premium": 13.88
+  },
+  {
+   "group": 20,
+   "ballots": 5385,
+   "peltola": 3365,
+   "palin_begich": 2020,
+   "gara_walker": 3109,
+   "dunleavy_pierce": 2276,
+   "house_margin": 24.98,
+   "governor_margin": 15.47,
+   "premium": 9.51
+  },
+  {
+   "group": 21,
+   "ballots": 7140,
+   "peltola": 3994,
+   "palin_begich": 3146,
+   "gara_walker": 3700,
+   "dunleavy_pierce": 3440,
+   "house_margin": 11.88,
+   "governor_margin": 3.64,
+   "premium": 8.24
+  },
+  {
+   "group": 22,
+   "ballots": 3905,
+   "peltola": 2156,
+   "palin_begich": 1749,
+   "gara_walker": 1934,
+   "dunleavy_pierce": 1971,
+   "house_margin": 10.42,
+   "governor_margin": -0.95,
+   "premium": 11.37
+  },
+  {
+   "group": 23,
+   "ballots": 8224,
+   "peltola": 3550,
+   "palin_begich": 4674,
+   "gara_walker": 3205,
+   "dunleavy_pierce": 5019,
+   "house_margin": -13.67,
+   "governor_margin": -22.06,
+   "premium": 8.39
+  },
+  {
+   "group": 24,
+   "ballots": 7875,
+   "peltola": 2950,
+   "palin_begich": 4925,
+   "gara_walker": 2670,
+   "dunleavy_pierce": 5205,
+   "house_margin": -25.08,
+   "governor_margin": -32.19,
+   "premium": 7.11
+  },
+  {
+   "group": 25,
+   "ballots": 8217,
+   "peltola": 2871,
+   "palin_begich": 5346,
+   "gara_walker": 2579,
+   "dunleavy_pierce": 5638,
+   "house_margin": -30.12,
+   "governor_margin": -37.23,
+   "premium": 7.11
+  },
+  {
+   "group": 26,
+   "ballots": 7073,
+   "peltola": 1773,
+   "palin_begich": 5300,
+   "gara_walker": 1495,
+   "dunleavy_pierce": 5578,
+   "house_margin": -49.87,
+   "governor_margin": -57.73,
+   "premium": 7.86
+  },
+  {
+   "group": 27,
+   "ballots": 6556,
+   "peltola": 1631,
+   "palin_begich": 4925,
+   "gara_walker": 1427,
+   "dunleavy_pierce": 5129,
+   "house_margin": -50.24,
+   "governor_margin": -56.47,
+   "premium": 6.22
+  },
+  {
+   "group": 28,
+   "ballots": 6962,
+   "peltola": 2008,
+   "palin_begich": 4954,
+   "gara_walker": 1703,
+   "dunleavy_pierce": 5259,
+   "house_margin": -42.32,
+   "governor_margin": -51.08,
+   "premium": 8.76
+  },
+  {
+   "group": 29,
+   "ballots": 8051,
+   "peltola": 2518,
+   "palin_begich": 5533,
+   "gara_walker": 2392,
+   "dunleavy_pierce": 5659,
+   "house_margin": -37.45,
+   "governor_margin": -40.58,
+   "premium": 3.13
+  },
+  {
+   "group": 30,
+   "ballots": 7944,
+   "peltola": 2565,
+   "palin_begich": 5379,
+   "gara_walker": 2283,
+   "dunleavy_pierce": 5661,
+   "house_margin": -35.42,
+   "governor_margin": -42.52,
+   "premium": 7.1
+  },
+  {
+   "group": 31,
+   "ballots": 5235,
+   "peltola": 2817,
+   "palin_begich": 2418,
+   "gara_walker": 2671,
+   "dunleavy_pierce": 2564,
+   "house_margin": 7.62,
+   "governor_margin": 2.04,
+   "premium": 5.58
+  },
+  {
+   "group": 32,
+   "ballots": 3348,
+   "peltola": 1377,
+   "palin_begich": 1971,
+   "gara_walker": 1288,
+   "dunleavy_pierce": 2060,
+   "house_margin": -17.74,
+   "governor_margin": -23.06,
+   "premium": 5.32
+  },
+  {
+   "group": 33,
+   "ballots": 6147,
+   "peltola": 1596,
+   "palin_begich": 4551,
+   "gara_walker": 1483,
+   "dunleavy_pierce": 4664,
+   "house_margin": -48.07,
+   "governor_margin": -51.75,
+   "premium": 3.68
+  },
+  {
+   "group": 34,
+   "ballots": 7587,
+   "peltola": 3442,
+   "palin_begich": 4145,
+   "gara_walker": 3379,
+   "dunleavy_pierce": 4208,
+   "house_margin": -9.27,
+   "governor_margin": -10.93,
+   "premium": 1.66
+  },
+  {
+   "group": 35,
+   "ballots": 7791,
+   "peltola": 4571,
+   "palin_begich": 3220,
+   "gara_walker": 4492,
+   "dunleavy_pierce": 3299,
+   "house_margin": 17.34,
+   "governor_margin": 15.31,
+   "premium": 2.03
+  },
+  {
+   "group": 36,
+   "ballots": 7758,
+   "peltola": 3652,
+   "palin_begich": 4106,
+   "gara_walker": 3098,
+   "dunleavy_pierce": 4660,
+   "house_margin": -5.85,
+   "governor_margin": -20.13,
+   "premium": 14.28
+  },
+  {
+   "group": 37,
+   "ballots": 3474,
+   "peltola": 2154,
+   "palin_begich": 1320,
+   "gara_walker": 1781,
+   "dunleavy_pierce": 1693,
+   "house_margin": 24.01,
+   "governor_margin": 2.53,
+   "premium": 21.47
+  },
+  {
+   "group": 38,
+   "ballots": 3609,
+   "peltola": 3027,
+   "palin_begich": 582,
+   "gara_walker": 1996,
+   "dunleavy_pierce": 1613,
+   "house_margin": 67.75,
+   "governor_margin": 10.61,
+   "premium": 57.13
+  },
+  {
+   "group": 39,
+   "ballots": 3698,
+   "peltola": 2899,
+   "palin_begich": 799,
+   "gara_walker": 1922,
+   "dunleavy_pierce": 1776,
+   "house_margin": 56.79,
+   "governor_margin": 3.95,
+   "premium": 52.84
+  },
+  {
+   "group": 40,
+   "ballots": 2393,
+   "peltola": 1672,
+   "palin_begich": 721,
+   "gara_walker": 1195,
+   "dunleavy_pierce": 1198,
+   "house_margin": 39.74,
+   "governor_margin": -0.13,
+   "premium": 39.87
+  }
+ ],
+ "c4": {
+  "head_to_head": {
+   "ballots": 98441,
+   "legislative_margin": -0.36,
+   "house_margin": 14.7,
+   "governor_margin": 4.03,
+   "gap": 10.68,
+   "house_pair": 15.06,
+   "governor_pair": 4.39,
+   "r_leg": {
+    "n": 49399,
+    "to_house_D": 9576,
+    "to_gov_D": 6628
+   },
+   "d_leg": {
+    "n": 49042,
+    "to_house_R": 2161,
+    "to_gov_R": 4468
+   },
+   "d_part": 5.99,
+   "r_part": 4.69
+  },
+  "blocs": {
+   "ballots": 105999,
+   "legislative_margin": -6.72,
+   "house_margin": 4.31,
+   "governor_margin": -3.75,
+   "gap": 8.05,
+   "house_pair": 11.02,
+   "governor_pair": 2.97,
+   "r_leg": {
+    "n": 56560,
+    "to_house_D": 8602,
+    "to_gov_D": 6490
+   },
+   "d_leg": {
+    "n": 49439,
+    "to_house_R": 2759,
+    "to_gov_R": 4915
+   },
+   "d_part": 3.98,
+   "r_part": 4.07
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+  "tabulatorVersion": "2.1.0",
+  "outputSettings": {
+    "contestName": "Alaska governor 2022",
+    "outputDirectory": "/opt/github/election-watching/rctab-output/alaska-2022-governor",
+    "contestDate": "",
+    "contestJurisdiction": "",
+    "contestOffice": "",
+    "tabulateByBatch": false,
+    "tabulateByPrecinct": false,
+    "generateCdfJson": false
+  },
+  "cvrFileSources": [
+    {
+      "filePath": "../data/alaska-2022",
+      "contestId": "5",
+      "firstVoteColumnIndex": "",
+      "firstVoteRowIndex": "",
+      "idColumnIndex": "",
+      "batchColumnIndex": "",
+      "precinctColumnIndex": "",
+      "overvoteDelimiter": "",
+      "provider": "dominion",
+      "overvoteLabel": "",
+      "undeclaredWriteInLabel": "",
+      "treatBlankAsUndeclaredWriteIn": false
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Dunleavy/Dahlstrom",
+      "excluded": false,
+      "aliases": [
+        "267"
+      ]
+    },
+    {
+      "name": "Gara/Cook",
+      "excluded": false,
+      "aliases": [
+        "268"
+      ]
+    },
+    {
+      "name": "Pierce/Grunwald",
+      "excluded": false,
+      "aliases": [
+        "269"
+      ]
+    },
+    {
+      "name": "Walker/Drygas",
+      "excluded": false,
+      "aliases": [
+        "270"
+      ]
+    },
+    {
+      "name": "Write-in",
+      "excluded": false,
+      "aliases": [
+        "235"
+      ]
+    }
+  ],
+  "rules": {
+    "tiebreakMode": "random",
+    "overvoteRule": "exhaustImmediately",
+    "winnerElectionMode": "singleWinnerMajority",
+    "randomSeed": "5656",
+    "numberOfWinners": "1",
+    "multiSeatBottomsUpPercentageThreshold": "",
+    "decimalPlacesForVoteArithmetic": "4",
+    "maxSkippedRanksAllowed": "1",
+    "maxRankingsAllowed": "max",
+    "nonIntegerWinningThreshold": false,
+    "doesFirstRoundDetermineThreshold": false,
+    "hareQuota": false,
+    "batchElimination": false,
+    "cutoffElimination": false,
+    "continueUntilTwoCandidatesRemain": false,
+    "stopTabulationEarlyAfterRound": "",
+    "exhaustOnDuplicateCandidate": false,
+    "rulesDescription": ""
+  }
+}

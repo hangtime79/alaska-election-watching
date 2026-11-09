@@ -1,0 +1,26 @@
+# Raw CVR exports are 35-270 MB; keep them out of git
+*_rctab_cvr*.csv
+*:com.dropbox.attrs
+*:Zone.Identifier
+__pycache__/
+by_district.csv
+by_location.csv
+ballot-flow.html
+crossover_2026.csv
+
+# RCTab app (downloaded release) and its run output
+rctab/
+rctab-output/
+rcv_*.log*
+legislative_2026.csv
+legislative_2022.csv
+legislative_2024.csv
+external/
+downloads/
+
+# Internal working notes and deliberation (kept local, never pushed)
+internal/
+CLAUDE.md
+page/candidate_profiles.html
+# Local link to the raw election downloads (see README)
+data

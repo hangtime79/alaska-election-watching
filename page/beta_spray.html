@@ -1,0 +1,241 @@
+<title>Alaska Beta Spray</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Outfit:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap">
+<style>
+/* Layout: one wide strip chart (each estimate its own row, sorted), controls above, table below. */
+:root {
+  --bg: #fcfcfb; --panel: #f3f3f0; --fg: #16161a; --fg2: #52514e; --muted: #8a8983;
+  --grid: #e3e2dd; --rule: #c9c8c1;
+  --s-real: #eb6834; --s-down: #2a78d6; --s-pres: #1baf7a;
+  --ref: #16161a;
+  --f-title: "Zilla Slab", Georgia, serif;
+  --f-body: "Outfit", system-ui, sans-serif;
+  --f-mono: "Space Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #1a1a19; --panel: #232322; --fg: #f0efec; --fg2: #c3c2b7; --muted: #8f8e86;
+  --grid: #2e2e2c; --rule: #4a4a46;
+  --s-real: #d95926; --s-down: #3987e5; --s-pres: #199e70; --ref: #f0efec; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #1a1a19; --panel: #232322; --fg: #f0efec; --fg2: #c3c2b7; --muted: #8f8e86;
+  --grid: #2e2e2c; --rule: #4a4a46;
+  --s-real: #d95926; --s-down: #3987e5; --s-pres: #199e70; --ref: #f0efec; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 48px; }
+main { max-width: 1100px; margin: 0 auto; display: grid; gap: 20px; }
+h1 { font-family: var(--f-title); font-weight: 700; font-size: 2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+.lede { margin: 6px 0 0; color: var(--fg2); max-width: 70ch; }
+.mono { font-family: var(--f-mono); }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.label { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.chips, .seg { display: flex; flex-wrap: wrap; gap: 6px; }
+button.chip, button.segb { font: 500 13px var(--f-body); color: var(--fg); background: var(--panel); border: 1px solid var(--rule);
+  border-radius: 999px; padding: 5px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; }
+button.chip[aria-pressed="false"] { opacity: .45; }
+button.segb[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+button:focus-visible { outline: 2px solid var(--s-down); outline-offset: 2px; }
+.chip svg { width: 11px; height: 11px; }
+.chartwrap { overflow-x: auto; background: var(--panel); border-radius: 10px; padding: 8px 4px; }
+#chart { display: block; min-width: 620px; width: 100%; }
+#chart text { font-family: var(--f-body); fill: var(--fg); }
+#chart .tick { font-family: var(--f-mono); font-size: 11px; fill: var(--muted); }
+#chart .rowlab { font-size: 12.5px; fill: var(--fg); }
+#chart .vallab { font-family: var(--f-mono); font-size: 11px; fill: var(--fg2); }
+#chart .reflab { font-family: var(--f-mono); font-size: 10.5px; fill: var(--fg2); }
+#chart .row:hover .rowlab, #chart .row.hot .rowlab { font-weight: 600; }
+#chart .row.hot .band { fill: var(--grid); }
+.tip { position: fixed; pointer-events: none; background: var(--bg); color: var(--fg); border: 1px solid var(--rule);
+  border-radius: 8px; padding: 10px 12px; font-size: 13px; max-width: 300px; box-shadow: 0 6px 20px rgba(0,0,0,.18); z-index: 20; }
+.tip b { font-family: var(--f-mono); font-size: 18px; }
+.tip .src { font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
+.reading { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.reading div { border-top: 3px solid var(--c); padding-top: 8px; min-width: 0; }
+.reading h3 { font-family: var(--f-title); font-size: 1.1rem; margin: 0 0 4px; }
+.reading p { margin: 0; color: var(--fg2); font-size: 14px; }
+details summary { cursor: pointer; font-weight: 600; }
+.tablewrap { overflow-x: auto; margin-top: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+td.num { font-family: var(--f-mono); text-align: right; white-space: nowrap; }
+.notes { color: var(--fg2); font-size: 13.5px; max-width: 80ch; }
+@media (prefers-reduced-motion: no-preference) { #chart .mark { transition: transform .35s ease; } }
+</style>
+
+<main>
+  <header>
+    <h1>Every Alaska beta, side by side</h1>
+    <p class="lede">Beta is how many points Alaska's margin moves for each point of national wave. Each row is one estimate from this project's scripts. Hover or tap a row for its source. Bars show the 95% range where a fit gave one.</p>
+  </header>
+
+  <div class="controls">
+    <span class="label">Show</span>
+    <div class="chips" id="chips"></div>
+    <span class="label">Order</span>
+    <div class="seg" role="group" aria-label="Row order">
+      <button class="segb" id="ord-val" aria-pressed="true">By value</button>
+      <button class="segb" id="ord-grp" aria-pressed="false">By group</button>
+    </div>
+  </div>
+
+  <div class="chartwrap"><svg id="chart" role="img" aria-label="Dot plot of Alaska beta estimates from −0.36 to 1.17, coloured by what each measures"></svg></div>
+
+  <section class="reading">
+    <div style="--c: var(--s-real)"><h3>What 2026 delivered: 0.0–0.4</h3><p>Each 2026 Alaska race against its previous race, plus 2018 nationally. The wave reached downballot races weakly this year, as it did in 2018.</p></div>
+    <div style="--c: var(--s-down)"><h3>Long-run downballot: 0.5–0.8</h3><p>Pooled across 50 states, no cap: 0.76. The Alaska-only fits sit lower because of the 25-point cap and no pooling.</p></div>
+    <div style="--c: var(--s-pres)"><h3>Presidential: 0.9–1.2</h3><p>Alaska's presidential vote is elastic, which is what FiveThirtyEight's score measures. Downballot races move less than this in every state.</p></div>
+  </section>
+
+  <details>
+    <summary>Table view</summary>
+    <div class="tablewrap"><table id="tbl"><thead><tr><th>Estimate</th><th>Group</th><th>Beta</th><th>95% range</th><th>Source</th></tr></thead><tbody></tbody></table></div>
+  </details>
+
+  <p class="notes">Sign convention: margins are Democratic minus Republican. National wave is the national House margin (2026 projected at +13). "With drift" subtracts Alaska's lean drift of 4.74 per 4 years before reading off beta. Office rows are the pooled national midterm mean for that office plus Alaska's deviation of +0.066. Reference lines: 0.76 is the recommended long-run downballot value; 0.93 is what the page's model rows use now.</p>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const G = {
+  real: { name: "What 2026 delivered", color: "--s-real", shape: "tri" },
+  down: { name: "Long-run downballot", color: "--s-down", shape: "circle" },
+  pres: { name: "Presidential", color: "--s-pres", shape: "square" },
+};
+const D = [
+  ["Governor 2026 vs 2022, with drift", "real", -0.36, null, null, "Each 2026 race against its previous race (state_beta.py)"],
+  ["Governor 2026 vs 2022, no drift", "real", -0.06, null, null, "Each 2026 race against its previous race"],
+  ["Governors nationally, 2018", "real", 0.11, null, null, "Held-out implied 2018 beta, all states (state_beta.py)"],
+  ["Senate 2026 vs 2020, with drift", "real", 0.14, null, null, "Each 2026 race against its previous race"],
+  ["House 2026 vs 2024, with drift", "real", 0.23, null, null, "Each 2026 race against its previous race"],
+  ["House 2026 vs 2024, no drift", "real", 0.39, null, null, "Each 2026 race against its previous race"],
+  ["Senate nationally, 2018", "real", 0.43, null, null, "Held-out implied 2018 beta, all states (state_beta.py)"],
+  ["Senate 2026 vs 2020, no drift", "real", 0.86, null, null, "Each 2026 race against its previous race"],
+
+  ["Alaska-only panel, 2026 rows removed", "down", 0.10, 0.06, 0.14, "panel.py refit without 2026 (range across lambdas)"],
+  ["Alaska-only panel, best fit (cap 25)", "down", 0.15, null, null, "panel.py, 20 races 2006–2026"],
+  ["Holt-Winters one-step error", "down", 0.225, 0.20, 0.25, "holt_winters.py --scan, best beta across smoothing weights"],
+  ["Pooled, cap 25", "down", 0.28, -0.02, 0.59, "state_beta.py --cap 25"],
+  ["Holt-Winters, level weight 1.0", "down", 0.40, null, null, "holt_winters.py --scan"],
+  ["Pooled, cap 40", "down", 0.53, 0.21, 0.86, "state_beta.py --cap 40"],
+  ["Governor office, midterm", "down", 0.60, null, null, "midterm split: 0.530 + 0.066"],
+  ["Pooled, no cap (recommended)", "down", 0.76, 0.43, 1.09, "state_beta.py, tau 0.2 chosen by leave-one-cycle-out"],
+  ["Pooled, candidate lambda 4", "down", 0.81, 0.35, 1.27, "state_beta.py --lamc 4, tau 0.3"],
+  ["Senate office, midterm", "down", 0.81, null, null, "midterm split: 0.740 + 0.066"],
+  ["Pooled, tau 0.3", "down", 0.82, 0.40, 1.23, "state_beta.py, tau 0.3"],
+  ["At-large House office, midterm", "down", 1.01, null, null, "midterm split: 0.939 + 0.066 (7 states, wide)"],
+
+  ["Panel, presidential races only", "pres", 0.45, null, null, "panel.py, nominee effects included"],
+  ["Presidential 2000–2024", "pres", 0.51, null, null, "beta.py, Palin year included"],
+  ["Presidential 1976–2024", "pres", 0.63, null, null, "beta.py, fits badly (realignment)"],
+  ["Pooled presidential, cap 25", "pres", 0.81, null, null, "state_beta.py --cap 25"],
+  ["Presidential 2012–2024", "pres", 0.88, null, null, "beta.py"],
+  ["Pooled presidential, cap 40", "pres", 0.92, null, null, "state_beta.py --cap 40"],
+  ["Presidential 2000–2024 without 2008", "pres", 0.93, null, null, "beta.py; the page's current value"],
+  ["Pooled presidential, no cap", "pres", 1.10, null, null, "state_beta.py, tau 0.2"],
+  ["Pooled presidential, lambda 4", "pres", 1.11, null, null, "state_beta.py --lamc 4"],
+  ["FiveThirtyEight elasticity", "pres", 1.16, 1.07, 1.22, "FTE 2018 score 1.16; 1.07–1.22 across their editions"],
+  ["Pooled presidential, tau 0.3", "pres", 1.17, null, null, "state_beta.py, tau 0.3"],
+].map(([label, g, v, lo, hi, src], i) => ({ id: i, label, g, v, lo, hi, src }));
+
+const on = { real: true, down: true, pres: true };
+let order = "val";
+const svg = document.getElementById("chart");
+const tip = document.getElementById("tip");
+const NS = "http://www.w3.org/2000/svg";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const fmt = x => (x < 0 ? "−" : "") + Math.abs(x).toFixed(2);
+
+function shape(g, cx, cy, r, fill, parent) {
+  const s = G[g].shape, ring = css("--panel");
+  if (s === "circle") return el("circle", { cx, cy, r, fill, stroke: ring, "stroke-width": 2 }, parent);
+  if (s === "square") return el("rect", { x: cx - r * .9, y: cy - r * .9, width: r * 1.8, height: r * 1.8, rx: 1.5, fill, stroke: ring, "stroke-width": 2 }, parent);
+  return el("path", { d: `M${cx},${cy - r * 1.1} L${cx + r},${cy + r * .75} L${cx - r},${cy + r * .75} Z`, fill, stroke: ring, "stroke-width": 2, "stroke-linejoin": "round" }, parent);
+}
+
+function chips() {
+  const box = document.getElementById("chips");
+  for (const k in G) {
+    const b = document.createElement("button");
+    b.className = "chip"; b.id = "chip-" + k; b.setAttribute("aria-pressed", "true");
+    const s = document.createElementNS(NS, "svg"); s.setAttribute("viewBox", "0 0 12 12");
+    shape(k, 6, 6.3, 5, `var(${G[k].color})`, s).setAttribute("stroke", "none");
+    b.append(s, G[k].name);
+    b.onclick = () => { on[k] = !on[k]; if (!Object.values(on).some(Boolean)) on[k] = true; b.setAttribute("aria-pressed", on[k]); draw(); };
+    box.appendChild(b);
+  }
+}
+
+function draw() {
+  const rows = D.filter(d => on[d.g]);
+  const gi = { real: 0, down: 1, pres: 2 };
+  rows.sort(order === "val" ? (a, b) => a.v - b.v || a.id - b.id : (a, b) => gi[a.g] - gi[b.g] || a.v - b.v);
+  const W = Math.max(620, svg.clientWidth || 900);
+  const labW = W < 760 ? 220 : 270, padR = 56, top = 40, rowH = 22, bottom = 34;
+  const H = top + rows.length * rowH + bottom;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("height", H);
+  svg.replaceChildren();
+  const x0 = -0.5, x1 = 1.35, x = v => labW + (v - x0) / (x1 - x0) * (W - labW - padR);
+  // grid + ticks
+  for (let t = -0.4; t <= 1.21; t += 0.2) {
+    const tv = Math.round(t * 10) / 10, X = x(tv);
+    el("line", { x1: X, x2: X, y1: top - 8, y2: H - bottom + 4, stroke: css(tv === 0 ? "--rule" : "--grid"), "stroke-width": tv === 0 ? 1.5 : 1 }, svg);
+    const tx = el("text", { x: X, y: H - bottom + 20, "text-anchor": "middle", class: "tick" }, svg); tx.textContent = tv.toFixed(1).replace("-", "−");
+  }
+  // reference lines
+  [[0.76, "0.76 recommended"], [0.93, "0.93 on page now"]].forEach(([v, s], i) => {
+    el("line", { x1: x(v), x2: x(v), y1: top - 10, y2: H - bottom + 4, stroke: css("--ref"), "stroke-width": 1.2, "stroke-dasharray": i ? "2 3" : "6 4", opacity: .7 }, svg);
+    const t = el("text", { x: x(v) + (i ? 4 : -4), y: top - 16, "text-anchor": i ? "start" : "end", class: "reflab" }, svg); t.textContent = s;
+  });
+  let prevG = null;
+  rows.forEach((d, i) => {
+    const y = top + i * rowH + rowH / 2;
+    if (order === "grp" && d.g !== prevG && prevG !== null) el("line", { x1: 8, x2: W - 8, y1: y - rowH / 2, y2: y - rowH / 2, stroke: css("--rule") }, svg);
+    prevG = d.g;
+    const g = el("g", { class: "row", tabindex: 0, "data-id": d.id }, svg);
+    el("rect", { class: "band", x: 4, y: y - rowH / 2, width: W - 8, height: rowH, fill: "transparent", rx: 4 }, g);
+    const lab = el("text", { x: labW - 12, y: y + 4, "text-anchor": "end", class: "rowlab" }, g); lab.textContent = d.label;
+    const col = css(G[d.g].color);
+    if (d.lo != null) {
+      el("line", { x1: x(d.lo), x2: x(d.hi), y1: y, y2: y, stroke: col, "stroke-width": 2, "stroke-linecap": "round", opacity: .55 }, g);
+      [d.lo, d.hi].forEach(e => el("line", { x1: x(e), x2: x(e), y1: y - 4, y2: y + 4, stroke: col, "stroke-width": 2, opacity: .55 }, g));
+    }
+    shape(d.g, x(d.v), y, 5.5, col, g).setAttribute("class", "mark");
+    const right = d.hi != null ? x(d.hi) : x(d.v);
+    const vl = el("text", { x: right + 9, y: y + 4, class: "vallab" }, g); vl.textContent = fmt(d.v);
+    const show = ev => {
+      svg.querySelectorAll(".row.hot").forEach(r => r.classList.remove("hot")); g.classList.add("hot");
+      tip.innerHTML = `<div class="src">${G[d.g].name}</div><div style="font-weight:600;margin:2px 0">${d.label}</div><b>${fmt(d.v)}</b>${d.lo != null ? ` <span class="mono">(${fmt(d.lo)} to ${fmt(d.hi)})</span>` : ""}<div class="src" style="margin-top:6px">${d.src}</div>`;
+      tip.hidden = false;
+      const r = ev.clientX != null && ev.type !== "focus" ? { x: ev.clientX, y: ev.clientY } : (() => { const b = g.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top }; })();
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      tip.style.left = Math.min(window.innerWidth - tw - 12, Math.max(12, r.x + 14)) + "px";
+      tip.style.top = (r.y + th + 20 > window.innerHeight ? r.y - th - 12 : r.y + 16) + "px";
+    };
+    const hide = () => { g.classList.remove("hot"); tip.hidden = true; };
+    g.addEventListener("pointermove", show); g.addEventListener("pointerleave", hide);
+    g.addEventListener("focus", show); g.addEventListener("blur", hide);
+  });
+  const axl = el("text", { x: x(1.35) , y: H - 4, "text-anchor": "end", class: "tick" }, svg); axl.textContent = "beta: points of Alaska margin per point of national wave";
+  table(rows);
+}
+
+function table(rows) {
+  const tb = document.querySelector("#tbl tbody"); tb.replaceChildren();
+  rows.forEach(d => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${d.label}</td><td>${G[d.g].name}</td><td class="num">${fmt(d.v)}</td><td class="num">${d.lo != null ? fmt(d.lo) + " to " + fmt(d.hi) : ""}</td><td>${d.src}</td>`;
+    tb.appendChild(tr);
+  });
+}
+
+document.getElementById("ord-val").onclick = () => { order = "val"; setSeg(); draw(); };
+document.getElementById("ord-grp").onclick = () => { order = "grp"; setSeg(); draw(); };
+function setSeg() { document.getElementById("ord-val").setAttribute("aria-pressed", order === "val"); document.getElementById("ord-grp").setAttribute("aria-pressed", order === "grp"); }
+chips(); draw();
+let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+</script>

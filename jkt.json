@@ -1,0 +1,182 @@
+[
+ {
+  "year": "2014",
+  "area": "old HD35",
+  "race": "JKT / State House",
+  "D": 4630,
+  "R": 3189,
+  "margin": 18.43,
+  "premium": null
+ },
+ {
+  "year": "2014",
+  "area": "old HD35",
+  "race": "Mark Begich / Senate",
+  "D": 4291,
+  "R": 3164,
+  "margin": 15.12,
+  "premium": 3.31
+ },
+ {
+  "year": "2014",
+  "area": "old HD35",
+  "race": "Walker/Mallott / Governor",
+  "D": 4047,
+  "R": 3229,
+  "margin": 11.24,
+  "premium": 7.19
+ },
+ {
+  "year": "2014",
+  "area": "old HD35",
+  "race": "Dunbar / House",
+  "D": 3495,
+  "R": 3834,
+  "margin": -4.63,
+  "premium": 23.06
+ },
+ {
+  "year": "2016",
+  "area": "old HD35",
+  "race": "JKT / State House",
+  "D": 5068,
+  "R": 3486,
+  "margin": 18.49,
+  "premium": null
+ },
+ {
+  "year": "2016",
+  "area": "old HD35",
+  "race": "Clinton / President",
+  "D": 3749,
+  "R": 4105,
+  "margin": -4.53,
+  "premium": 23.02
+ },
+ {
+  "year": "2016",
+  "area": "old HD35",
+  "race": "Lindbeck / House",
+  "D": 3418,
+  "R": 4080,
+  "margin": -8.83,
+  "premium": 27.32
+ },
+ {
+  "year": "2018",
+  "area": "old HD35",
+  "race": "JKT / State House",
+  "D": 4480,
+  "R": 3367,
+  "margin": 14.18,
+  "premium": null
+ },
+ {
+  "year": "2018",
+  "area": "old HD35",
+  "race": "Mark Begich / Governor",
+  "D": 4212,
+  "R": 3355,
+  "margin": 11.33,
+  "premium": 2.85
+ },
+ {
+  "year": "2018",
+  "area": "old HD35",
+  "race": "Galvin / House",
+  "D": 4485,
+  "R": 3514,
+  "margin": 12.14,
+  "premium": 2.04
+ },
+ {
+  "year": "2020",
+  "area": "old HD35",
+  "race": "JKT / State House",
+  "D": 5682,
+  "R": 3972,
+  "margin": 17.71,
+  "premium": null
+ },
+ {
+  "year": "2020",
+  "area": "old HD35",
+  "race": "Biden / President",
+  "D": 5011,
+  "R": 4769,
+  "margin": 2.47,
+  "premium": 15.24
+ },
+ {
+  "year": "2020",
+  "area": "old HD35",
+  "race": "Gross / Senate",
+  "D": 5004,
+  "R": 4388,
+  "margin": 6.56,
+  "premium": 11.15
+ },
+ {
+  "year": "2020",
+  "area": "old HD35",
+  "race": "Galvin / House",
+  "D": 5301,
+  "R": 4623,
+  "margin": 6.83,
+  "premium": 10.88
+ },
+ {
+  "year": "2026",
+  "area": "new HD2",
+  "race": "JKT / Governor",
+  "D": 2694,
+  "R": 1628,
+  "margin": 24.66,
+  "premium": null
+ },
+ {
+  "year": "2026",
+  "area": "new HD2",
+  "race": "Peltola / Senate",
+  "D": 2421,
+  "R": 1696,
+  "margin": 17.61,
+  "premium": 7.05
+ },
+ {
+  "year": "2026",
+  "area": "new HD2",
+  "race": "Hill + Hafner / House",
+  "D": 2397,
+  "R": 1789,
+  "margin": 14.52,
+  "premium": 10.14
+ },
+ {
+  "year": "2026",
+  "area": "Statewide",
+  "race": "JKT / Governor",
+  "D": 103837,
+  "R": 107500,
+  "margin": -1.73,
+  "premium": null
+ },
+ {
+  "year": "2026",
+  "area": "Statewide",
+  "race": "Peltola / Senate",
+  "D": 102962,
+  "R": 102325,
+  "margin": 0.31,
+  "premium": -2.04
+ },
+ {
+  "year": "2026",
+  "area": "Statewide",
+  "race": "Hill + Hafner / House",
+  "D": 101573,
+  "R": 105647,
+  "margin": -1.97,
+  "premium": 0.24
+ }
+]

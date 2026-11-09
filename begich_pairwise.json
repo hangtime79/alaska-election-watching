@@ -1,0 +1,134 @@
+[
+ {
+  "comparison": "2026: Begich against the governor Republicans",
+  "peltola": "nowhere",
+  "region": "Rural HD37-40",
+  "ballots": 3229,
+  "begich_and_comp_D": 179,
+  "opp_and_comp_R": 315,
+  "weighted": -288,
+  "points": -8.92,
+  "signed": 8.92
+ },
+ {
+  "comparison": "2026: Begich against the governor Republicans",
+  "peltola": "nowhere",
+  "region": "Everywhere else",
+  "ballots": 201171,
+  "begich_and_comp_D": 6393,
+  "opp_and_comp_R": 5964,
+  "weighted": 1270,
+  "points": 0.63,
+  "signed": -0.63
+ },
+ {
+  "comparison": "2026: Begich against the governor Republicans",
+  "peltola": "nowhere",
+  "region": "Statewide",
+  "ballots": 204400,
+  "begich_and_comp_D": 6572,
+  "opp_and_comp_R": 6279,
+  "weighted": 982,
+  "points": 0.48,
+  "signed": -0.48
+ },
+ {
+  "comparison": "2026: Begich against Sullivan",
+  "peltola": "comparison side",
+  "region": "Rural HD37-40",
+  "ballots": 3229,
+  "begich_and_comp_D": 226,
+  "opp_and_comp_R": 157,
+  "weighted": 166,
+  "points": 5.14,
+  "signed": -5.14
+ },
+ {
+  "comparison": "2026: Begich against Sullivan",
+  "peltola": "comparison side",
+  "region": "Everywhere else",
+  "ballots": 201301,
+  "begich_and_comp_D": 4184,
+  "opp_and_comp_R": 4026,
+  "weighted": 1250,
+  "points": 0.62,
+  "signed": -0.62
+ },
+ {
+  "comparison": "2026: Begich against Sullivan",
+  "peltola": "comparison side",
+  "region": "Statewide",
+  "ballots": 204530,
+  "begich_and_comp_D": 4410,
+  "opp_and_comp_R": 4183,
+  "weighted": 1416,
+  "points": 0.69,
+  "signed": -0.69
+ },
+ {
+  "comparison": "2024: Begich against Trump",
+  "peltola": "Begich side",
+  "region": "Rural HD37-40",
+  "ballots": 15771,
+  "begich_and_comp_D": 453,
+  "opp_and_comp_R": 2289,
+  "weighted": -4363,
+  "points": -27.66,
+  "signed": 27.66
+ },
+ {
+  "comparison": "2024: Begich against Trump",
+  "peltola": "Begich side",
+  "region": "Everywhere else",
+  "ballots": 320082,
+  "begich_and_comp_D": 2819,
+  "opp_and_comp_R": 15909,
+  "weighted": -33708,
+  "points": -10.53,
+  "signed": 10.53
+ },
+ {
+  "comparison": "2024: Begich against Trump",
+  "peltola": "Begich side",
+  "region": "Statewide",
+  "ballots": 335853,
+  "begich_and_comp_D": 3272,
+  "opp_and_comp_R": 18198,
+  "weighted": -38071,
+  "points": -11.34,
+  "signed": 11.34
+ },
+ {
+  "comparison": "2022: Begich against Dunleavy",
+  "peltola": "Begich side",
+  "region": "Rural HD37-40",
+  "ballots": 13721,
+  "begich_and_comp_D": 482,
+  "opp_and_comp_R": 3428,
+  "weighted": -6575,
+  "points": -47.92,
+  "signed": 47.92
+ },
+ {
+  "comparison": "2022: Begich against Dunleavy",
+  "peltola": "Begich side",
+  "region": "Everywhere else",
+  "ballots": 252972,
+  "begich_and_comp_D": 7845,
+  "opp_and_comp_R": 18099,
+  "weighted": -38434,
+  "points": -15.19,
+  "signed": 15.19
+ },
+ {
+  "comparison": "2022: Begich against Dunleavy",
+  "peltola": "Begich side",
+  "region": "Statewide",
+  "ballots": 266693,
+  "begich_and_comp_D": 8327,
+  "opp_and_comp_R": 21527,
+  "weighted": -45009,
+  "points": -16.88,
+  "signed": 16.88
+ }
+]

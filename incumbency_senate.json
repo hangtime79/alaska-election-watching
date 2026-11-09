@@ -1,0 +1,72 @@
+{
+ "2006-2024 all contested": {
+  "n": 279,
+  "incumbent": 224,
+  "open": 55,
+  "psi": 10.66,
+  "se": 1.99
+ },
+ "2006-2024 last margin within 25": {
+  "n": 196,
+  "incumbent": 141,
+  "open": 55,
+  "psi": 12.17,
+  "se": 2.35
+ },
+ "2006-2024 challenger >= $2M": {
+  "n": 180,
+  "incumbent": 125,
+  "open": 55,
+  "psi": 5.47,
+  "se": 2.22
+ },
+ "2006-2024 challenger >= $5M": {
+  "n": 149,
+  "incumbent": 94,
+  "open": 55,
+  "psi": 4.67,
+  "se": 2.37
+ },
+ "2006-2024 challenger >= half the incumbent": {
+  "n": 139,
+  "incumbent": 84,
+  "open": 55,
+  "psi": 3.62,
+  "se": 2.58
+ },
+ "2014-2024 all contested": {
+  "n": 169,
+  "incumbent": 137,
+  "open": 32,
+  "psi": 9.08,
+  "se": 2.29
+ },
+ "2014-2024 last margin within 25": {
+  "n": 121,
+  "incumbent": 89,
+  "open": 32,
+  "psi": 10.25,
+  "se": 2.72
+ },
+ "2014-2024 challenger >= $2M": {
+  "n": 108,
+  "incumbent": 76,
+  "open": 32,
+  "psi": 5.31,
+  "se": 2.79
+ },
+ "2014-2024 challenger >= $5M": {
+  "n": 90,
+  "incumbent": 58,
+  "open": 32,
+  "psi": 3.32,
+  "se": 2.8
+ },
+ "2014-2024 challenger >= half the incumbent": {
+  "n": 78,
+  "incumbent": 46,
+  "open": 32,
+  "psi": 1.69,
+  "se": 3.35
+ }
+}

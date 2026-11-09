@@ -1,0 +1,43 @@
+{
+ "b3": {
+  "ballots": 80516,
+  "legislative_margin": 2.18,
+  "house_margin": 6.95,
+  "president_margin": -1.35,
+  "premium": 8.29,
+  "r_leg": 39381,
+  "r_leg_peltola": 5004,
+  "r_leg_harris": 3149,
+  "d_leg": 41135,
+  "d_leg_begich": 3085,
+  "d_leg_trump": 4569,
+  "d_part": 4.61,
+  "r_part": 3.69
+ },
+ "c3": {
+  "Trump": {
+   "voters": 45474,
+   "house_Begich": 38707,
+   "house_Peltola": 4708,
+   "house_no_vote": 2059,
+   "leg_same": 37223,
+   "leg_other": 4857,
+   "leg_blank_other": 3394,
+   "two_way_ballots": 40801,
+   "house_same_pct": 89.58,
+   "leg_same_pct": 88.8
+  },
+  "Harris": {
+   "voters": 42598,
+   "house_Peltola": 40702,
+   "house_Begich": 1001,
+   "house_no_vote": 895,
+   "leg_same": 37054,
+   "leg_other": 3242,
+   "leg_blank_other": 2302,
+   "two_way_ballots": 39715,
+   "house_same_pct": 97.7,
+   "leg_same_pct": 92.07
+  }
+ }
+}

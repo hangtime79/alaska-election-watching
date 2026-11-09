@@ -1,0 +1,173 @@
+[
+ {
+  "year": 2022,
+  "race": "House final, Peltola \u2212 Palin",
+  "region": "Clean, all",
+  "ballots": 101128,
+  "race_margin": 16.13,
+  "legislative_margin": -3.0,
+  "pair_effect": 19.13
+ },
+ {
+  "year": 2022,
+  "race": "House final, Peltola \u2212 Palin",
+  "region": "Contested, other",
+  "ballots": 187963,
+  "race_margin": 14.19,
+  "legislative_margin": -6.42,
+  "pair_effect": 20.6
+ },
+ {
+  "year": 2022,
+  "race": "House head to head, Peltola \u2212 Begich",
+  "region": "Clean, all",
+  "ballots": 99209,
+  "race_margin": 14.48,
+  "legislative_margin": -0.69,
+  "pair_effect": 15.18
+ },
+ {
+  "year": 2022,
+  "race": "House head to head, Peltola \u2212 Begich",
+  "region": "Contested, other",
+  "ballots": 183219,
+  "race_margin": 13.44,
+  "legislative_margin": -3.79,
+  "pair_effect": 17.22
+ },
+ {
+  "year": 2022,
+  "race": "Governor head to head, Gara \u2212 Dunleavy",
+  "region": "Clean, all",
+  "ballots": 102300,
+  "race_margin": -11.22,
+  "legislative_margin": -7.13,
+  "pair_effect": -4.09
+ },
+ {
+  "year": 2022,
+  "race": "Governor head to head, Gara \u2212 Dunleavy",
+  "region": "Contested, other",
+  "ballots": 188673,
+  "race_margin": -12.67,
+  "legislative_margin": -10.55,
+  "pair_effect": -2.12
+ },
+ {
+  "year": 2024,
+  "race": "House final, Peltola \u2212 Begich",
+  "region": "Clean, all",
+  "ballots": 81816,
+  "race_margin": 7.11,
+  "legislative_margin": 2.04,
+  "pair_effect": 5.07
+ },
+ {
+  "year": 2024,
+  "race": "House final, Peltola \u2212 Begich",
+  "region": "Contested, other",
+  "ballots": 157040,
+  "race_margin": -1.69,
+  "legislative_margin": -18.59,
+  "pair_effect": 16.9
+ },
+ {
+  "year": 2024,
+  "race": "President, Harris \u2212 Trump",
+  "region": "Clean, all",
+  "ballots": 82376,
+  "race_margin": -2.17,
+  "legislative_margin": 1.76,
+  "pair_effect": -3.92
+ },
+ {
+  "year": 2024,
+  "race": "President, Harris \u2212 Trump",
+  "region": "Contested, other",
+  "ballots": 158142,
+  "race_margin": -10.66,
+  "legislative_margin": -18.89,
+  "pair_effect": 8.23
+ },
+ {
+  "year": 2026,
+  "race": "House final, Hill \u2212 Begich",
+  "region": "Clean, all",
+  "ballots": 62834,
+  "race_margin": -4.83,
+  "legislative_margin": -6.96,
+  "pair_effect": 2.13
+ },
+ {
+  "year": 2026,
+  "race": "House final, Hill \u2212 Begich",
+  "region": "Contested, rural",
+  "ballots": 1603,
+  "race_margin": 23.77,
+  "legislative_margin": 25.27,
+  "pair_effect": -1.5
+ },
+ {
+  "year": 2026,
+  "race": "House final, Hill \u2212 Begich",
+  "region": "Contested, other",
+  "ballots": 119901,
+  "race_margin": -16.57,
+  "legislative_margin": -21.33,
+  "pair_effect": 4.76
+ },
+ {
+  "year": 2026,
+  "race": "Senate final, Peltola \u2212 Sullivan",
+  "region": "Clean, all",
+  "ballots": 64711,
+  "race_margin": 0.27,
+  "legislative_margin": -2.81,
+  "pair_effect": 3.08
+ },
+ {
+  "year": 2026,
+  "race": "Senate final, Peltola \u2212 Sullivan",
+  "region": "Contested, rural",
+  "ballots": 1660,
+  "race_margin": 37.23,
+  "legislative_margin": 28.07,
+  "pair_effect": 9.16
+ },
+ {
+  "year": 2026,
+  "race": "Senate final, Peltola \u2212 Sullivan",
+  "region": "Contested, other",
+  "ballots": 122887,
+  "race_margin": -11.89,
+  "legislative_margin": -17.2,
+  "pair_effect": 5.31
+ },
+ {
+  "year": 2026,
+  "race": "Governor first choice, Kreiss-Tomkins \u2212 Republicans",
+  "region": "Clean, all",
+  "ballots": 65354,
+  "race_margin": 0.26,
+  "legislative_margin": -3.42,
+  "pair_effect": 3.69
+ },
+ {
+  "year": 2026,
+  "race": "Governor first choice, Kreiss-Tomkins \u2212 Republicans",
+  "region": "Contested, rural",
+  "ballots": 1663,
+  "race_margin": 20.38,
+  "legislative_margin": 27.84,
+  "pair_effect": -7.46
+ },
+ {
+  "year": 2026,
+  "race": "Governor first choice, Kreiss-Tomkins \u2212 Republicans",
+  "region": "Contested, other",
+  "ballots": 124269,
+  "race_margin": -12.17,
+  "legislative_margin": -17.83,
+  "pair_effect": 5.66
+ }
+]

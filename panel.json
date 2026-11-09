@@ -1,0 +1,254 @@
+{
+ "1.0": {
+  "params": {
+   "lean_2000": -12.445,
+   "drift": 1.305,
+   "beta": 0.154,
+   "incumbency": 2.0
+  },
+  "lean": {
+   "2022": -5.27,
+   "2024": -4.62,
+   "2026": -3.96
+  },
+  "rmse": 3.74,
+  "effects": {
+   "Obama": -4.72,
+   "Trump": -4.19,
+   "McCain-Palin": -4.05,
+   "Benson": -2.82,
+   "Gross": -2.71,
+   "Lindbeck": -2.61,
+   "Harris": -2.05,
+   "Clinton": -1.82,
+   "Dunleavy": -1.36,
+   "Berkowitz": -1.27,
+   "F.Murkowski": -0.87,
+   "Ulmer": -0.87,
+   "Romney": -0.67,
+   "Parnell": -0.56,
+   "Galvin": -0.55,
+   "Biden": -0.32,
+   "N.Begich": -0.27,
+   "Republicans 2026": 0.08,
+   "Kreiss-Tomkins": 0.08,
+   "Sullivan": 0.15,
+   "Dunbar": 0.22,
+   "Young": 0.31,
+   "Hill+Hafner": 0.52,
+   "Knowles": 1.77,
+   "Gara+Walker": 1.85,
+   "Palin": 2.74,
+   "M.Begich": 2.8,
+   "Stevens": 4.33,
+   "L.Murkowski": 4.37,
+   "Peltola": 5.73,
+   "Walker": 6.77
+  },
+  "residuals": [
+   {
+    "year": 2008,
+    "office": "Pres",
+    "race": "Obama - McCain-Palin",
+    "note": "",
+    "resid": -4.05
+   },
+   {
+    "year": 2012,
+    "office": "Pres",
+    "race": "Obama - Romney",
+    "note": "",
+    "resid": -0.67
+   },
+   {
+    "year": 2016,
+    "office": "Pres",
+    "race": "Clinton - Trump",
+    "note": "",
+    "resid": -1.82
+   },
+   {
+    "year": 2020,
+    "office": "Pres",
+    "race": "Biden - Trump",
+    "note": "",
+    "resid": -0.32
+   },
+   {
+    "year": 2024,
+    "office": "Pres",
+    "race": "Harris - Trump",
+    "note": "",
+    "resid": -2.05
+   },
+   {
+    "year": 2006,
+    "office": "House",
+    "race": "Benson - Young",
+    "note": "",
+    "resid": -2.82
+   },
+   {
+    "year": 2008,
+    "office": "House",
+    "race": "Berkowitz - Young",
+    "note": "",
+    "resid": 6.07
+   },
+   {
+    "year": 2014,
+    "office": "House",
+    "race": "Dunbar - Young",
+    "note": "",
+    "resid": 0.22
+   },
+   {
+    "year": 2016,
+    "office": "House",
+    "race": "Lindbeck - Young",
+    "note": "",
+    "resid": -2.61
+   },
+   {
+    "year": 2018,
+    "office": "House",
+    "race": "Galvin - Young",
+    "note": "",
+    "resid": 0.91
+   },
+   {
+    "year": 2020,
+    "office": "House",
+    "race": "Galvin - Young",
+    "note": "",
+    "resid": -1.46
+   },
+   {
+    "year": 2022,
+    "office": "House",
+    "race": "Peltola - Palin",
+    "note": "Aug special, final round",
+    "resid": 0.19
+   },
+   {
+    "year": 2022,
+    "office": "House",
+    "race": "Peltola - N.Begich",
+    "note": "Aug special, head to head",
+    "resid": -4.88
+   },
+   {
+    "year": 2022,
+    "office": "House",
+    "race": "Peltola - Palin",
+    "note": "Nov, final round",
+    "resid": 5.15
+   },
+   {
+    "year": 2022,
+    "office": "House",
+    "race": "Peltola - N.Begich",
+    "note": "Nov, head to head",
+    "resid": 8.99
+   },
+   {
+    "year": 2024,
+    "office": "House",
+    "race": "Peltola - N.Begich",
+    "note": "final round",
+    "resid": -4.89
+   },
+   {
+    "year": 2026,
+    "office": "House",
+    "race": "Hill+Hafner - N.Begich",
+    "note": "projected final round",
+    "resid": 0.52
+   },
+   {
+    "year": 2004,
+    "office": "Senate",
+    "race": "Knowles - L.Murkowski",
+    "note": "",
+    "resid": 4.37
+   },
+   {
+    "year": 2008,
+    "office": "Senate",
+    "race": "M.Begich - Stevens",
+    "note": "",
+    "resid": 4.33
+   },
+   {
+    "year": 2014,
+    "office": "Senate",
+    "race": "M.Begich - Sullivan",
+    "note": "",
+    "resid": 1.68
+   },
+   {
+    "year": 2020,
+    "office": "Senate",
+    "race": "Gross - Sullivan",
+    "note": "",
+    "resid": -2.71
+   },
+   {
+    "year": 2026,
+    "office": "Senate",
+    "race": "Peltola - Sullivan",
+    "note": "projected final round",
+    "resid": 1.17
+   },
+   {
+    "year": 2002,
+    "office": "Gov",
+    "race": "Ulmer - F.Murkowski",
+    "note": "",
+    "resid": -0.87
+   },
+   {
+    "year": 2006,
+    "office": "Gov",
+    "race": "Knowles - Palin",
+    "note": "",
+    "resid": -2.61
+   },
+   {
+    "year": 2010,
+    "office": "Gov",
+    "race": "Berkowitz - Parnell",
+    "note": "",
+    "resid": -7.33
+   },
+   {
+    "year": 2014,
+    "office": "Gov",
+    "race": "Walker - Parnell",
+    "note": "",
+    "resid": 6.77
+   },
+   {
+    "year": 2018,
+    "office": "Gov",
+    "race": "M.Begich - Dunleavy",
+    "note": "",
+    "resid": -3.21
+   },
+   {
+    "year": 2022,
+    "office": "Gov",
+    "race": "Gara+Walker - Dunleavy",
+    "note": "first round, D side combined",
+    "resid": 1.85
+   },
+   {
+    "year": 2026,
+    "office": "Gov",
+    "race": "Kreiss-Tomkins - Republicans 2026",
+    "note": "first choices, three Republicans combined",
+    "resid": 0.08
+   }
+  ]
+ }
+}

@@ -1,0 +1,86 @@
+{
+  "tabulatorVersion": "2.1.0",
+  "outputSettings": {
+    "contestName": "Alaska senate 2022",
+    "outputDirectory": "/opt/github/election-watching/rctab-output/alaska-2022-senate",
+    "contestDate": "",
+    "contestJurisdiction": "",
+    "contestOffice": "",
+    "tabulateByBatch": false,
+    "tabulateByPrecinct": false,
+    "generateCdfJson": false
+  },
+  "cvrFileSources": [
+    {
+      "filePath": "../data/alaska-2022",
+      "contestId": "3",
+      "firstVoteColumnIndex": "",
+      "firstVoteRowIndex": "",
+      "idColumnIndex": "",
+      "batchColumnIndex": "",
+      "precinctColumnIndex": "",
+      "overvoteDelimiter": "",
+      "provider": "dominion",
+      "overvoteLabel": "",
+      "undeclaredWriteInLabel": "",
+      "treatBlankAsUndeclaredWriteIn": false
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Chesbro, Patricia R.",
+      "excluded": false,
+      "aliases": [
+        "271"
+      ]
+    },
+    {
+      "name": "Kelley, Buzz A.",
+      "excluded": false,
+      "aliases": [
+        "272"
+      ]
+    },
+    {
+      "name": "Murkowski, Lisa",
+      "excluded": false,
+      "aliases": [
+        "273"
+      ]
+    },
+    {
+      "name": "Tshibaka, Kelly C.",
+      "excluded": false,
+      "aliases": [
+        "274"
+      ]
+    },
+    {
+      "name": "Write-in",
+      "excluded": false,
+      "aliases": [
+        "246"
+      ]
+    }
+  ],
+  "rules": {
+    "tiebreakMode": "random",
+    "overvoteRule": "exhaustImmediately",
+    "winnerElectionMode": "singleWinnerMajority",
+    "randomSeed": "5656",
+    "numberOfWinners": "1",
+    "multiSeatBottomsUpPercentageThreshold": "",
+    "decimalPlacesForVoteArithmetic": "4",
+    "maxSkippedRanksAllowed": "1",
+    "maxRankingsAllowed": "max",
+    "nonIntegerWinningThreshold": false,
+    "doesFirstRoundDetermineThreshold": false,
+    "hareQuota": false,
+    "batchElimination": false,
+    "cutoffElimination": false,
+    "continueUntilTwoCandidatesRemain": false,
+    "stopTabulationEarlyAfterRound": "",
+    "exhaustOnDuplicateCandidate": false,
+    "rulesDescription": ""
+  }
+}

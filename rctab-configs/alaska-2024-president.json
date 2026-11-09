@@ -1,0 +1,107 @@
+{
+  "tabulatorVersion": "2.1.0",
+  "outputSettings": {
+    "contestName": "Alaska president 2024",
+    "outputDirectory": "/opt/github/election-watching/rctab-output/alaska-2024-president",
+    "contestDate": "",
+    "contestJurisdiction": "",
+    "contestOffice": "",
+    "tabulateByBatch": false,
+    "tabulateByPrecinct": false,
+    "generateCdfJson": false
+  },
+  "cvrFileSources": [
+    {
+      "filePath": "../data/alaska-2024",
+      "contestId": "4",
+      "firstVoteColumnIndex": "",
+      "firstVoteRowIndex": "",
+      "idColumnIndex": "",
+      "batchColumnIndex": "",
+      "precinctColumnIndex": "",
+      "overvoteDelimiter": "",
+      "provider": "dominion",
+      "overvoteLabel": "",
+      "undeclaredWriteInLabel": "",
+      "treatBlankAsUndeclaredWriteIn": false
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Harris/Walz",
+      "excluded": false,
+      "aliases": [
+        "542"
+      ]
+    },
+    {
+      "name": "Kennedy/Shanahan",
+      "excluded": false,
+      "aliases": [
+        "554"
+      ]
+    },
+    {
+      "name": "Oliver/Maat",
+      "excluded": false,
+      "aliases": [
+        "540"
+      ]
+    },
+    {
+      "name": "Sonski/Onak",
+      "excluded": false,
+      "aliases": [
+        "547"
+      ]
+    },
+    {
+      "name": "Stein/Ware",
+      "excluded": false,
+      "aliases": [
+        "545"
+      ]
+    },
+    {
+      "name": "Terry/Broden",
+      "excluded": false,
+      "aliases": [
+        "546"
+      ]
+    },
+    {
+      "name": "Trump/Vance",
+      "excluded": false,
+      "aliases": [
+        "543"
+      ]
+    },
+    {
+      "name": "West/Abdullah",
+      "excluded": false,
+      "aliases": [
+        "541"
+      ]
+    }
+  ],
+  "rules": {
+    "tiebreakMode": "random",
+    "overvoteRule": "exhaustImmediately",
+    "winnerElectionMode": "singleWinnerMajority",
+    "randomSeed": "5656",
+    "numberOfWinners": "1",
+    "multiSeatBottomsUpPercentageThreshold": "",
+    "decimalPlacesForVoteArithmetic": "4",
+    "maxSkippedRanksAllowed": "1",
+    "maxRankingsAllowed": "max",
+    "nonIntegerWinningThreshold": false,
+    "doesFirstRoundDetermineThreshold": false,
+    "hareQuota": false,
+    "batchElimination": false,
+    "cutoffElimination": false,
+    "continueUntilTwoCandidatesRemain": false,
+    "stopTabulationEarlyAfterRound": "",
+    "exhaustOnDuplicateCandidate": false,
+    "rulesDescription": ""
+  }
+}

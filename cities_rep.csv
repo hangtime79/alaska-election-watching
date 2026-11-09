@@ -1,0 +1,190 @@
+year,office,rep,note,view,group,R,total,r_pct
+2014,Senate,Sullivan,,A election day,Anchorage,39330,81656,48.17
+2014,Senate,Sullivan,,A election day,Fairbanks,12866,24165,53.24
+2014,Senate,Sullivan,,A election day,Juneau,3479,9472,36.73
+2014,Senate,Sullivan,,A election day,Cities (all three),55675,115293,48.29
+2014,Senate,Sullivan,,A election day,Rest of state,40817,81447,50.11
+2014,Senate,Sullivan,,B all ballots,Whole-city districts,71793,154169,46.57
+2014,Senate,Sullivan,,B all ballots,Statewide,135445,282400,47.96
+2014,Governor,Parnell/Sullivan,incumbent,A election day,Anchorage,37448,80870,46.31
+2014,Governor,Parnell/Sullivan,incumbent,A election day,Fairbanks,10935,23991,45.58
+2014,Governor,Parnell/Sullivan,incumbent,A election day,Juneau,3793,9443,40.17
+2014,Governor,Parnell/Sullivan,incumbent,A election day,Cities (all three),52176,114304,45.65
+2014,Governor,Parnell/Sullivan,incumbent,A election day,Rest of state,39278,81000,48.49
+2014,Governor,Parnell/Sullivan,incumbent,B all ballots,Whole-city districts,68085,152558,44.63
+2014,Governor,Parnell/Sullivan,incumbent,B all ballots,Statewide,128435,279958,45.88
+2014,House,Young,incumbent,A election day,Anchorage,39134,80876,48.39
+2014,House,Young,incumbent,A election day,Fairbanks,12964,23926,54.18
+2014,House,Young,incumbent,A election day,Juneau,3621,9385,38.58
+2014,House,Young,incumbent,A election day,Cities (all three),55719,114187,48.8
+2014,House,Young,incumbent,A election day,Rest of state,46745,80836,57.83
+2014,House,Young,incumbent,B all ballots,Whole-city districts,72245,152566,47.35
+2014,House,Young,incumbent,B all ballots,Statewide,142572,279741,50.97
+2016,President,Trump,,A election day,Anchorage,39942,81678,48.9
+2016,President,Trump,,A election day,Fairbanks,14123,25076,56.32
+2016,President,Trump,,A election day,Juneau,3161,8583,36.83
+2016,President,Trump,,A election day,Cities (all three),57226,115337,49.62
+2016,President,Trump,,A election day,Rest of state,46231,82587,55.98
+2016,President,Trump,,B all ballots,Whole-city districts,81847,172569,47.43
+2016,President,Trump,,B all ballots,Statewide,163387,318608,51.28
+2016,Senate,Murkowski,incumbent; Miller (Libertarian) ran to her right,A election day,Anchorage,36723,81305,45.17
+2016,Senate,Murkowski,incumbent; Miller (Libertarian) ran to her right,A election day,Fairbanks,11085,24901,44.52
+2016,Senate,Murkowski,incumbent; Miller (Libertarian) ran to her right,A election day,Juneau,3697,8536,43.31
+2016,Senate,Murkowski,incumbent; Miller (Libertarian) ran to her right,A election day,Cities (all three),51505,114742,44.89
+2016,Senate,Murkowski,incumbent; Miller (Libertarian) ran to her right,A election day,Rest of state,36349,82113,44.27
+2016,Senate,Murkowski,incumbent; Miller (Libertarian) ran to her right,B all ballots,Whole-city districts,75943,168696,45.02
+2016,Senate,Murkowski,incumbent; Miller (Libertarian) ran to her right,B all ballots,Statewide,138149,311441,44.36
+2016,House,Young,incumbent,A election day,Anchorage,39518,80576,49.04
+2016,House,Young,incumbent,A election day,Fairbanks,12552,24640,50.94
+2016,House,Young,incumbent,A election day,Juneau,3317,8413,39.43
+2016,House,Young,incumbent,A election day,Cities (all three),55387,113629,48.74
+2016,House,Young,incumbent,A election day,Rest of state,45315,81171,55.83
+2016,House,Young,incumbent,B all ballots,Whole-city districts,79110,167107,47.34
+2016,House,Young,incumbent,B all ballots,Statewide,155088,308198,50.32
+2018,Governor,Dunleavy/Meyer,open seat,A election day,Anchorage,38291,76133,50.29
+2018,Governor,Dunleavy/Meyer,open seat,A election day,Fairbanks,12975,23274,55.75
+2018,Governor,Dunleavy/Meyer,open seat,A election day,Juneau,3304,8112,40.73
+2018,Governor,Dunleavy/Meyer,open seat,A election day,Cities (all three),54570,107519,50.75
+2018,Governor,Dunleavy/Meyer,open seat,A election day,Rest of state,45802,81266,56.36
+2018,Governor,Dunleavy/Meyer,open seat,B all ballots,Whole-city districts,72472,150486,48.16
+2018,Governor,Dunleavy/Meyer,open seat,B all ballots,Statewide,145631,283134,51.44
+2018,House,Young,incumbent,A election day,Anchorage,38695,75895,50.98
+2018,House,Young,incumbent,A election day,Fairbanks,13029,23198,56.16
+2018,House,Young,incumbent,A election day,Juneau,3164,8087,39.12
+2018,House,Young,incumbent,A election day,Cities (all three),54888,107180,51.21
+2018,House,Young,incumbent,A election day,Rest of state,48497,80879,59.96
+2018,House,Young,incumbent,B all ballots,Whole-city districts,73346,150029,48.89
+2018,House,Young,incumbent,B all ballots,Statewide,149779,282166,53.08
+2020,President,Trump,incumbent,A election day,Anchorage,34313,54454,63.01
+2020,President,Trump,incumbent,A election day,Fairbanks,14945,21978,68.0
+2020,President,Trump,incumbent,A election day,Juneau,2222,4158,53.44
+2020,President,Trump,incumbent,A election day,Cities (all three),51480,80590,63.88
+2020,President,Trump,incumbent,A election day,Rest of state,50557,74993,67.42
+2020,President,Trump,incumbent,B all ballots,Whole-city districts,91595,191126,47.92
+2020,President,Trump,incumbent,B all ballots,Statewide,189951,357569,53.12
+2020,Senate,Sullivan,incumbent,A election day,Anchorage,35133,54583,64.37
+2020,Senate,Sullivan,incumbent,A election day,Fairbanks,14831,21999,67.42
+2020,Senate,Sullivan,incumbent,A election day,Juneau,2233,4162,53.65
+2020,Senate,Sullivan,incumbent,A election day,Cities (all three),52197,80744,64.65
+2020,Senate,Sullivan,incumbent,A election day,Rest of state,49649,74725,66.44
+2020,Senate,Sullivan,incumbent,B all ballots,Whole-city districts,94630,189470,49.94
+2020,Senate,Sullivan,incumbent,B all ballots,Statewide,191112,353986,53.99
+2020,House,Young,incumbent,A election day,Anchorage,34639,54261,63.84
+2020,House,Young,incumbent,A election day,Fairbanks,14759,21813,67.66
+2020,House,Young,incumbent,A election day,Juneau,2201,4137,53.2
+2020,House,Young,incumbent,A election day,Cities (all three),51599,80211,64.33
+2020,House,Young,incumbent,A election day,Rest of state,51463,74183,69.37
+2020,House,Young,incumbent,B all ballots,Whole-city districts,93196,188505,49.44
+2020,House,Young,incumbent,B all ballots,Statewide,192126,351982,54.58
+2022,House,Palin,first choices,A election day,Anchorage,13867,62862,22.06
+2022,House,Palin,first choices,A election day,Fairbanks,7065,21416,32.99
+2022,House,Palin,first choices,A election day,Juneau,1127,6950,16.22
+2022,House,Palin,first choices,A election day,Cities (all three),22059,91228,24.18
+2022,House,Palin,first choices,A election day,Rest of state,24045,73698,32.63
+2022,House,Palin,first choices,B all ballots,Whole-city districts,30806,142425,21.63
+2022,House,Palin,first choices,B all ballots,Statewide,67831,263371,25.75
+2022,House,Begich (Nick),first choices,A election day,Anchorage,16619,62862,26.44
+2022,House,Begich (Nick),first choices,A election day,Fairbanks,4753,21416,22.19
+2022,House,Begich (Nick),first choices,A election day,Juneau,1255,6950,18.06
+2022,House,Begich (Nick),first choices,A election day,Cities (all three),22627,91228,24.8
+2022,House,Begich (Nick),first choices,A election day,Rest of state,19019,73698,25.81
+2022,House,Begich (Nick),first choices,B all ballots,Whole-city districts,32095,142425,22.53
+2022,House,Begich (Nick),first choices,B all ballots,Statewide,61465,263371,23.34
+2022,House,Palin + Begich,"first choices, both Republicans",A election day,Anchorage,30486,62862,48.5
+2022,House,Palin + Begich,"first choices, both Republicans",A election day,Fairbanks,11818,21416,55.18
+2022,House,Palin + Begich,"first choices, both Republicans",A election day,Juneau,2382,6950,34.27
+2022,House,Palin + Begich,"first choices, both Republicans",A election day,Cities (all three),44686,91228,48.98
+2022,House,Palin + Begich,"first choices, both Republicans",A election day,Rest of state,43064,73698,58.43
+2022,House,Palin + Begich,"first choices, both Republicans",B all ballots,Whole-city districts,62901,142425,44.16
+2022,House,Palin + Begich,"first choices, both Republicans",B all ballots,Statewide,129296,263371,49.09
+2022,Senate,Murkowski,first choices; incumbent; drew many Democrats,A election day,Anchorage,28275,62296,45.39
+2022,Senate,Murkowski,first choices; incumbent; drew many Democrats,A election day,Fairbanks,8000,21231,37.68
+2022,Senate,Murkowski,first choices; incumbent; drew many Democrats,A election day,Juneau,3689,6791,54.32
+2022,Senate,Murkowski,first choices; incumbent; drew many Democrats,A election day,Cities (all three),39964,90318,44.25
+2022,Senate,Murkowski,first choices; incumbent; drew many Democrats,A election day,Rest of state,27099,73086,37.08
+2022,Senate,Murkowski,first choices; incumbent; drew many Democrats,B all ballots,Whole-city districts,66465,141324,47.03
+2022,Senate,Murkowski,first choices; incumbent; drew many Democrats,B all ballots,Statewide,113326,261468,43.34
+2022,Senate,Tshibaka,first choices,A election day,Anchorage,26218,62296,42.09
+2022,Senate,Tshibaka,first choices,A election day,Fairbanks,10319,21231,48.6
+2022,Senate,Tshibaka,first choices,A election day,Juneau,2041,6791,30.05
+2022,Senate,Tshibaka,first choices,A election day,Cities (all three),38578,90318,42.71
+2022,Senate,Tshibaka,first choices,A election day,Rest of state,37873,73086,51.82
+2022,Senate,Tshibaka,first choices,B all ballots,Whole-city districts,53343,141324,37.75
+2022,Senate,Tshibaka,first choices,B all ballots,Statewide,111434,261468,42.62
+2022,Senate,Murkowski + Tshibaka,"first choices, both Republicans",A election day,Anchorage,54493,62296,87.47
+2022,Senate,Murkowski + Tshibaka,"first choices, both Republicans",A election day,Fairbanks,18319,21231,86.28
+2022,Senate,Murkowski + Tshibaka,"first choices, both Republicans",A election day,Juneau,5730,6791,84.38
+2022,Senate,Murkowski + Tshibaka,"first choices, both Republicans",A election day,Cities (all three),78542,90318,86.96
+2022,Senate,Murkowski + Tshibaka,"first choices, both Republicans",A election day,Rest of state,64972,73086,88.9
+2022,Senate,Murkowski + Tshibaka,"first choices, both Republicans",B all ballots,Whole-city districts,119808,141324,84.78
+2022,Senate,Murkowski + Tshibaka,"first choices, both Republicans",B all ballots,Statewide,224760,261468,85.96
+2022,Governor,Dunleavy/Dahlstrom,first choices; incumbent,A election day,Anchorage,32086,63059,50.88
+2022,Governor,Dunleavy/Dahlstrom,first choices; incumbent,A election day,Fairbanks,11783,21419,55.01
+2022,Governor,Dunleavy/Dahlstrom,first choices; incumbent,A election day,Juneau,2404,6935,34.66
+2022,Governor,Dunleavy/Dahlstrom,first choices; incumbent,A election day,Cities (all three),46273,91413,50.62
+2022,Governor,Dunleavy/Dahlstrom,first choices; incumbent,A election day,Rest of state,44517,73860,60.27
+2022,Governor,Dunleavy/Dahlstrom,first choices; incumbent,B all ballots,Whole-city districts,65212,142572,45.74
+2022,Governor,Dunleavy/Dahlstrom,first choices; incumbent,B all ballots,Statewide,132478,263513,50.27
+2022,Governor,Dunleavy + Pierce,"first choices, both Republicans",A election day,Anchorage,34389,63059,54.53
+2022,Governor,Dunleavy + Pierce,"first choices, both Republicans",A election day,Fairbanks,12808,21419,59.8
+2022,Governor,Dunleavy + Pierce,"first choices, both Republicans",A election day,Juneau,2589,6935,37.33
+2022,Governor,Dunleavy + Pierce,"first choices, both Republicans",A election day,Cities (all three),49786,91413,54.46
+2022,Governor,Dunleavy + Pierce,"first choices, both Republicans",A election day,Rest of state,49222,73860,66.64
+2022,Governor,Dunleavy + Pierce,"first choices, both Republicans",B all ballots,Whole-city districts,70037,142572,49.12
+2022,Governor,Dunleavy + Pierce,"first choices, both Republicans",B all ballots,Statewide,144286,263513,54.75
+2024,President,Trump,first choices,A election day,Anchorage,34227,67116,51.0
+2024,President,Trump,first choices,A election day,Fairbanks,14538,24124,60.26
+2024,President,Trump,first choices,A election day,Juneau,2643,6553,40.33
+2024,President,Trump,first choices,A election day,Cities (all three),51408,97793,52.57
+2024,President,Trump,first choices,A election day,Rest of state,48750,75957,64.18
+2024,President,Trump,first choices,B all ballots,Whole-city districts,89694,183794,48.8
+2024,President,Trump,first choices,B all ballots,Statewide,184393,337974,54.56
+2024,House,Begich (Nick),first choices,A election day,Anchorage,30125,66633,45.21
+2024,House,Begich (Nick),first choices,A election day,Fairbanks,12476,23930,52.14
+2024,House,Begich (Nick),first choices,A election day,Juneau,2173,6522,33.32
+2024,House,Begich (Nick),first choices,A election day,Cities (all three),44774,97085,46.12
+2024,House,Begich (Nick),first choices,A election day,Rest of state,41266,74976,55.04
+2024,House,Begich (Nick),first choices,B all ballots,Whole-city districts,77931,178920,43.56
+2024,House,Begich (Nick),first choices,B all ballots,Statewide,159500,329359,48.43
+2026,Senate,Sullivan,first choices; incumbent; partial count,A election day,Anchorage,27346,59422,46.02
+2026,Senate,Sullivan,first choices; incumbent; partial count,A election day,Fairbanks,11049,20958,52.72
+2026,Senate,Sullivan,first choices; incumbent; partial count,A election day,Juneau,1978,5571,35.51
+2026,Senate,Sullivan,first choices; incumbent; partial count,A election day,Cities (all three),40373,85951,46.97
+2026,Senate,Sullivan,first choices; incumbent; partial count,A election day,Rest of state,37966,69530,54.6
+2026,Senate,Sullivan,first choices; incumbent; partial count,B all ballots,Whole-city districts,50579,117129,43.18
+2026,Senate,Sullivan,first choices; incumbent; partial count,B all ballots,Statewide,102325,213733,47.88
+2026,House,Begich (Nick),first choices; incumbent; partial count,A election day,Anchorage,27990,59221,47.26
+2026,House,Begich (Nick),first choices; incumbent; partial count,A election day,Fairbanks,11145,20987,53.1
+2026,House,Begich (Nick),first choices; incumbent; partial count,A election day,Juneau,2050,5528,37.08
+2026,House,Begich (Nick),first choices; incumbent; partial count,A election day,Cities (all three),41185,85736,48.04
+2026,House,Begich (Nick),first choices; incumbent; partial count,A election day,Rest of state,39836,69127,57.63
+2026,House,Begich (Nick),first choices; incumbent; partial count,B all ballots,Whole-city districts,51666,116856,44.21
+2026,House,Begich (Nick),first choices; incumbent; partial count,B all ballots,Statewide,105647,213009,49.6
+2026,Governor,Wilson/Shower,first choices; open seat; partial count,A election day,Anchorage,14280,58844,24.27
+2026,Governor,Wilson/Shower,first choices; open seat; partial count,A election day,Fairbanks,5772,20773,27.79
+2026,Governor,Wilson/Shower,first choices; open seat; partial count,A election day,Juneau,1086,5491,19.78
+2026,Governor,Wilson/Shower,first choices; open seat; partial count,A election day,Cities (all three),21138,85108,24.84
+2026,Governor,Wilson/Shower,first choices; open seat; partial count,A election day,Rest of state,25018,68430,36.56
+2026,Governor,Wilson/Shower,first choices; open seat; partial count,B all ballots,Whole-city districts,27184,116125,23.41
+2026,Governor,Wilson/Shower,first choices; open seat; partial count,B all ballots,Statewide,61734,211337,29.21
+2026,Governor,Bronson/Church,first choices; partial count,A election day,Anchorage,9642,58844,16.39
+2026,Governor,Bronson/Church,first choices; partial count,A election day,Fairbanks,4099,20773,19.73
+2026,Governor,Bronson/Church,first choices; partial count,A election day,Juneau,409,5491,7.45
+2026,Governor,Bronson/Church,first choices; partial count,A election day,Cities (all three),14150,85108,16.63
+2026,Governor,Bronson/Church,first choices; partial count,A election day,Rest of state,10034,68430,14.66
+2026,Governor,Bronson/Church,first choices; partial count,B all ballots,Whole-city districts,17275,116125,14.88
+2026,Governor,Bronson/Church,first choices; partial count,B all ballots,Statewide,30003,211337,14.2
+2026,Governor,Taylor/English,first choices; partial count,A election day,Anchorage,4325,58844,7.35
+2026,Governor,Taylor/English,first choices; partial count,A election day,Fairbanks,1606,20773,7.73
+2026,Governor,Taylor/English,first choices; partial count,A election day,Juneau,442,5491,8.05
+2026,Governor,Taylor/English,first choices; partial count,A election day,Cities (all three),6373,85108,7.49
+2026,Governor,Taylor/English,first choices; partial count,A election day,Rest of state,6035,68430,8.82
+2026,Governor,Taylor/English,first choices; partial count,B all ballots,Whole-city districts,7760,116125,6.68
+2026,Governor,Taylor/English,first choices; partial count,B all ballots,Statewide,15763,211337,7.46
+2026,Governor,Wilson + Bronson + Taylor,"first choices, all three Republicans; partial count",A election day,Anchorage,28247,58844,48.0
+2026,Governor,Wilson + Bronson + Taylor,"first choices, all three Republicans; partial count",A election day,Fairbanks,11477,20773,55.25
+2026,Governor,Wilson + Bronson + Taylor,"first choices, all three Republicans; partial count",A election day,Juneau,1937,5491,35.28
+2026,Governor,Wilson + Bronson + Taylor,"first choices, all three Republicans; partial count",A election day,Cities (all three),41661,85108,48.95
+2026,Governor,Wilson + Bronson + Taylor,"first choices, all three Republicans; partial count",A election day,Rest of state,41087,68430,60.04
+2026,Governor,Wilson + Bronson + Taylor,"first choices, all three Republicans; partial count",B all ballots,Whole-city districts,52219,116125,44.97
+2026,Governor,Wilson + Bronson + Taylor,"first choices, all three Republicans; partial count",B all ballots,Statewide,107500,211337,50.87

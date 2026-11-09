@@ -1,0 +1,176 @@
+<title>Democrats in Alaska's Cities</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Playfair+Display:wght@700&family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600&display=swap">
+<style>
+/* Layout: one ranked horizontal bar chart, controls above, notes and table below. ACI type. */
+:root {
+  --bg: #fbfbfa; --panel: #f2f2ef; --fg: #15151a; --fg2: #505058; --muted: #85858c; --grid: #e2e2de; --rule: #c8c8c2;
+  --dem: #2a6fd6; --ind: #9b4fc0; --hatch: rgba(255,255,255,.55); --ref: #15151a;
+  --f-title: "Zilla Slab", Georgia, serif; --f-num: "Playfair Display", Georgia, serif;
+  --f-mono: "Space Mono", ui-monospace, Menlo, monospace; --f-body: "Outfit", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #18181b; --panel: #222226; --fg: #efeff1; --fg2: #c2c2c8; --muted: #8e8e96; --grid: #2e2e33; --rule: #48484f;
+  --dem: #4a8ae8; --ind: #c48ee6; --hatch: rgba(0,0,0,.45); --ref: #efeff1; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #18181b; --panel: #222226; --fg: #efeff1; --fg2: #c2c2c8; --muted: #8e8e96; --grid: #2e2e33; --rule: #48484f;
+  --dem: #4a8ae8; --ind: #c48ee6; --hatch: rgba(0,0,0,.45); --ref: #efeff1; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 48px; }
+main { max-width: 1100px; margin: 0 auto; display: grid; gap: 18px; }
+h1 { font-family: var(--f-title); font-weight: 700; font-size: 2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+.lede { margin: 6px 0 0; color: var(--fg2); max-width: 75ch; }
+.stats { display: flex; flex-wrap: wrap; gap: 28px; }
+.stat .n { font-family: var(--f-num); font-size: 2.1rem; line-height: 1; }
+.stat .l { font-family: var(--f-mono); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
+.label { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+button.segb { font: 500 13px var(--f-body); color: var(--fg); background: var(--panel); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+button.segb[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+button:focus-visible, label:focus-within { outline: 2px solid var(--dem); outline-offset: 2px; }
+.chk { display: inline-flex; gap: 6px; align-items: center; font-size: 13.5px; cursor: pointer; }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13.5px; color: var(--fg2); }
+.legend span { display: inline-flex; gap: 7px; align-items: center; }
+.sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+.chartwrap { overflow-x: auto; background: var(--panel); border-radius: 10px; padding: 10px 6px; }
+#chart { display: block; min-width: 620px; width: 100%; }
+#chart text { font-family: var(--f-body); fill: var(--fg); }
+#chart .tick { font-family: var(--f-mono); font-size: 11px; fill: var(--muted); }
+#chart .lab { font-size: 13px; }
+#chart .lab.pel { font-weight: 600; }
+#chart .val { font-family: var(--f-mono); font-size: 11.5px; fill: var(--fg2); }
+#chart .reflab { font-family: var(--f-mono); font-size: 10.5px; fill: var(--fg2); }
+#chart .row.hot .band, #chart .row:focus .band { fill: var(--grid); }
+#chart .row { outline: none; }
+.tip { position: fixed; pointer-events: none; background: var(--bg); color: var(--fg); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; font-size: 13px; max-width: 320px; box-shadow: 0 6px 20px rgba(0,0,0,.18); z-index: 20; }
+.tip .h { font-weight: 600; margin-bottom: 2px; }
+.tip .big { font-family: var(--f-num); font-size: 22px; }
+.tip .m { font-family: var(--f-mono); font-size: 11.5px; color: var(--fg2); }
+.tip table { border-collapse: collapse; margin-top: 6px; font-family: var(--f-mono); font-size: 11.5px; }
+.tip td { padding: 1px 10px 1px 0; }
+.notes { color: var(--fg2); font-size: 13.5px; max-width: 85ch; display: grid; gap: 6px; }
+.notes p { margin: 0; }
+details summary { cursor: pointer; font-weight: 600; }
+.tablewrap { overflow-x: auto; margin-top: 10px; }
+table.t { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+table.t th, table.t td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--grid); }
+table.t th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+table.t td.n { font-family: var(--f-mono); text-align: right; white-space: nowrap; }
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.2" height="6" style="fill:var(--hatch)"></rect></pattern>
+</defs></svg>
+<main>
+  <header>
+    <h1>Democrats in Alaska's cities, 2014–2026</h1>
+    <p class="lede">Each statewide race's Democratic side as a share of the vote in Anchorage (with Eagle River and Chugiak), the Fairbanks North Star Borough (with North Pole) and Juneau. Highest first. Hover or tap a bar for each city and the count behind it.</p>
+  </header>
+  <div class="stats" id="stats"></div>
+  <div class="controls">
+    <span class="label">Ballots</span>
+    <div class="seg" role="group" aria-label="Which ballots">
+      <button class="segb" id="v-eday" aria-pressed="true">Election day, every city precinct</button>
+      <button class="segb" id="v-all" aria-pressed="false">All ballots, districts wholly in a city</button>
+    </div>
+    <label class="chk"><input type="checkbox" id="norealD"> Show races with no real Democratic side</label>
+  </div>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--dem)"></i>Democrat</span>
+    <span><svg class="sw" viewBox="0 0 14 14"><rect width="14" height="14" rx="3" style="fill:var(--ind)"></rect><rect width="14" height="14" rx="3" fill="url(#hatch)"></rect></svg>Independent or combined (I)</span>
+    <span><b>Bold</b> = Peltola</span>
+  </div>
+  <div class="chartwrap"><svg id="chart" role="img" aria-label="Ranked bar chart of Democratic vote share in Alaska's cities by race"></svg></div>
+  <div class="notes">
+    <p>Share == the Democratic side's votes / votes for all candidates in the race (minor candidates and write-ins in; blank ballots and overvotes out). 2022–2026 are first choices.</p>
+    <p><b>Election day</b> is the only vote type reported by precinct. 2020 election day is greyed out: in the pandemic year Democrats voted absentee, so election day ran far more Republican. Use the all-ballots view for 2020.</p>
+    <p><b>All ballots</b> adds the absentee, early and questioned votes, which are reported by House district, so it covers only districts lying wholly inside a city.</p>
+    <p>(I): Walker/Mallott 2014 was an independent unity ticket with a Democratic running mate; Galvin, Gross and Hill were independents backed by the Democrats; Gara + Walker and Hill + Hafner add two candidates. 2026 is a partial count (Division of Elections precinct file, 4 Nov). Sources: OpenElections precinct files 2014–2020, RCTab cast vote records 2022–2024.</p>
+  </div>
+  <details>
+    <summary>Table view</summary>
+    <div class="tablewrap"><table class="t" id="tbl"><thead><tr><th>Candidate / Office – Year</th><th>Cities</th><th>Anchorage</th><th>Fairbanks</th><th>Juneau</th><th>Rest of state</th><th>All ballots, whole-city districts</th><th>Statewide</th></tr></thead><tbody></tbody></table></div>
+  </details>
+</main>
+<div class="tip" id="tip" hidden></div>
+<script>
+const RAW = [{"year": "2014", "office": "Senate", "cand": "Begich (Mark)", "note": "", "anc": 46.57, "fbx": 40.55, "jnu": 58.13, "city": 46.26, "D": 53333, "T": 115293, "rest": 42.06, "whole": 48.1, "Dw": 74150, "Tw": 154169, "state": 45.83}, {"year": "2014", "office": "Governor", "cand": "Walker/Mallott", "note": "independent with Democratic running mate (unity ticket)", "anc": 48.49, "fbx": 49.21, "jnu": 55.51, "city": 49.22, "D": 56263, "T": 114304, "rest": 44.34, "whole": 49.86, "Dw": 76060, "Tw": 152558, "state": 48.1}, {"year": "2014", "office": "House", "cand": "Dunbar", "note": "", "anc": 44.98, "fbx": 34.88, "jnu": 54.82, "city": 43.67, "D": 49867, "T": 114187, "rest": 33.57, "whole": 45.06, "Dw": 68751, "Tw": 152566, "state": 40.97}, {"year": "2016", "office": "President", "cand": "Clinton", "note": "", "anc": 39.34, "fbx": 30.18, "jnu": 49.78, "city": 38.12, "D": 43970, "T": 115337, "rest": 30.42, "whole": 40.58, "Dw": 70032, "Tw": 172569, "state": 36.55}, {"year": "2016", "office": "Senate", "cand": "Metcalfe", "note": "no real Democratic side: Stock (independent) and Miller (Libertarian) split the anti-Murkowski vote", "anc": 11.49, "fbx": 8.59, "jnu": 16.16, "city": 11.21, "D": 12860, "T": 114742, "rest": 8.21, "whole": 12.99, "Dw": 21912, "Tw": 168696, "state": 11.62}, {"year": "2016", "office": "House", "cand": "Lindbeck", "note": "", "anc": 38.82, "fbx": 33.74, "jnu": 48.54, "city": 38.44, "D": 43677, "T": 113629, "rest": 29.07, "whole": 40.05, "Dw": 66925, "Tw": 167107, "state": 36.02}, {"year": "2018", "office": "Governor", "cand": "Begich (Mark)/Call", "note": "Walker withdrew but stayed on the ballot", "anc": 46.63, "fbx": 40.11, "jnu": 55.68, "city": 45.9, "D": 49356, "T": 107519, "rest": 38.88, "whole": 48.13, "Dw": 72427, "Tw": 150486, "state": 44.41}, {"year": "2018", "office": "House", "cand": "Galvin", "note": "independent, Democratic nominee", "anc": 48.65, "fbx": 43.28, "jnu": 60.69, "city": 48.4, "D": 51873, "T": 107180, "rest": 39.54, "whole": 50.73, "Dw": 76114, "Tw": 150029, "state": 46.5}, {"year": "2020", "office": "President", "cand": "Biden", "note": "", "anc": 32.77, "fbx": 26.67, "jnu": 41.17, "city": 31.54, "D": 25416, "T": 80590, "rest": 27.98, "whole": 48.25, "Dw": 92214, "Tw": 191126, "state": 43.01}, {"year": "2020", "office": "Senate", "cand": "Gross", "note": "independent, Democratic nominee", "anc": 31.04, "fbx": 26.59, "jnu": 40.99, "city": 30.34, "D": 24501, "T": 80744, "rest": 26.15, "whole": 46.1, "Dw": 87338, "Tw": 189470, "state": 41.26}, {"year": "2020", "office": "House", "cand": "Galvin", "note": "independent, Democratic nominee", "anc": 36.16, "fbx": 32.34, "jnu": 46.8, "city": 35.67, "D": 28612, "T": 80211, "rest": 30.63, "whole": 50.56, "Dw": 95309, "Tw": 188505, "state": 45.42}, {"year": "2022", "office": "House", "cand": "Peltola", "note": "first choices", "anc": 49.77, "fbx": 41.44, "jnu": 64.07, "city": 48.91, "D": 44617, "T": 91228, "rest": 39.5, "whole": 53.72, "Dw": 76512, "Tw": 142425, "state": 48.75}, {"year": "2022", "office": "Senate", "cand": "Chesbro", "note": "first choices; no real Democratic side (Murkowski took most Democrats)", "anc": 10.13, "fbx": 9.39, "jnu": 13.11, "city": 10.18, "D": 9192, "T": 90318, "rest": 6.92, "whole": 12.05, "Dw": 17028, "Tw": 141324, "state": 10.38}, {"year": "2022", "office": "Governor", "cand": "Gara", "note": "first choices", "anc": 27.28, "fbx": 16.36, "jnu": 22.15, "city": 24.33, "D": 22244, "T": 91413, "rest": 16.39, "whole": 28.44, "Dw": 40549, "Tw": 142572, "state": 24.22}, {"year": "2022", "office": "Governor", "cand": "Gara + Walker", "note": "first choices; Walker independent", "anc": 45.34, "fbx": 40.11, "jnu": 62.54, "city": 45.42, "D": 41520, "T": 91413, "rest": 33.15, "whole": 50.62, "Dw": 72171, "Tw": 142572, "state": 44.95}, {"year": "2024", "office": "President", "cand": "Harris", "note": "first choices", "anc": 44.49, "fbx": 35.28, "jnu": 54.57, "city": 42.9, "D": 41950, "T": 97793, "rest": 30.83, "whole": 47.22, "Dw": 86789, "Tw": 183794, "state": 41.4}, {"year": "2024", "office": "House", "cand": "Peltola", "note": "first choices", "anc": 49.97, "fbx": 41.2, "jnu": 61.91, "city": 48.61, "D": 47192, "T": 97085, "rest": 37.71, "whole": 51.87, "Dw": 92806, "Tw": 178920, "state": 46.36}, {"year": "2026", "office": "Senate", "cand": "Peltola", "note": "first choices; partial count", "anc": 50.44, "fbx": 42.43, "jnu": 60.17, "city": 49.12, "D": 42216, "T": 85951, "rest": 39.95, "whole": 53.53, "Dw": 62700, "Tw": 117129, "state": 48.17}, {"year": "2026", "office": "Governor", "cand": "Kreiss-Tomkins", "note": "first choices; partial count", "anc": 52.0, "fbx": 44.75, "jnu": 64.72, "city": 51.05, "D": 43447, "T": 85108, "rest": 39.96, "whole": 55.03, "Dw": 63906, "Tw": 116125, "state": 49.13}, {"year": "2026", "office": "House", "cand": "Hill", "note": "first choices; partial count; independent, Democratic-endorsed", "anc": 40.82, "fbx": 36.76, "jnu": 52.12, "city": 40.56, "D": 34772, "T": 85736, "rest": 32.49, "whole": 45.11, "Dw": 52714, "Tw": 116856, "state": 40.38}, {"year": "2026", "office": "House", "cand": "Hill + Hafner", "note": "first choices; partial count", "anc": 49.9, "fbx": 42.98, "jnu": 59.82, "city": 48.85, "D": 41878, "T": 85736, "rest": 39.05, "whole": 53.18, "Dw": 62146, "Tw": 116856, "state": 47.68}];
+const IND = new Set(["Walker/Mallott", "Galvin", "Gross", "Hill", "Gara + Walker", "Hill + Hafner"]);
+const NOREAL = new Set(["2016 Senate", "2022 Senate"]);
+const NAME = { "Begich (Mark)": "Mark Begich", "Begich (Mark)/Call": "Mark Begich", "Walker/Mallott": "Walker/Mallott" };
+const D = RAW.map(r => ({ ...r, ind: IND.has(r.cand), noreal: NOREAL.has(r.year + " " + r.office), pel: r.cand === "Peltola",
+  label: `${NAME[r.cand] || r.cand}${IND.has(r.cand) ? " (I)" : ""} / ${r.office} – ${r.year}`, covid: r.year === "2020" }));
+let view = "eday", showNo = false;
+const svg = document.getElementById("chart"), tip = document.getElementById("tip"), NS = "http://www.w3.org/2000/svg";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const f2 = x => x == null ? "–" : x.toFixed(2);
+const fmtN = n => n.toLocaleString("en-US");
+const val = r => view === "eday" ? r.city : r.whole;
+
+function stats() {
+  const p = D.filter(r => r.pel), key = view === "eday" ? "city" : "whole";
+  const others = D.filter(r => !r.pel && !r.noreal && !(view === "eday" && r.covid) && r.year < "2022");
+  const best = others.reduce((a, b) => (b[key] > a[key] ? b : a));
+  const avg = p.reduce((s, r) => s + r[key], 0) / p.length;
+  document.getElementById("stats").innerHTML =
+    `<div class="stat"><div class="n">${p.map(r => f2(r[key])).join(" · ")}</div><div class="l">Peltola 2022 · 2024 · 2026</div></div>` +
+    `<div class="stat"><div class="n">${f2(avg)}</div><div class="l">Peltola average</div></div>` +
+    `<div class="stat"><div class="n">${f2(best[key])}</div><div class="l">Best before her: ${best.label}</div></div>`;
+  return avg;
+}
+
+function draw() {
+  const avg = stats();
+  const rows = D.filter(r => (showNo || !r.noreal)).sort((a, b) => val(b) - val(a));
+  const W = Math.max(620, svg.clientWidth || 900), labW = W < 760 ? 250 : 300, padR = 60, top = 34, rowH = 26, bottom = 34;
+  const H = top + rows.length * rowH + bottom;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("height", H); svg.replaceChildren();
+  const x = v => labW + v / 60 * (W - labW - padR);
+  for (let t = 0; t <= 60; t += 10) {
+    el("line", { x1: x(t), x2: x(t), y1: top - 6, y2: H - bottom + 4, stroke: css("--grid") }, svg);
+    el("text", { x: x(t), y: H - bottom + 20, "text-anchor": "middle", class: "tick" }, svg).textContent = t + "%";
+  }
+  el("line", { x1: x(avg), x2: x(avg), y1: top - 12, y2: H - bottom + 4, stroke: css("--ref"), "stroke-width": 1.2, "stroke-dasharray": "5 4", opacity: .75 }, svg);
+  el("text", { x: x(avg) + 5, y: top - 16, class: "reflab" }, svg).textContent = `Peltola average ${f2(avg)}`;
+  rows.forEach((r, i) => {
+    const y = top + i * rowH, v = val(r), grey = view === "eday" && r.covid;
+    const g = el("g", { class: "row", tabindex: 0 }, svg);
+    el("rect", { class: "band", x: 4, y, width: W - 8, height: rowH, fill: "transparent", rx: 4 }, g);
+    el("text", { x: labW - 12, y: y + rowH / 2 + 4.5, "text-anchor": "end", class: "lab" + (r.pel ? " pel" : ""), opacity: grey ? .55 : 1 }, g).textContent = r.label;
+    const bw = Math.max(1, x(v) - x(0)), col = css(r.ind ? "--ind" : "--dem");
+    const by = y + 5, bh = rowH - 10;
+    el("path", { d: `M${x(0)},${by} h${bw - 4} a4,4 0 0 1 4,4 v${bh - 8} a4,4 0 0 1 -4,4 h${-(bw - 4)} z`, fill: col, opacity: grey ? .3 : 1 }, g);
+    if (r.ind) el("path", { d: `M${x(0)},${by} h${bw - 4} a4,4 0 0 1 4,4 v${bh - 8} a4,4 0 0 1 -4,4 h${-(bw - 4)} z`, fill: "url(#hatch)", opacity: grey ? .3 : 1 }, g);
+    el("text", { x: x(v) + 7, y: y + rowH / 2 + 4, class: "val" }, g).textContent = f2(v) + (grey ? " ⚠" : "");
+    const show = ev => {
+      svg.querySelectorAll(".row.hot").forEach(n => n.classList.remove("hot")); g.classList.add("hot");
+      const chain = view === "eday" ? `${fmtN(r.D)} / ${fmtN(r.T)} == ${f2(r.city)}` : `${fmtN(r.Dw)} / ${fmtN(r.Tw)} == ${f2(r.whole)}`;
+      tip.innerHTML = `<div class="h">${r.label}</div><div class="big">${f2(v)}%</div><div class="m">${chain}</div>` +
+        (view === "eday" ? `<table><tr><td>Anchorage</td><td>${f2(r.anc)}</td></tr><tr><td>Fairbanks</td><td>${f2(r.fbx)}</td></tr><tr><td>Juneau</td><td>${f2(r.jnu)}</td></tr><tr><td>Rest of state</td><td>${f2(r.rest)}</td></tr></table>` :
+          `<table><tr><td>Statewide</td><td>${f2(r.state)}</td></tr></table>`) +
+        (grey ? `<div class="m" style="margin-top:6px">2020 election day is unusable (pandemic absentee voting).</div>` : "") +
+        (r.noreal ? `<div class="m" style="margin-top:6px">No real Democratic side in this race.</div>` : "");
+      tip.hidden = false;
+      const p = ev.clientX != null && ev.type !== "focus" ? { x: ev.clientX, y: ev.clientY } : (() => { const b = g.getBoundingClientRect(); return { x: b.left + labW, y: b.top }; })();
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      tip.style.left = Math.min(innerWidth - tw - 12, Math.max(12, p.x + 14)) + "px";
+      tip.style.top = (p.y + th + 24 > innerHeight ? p.y - th - 12 : p.y + 16) + "px";
+    };
+    const hide = () => { g.classList.remove("hot"); tip.hidden = true; };
+    g.addEventListener("pointermove", show); g.addEventListener("pointerleave", hide); g.addEventListener("focus", show); g.addEventListener("blur", hide);
+  });
+  const tb = document.querySelector("#tbl tbody"); tb.replaceChildren();
+  rows.forEach(r => { const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${r.label}</td>` + [r.city, r.anc, r.fbx, r.jnu, r.rest, r.whole, r.state].map(v => `<td class="n">${f2(v)}</td>`).join(""); tb.appendChild(tr); });
+}
+const setView = v => { view = v; document.getElementById("v-eday").setAttribute("aria-pressed", v === "eday"); document.getElementById("v-all").setAttribute("aria-pressed", v === "all"); draw(); };
+document.getElementById("v-eday").onclick = () => setView("eday");
+document.getElementById("v-all").onclick = () => setView("all");
+document.getElementById("norealD").onchange = e => { showNo = e.target.checked; draw(); };
+draw();
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+</script>

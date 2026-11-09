@@ -1,0 +1,51 @@
+{
+ "stopped_2026": {
+  "hill_or_D": 89116,
+  "begich": 104547,
+  "two_way": 193663,
+  "actual": -7.97,
+  "cont_D": 97477,
+  "cont_R": 105813,
+  "cont_two_way": 203290,
+  "continued": -4.1,
+  "stopped": 10867,
+  "stopped_to_D": 8361,
+  "stopped_to_R": 1266,
+  "stopped_none": 1240,
+  "effect": -3.87
+ },
+ "stopped_2024": {
+  "hill_or_D": 156992,
+  "begich": 164870,
+  "two_way": 321862,
+  "actual": -2.45,
+  "cont_D": 160086,
+  "cont_R": 174069,
+  "cont_two_way": 334155,
+  "continued": -4.18,
+  "stopped": 13991,
+  "stopped_to_D": 3094,
+  "stopped_to_R": 9199,
+  "stopped_none": 1698,
+  "effect": 1.74
+ },
+ "stopped_excess": -5.61,
+ "hill_nonD": {
+  "Grant set": {
+   "ballots": 7247,
+   "margin": -7.95,
+   "effect": -3.85
+  },
+  "without protest voters": {
+   "ballots": 5636,
+   "margin": -7.07,
+   "effect": -2.97
+  },
+  "broader": {
+   "ballots": 9746,
+   "margin": -9.34,
+   "effect": -5.24
+  }
+ },
+ "both_sides_net": 0.02
+}

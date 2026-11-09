@@ -1,0 +1,99 @@
+{
+ "release": "release_20261104_1309.json",
+ "early_rem": 21969,
+ "abs_rem": 30995,
+ "unreturned": 18919,
+ "questioned": 8000,
+ "races": {
+  "House": {
+   "dem": "Hill",
+   "rep": "Begich",
+   "cvr_net": -15431,
+   "batch_first_choices": 10541,
+   "batch_shares": {
+    "Begich": 35.3,
+    "Hafner": 9.7,
+    "Hill": 51.4,
+    "McDermott": 3.2,
+    "Write-in": 0.4
+   },
+   "batch_net": 2084,
+   "batch_margin_pct": 21.06,
+   "counted_net": -13347,
+   "scenarios": [
+    {
+     "unreturned_pct": 0,
+     "remaining_net": 4173,
+     "remaining_two": 57778,
+     "remaining_margin_pct": 7.22,
+     "total_net": -9174,
+     "total_pct_dem": 48.24,
+     "flip_shift_pts": 15.88
+    },
+    {
+     "unreturned_pct": 40,
+     "remaining_net": 4757,
+     "remaining_two": 64879,
+     "remaining_margin_pct": 7.33,
+     "total_net": -8590,
+     "total_pct_dem": 48.4,
+     "flip_shift_pts": 13.24
+    },
+    {
+     "unreturned_pct": 100,
+     "remaining_net": 5633,
+     "remaining_two": 75532,
+     "remaining_margin_pct": 7.46,
+     "total_net": -7715,
+     "total_pct_dem": 48.62,
+     "flip_shift_pts": 10.21
+    }
+   ]
+  },
+  "Senate": {
+   "dem": "Peltola",
+   "rep": "Sullivan",
+   "cvr_net": -4685,
+   "batch_first_choices": 10930,
+   "batch_shares": {
+    "Heikes": 5.2,
+    "Peltola": 66.7,
+    "Sullivan Jr.": 2.1,
+    "Sullivan": 25.6,
+    "Write-in": 0.4
+   },
+   "batch_net": 4356,
+   "batch_margin_pct": 41.17,
+   "counted_net": -329,
+   "scenarios": [
+    {
+     "unreturned_pct": 0,
+     "remaining_net": 7791,
+     "remaining_two": 59965,
+     "remaining_margin_pct": 12.99,
+     "total_net": 7462,
+     "total_pct_dem": 51.38,
+     "flip_shift_pts": -12.44
+    },
+    {
+     "unreturned_pct": 40,
+     "remaining_net": 8907,
+     "remaining_two": 67402,
+     "remaining_margin_pct": 13.22,
+     "total_net": 8579,
+     "total_pct_dem": 51.54,
+     "flip_shift_pts": -12.73
+    },
+    {
+     "unreturned_pct": 100,
+     "remaining_net": 10582,
+     "remaining_two": 78558,
+     "remaining_margin_pct": 13.47,
+     "total_net": 10254,
+     "total_pct_dem": 51.77,
+     "flip_shift_pts": -13.05
+    }
+   ]
+  }
+ }
+}

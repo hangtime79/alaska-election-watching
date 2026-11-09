@@ -1,0 +1,385 @@
+{
+ "matched": 335853,
+ "house_margin": -2.45,
+ "president_margin": -12.79,
+ "premium": 10.34,
+ "parts_votes": {
+  "Trump voters choosing Peltola (x2)": 34178,
+  "Harris voters choosing Begich (x2)": -7264,
+  "Trump voters with no House final-round vote": 9210,
+  "Harris voters with no House final-round vote": -3111,
+  "Peltola voters with no presidential final-round vote": 3342,
+  "Begich voters with no presidential final-round vote": -2210
+ },
+ "by_district": [
+  {
+   "dist": 1,
+   "ballots": 8561,
+   "house": -7.45,
+   "president": -17.39,
+   "trump_to_peltola_pct": 8.66,
+   "harris_to_begich_pct": 3.19,
+   "premium": 9.94
+  },
+  {
+   "dist": 2,
+   "ballots": 9548,
+   "house": 14.45,
+   "president": 0.71,
+   "trump_to_peltola_pct": 11.75,
+   "harris_to_begich_pct": 2.54,
+   "premium": 13.74
+  },
+  {
+   "dist": 3,
+   "ballots": 11064,
+   "house": 25.72,
+   "president": 15.53,
+   "trump_to_peltola_pct": 12.28,
+   "harris_to_begich_pct": 1.96,
+   "premium": 10.19
+  },
+  {
+   "dist": 4,
+   "ballots": 9240,
+   "house": 47.62,
+   "president": 39.38,
+   "trump_to_peltola_pct": 14.23,
+   "harris_to_begich_pct": 1.49,
+   "premium": 8.23
+  },
+  {
+   "dist": 5,
+   "ballots": 7940,
+   "house": -0.2,
+   "president": -12.37,
+   "trump_to_peltola_pct": 10.87,
+   "harris_to_begich_pct": 2.68,
+   "premium": 12.17
+  },
+  {
+   "dist": 6,
+   "ballots": 11952,
+   "house": -6.97,
+   "president": -15.73,
+   "trump_to_peltola_pct": 5.75,
+   "harris_to_begich_pct": 1.4,
+   "premium": 8.76
+  },
+  {
+   "dist": 7,
+   "ballots": 9586,
+   "house": -34.45,
+   "president": -44.82,
+   "trump_to_peltola_pct": 6.18,
+   "harris_to_begich_pct": 3.01,
+   "premium": 10.37
+  },
+  {
+   "dist": 8,
+   "ballots": 10778,
+   "house": -42.18,
+   "president": -50.04,
+   "trump_to_peltola_pct": 4.78,
+   "harris_to_begich_pct": 2.45,
+   "premium": 7.86
+  },
+  {
+   "dist": 9,
+   "ballots": 11882,
+   "house": 9.06,
+   "president": 2.24,
+   "trump_to_peltola_pct": 8.3,
+   "harris_to_begich_pct": 1.98,
+   "premium": 6.82
+  },
+  {
+   "dist": 10,
+   "ballots": 8796,
+   "house": 6.54,
+   "president": -3.19,
+   "trump_to_peltola_pct": 10.21,
+   "harris_to_begich_pct": 2.86,
+   "premium": 9.73
+  },
+  {
+   "dist": 11,
+   "ballots": 9872,
+   "house": 4.62,
+   "president": -2.32,
+   "trump_to_peltola_pct": 8.83,
+   "harris_to_begich_pct": 2.67,
+   "premium": 6.93
+  },
+  {
+   "dist": 12,
+   "ballots": 8522,
+   "house": 11.1,
+   "president": 1.4,
+   "trump_to_peltola_pct": 10.98,
+   "harris_to_begich_pct": 2.05,
+   "premium": 9.71
+  },
+  {
+   "dist": 13,
+   "ballots": 7558,
+   "house": 11.36,
+   "president": 1.79,
+   "trump_to_peltola_pct": 11.0,
+   "harris_to_begich_pct": 2.51,
+   "premium": 9.57
+  },
+  {
+   "dist": 14,
+   "ballots": 7428,
+   "house": 31.58,
+   "president": 22.21,
+   "trump_to_peltola_pct": 12.18,
+   "harris_to_begich_pct": 1.76,
+   "premium": 9.37
+  },
+  {
+   "dist": 15,
+   "ballots": 9318,
+   "house": 6.54,
+   "president": -2.49,
+   "trump_to_peltola_pct": 9.92,
+   "harris_to_begich_pct": 2.55,
+   "premium": 9.03
+  },
+  {
+   "dist": 16,
+   "ballots": 9695,
+   "house": 25.37,
+   "president": 15.1,
+   "trump_to_peltola_pct": 12.57,
+   "harris_to_begich_pct": 1.35,
+   "premium": 10.27
+  },
+  {
+   "dist": 17,
+   "ballots": 7707,
+   "house": 40.8,
+   "president": 34.93,
+   "trump_to_peltola_pct": 12.13,
+   "harris_to_begich_pct": 2.06,
+   "premium": 5.87
+  },
+  {
+   "dist": 18,
+   "ballots": 4157,
+   "house": -4.28,
+   "president": -11.59,
+   "trump_to_peltola_pct": 7.82,
+   "harris_to_begich_pct": 3.71,
+   "premium": 7.31
+  },
+  {
+   "dist": 19,
+   "ballots": 4984,
+   "house": 31.43,
+   "president": 18.66,
+   "trump_to_peltola_pct": 15.83,
+   "harris_to_begich_pct": 2.11,
+   "premium": 12.77
+  },
+  {
+   "dist": 20,
+   "ballots": 7245,
+   "house": 23.38,
+   "president": 13.34,
+   "trump_to_peltola_pct": 12.46,
+   "harris_to_begich_pct": 1.77,
+   "premium": 10.04
+  },
+  {
+   "dist": 21,
+   "ballots": 9044,
+   "house": 16.84,
+   "president": 8.82,
+   "trump_to_peltola_pct": 10.04,
+   "harris_to_begich_pct": 1.78,
+   "premium": 8.03
+  },
+  {
+   "dist": 22,
+   "ballots": 5450,
+   "house": 12.33,
+   "president": 1.76,
+   "trump_to_peltola_pct": 11.86,
+   "harris_to_begich_pct": 2.39,
+   "premium": 10.57
+  },
+  {
+   "dist": 23,
+   "ballots": 10614,
+   "house": -10.89,
+   "president": -19.08,
+   "trump_to_peltola_pct": 7.92,
+   "harris_to_begich_pct": 2.95,
+   "premium": 8.19
+  },
+  {
+   "dist": 24,
+   "ballots": 10100,
+   "house": -24.82,
+   "president": -32.64,
+   "trump_to_peltola_pct": 6.64,
+   "harris_to_begich_pct": 3.26,
+   "premium": 7.82
+  },
+  {
+   "dist": 25,
+   "ballots": 10418,
+   "house": -27.72,
+   "president": -35.99,
+   "trump_to_peltola_pct": 6.31,
+   "harris_to_begich_pct": 2.57,
+   "premium": 8.27
+  },
+  {
+   "dist": 26,
+   "ballots": 9400,
+   "house": -45.96,
+   "president": -55.12,
+   "trump_to_peltola_pct": 5.36,
+   "harris_to_begich_pct": 2.84,
+   "premium": 9.15
+  },
+  {
+   "dist": 27,
+   "ballots": 8805,
+   "house": -48.18,
+   "president": -56.96,
+   "trump_to_peltola_pct": 5.03,
+   "harris_to_begich_pct": 2.15,
+   "premium": 8.78
+  },
+  {
+   "dist": 28,
+   "ballots": 9256,
+   "house": -40.57,
+   "president": -49.34,
+   "trump_to_peltola_pct": 5.47,
+   "harris_to_begich_pct": 2.78,
+   "premium": 8.77
+  },
+  {
+   "dist": 29,
+   "ballots": 10474,
+   "house": -36.39,
+   "president": -45.57,
+   "trump_to_peltola_pct": 5.88,
+   "harris_to_begich_pct": 2.5,
+   "premium": 9.18
+  },
+  {
+   "dist": 30,
+   "ballots": 10306,
+   "house": -35.68,
+   "president": -45.23,
+   "trump_to_peltola_pct": 5.39,
+   "harris_to_begich_pct": 1.95,
+   "premium": 9.55
+  },
+  {
+   "dist": 31,
+   "ballots": 6929,
+   "house": 11.3,
+   "president": -2.34,
+   "trump_to_peltola_pct": 12.87,
+   "harris_to_begich_pct": 2.4,
+   "premium": 13.65
+  },
+  {
+   "dist": 32,
+   "ballots": 5245,
+   "house": -16.68,
+   "president": -28.19,
+   "trump_to_peltola_pct": 9.33,
+   "harris_to_begich_pct": 3.72,
+   "premium": 11.51
+  },
+  {
+   "dist": 33,
+   "ballots": 8781,
+   "house": -44.12,
+   "president": -52.22,
+   "trump_to_peltola_pct": 6.1,
+   "harris_to_begich_pct": 3.97,
+   "premium": 8.09
+  },
+  {
+   "dist": 34,
+   "ballots": 9704,
+   "house": -9.47,
+   "president": -20.14,
+   "trump_to_peltola_pct": 8.54,
+   "harris_to_begich_pct": 2.34,
+   "premium": 10.67
+  },
+  {
+   "dist": 35,
+   "ballots": 9711,
+   "house": 15.7,
+   "president": 6.23,
+   "trump_to_peltola_pct": 9.98,
+   "harris_to_begich_pct": 1.6,
+   "premium": 9.46
+  },
+  {
+   "dist": 36,
+   "ballots": 9614,
+   "house": -8.82,
+   "president": -21.56,
+   "trump_to_peltola_pct": 9.66,
+   "harris_to_begich_pct": 2.46,
+   "premium": 12.74
+  },
+  {
+   "dist": 37,
+   "ballots": 4372,
+   "house": 12.65,
+   "president": -5.62,
+   "trump_to_peltola_pct": 20.36,
+   "harris_to_begich_pct": 6.43,
+   "premium": 18.27
+  },
+  {
+   "dist": 38,
+   "ballots": 3831,
+   "house": 40.91,
+   "president": 13.29,
+   "trump_to_peltola_pct": 35.99,
+   "harris_to_begich_pct": 6.64,
+   "premium": 27.62
+  },
+  {
+   "dist": 39,
+   "ballots": 4258,
+   "house": 40.27,
+   "president": 14.54,
+   "trump_to_peltola_pct": 35.32,
+   "harris_to_begich_pct": 7.19,
+   "premium": 25.73
+  },
+  {
+   "dist": 40,
+   "ballots": 3310,
+   "house": 25.67,
+   "president": -8.45,
+   "trump_to_peltola_pct": 31.24,
+   "harris_to_begich_pct": 6.27,
+   "premium": 34.12
+  },
+  {
+   "dist": 99,
+   "ballots": 398,
+   "house": 71.04,
+   "president": 73.03,
+   "trump_to_peltola_pct": 3.77,
+   "harris_to_begich_pct": 2.06,
+   "premium": -1.99
+  }
+ ]
+}

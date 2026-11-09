@@ -1,0 +1,395 @@
+<main>
+<header>
+  <div class="eyebrow">Alaska · US House and US Senate · count as of 4 Nov, 1:09 p.m.</div>
+  <h1>Projecting the 2026 Alaska Election Finish</h1>
+  <p class="lead">Begich holds the House and Peltola takes the Senate, each by about 8,600 votes. This page projects the rest of the count and traces every ballot through Alaska's ranked-choice rounds.</p>
+  <p class="note">Every number with a sign is the Democratic side minus the Republican side: negative is overperformance for the Republican, positive is overperformance for the Democrat. Red is Republican, blue is Democratic, purple is everyone else (Hill is an independent endorsed by the Democrats). My own tabulations of unofficial data.</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<section aria-label="Executive summary">
+  <div class="summaries">
+    <article class="card" aria-labelledby="sum1">
+      <div class="kicker">Executive summary</div>
+      <h2 id="sum1">The forecast</h2>
+      <ul>
+        <li><b>Begich holds the House, Peltola takes the Senate.</b>Each by about 8,600. Hill − Begich projects at −7,715 to −9,174. Begich has 49.52% of first choices, so the ranked-choice rounds on 18 Nov decide it. Peltola − Sullivan projects at +7,462 to +10,254; Sullivan leads the ballots counted so far by 329. <a href="#projection">Begich holds the House, Peltola takes the Senate</a></li>
+        <li><b>The ballots still to count lean Democratic, but not enough to flip either race.</b>About 53,000 early and absentee ballots are in hand, up to 18,900 absentees are still out, and about 8,000 questioned ballots are expected. On counted ballots of the same types they run about +7 for Hill and +13 for Peltola. To flip, they would have to vote 10–16 points more for Hill, or 12–13 points more for Sullivan, than counted ballots of the same type. <a href="#remaining">The ballots still to count lean Democratic, but not enough to flip either race</a></li>
+        <li><b>Late ballots in 2024 ran against Begich.</b>Every batch counted after 10 Nov 2024 was less favourable to Begich than the first count, and the last batch was the worst (41.0%). The projection already assumes the 2026 late ballots lean Democratic. <a href="#drift-2024">Late ballots in 2024 ran against Begich</a></li>
+      </ul>
+      <div class="tablewrap"><table class="mini">
+        <thead><tr><th>Race</th><th>Projected margin (D − R)</th><th>Remaining ballots would have to move</th></tr></thead>
+        <tbody>
+          <tr><td>House, Hill − Begich</td><td class="rep">−7,715 to −9,174</td><td>10–16 points toward Hill</td></tr>
+          <tr><td>Senate, Peltola − Sullivan</td><td class="dem">+7,462 to +10,254</td><td>12–13 points toward Sullivan</td></tr>
+        </tbody>
+      </table></div>
+    </article>
+  </div>
+  <p class="note">2026 figures use the projection's central case. Notes on the data are at the bottom of the page.</p>
+</section>
+
+<nav class="toc" aria-label="Contents">
+  <div class="tocpart"><span class="partno">Part 1</span><b>The forecast</b>
+    <a href="#projection">Begich holds the House, Peltola takes the Senate</a>
+    <a href="#remaining">The ballots still to count lean Democratic, but not enough to flip either race</a>
+    <a href="#drift-2024">Late ballots in 2024 ran against Begich</a></div>
+  <div class="tocpart"><span class="partno">Part 2</span><b>The ballots, traced</b>
+    <a href="#same-ballots">House and Senate on the same ballots</a>
+    <a href="#flows-2026">Minor-candidate voters, 2026</a>
+    <a href="#flows-2024">Minor-candidate voters, 2024 count by count</a>
+    <a href="#whole-race">Every round of the House race</a>
+    <a href="#first-to-final">First choice to final round</a></div>
+</nav>
+
+<div class="part" role="presentation"><span class="partno">Part 1</span><span class="parttitle">The forecast</span><span class="partsub">Where the 2026 count is heading, and how the 2024 count moved after election night.</span></div>
+
+<section id="projection">
+  <h2>Begich holds the House, Peltola takes the Senate</h2>
+  <p>Counted ballots are the official count as of 4 Nov, 1:09 p.m. (note 1). Remaining early, absentee and questioned ballots vote like counted ballots of the same type. The bar shows the range from 0% to 100% of the 18,919 unreturned absentees coming back; the dot is the 40% case.</p>
+  <div class="ranges" id="ranges"></div>
+  <h3 id="remaining">The ballots still to count lean Democratic, but not enough to flip either race</h3>
+  <p>Each row adds the remaining ballots to the official count. The last column is how far the remaining ballots would have to move, against counted ballots of the same type, to flip the race.</p>
+  <div class="tablewrap"><table id="revTab"></table></div>
+  <p class="note" id="revNote"></p>
+</section>
+
+<section id="drift-2024">
+  <h2>Late ballots in 2024 ran against Begich</h2>
+  <p>In 2024, every batch counted after 10 Nov was less favourable to Begich than the first count. The tables below show each candidate's share at the first and last snapshots, and how each later batch split.</p>
+  <div class="tablewrap"><table id="drift"></table></div>
+  <div class="tablewrap"><table id="incr"></table></div>
+  <p class="note" id="driftNote"></p>
+  <h3>Begich's share in each 2024 snapshot</h3>
+  <p>Round 1 counts first choices among active ballots (Alaska declares a winner here if anyone is above 50%). Final round is Begich against the main opponent after all eliminations.</p>
+  <div class="tablewrap"><table id="moves"></table></div>
+  <div class="tablewrap"><table id="proj"></table></div>
+  <p class="note" id="projnote"></p>
+</section>
+
+<div class="part" role="presentation"><span class="partno">Part 2</span><span class="parttitle">The ballots, traced</span><span class="partsub">Every ballot followed through the ranked-choice rounds, in 2026 and in each 2024 snapshot.</span></div>
+
+<section id="same-ballots">
+  <h2>House and Senate on the same ballots</h2>
+  <p id="xIntro"></p>
+  <div class="stats" id="xStats"></div>
+  <h3>Final round: where each ballot went in both races</h3>
+  <p>Left: the ballot's House final-round vote. Right: the same ballot's Senate final-round vote. Hover over a band for the number of ballots.</p>
+  <div class="chart" id="xSankey"></div>
+  <div class="tablewrap"><table id="xTab"></table></div>
+  <h3>The House–Senate gap, part by part</h3>
+  <div class="tablewrap"><table id="xDec"></table></div>
+  <p class="note" id="xDecNote"></p>
+  <h3>Peltola 2024 (House) against Peltola 2026 (Senate), same locations</h3>
+  <div class="tablewrap"><table id="xPel"></table></div>
+  <p class="note">Final-round share against the Republican. 2024 is the final count, and 2026 is the count so far. Peltola's election-day share hasn't moved. Her early-vote share is up almost 12 points, the same swing that hit Begich. So the early-vote shift is in the whole electorate, not something specific to Hill.</p>
+  <h3>Hill against Peltola by vote type and district</h3>
+  <div class="tablewrap"><table id="xVt"></table></div>
+  <details><summary>All House districts, sorted by Peltola's lead over Hill</summary><div class="tablewrap"><table id="xDist"></table></div></details>
+</section>
+
+<section id="flows-2026">
+  <h2>Minor-candidate voters, 2026</h2>
+  <p id="m26"></p>
+  <div class="legend" id="leg26"></div>
+  <div class="chart" id="minor26"></div>
+</section>
+
+<section id="flows-2024">
+  <h2>Minor-candidate voters, 2024 count by count</h2>
+  <p>Pick a snapshot. The chart is drawn on the same scale as the 2026 chart above, so band widths can be compared directly.</p>
+  <div class="seg" role="group" aria-label="2024 snapshot" id="seg"></div>
+  <div class="legend" id="leg24"></div>
+  <div class="chart" id="minor24"></div>
+</section>
+
+<section id="whole-race">
+  <h2>Every round of the House race</h2>
+  <p>All ballots, 2026 now and the selected 2024 snapshot. Begich and the main opponent's voters stay put in every round, so the minor-candidate flows look thin at this scale.</p>
+  <h3>2026 now</h3>
+  <div class="chart" id="full26"></div>
+  <h3 id="full24h">2024</h3>
+  <div class="chart" id="full24"></div>
+</section>
+
+<section id="first-to-final">
+  <h2>First choice to final round</h2>
+  <div class="tablegrid">
+    <div><h3>2026 now</h3><div class="tablewrap"><table id="t26"></table></div></div>
+    <div><h3 id="t24h">2024</h3><div class="tablewrap"><table id="t24"></table></div></div>
+  </div>
+  <p class="note">"No more rankings" means the voter ranked no one else who was still in the race. It also includes the few ballots that hit an overvote or two blank ranks in a row, which Alaska also stops counting (AS 15.15.350). Write-ins are counted together as one candidate.</p>
+</section>
+<section id="notes" class="notes">
+  <h2>Notes</h2>
+  <ol>
+    <li id="note1"><b>Counted ballots.</b> The ballot-level data (the cast vote record, exported 4 Nov at about 1:20 p.m.) holds 204,530 ballots. The official Election Summary Report of 1:09 p.m. counts 215,912, with 400 of 401 precincts in. The difference, 215,912 − 204,530 == 11,382, is almost entirely rural election-day precincts: only 6 of the 106 precincts in HD37–40 are in the ballot-level data. The projection adds those ballots from the report's first choices, read through each race's own transfer pattern. The same lag happened in 2024, when 75% of rural election-day ballots arrived after 10 Nov.
+      <div class="tablewrap"><table id="batchTab"></table></div></li>
+    <li><b>Sources.</b> Alaska Division of Elections: Dominion cast vote record exports for 2022 (August special and November general), 2024 and 2026, tabulated with RCTab 2.1.0 under Alaska's ranked-choice rules; the Combined Ballot Report (4 Nov, 11:06 a.m.); the Election Summary Report (4 Nov, 1:09 p.m.). National figures: UF Election Lab and news projections. All tabulations are my own and unofficial.</li>
+  </ol>
+</section>
+</main>
+<div id="tip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js"></script>
+<script>
+const DATA = __DATA__;
+const PROJ = __PROJ__;
+const REP = __REP__;
+const XO = __XOVER__;
+const REV = __REV__;
+const DONE = "No more rankings";
+const ORDER = ["Begich","Sullivan","Hill","Peltola","Hafner","McDermott","Howe","Write-in",DONE];
+const VAR = {Begich:"--rep",Sullivan:"--rep",Hill:"--ind",Peltola:"--dem",Hafner:"--dem2",McDermott:"--oth1",Howe:"--oth1","Write-in":"--oth2",[DONE]:"--stopped"};
+const fmt = d3.format(","), pct = v => v.toFixed(1)+"%", pct2 = v => v.toFixed(2);
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(VAR[n]).trim();
+const tip = document.getElementById("tip");
+const D26 = DATA.y2026, S24 = DATA.y2024;
+let sel = 0;
+try { const s = +localStorage.getItem("snap24"); if (s >= 0 && s < S24.length) sel = s; } catch(e) {}
+
+const PX_PER_BALLOT = 440 / D26.minor_ballots;  // shared scale for the minor-candidate charts
+const nonMinor = d => new Set([...d.finalists, DONE]);
+
+function draw(el, d, minorOnly, H){
+  el.innerHTML = "";
+  const keep = nonMinor(d);
+  const links = d.links.filter(l => !minorOnly || !keep.has(l.o));
+  const ncol = d.eliminated.length + 1;
+  const COLS = d.cols || Array.from({length:ncol}, (_,i) => i === ncol-1 ? "Final round" : "Round "+(i+1));
+  const W = 900, m = {t:34,r:120,b:12,l:120};
+  const id = (r,n) => r+"|"+n, nodes = new Map();
+  links.forEach(l => { nodes.set(id(l.r,l.s),{id:id(l.r,l.s),name:l.s,col:l.r}); nodes.set(id(l.r+1,l.t),{id:id(l.r+1,l.t),name:l.t,col:l.r+1}); });
+  const nodeCount = Math.max(...[...Array(ncol).keys()].map(c => [...nodes.values()].filter(n=>n.col===c).length));
+  const pad = 16;
+  const total = d3.sum(links.filter(l=>l.r===0), l=>l.v);
+  if (!H) H = Math.round(total * PX_PER_BALLOT + pad*(nodeCount-1) + m.t + m.b);
+  const sk = d3.sankey().nodeId(n=>n.id).nodeAlign(n=>n.col).nodeWidth(12).nodePadding(pad)
+    .nodeSort((a,b)=>ORDER.indexOf(a.name)-ORDER.indexOf(b.name))
+    .linkSort((a,b)=>ORDER.indexOf(a.origin)-ORDER.indexOf(b.origin)||ORDER.indexOf(a.target.name)-ORDER.indexOf(b.target.name))
+    .extent([[m.l,m.t],[W-m.r,H-m.b]]);
+  const {nodes:N, links:L} = sk({nodes:[...nodes.values()].map(n=>({...n})), links:links.map(l=>({source:id(l.r,l.s),target:id(l.r+1,l.t),value:l.v,origin:l.o,r:l.r}))});
+  const svg = d3.select(el).append("svg").attr("viewBox",`0 0 ${W} ${H}`).attr("role","img").attr("aria-label",`Ballot flow, ${d.label}`);
+  [...new Set(N.map(n=>n.col))].forEach(c => { const n = N.find(x=>x.col===c); svg.append("text").attr("class","col").attr("x",(n.x0+n.x1)/2).attr("y",16).attr("text-anchor","middle").text(COLS[c]); });
+  const g = svg.append("g");
+  g.selectAll("path").data(L).join("path").attr("class","link")
+    .attr("d",d3.sankeyLinkHorizontal()).attr("stroke",l=>css(l.origin)).attr("stroke-width",l=>Math.max(1,l.width))
+    .on("pointerenter",(e,l)=>{ g.classed("dim",true); d3.select(e.currentTarget).classed("on",true);
+      tip.innerHTML = `${d.cols ? "House "+l.source.name+", Senate "+l.target.name : (l.origin === DONE ? "Blank or invalid ballots" : l.origin+" first-choice voters")}<br>${COLS[l.r]}: ${l.source.name} → ${COLS[l.r+1]}: ${l.target.name}<br><b>${fmt(l.value)}</b> ballots`; tip.hidden=false; })
+    .on("pointermove",e=>{ tip.style.left=Math.min(e.clientX+14,innerWidth-270)+"px"; tip.style.top=(e.clientY+14)+"px"; })
+    .on("pointerleave",e=>{ g.classed("dim",false); d3.select(e.currentTarget).classed("on",false); tip.hidden=true; });
+  svg.append("g").selectAll("rect").data(N).join("rect")
+    .attr("x",n=>n.x0).attr("y",n=>n.y0).attr("width",n=>n.x1-n.x0).attr("height",n=>Math.max(1,n.y1-n.y0)).attr("rx",2).attr("fill",n=>css(n.name));
+  const prev = n => N.find(x=>x.col===n.col-1&&x.name===n.name);
+  const lab = svg.append("g").selectAll("g").data(N.filter(n=>n.col===0||n.col===ncol-1||!prev(n)||prev(n).value!==n.value)).join("g")
+    .attr("transform",n=>`translate(${n.col===0?n.x0-8:n.x1+6},${(n.y0+n.y1)/2})`);
+  const anchor = n => n.col===0?"end":"start";
+  lab.append("text").attr("dy","-0.15em").attr("text-anchor",anchor).text(n=>n.name);
+  lab.append("text").attr("class","val").attr("dy","1.05em").attr("text-anchor",anchor).text(n=>fmt(n.value));
+}
+
+function legend(el, d){
+  const minors = d.eliminated.filter(n=>n!=="Write-in").concat(["Write-in"]);
+  el.innerHTML = minors.map(n=>`<span><i class="key" style="background:var(${VAR[n]})"></i>${n} first choice</span>`).join("")
+    + `<span><i class="key" style="background:var(--stopped)"></i>${DONE}</span>`;
+}
+
+function flowTable(el, d){
+  const [f1,f2] = [d.finalists.includes("Begich")?"Begich":d.finalists[0], d.opponent];
+  const rows = {}, last = d.eliminated.length-1;
+  d.links.filter(l=>l.r===last).forEach(l=>{ const r = rows[l.o] ??= {[f1]:0,[f2]:0,[DONE]:0}; r[l.t]+=l.v; });
+  const tot = {[f1]:0,[f2]:0,[DONE]:0};
+  let h = `<thead><tr><th>First choice</th><th>Ballots</th><th>→ ${f1}</th><th>→ ${f2}</th><th>→ ${DONE}</th></tr></thead><tbody>`;
+  ORDER.forEach(o=>{ const r=rows[o]; if(!r) return; const s=r[f1]+r[f2]+r[DONE]; for (const k in tot) tot[k]+=r[k];
+    h += `<tr><td>${o===DONE?"Blank or invalid from the start":o}</td><td>${fmt(s)}</td><td>${fmt(r[f1])}</td><td>${fmt(r[f2])}</td><td>${fmt(r[DONE])}</td></tr>`; });
+  h += `</tbody><tfoot><tr><td>Total</td><td>${fmt(tot[f1]+tot[f2]+tot[DONE])}</td><td>${fmt(tot[f1])}</td><td>${fmt(tot[f2])}</td><td>${fmt(tot[DONE])}</td></tr></tfoot>`;
+  el.innerHTML = h;
+}
+
+function staticParts(){
+  const first = S24[0], fin = S24[S24.length-1];
+  const dR1 = fin.begich_r1_pct - first.begich_r1_pct, dF = fin.begich_final_pct - first.begich_final_pct;
+  const pR1 = D26.begich_r1_pct + dR1, pF = D26.begich_final_pct + dF;
+  document.getElementById("stats").innerHTML = [
+    [pct(D26.begich_r1_pct), "Begich round 1 now (needs over 50% to win outright)"],
+    [pct(pR1), "Round 1 projected, if 2026 drifts like 2024"],
+    [pct(D26.begich_final_pct), "Begich final round now, against Hill"],
+    [pct(pF), "Final round projected, if 2026 drifts like 2024"],
+  ].map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+
+  let h = `<thead><tr><th>Count</th><th>Ballots</th><th>Begich round 1</th><th>Begich final round</th><th>Minor ballots → Begich</th><th>→ opponent</th><th>→ ${DONE}</th></tr></thead><tbody>`;
+  S24.forEach(s => h += `<tr><td>2024 · ${s.label}</td><td>${fmt(s.ballots)}</td><td>${pct2(s.begich_r1_pct)}%</td><td>${pct2(s.begich_final_pct)}%</td><td>${fmt(s.minor_to_begich)}</td><td>${fmt(s.minor_to_opp)} (Peltola)</td><td>${fmt(s.minor_done)}</td></tr>`);
+  h += `<tr class="now"><td>2026 · now</td><td>${fmt(D26.ballots)}</td><td>${pct2(D26.begich_r1_pct)}%</td><td>${pct2(D26.begich_final_pct)}%</td><td>${fmt(D26.minor_to_begich)}</td><td>${fmt(D26.minor_to_opp)} (Hill)</td><td>${fmt(D26.minor_done)}</td></tr></tbody>`;
+  document.getElementById("moves").innerHTML = h;
+
+  const row = (what, a, b, now) => {
+    const d = b - a, p = now + d;
+    return `<tr><td>${what}</td><td class="chain">${pct2(b)} − ${pct2(a)} == ${d.toFixed(2)}</td><td class="chain">${pct2(now)} + (${d.toFixed(2)}) == <b>${pct2(p)}%</b></td></tr>`;
+  };
+  document.getElementById("proj").innerHTML = `<thead><tr><th>Begich share</th><th>2024 change, 10 Nov to final</th><th>2026 now + that change</th></tr></thead><tbody>`
+    + row("Round 1", first.begich_r1_pct, fin.begich_r1_pct, D26.begich_r1_pct)
+    + row("Final round", first.begich_final_pct, fin.begich_final_pct, D26.begich_final_pct) + `</tbody>`;
+  document.getElementById("projnote").textContent =
+    `This is a rough guide, not a forecast. It assumes the 2026 count changes from here as 2024 did from 10 Nov to the end. 2026 is earlier in its count (${fmt(D26.ballots)} ballots now against ${fmt(first.ballots)} on 10 Nov 2024), so more absentees are still to come, and absentees are Begich's weakest vote type. Midterm late voters may also differ from presidential-year ones. Re-run flow_data.py on each new export to update.`;
+  document.getElementById("m26").textContent =
+    `Only the ${fmt(D26.minor_ballots)} ballots that ranked ${D26.eliminated.filter(n=>n!=="Write-in").join(", ")} or a write-in first. Each band keeps its first-choice colour, so you can follow a voter through every elimination. Hover over a band for the number of ballots.`;
+  legend(document.getElementById("leg26"), D26);
+  legend(document.getElementById("leg24"), S24[0]);
+  flowTable(document.getElementById("t26"), D26);
+}
+
+function seg(){
+  document.getElementById("seg").innerHTML = S24.map((s,i)=>`<button type="button" id="snap${i}" aria-pressed="${i===sel}">${s.label}<span>${fmt(s.ballots)}</span></button>`).join("");
+  S24.forEach((s,i)=>document.getElementById("snap"+i).onclick=()=>{ sel=i; try{localStorage.setItem("snap24",i)}catch(e){} seg(); draw24(); });
+}
+function draw24(){
+  const s = S24[sel];
+  draw(document.getElementById("minor24"), s, true);
+  draw(document.getElementById("full24"), s, false, 520);
+  document.getElementById("full24h").textContent = `2024 · ${s.label}`;
+  document.getElementById("t24h").textContent = `2024 · ${s.label}`;
+  flowTable(document.getElementById("t24"), s);
+}
+function render(){
+  if (typeof xoParts === 'function' && document.getElementById('xSankey').innerHTML) xoParts();
+  draw(document.getElementById("minor26"), D26, true);
+  draw(document.getElementById("full26"), D26, false, 520);
+  draw24();
+}
+function vtParts(){
+  const A = PROJ.y2026.A, B = PROJ.y2026.B, bt = PROJ.backtest;
+  document.getElementById("absShare").textContent = A.abs_share_2024.toFixed(2)+"%";
+  let h = `<thead><tr><th>Vote type</th><th>Counted</th><th>Projected final</th><th>Still to come</th><th>Begich round 1</th><th>Begich final round</th></tr></thead><tbody>`;
+  A.rows.forEach(r => h += `<tr><td>${r.type}</td><td>${fmt(r.counted)}</td><td>${fmt(r.final)}</td><td>${fmt(r.remaining)}</td><td>${r.begich_r1_pct.toFixed(1)}%</td><td>${r.begich_final_pct.toFixed(1)}%</td></tr>`);
+  const sum = k => A.rows.reduce((s,r)=>s+r[k],0);
+  h += `</tbody><tfoot><tr><td>Total</td><td>${fmt(sum("counted"))}</td><td>${fmt(sum("final"))}</td><td>${fmt(sum("remaining"))}</td><td>${A.r1_pct.toFixed(2)}%</td><td>${A.final_pct.toFixed(2)}%</td></tr></tfoot>`;
+  document.getElementById("vt").innerHTML = h;
+  const adj = (p, b, act) => p + (act - b);
+  const r1Bias = bt.actual_r1_pct - bt.A.r1_pct, fBias = bt.actual_final_pct - bt.A.final_pct;
+  const r1BiasB = bt.actual_r1_pct - bt.B.r1_pct, fBiasB = bt.actual_final_pct - bt.B.final_pct;
+  document.getElementById("vtsum").innerHTML = `<thead><tr><th>Scenario</th><th>Final ballots</th><th>Begich round 1</th><th>Begich final round</th><th>Final-round margin, Hill − Begich</th></tr></thead><tbody>
+  <tr><td>2026 CVR</td><td>${fmt(D26.ballots)}</td><td>${A.now_r1_pct.toFixed(2)}%</td><td>${A.now_final_pct.toFixed(2)}%</td><td>${fmt(D26.final.Hill - D26.final.Begich)}</td></tr>
+  <tr class="now"><td>A · midterm-size turnout</td><td>${fmt(A.final_total)}</td><td>${A.r1_pct.toFixed(2)}%</td><td>${A.final_pct.toFixed(2)}%</td><td>${fmt(-A.final_margin)}</td></tr>
+  <tr><td>A · adjusted by 2024 backtest error</td><td></td><td class="chain">${A.r1_pct.toFixed(2)} + (${r1Bias.toFixed(2)}) == ${adj(A.r1_pct,bt.A.r1_pct,bt.actual_r1_pct).toFixed(2)}%</td><td class="chain">${A.final_pct.toFixed(2)} + (${fBias.toFixed(2)}) == ${adj(A.final_pct,bt.A.final_pct,bt.actual_final_pct).toFixed(2)}%</td><td></td></tr>
+  <tr><td>B · early and election-day counts also grow as in 2024</td><td>${fmt(B.final_total)}</td><td>${B.r1_pct.toFixed(2)}%</td><td>${B.final_pct.toFixed(2)}%</td><td>${fmt(-B.final_margin)}</td></tr>
+  <tr><td>B · adjusted by 2024 backtest error</td><td></td><td class="chain">${B.r1_pct.toFixed(2)} + (${r1BiasB.toFixed(2)}) == ${adj(B.r1_pct,bt.B.r1_pct,bt.actual_r1_pct).toFixed(2)}%</td><td class="chain">${B.final_pct.toFixed(2)} + (${fBiasB.toFixed(2)}) == ${adj(B.final_pct,bt.B.final_pct,bt.actual_final_pct).toFixed(2)}%</td><td></td></tr></tbody>`;
+  document.getElementById("vtnote").textContent =
+    `Backtest: run from the 10 Nov 2024 snapshot, the same method projected round 1 at ${bt.A.r1_pct.toFixed(2)}% and the final round at ${bt.A.final_pct.toFixed(2)}%. The actual results were ${bt.actual_r1_pct.toFixed(2)}% and ${bt.actual_final_pct.toFixed(2)}%. Ballots counted late within each vote type leaned slightly away from Begich, so the method overstates him a little. The adjusted rows subtract that error.`;
+  document.getElementById("stats").innerHTML = [
+    [pct(A.now_r1_pct), "Begich round 1 now (needs over 50% to win outright)"],
+    [pct(adj(A.r1_pct,bt.A.r1_pct,bt.actual_r1_pct)), "Round 1 projected by vote type (adjusted)"],
+    [pct(A.now_final_pct), "Begich final round now, against Hill"],
+    [pct(adj(A.final_pct,bt.A.final_pct,bt.actual_final_pct)), "Final round projected by vote type (adjusted)"],
+  ].map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+}
+function driftParts(){
+  const C = ["Begich","Peltola","Howe","Hafner","Write-in"];
+  const act = r => Object.values(r).reduce((a,b)=>a+b,0);
+  const a = S24[0], z = S24[S24.length-1];
+  const sh = (s,c) => (s.round1[c]||0)/act(s.round1)*100;
+  let h = `<thead><tr><th>Round 1 (first choice)</th><th>10 Nov share</th><th>Final share</th><th>Drift</th><th>Ballots counted after 10 Nov</th></tr></thead><tbody>`;
+  const lateAct = act(z.round1)-act(a.round1);
+  C.forEach(c => { const late = ((z.round1[c]||0)-(a.round1[c]||0))/lateAct*100;
+    h += `<tr><td>${c}</td><td>${sh(a,c).toFixed(2)}%</td><td>${sh(z,c).toFixed(2)}%</td><td class="chain">${sh(z,c).toFixed(2)} − ${sh(a,c).toFixed(2)} == ${(sh(z,c)-sh(a,c)>=0?"+":"")}${(sh(z,c)-sh(a,c)).toFixed(2)}</td><td>${late.toFixed(1)}%</td></tr>`; });
+  const fa = a.final.Begich+a.final.Peltola, fz = z.final.Begich+z.final.Peltola;
+  ["Begich","Peltola"].forEach(c => { const p0=a.final[c]/fa*100, p1=z.final[c]/fz*100, late=(z.final[c]-a.final[c])/(fz-fa)*100;
+    h += `<tr class="${c==="Begich"?"now":""}"><td>${c}, final round</td><td>${p0.toFixed(2)}%</td><td>${p1.toFixed(2)}%</td><td class="chain">${p1.toFixed(2)} − ${p0.toFixed(2)} == ${(p1-p0>=0?"+":"")}${(p1-p0).toFixed(2)}</td><td>${late.toFixed(1)}%</td></tr>`; });
+  document.getElementById("drift").innerHTML = h + `</tbody>`;
+  let g = `<thead><tr><th>Batch counted</th><th>Active ballots added</th><th>Begich round 1</th><th>Peltola round 1</th><th>Begich final round</th></tr></thead><tbody>`;
+  for (let i=1;i<S24.length;i++){ const p=S24[i-1], q=S24[i]; const n=act(q.round1)-act(p.round1);
+    const fb=(q.final.Begich-p.final.Begich)/((q.final.Begich+q.final.Peltola)-(p.final.Begich+p.final.Peltola))*100;
+    g += `<tr><td>${p.label} → ${q.label}</td><td>${fmt(n)}</td><td>${((q.round1.Begich-p.round1.Begich)/n*100).toFixed(1)}%</td><td>${((q.round1.Peltola-p.round1.Peltola)/n*100).toFixed(1)}%</td><td>${fb.toFixed(1)}%</td></tr>`; }
+  g += `</tbody>`;
+  document.getElementById("incr").innerHTML = g;
+  const early = a.begich_r1_pct, lateR1 = (z.round1.Begich-a.round1.Begich)/lateAct*100, wEarly = act(a.round1)/act(z.round1);
+  document.getElementById("driftNote").textContent =
+    `How the end mixes the two: ${fmt(act(a.round1))} of ${fmt(act(z.round1))} active ballots were in on 10 Nov, which is ${(wEarly*100).toFixed(1)}%. ${(wEarly).toFixed(3)} × ${early.toFixed(2)} + ${(1-wEarly).toFixed(3)} × ${lateR1.toFixed(2)} == ${(wEarly*early+(1-wEarly)*lateR1).toFixed(2)}%, Begich's final round-1 share. The late ballots were about 7 points worse for him, but they were only about a quarter of the total, so his overall share moved less than 2 points. Much of that 2024 late shift was rural election-day ballots, which arrive late every year; in 2026 those are already in the official count.`;
+}
+function repParts(){
+  const T = REP.totals;
+  document.getElementById("repIntro").textContent = `The Division of Elections' Combined Ballot Report (as of ${REP.as_of}) shows how many ballots have been received and accepted. Subtracting what the CVR has counted gives the ballots in hand but not yet counted. Mailed absentees postmarked by Election Day can arrive until 13 Nov, and overseas ballots until 18 Nov.`;
+  document.getElementById("repIn").innerHTML = `<thead><tr><th>Ballots</th><th>Accepted (report)</th><th>Counted (CVR)</th><th>Still to count</th></tr></thead><tbody>
+  <tr><td>Early vote</td><td>${fmt(REP.accepted_early)}</td><td>${fmt(REP.counted_early)}</td><td class="chain">${fmt(REP.accepted_early)} − ${fmt(REP.counted_early)} == ${fmt(REP.early_rem)}</td></tr>
+  <tr><td>Absentee, incl. overseas</td><td>${fmt(REP.accepted_abs)}</td><td>${fmt(REP.counted_abs)}</td><td class="chain">${fmt(REP.accepted_abs)} − ${fmt(REP.counted_abs)} == ${fmt(REP.abs_rem)}</td></tr>
+  <tr><td>Absentee sent, not yet returned</td><td colspan="2" class="chain">mail ${fmt(T.MAIL.sent)} − ${fmt(T.MAIL.received)} − ${fmt(T.MAIL.undeliverable)}, online ${fmt(T.ONLINE.sent)} − ${fmt(T.ONLINE.received)}, fax ${fmt(T.FAX.sent)} − ${fmt(T.FAX.received)}</td><td>${fmt(REP.unreturned)} (some will not come back)</td></tr>
+  <tr><td>Questioned</td><td>${fmt(T.QUESTIONED.received)} reviewed so far</td><td>0</td><td>about ${fmt(REP.questioned_assumed)} assumed (3.0% of the total, as in 2024)</td></tr></tbody>`;
+  const sc = REP.scenarios.filter(s => !s.late.startsWith("Vote like the batch"));
+  let h = `<thead><tr><th>Ballots still to count…</th><th>Outstanding absentees that arrive</th><th>Total ballots</th><th>Begich round 1</th><th>Begich final round</th><th>Final margin, Hill − Begich</th></tr></thead><tbody>`;
+  sc.forEach((s,i) => h += `<tr${i%3===0?' class="grp"':''}><td>${i%3===0?s.late:""}</td><td>${s.unreturned_pct}%</td><td>${fmt(s.ballots)}</td><td>${s.r1_pct.toFixed(2)}%</td><td>${s.final_pct.toFixed(2)}%</td><td>${fmt(-s.margin)}</td></tr>`);
+  document.getElementById("repOut").innerHTML = h + `</tbody>`;
+  document.getElementById("repNote").textContent = `Questioned ballots vote like all ballots counted so far in every row. "Shift like 2024" lowers Begich's share for the uncounted ballots by ${Math.abs(REP.shift_2024_r1).toFixed(2)} points in round 1 and ${Math.abs(REP.shift_2024_final).toFixed(2)} in the final round, the gap between 2024's late ballots and its 10 Nov count. Most of that 2024 gap came from rural election-day ballots arriving late, so it overstates the shift for early and absentee ballots.`;
+}
+function revParts(){
+  const H = REV.races.House, S = REV.races.Senate, sg = v => (v>0?"+":"")+fmt(v);
+  const side = v => v < 0 ? "rep" : "dem";
+  // range bars: one scale from -LIM to +LIM, zero in the middle
+  const all = [H, S].flatMap(r => r.scenarios.map(s => Math.abs(s.total_net)));
+  const LIM = Math.ceil(Math.max(...all) / 4000) * 4000;
+  const x = v => ((v + LIM) / (2 * LIM)) * 100;
+  const row = (name, who, r) => {
+    const v = r.scenarios.map(s => s.total_net), lo = Math.min(...v), hi = Math.max(...v), mid = r.scenarios.find(s=>s.unreturned_pct===40).total_net;
+    const col = `var(--${side(mid)})`;
+    return `<div class="rrow"><div class="lab">${name}<small>${who}: ${sg(lo)} to ${sg(hi)}</small></div>
+      <div class="track" role="img" aria-label="${name}: ${sg(lo)} to ${sg(hi)}, central ${sg(mid)}"><div class="axis"></div><div class="zero" style="left:${x(0)}%"></div>
+      <div class="band" style="left:${x(lo)}%;width:${x(hi)-x(lo)}%;background:${col}"></div><div class="dot" style="left:${x(mid)}%;background:${col}"></div></div></div>`;
+  };
+  const ticks = [-LIM, -LIM/2, 0, LIM/2, LIM];
+  document.getElementById("ranges").innerHTML = row("House", "Hill − Begich", H) + row("Senate", "Peltola − Sullivan", S)
+    + `<div class="rrow"><div></div><div class="scale">${ticks.map(t=>`<span style="left:${x(t)}%">${sg(t)}</span>`).join("")}</div></div>
+       <div class="rrow"><div></div><div class="scale"><span class="side rep" style="left:0;transform:none">← Republican ahead</span><span class="side dem" style="left:auto;right:0;transform:none">Democratic side ahead →</span></div></div>`;
+  let h = `<thead><tr><th>Race</th><th>Unreturned absentees returned</th><th>Counted (report)</th><th>+ Remaining ballots</th><th>== Projected margin</th><th>Democratic side's share</th><th>Shift needed to flip</th></tr></thead><tbody>`;
+  [["House", "Hill − Begich", H], ["Senate", "Peltola − Sullivan", S]].forEach(([name, who, r]) => r.scenarios.forEach((s,i) => {
+    const cls = [i===0?"grp":"", s.unreturned_pct===40?"now":""].filter(Boolean).join(" ");
+    h += `<tr${cls?` class="${cls}"`:""}><td>${i===0?`${name}<small>${who}</small>`:""}</td><td>${s.unreturned_pct}%</td><td>${sg(r.counted_net)}</td>
+      <td>${sg(s.remaining_net)}<small>${s.remaining_margin_pct>0?"+":""}${s.remaining_margin_pct.toFixed(2)} pts on ${fmt(s.remaining_two)}</small></td>
+      <td class="${side(s.total_net)}"><b>${sg(s.total_net)}</b></td><td>${s.total_pct_dem.toFixed(2)}%</td><td>${s.flip_shift_pts>0?"+":""}${s.flip_shift_pts.toFixed(2)} pts</td></tr>`; }));
+  document.getElementById("revTab").innerHTML = h + `</tbody>`;
+  document.getElementById("revNote").textContent = `Counted == ballot-level count + the rural precincts in the official report (note 1). House: ${sg(H.cvr_net)} + (${sg(H.batch_net)}) == ${sg(H.counted_net)}. Senate: ${sg(S.cvr_net)} + (${sg(S.batch_net)}) == ${sg(S.counted_net)}. Remaining ballots: ${fmt(REV.early_rem)} early, ${fmt(REV.abs_rem)} absentee, about ${fmt(REV.questioned)} questioned, and 0–100% of ${fmt(REV.unreturned)} unreturned absentees. Only ballots that reach the final round count in the margin, so the remaining-ballot counts are smaller than the ballot totals. "Shift needed to flip" is how many points the remaining ballots' margin would have to move.`;
+  let b = `<thead><tr><th>Race</th><th>Batch first choices</th><th class="txt">Shares</th><th>Batch final-round margin</th></tr></thead><tbody>`;
+  [["House", H], ["Senate", S]].forEach(([n, r]) => b += `<tr><td>${n}</td><td>${fmt(r.batch_first_choices)}</td><td class="txt">${Object.entries(r.batch_shares).map(([k,v])=>`${k} ${v}%`).join(", ")}</td><td class="dem">${r.batch_margin_pct>0?"+":""}${r.batch_margin_pct.toFixed(2)}<small>${sg(r.batch_net)} votes</small></td></tr>`);
+  document.getElementById("batchTab").innerHTML = b + `</tbody>`;
+  const m40 = r => r.scenarios.find(s=>s.unreturned_pct===40);
+  document.getElementById("stats").innerHTML = [
+    [sg(m40(H).total_net), "rep", `House projected, Hill − Begich. Range ${sg(H.scenarios[2].total_net)} to ${sg(H.scenarios[0].total_net)}.`],
+    [sg(m40(S).total_net), "dem", `Senate projected, Peltola − Sullivan. Range ${sg(S.scenarios[0].total_net)} to ${sg(S.scenarios[2].total_net)}.`],
+    ["49.52%", "", "Begich first choices in the official count. Under 50%, so the ranked-choice rounds decide it."],
+    [`${m40(H).flip_shift_pts.toFixed(1)} / ${Math.abs(m40(S).flip_shift_pts).toFixed(1)}`, "", "Points the remaining ballots would have to move to flip the House / Senate."],
+  ].map(([v,c,s])=>`<div class="stat"><b class="${c}">${v}</b><span>${s}</span></div>`).join("");
+}
+function xoParts(){
+  const F = XO.final, D = XO.decomp;
+  document.getElementById("xIntro").textContent = `The Senate CVR has the same ${fmt(XO.ballots)} ballots as the House CVR, and every ballot ID matches, so each ballot's House and Senate votes can be compared directly. Senate candidates are eliminated in this order: Write-in, Sullivan Jr. (the second Dan Sullivan on the ballot), Heikes.`;
+  const sF = F.Begich.Sullivan+F.Hill.Sullivan+F[DONE].Sullivan, pF = F.Begich.Peltola+F.Hill.Peltola+F[DONE].Peltola;
+  document.getElementById("xStats").innerHTML = [
+    [fmt(-XO.house_margin), "House final-round margin in the CVR, Hill − Begich"],
+    [fmt(-XO.senate_margin), `Senate final-round margin in the CVR, Peltola − Sullivan (Sullivan ${(sF/(sF+pF)*100).toFixed(1)}% to ${(pF/(sF+pF)*100).toFixed(1)}%)`],
+    [fmt(XO.r1.Peltola - XO.r1.Hill), `More first-choice votes for Peltola than for Hill on the same ballots (${fmt(XO.r1.Peltola)} against ${fmt(XO.r1.Hill)})`],
+  ].map(([v,s])=>`<div class="stat"><b>${v}</b><span>${s}</span></div>`).join("");
+  const links = [];
+  ["Begich","Hill",DONE].forEach(h => ["Sullivan","Peltola",DONE].forEach(s => links.push({r:0,s:h,t:s,o:h,v:F[h][s]})));
+  draw(document.getElementById("xSankey"), {label:"House by Senate", links, eliminated:["x"], finalists:["Begich","Hill"], cols:["House final round","Senate final round"]}, false, 440);
+  let h = `<thead><tr><th>House ↓ / Senate →</th><th>Sullivan</th><th>Peltola</th><th>${DONE}</th><th>Total</th></tr></thead><tbody>`;
+  ["Begich","Hill",DONE].forEach(r => h += `<tr><td>${r}</td><td>${fmt(F[r].Sullivan)}</td><td>${fmt(F[r].Peltola)}</td><td>${fmt(F[r][DONE])}</td><td>${fmt(F[r].Sullivan+F[r].Peltola+F[r][DONE])}</td></tr>`);
+  const col = c => F.Begich[c]+F.Hill[c]+F[DONE][c];
+  h += `</tbody><tfoot><tr><td>Total</td><td>${fmt(col("Sullivan"))}</td><td>${fmt(col("Peltola"))}</td><td>${fmt(col(DONE))}</td><td>${fmt(XO.ballots)}</td></tr></tfoot>`;
+  document.getElementById("xTab").innerHTML = h;
+  document.getElementById("xDec").innerHTML = `<thead><tr><th>Source</th><th>Calculation</th><th>Votes</th></tr></thead><tbody>
+    <tr><td>Split tickets: Hill–Sullivan voters against Begich–Peltola voters</td><td class="chain">2 × (${fmt(F.Hill.Sullivan)} − ${fmt(F.Begich.Peltola)})</td><td>${fmt(-D.split)}</td></tr>
+    <tr class="now"><td>House ballot ran out of rankings before the final round: Senate vote for Sullivan minus Senate vote for Peltola</td><td class="chain">${fmt(F[DONE].Sullivan)} − ${fmt(F[DONE].Peltola)}</td><td>${fmt(-D.house_done)}</td></tr>
+    <tr><td>Senate ballot ran out of rankings: House vote for Hill minus House vote for Begich</td><td class="chain">${fmt(F.Hill[DONE])} − ${fmt(F.Begich[DONE])}</td><td>${fmt(-D.senate_done)}</td></tr></tbody>
+    <tfoot><tr><td>Gap between the margins, House − Senate</td><td class="chain">${fmt(-XO.house_margin)} − (${fmt(-XO.senate_margin)}) == ${fmt(-D.split)} + (${fmt(-D.house_done)}) + (${fmt(-D.senate_done)})</td><td>${fmt(-(XO.house_margin - XO.senate_margin))}</td></tr></tfoot>`;
+  document.getElementById("xDecNote").textContent = `Split tickets count twice, because each one takes a vote from one side and gives it to the other. Hill isn't losing many Peltola voters to Begich: split tickets explain ${fmt(D.split)} votes of the gap. The larger part, ${fmt(D.house_done)}, is ballots that voted Peltola for Senate but whose House ballot never reached Hill. These are mostly Hafner voters who ranked only Hafner: ${fmt(XO.hafner_peltola)} ballots ranked Hafner first in the House and voted Peltola first in the Senate.`;
+  let p = `<thead><tr><th>Vote type</th><th>Peltola 2024 House</th><th>Peltola 2026 Senate</th><th>Change</th></tr></thead><tbody>`;
+  XO.peltola_same_loc.forEach(r => p += `<tr${r.vote_type==="All"?' class="now"':''}><td>${r.vote_type}</td><td>${r.h2024.toFixed(1)}%</td><td>${r.s2026.toFixed(1)}%</td><td class="chain">${r.s2026.toFixed(1)} − ${r.h2024.toFixed(1)} == ${(r.s2026-r.h2024>=0?"+":"")}${(r.s2026-r.h2024).toFixed(1)}</td></tr>`);
+  document.getElementById("xPel").innerHTML = p + `</tbody>`;
+  let v = `<thead><tr><th>Vote type</th><th>Ballots</th><th>Hill, House final round</th><th>Peltola, Senate final round</th><th>Peltola minus Hill</th></tr></thead><tbody>`;
+  XO.vote_type.forEach(r => v += `<tr><td>${r.vote_type}</td><td>${fmt(r.ballots)}</td><td>${r.hill_final.toFixed(1)}%</td><td>${r.peltola_final.toFixed(1)}%</td><td>${(r.peltola_final-r.hill_final>=0?"+":"")}${(r.peltola_final-r.hill_final).toFixed(1)}</td></tr>`);
+  document.getElementById("xVt").innerHTML = v + `</tbody>`;
+  let t = `<thead><tr><th>House district</th><th>Ballots</th><th>Hill</th><th>Peltola</th><th>Peltola minus Hill</th></tr></thead><tbody>`;
+  [...XO.district].sort((a,b)=>b.peltola_minus_hill-a.peltola_minus_hill).forEach(r => t += `<tr><td>${r.district===99?"Overseas (99)":r.district}</td><td>${fmt(r.ballots)}</td><td>${r.hill_final.toFixed(1)}%</td><td>${r.peltola_final.toFixed(1)}%</td><td>${(r.peltola_minus_hill>=0?"+":"")}${r.peltola_minus_hill.toFixed(1)}</td></tr>`);
+  document.getElementById("xDist").innerHTML = t + `</tbody>`;
+}
+staticParts(); driftParts(); seg(); render(); xoParts(); revParts();
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",render);
+new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+</script>
