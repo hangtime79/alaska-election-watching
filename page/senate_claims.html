@@ -283,7 +283,7 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
 </header>
 
 <nav class="toc" aria-label="Contents">
-  <a role="link" tabindex="0" data-go="summary">Who wins</a><a role="link" tabindex="0" data-go="claim">Claim</a><a role="link" tabindex="0" data-go="count">Count</a><a role="link" tabindex="0" data-go="ceiling">Confusion</a><a role="link" tabindex="0" data-go="reality">Projection</a><a role="link" tabindex="0" data-go="detail">Detail</a>
+  <a role="link" tabindex="0" data-go="summary">Who wins</a><a role="link" tabindex="0" data-go="changes">Changes</a><a role="link" tabindex="0" data-go="claim">Claim</a><a role="link" tabindex="0" data-go="count">Count</a><a role="link" tabindex="0" data-go="ceiling">Confusion</a><a role="link" tabindex="0" data-go="reality">Projection</a><a role="link" tabindex="0" data-go="detail">Detail</a>
 </nav>
 </div>
 
@@ -310,6 +310,25 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
 </section>
 
 
+
+<section class="sec" id="changes">
+  <span class="kicker">Updates</span>
+  <h2>What changed since the last version</h2>
+  <p>This version (10 Nov) uses the 9 Nov CVR export and the 9 Nov Combined Ballot Report. The last version (8 Nov) used the 4 Nov export and the 4 Nov report. Two things moved the numbers: a change of method for the uncounted ballots, then the new count. The walk takes the old best guess to the new one under Alaska's rules, at 40% of unreturned absentees arriving.</p>
+  <div class="tw"><table class="wide">
+    <thead><tr><th style="text-align:left">Step</th><th style="text-align:left">Formula, values</th><th>Projected final</th><th>If late ballots follow 2024</th></tr></thead>
+    <tbody>
+      <tr><th>Last version (8 Nov)<small>4 Nov data; one statewide rate per ballot type</small></th><td class="f">previous page</td><td class="n cd">+8,579</td><td class="n cd">+6,046</td></tr>
+      <tr><th>Method: each district's remaining ballots vote like that district's counted ballots<small>same 4 Nov data, so only the method changes</small></th><td class="f">11,668 − 8,579; 9,015 − 6,046</td><td class="n cd">+3,089</td><td class="n cd">+2,969</td></tr>
+      <tr class="sub"><th>4 Nov data, district method</th><td class="f">8,579 + 3,089; 6,046 + 2,969</td><td class="n cd">+11,668</td><td class="n cd">+9,015</td></tr>
+      <tr><th>The count as it stands<small>4,787 new absentees (+1,809), 1,627 election-day ballots (+512), a smaller rural batch still outside the CVR (4,356 → 3,864, −492)</small></th><td class="f">1,500 − (−329) == 1,809 + 512 − 492</td><td class="n cd">+1,829</td><td class="n cd">+1,829</td></tr>
+      <tr><th>The ballots still to count<small>9 Nov report: more absentees received, fewer unreturned, 6,581 accepted questioned ballots in place of an assumed 8,000</small></th><td class="f">13,488 − 11,997; 10,666 − 9,344</td><td class="n cd">+1,491</td><td class="n cd">+1,322</td></tr>
+      <tr class="tot"><th>This version (10 Nov)</th><td class="f">11,668 + 1,829 + 1,491; 9,015 + 1,829 + 1,322</td><td class="n cd">+14,988</td><td class="n cd">+12,166</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note"><strong>Why the method changed.</strong> The Division counts absentees district by district. All 4,787 absentees added since 4 Nov came from Anchorage districts HD9–16 and HD18, which had no absentees in the earlier export, so one statewide rate moved with whichever districts happened to be in. The method and its backtests are on the <a href="https://hangtime79.github.io/alaska-election-watching/house/">House count check</a>, step 3. <strong>What else moved:</strong> the count as it stands went from Sullivan by 329 to Peltola by 1,500; Trump's method on the projected final went from −591 (a Sullivan win) to +5,879; the stress test now holds unless late ballots run about 15 points worse for Peltola, up from 5; the overseas scenario is gone, because the unreturned overseas ballots now sit inside the projection at the overseas rate.</p>
+  <p class="note"><strong>Earlier versions:</strong> <a href="https://hangtime79.github.io/alaska-election-watching/archive/2026-11-08/">8 Nov</a> (4 Nov CVR, statewide method, best guess +6,046 to +8,579, Trump's method −591). Each archived page is kept as published. The full history of every number is in the <a href="https://github.com/hangtime79/alaska-election-watching/commits/main">public repository</a>.</p>
+</section>
 
 <!-- 1. The claim -->
 <section class="sec" id="claim">
@@ -784,7 +803,7 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
     <li><strong>The counted ranked-choice result.</strong> The CVR's final round is −2,364. The official count also holds 9,332 election-day first choices the CVR does not (mostly rural precincts, Peltola 67.3%; 1,627 election-day ballots of the 4 Nov batch are now in the CVR, and the batch is the remainder). Each first-choice group is given the final-round rate of election-day ballots with the same first choice. That puts 9,018 of the 9,332 into the final round as two-way votes (the rest stop) and nets +3,864, a two-way margin of 3,864 ÷ 9,018 == 0.4285. So −2,364 + 3,864 == +1,500. On the 4 Nov CVR the same walk gave −4,685 + 4,356 == −329, the figure the Sullivan campaign gave as 328 on 5 Nov. ADN reported that the campaign's 328 left out 10,805 rural votes; leaving them out gives −4,685, so the 328 looks like it already includes them.</li>
     <li><strong>The remaining ballots</strong> are assumed to vote like counted ballots of the same type in the same district. Statewide per-ballot final-round rates of the counted ballots: early 7,476 ÷ 48,292 == +0.1548, absentee 3,041 ÷ 13,137 == +0.2315, all ballots −2,364 ÷ 210,944 == −0.0112. <strong>Two counts of the minor candidates:</strong> by first marked choice, Sullivan Jr. 3,465 and Heikes 4,372 (7,837, used for the claim). Round 1 counts 3,453 and 4,364 after the rules for skipped rankings and overvotes. The round-by-round nets (+448, −1,300) also include write-in ballots that moved into those piles. The same applies to the major candidates: Walk 3 groups ballots by first marked choice (Sullivan 101,485, Peltola 99,972), while round 1 applies the rules (101,465 and 99,928). Some of the 1,501 Sullivan Jr. ballots that rank neither finalist pass through Heikes first, which is why round 3 shows only 1,291 stopping. Figures in step 3 are summed from rounded components, so they can differ by one vote from the script's unrounded totals.</li>
     <li><strong>2024 snapshots</strong> are the CVR exports of 10, 12, 13 and 14 Nov 2024 and the final, each run through the same ranked-choice code. My final has about 2,000 more ballots in the final round than the official result, a gap not yet traced. It is small next to Trump's overstatement on the counted ballots: 7,837 − 837 == 7,000.</li>
-    <li><strong>What changed from the first version of this page (8 Nov).</strong> It used the 4 Nov CVR, the 4 Nov ballot report and one statewide rate per ballot type, and put the best guess at Peltola by 6,046 to 8,579, with Trump's method at −591. Run on the same 4 Nov data, the district method gives +11,668 and +9,015: the method moves the range about 3,000 votes toward Peltola. The 9 Nov count moves it a further 3,320 and 3,151, to +14,988 and +12,166. The 9 Nov count added 4,787 Anchorage absentees, 1,627 election-day ballots and the report's 6,581 accepted questioned ballots, which replace an assumed 8,000.</li>
+    <li><strong>Versions.</strong> What changed from the last version, and links to earlier versions, are in <a role="link" tabindex="0" data-go="changes">What changed since the last version</a>.</li>
     <li><strong>Areas</strong> are defined precinct by precinct, so they cover the same places on both legislative maps. Absentee, early and questioned votes are reported by district. Where a district is split between areas, each candidate's votes are divided by that candidate's election-day split.</li>
     <li><strong>Reproducing this.</strong> Ranked-choice rounds were tabulated with RCTab 2.1.0 (<a href="https://github.com/BrightSpots/rcv">github.com/BrightSpots/rcv</a>) from the Dominion export of 9 Nov (<code>rctab-configs/alaska-2026-1109-*.json</code>), then checked with my own round-by-round code. Source reports: the Alaska Division of Elections (<a href="https://www.elections.alaska.gov/">elections.alaska.gov</a>) Election Summary Report (4 Nov, 1:09 p.m.) and Combined Ballot Report (9 Nov, 2:09 p.m.). Input files and SHA-256 checksums:
       <div class="tw"><table class="hashes"><tbody>
