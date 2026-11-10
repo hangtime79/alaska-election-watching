@@ -19,6 +19,7 @@ import re
 from pathlib import Path
 
 import pandas as pd
+import cvr2026
 
 HERE = Path(__file__).parent
 RANKS = [f"Rank {i}" for i in range(1, 6)]
@@ -26,10 +27,10 @@ OVER, SKIP = "OVER", "SKIP"
 
 # (label, Begich race file, Begich D side, comparison file, comparison R side, comparison D side, where Peltola is)
 COMPARISONS = [
-    ("2026: Begich against the governor Republicans", "2026-11-04_23-33_rctab_cvr.csv", ["Hill, Bill", "Hafner, Eric"],
-     "2026-11-05_14-36_rctab_cvr-2026-governor.csv", ["Wilson/Shower", "Bronson/Church", "Taylor/English"], ["Kreiss-Tomkins/Johnson"], "nowhere"),
-    ("2026: Begich against Sullivan", "2026-11-04_23-33_rctab_cvr.csv", ["Hill, Bill", "Hafner, Eric"],
-     "2026-11-05_00-56_rctab_cvr-senate.csv", ["Sullivan, Dan S."], ["Peltola, Mary"], "comparison side"),
+    ("2026: Begich against the governor Republicans", cvr2026.HOUSE, ["Hill, Bill", "Hafner, Eric"],
+     cvr2026.GOVERNOR, ["Wilson/Shower", "Bronson/Church", "Taylor/English"], ["Kreiss-Tomkins/Johnson"], "nowhere"),
+    ("2026: Begich against Sullivan", cvr2026.HOUSE, ["Hill, Bill", "Hafner, Eric"],
+     cvr2026.SENATE, ["Sullivan, Dan S."], ["Peltola, Mary"], "comparison side"),
     ("2024: Begich against Trump", "2026-11-04_23-29_rctab_cvr.csv", ["Peltola, Mary S.", "Hafner, Eric"],
      "2026-11-05_14-34_rctab_cvr-2024-president.csv", ["Trump/Vance"], ["Harris/Walz"], "Begich side"),
     ("2022: Begich against Dunleavy", "2026-11-05_14-31_rctab_cvr-2022-house.csv", ["Peltola, Mary S."],

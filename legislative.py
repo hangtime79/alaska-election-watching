@@ -26,9 +26,10 @@ from collections import defaultdict
 from pathlib import Path
 
 import pandas as pd
+import cvr2026
 
 HERE = Path(__file__).parent
-SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(os.environ.get("AK_DATA_DIR", "data")) / "alaska-2026"
+SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(os.environ.get("AK_DATA_DIR", "data")) / cvr2026.DOMINION
 
 
 def party_sides(src: Path) -> dict:
@@ -81,7 +82,7 @@ def main() -> None:
     L.to_csv(HERE / "legislative_2026.csv", index=False)
 
     x = pd.read_csv(HERE / "crossover_2026.csv", dtype=str, keep_default_na=False)
-    g = pd.read_csv(HERE / "2026-11-05_14-36_rctab_cvr-2026-governor.csv", usecols=["RCTab CVR Id", "Rank 1"], dtype=str, keep_default_na=False)
+    g = pd.read_csv(HERE / cvr2026.GOVERNOR, usecols=["RCTab CVR Id", "Rank 1"], dtype=str, keep_default_na=False)
     g["G1"] = g["Rank 1"].str.split("/").str[0]
     m = L.merge(x[["RCTab CVR Id", "H1", "S1"]], on="RCTab CVR Id").merge(g[["RCTab CVR Id", "G1"]], on="RCTab CVR Id", how="left")
     print(f"Legislative contest-ballots {len(L):,}; matched to the House CVR {len(m):,}")

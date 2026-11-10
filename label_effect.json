@@ -1,0 +1,179 @@
+{
+ "A_2026": {
+  "Begich": {
+   "n": 1090,
+   "all_D": 471,
+   "all_D_with_leg": 403,
+   "all_R": 134,
+   "senate_ranked_2plus": 997,
+   "gov_ranked_2plus": 896,
+   "either_2plus": 1023,
+   "allD_and_ranked_2plus_elsewhere": 425,
+   "house_n": {
+    "2": 249,
+    "3": 200,
+    "4": 620,
+    "5": 21
+   }
+  },
+  "Hill": {
+   "n": 7186,
+   "all_D": 5312,
+   "all_D_with_leg": 4383,
+   "all_R": 66,
+   "senate_ranked_2plus": 5185,
+   "gov_ranked_2plus": 3419,
+   "either_2plus": 5333,
+   "allD_and_ranked_2plus_elsewhere": 3752,
+   "house_n": {
+    "2": 2382,
+    "3": 1814,
+    "4": 2833,
+    "5": 157
+   }
+  },
+  "stops": {
+   "n": 7493,
+   "all_D": 5485,
+   "all_D_with_leg": 4265,
+   "all_R": 145,
+   "senate_ranked_2plus": 1173,
+   "gov_ranked_2plus": 352,
+   "either_2plus": 1296,
+   "allD_and_ranked_2plus_elsewhere": 817,
+   "house_n": {
+    "1": 6789,
+    "2": 663,
+    "3": 14,
+    "4": 27
+   }
+  },
+  "only_hafner": {
+   "n": 6789,
+   "all_D": 5014,
+   "all_D_with_leg": 3903,
+   "all_R": 126,
+   "senate_ranked_2plus": 802,
+   "gov_ranked_2plus": 183,
+   "either_2plus": 898,
+   "allD_and_ranked_2plus_elsewhere": 584,
+   "house_n": {
+    "1": 6789
+   }
+  }
+ },
+ "baseline_2026": {
+  "Hill": {
+   "n": 84273,
+   "house_only_one": 49786,
+   "senate_2plus": 37692,
+   "gov_2plus": 21443
+  },
+  "Begich": {
+   "n": 104088,
+   "house_only_one": 80155,
+   "senate_2plus": 48007,
+   "gov_2plus": 69616
+  },
+  "Hafner": {
+   "n": 15133,
+   "house_only_one": 6807,
+   "senate_2plus": 6839,
+   "gov_2plus": 4254
+  },
+  "McDermott": {
+   "n": 5597,
+   "house_only_one": 1779,
+   "senate_2plus": 3353,
+   "gov_2plus": 3096
+  }
+ },
+ "B_2026": {
+  "hill_first_choice": {
+   "n": 84273,
+   "senate_x_gov": {
+    "Heikes | Kreiss-Tomkins": 431,
+    "Heikes | Republican": 626,
+    "Heikes | none": 16,
+    "Heikes | other": 8,
+    "Peltola | Kreiss-Tomkins": 75768,
+    "Peltola | Republican": 2274,
+    "Peltola | none": 464,
+    "Peltola | other": 123,
+    "Sullivan | Kreiss-Tomkins": 1256,
+    "Sullivan | Republican": 1487,
+    "Sullivan | none": 55,
+    "Sullivan | other": 12,
+    "Sullivan Jr. | Kreiss-Tomkins": 925,
+    "Sullivan Jr. | Republican": 335,
+    "Sullivan Jr. | none": 28,
+    "Sullivan Jr. | other": 18,
+    "other/blank | Kreiss-Tomkins": 310,
+    "other/blank | Republican": 73,
+    "other/blank | none": 32,
+    "other/blank | other": 32
+   },
+   "all_R_elsewhere": 1916,
+   "all_R_with_leg": 1618,
+   "sullivan_and_R_gov": 1487,
+   "ranked_begich_2nd": 4892
+  },
+  "hill_final_round": {
+   "n": 93017,
+   "senate_x_gov": {
+    "Heikes | Kreiss-Tomkins": 563,
+    "Heikes | Republican": 835,
+    "Heikes | none": 21,
+    "Heikes | other": 10,
+    "Peltola | Kreiss-Tomkins": 83048,
+    "Peltola | Republican": 2618,
+    "Peltola | none": 529,
+    "Peltola | other": 148,
+    "Sullivan | Kreiss-Tomkins": 1336,
+    "Sullivan | Republican": 1673,
+    "Sullivan | none": 57,
+    "Sullivan | other": 16,
+    "Sullivan Jr. | Kreiss-Tomkins": 1111,
+    "Sullivan Jr. | Republican": 436,
+    "Sullivan Jr. | none": 34,
+    "Sullivan Jr. | other": 27,
+    "other/blank | Kreiss-Tomkins": 340,
+    "other/blank | Republican": 101,
+    "other/blank | none": 40,
+    "other/blank | other": 74
+   },
+   "all_R_elsewhere": 2301,
+   "all_R_with_leg": 1935,
+   "sullivan_and_R_gov": 1673,
+   "ranked_begich_2nd": 4880
+  }
+ },
+ "hafner_2024": {
+  "held": 3558,
+  "next": {
+   "Peltola": 1315,
+   "stops": 1314,
+   "Howe": 662,
+   "Begich": 267
+  },
+  "final": {
+   "Peltola": 1633,
+   "stops": 1470,
+   "Begich": 455
+  },
+  "only_hafner": 1272,
+  "president": {
+   "Harris/Walz": 2156,
+   "Trump/Vance": 836,
+   "Kennedy/Shanahan": 168,
+   "Stein/Ware": 155,
+   "Oliver/Maat": 77,
+   "West/Abdullah": 68
+  },
+  "harris_voters_final": {
+   "Peltola": 1211,
+   "stops": 816,
+   "Begich": 129
+  }
+ }
+}

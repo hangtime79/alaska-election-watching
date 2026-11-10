@@ -37,9 +37,10 @@ from pathlib import Path
 import pandas as pd
 
 import rcv
+import cvr2026
 
 HERE = Path(__file__).parent
-GOV = HERE / "2026-11-05_14-36_rctab_cvr-2026-governor.csv"
+GOV = HERE / cvr2026.GOVERNOR
 D_SIDE, R_SIDE = {"Hill", "Peltola"}, {"Begich", "Sullivan"}
 SOURCES = {"house": "H1", "senate": "S1", "governor": "G1"}
 TARGETS = {"House final": "HF", "Senate final": "SF"}

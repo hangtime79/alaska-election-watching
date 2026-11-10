@@ -32,10 +32,13 @@ import pandas as pd
 
 sys.path.insert(0, ".")
 import rcv  # noqa: E402
+import cvr2026  # noqa: E402
+import district_projection as dp  # noqa: E402
 
 HERE = Path(".")
-HOUSE = HERE / "2026-11-04_23-33_rctab_cvr.csv"
-GOV = HERE / "2026-11-05_14-36_rctab_cvr-2026-governor.csv"
+HOUSE = HERE / cvr2026.HOUSE
+GOV = HERE / cvr2026.GOVERNOR
+REPORT = HERE / "combined-ballot-report-20261109.html"
 RANKS = rcv.RANKS
 SHORT = {"Begich, Nick": "Begich", "Hill, Bill": "Hill", "Hafner, Eric": "Hafner",
          'McDermott, James C. "Jim"': "McDermott", "Write-in": "Write-in"}
@@ -171,7 +174,6 @@ def main():
     minors["context"] = ctx
 
     # ---------- projection ----------
-    R = json.loads((HERE / "report_projection.json").read_text())
     rel = json.loads((HERE / "release_20261104_1309.json").read_text())["house"]["Election Day"]
     ed = m[m.vt == "Election Day"]
     rural_ed = ed[ed.dist >= 37]
@@ -183,38 +185,41 @@ def main():
         return float((batch * r[key + "_net"]).sum()), float((batch * r[key + "_two"]).sum()), \
                {c: round(float(r.loc[c, key + "_net"]), 4) for c in batch.index}
 
-    by_vt = lambda key: {vt: (gg[key + "_net"].mean(), gg[key + "_two"].mean()) for vt, gg in m.groupby("vt")}
+    # remaining ballots per district (district_projection.py): each district's remaining ballots vote like that
+    # district's counted ballots of the same type
+    as_of, report = dp.parse(REPORT)
+    md = m.assign(dist=m.dist.fillna(0).astype(int))
+    rem = dp.remaining(report, md)
+    tot = {k: sum(v[k] for v in rem.values()) for k in ["early", "absentee", "unreturned", "questioned"]}
     allrate = lambda key: (m[key + "_net"].mean(), m[key + "_two"].mean())
-    proj = {"inputs": {"early_rem": R["early_rem"], "abs_rem": R["abs_rem"], "unreturned": R["unreturned"],
-                       "questioned": R["questioned_assumed"], "batch": {k: int(v) for k, v in batch.items()},
-                       "rural_ed_ballots": len(rural_ed)}, "rows": {}}
+    proj = {"inputs": {"report": REPORT.name, "as_of": as_of, "early_rem": tot["early"], "abs_rem": tot["absentee"],
+                       "unreturned": tot["unreturned"], "questioned": tot["questioned"],
+                       "batch": {k: int(v) for k, v in batch.items()}, "rural_ed_ballots": len(rural_ed)}, "rows": {}}
     for key in V:
         bnet, btwo, brate = read_batch(ed, key)
         rnet_, rtwo_, rrate = read_batch(rural_ed, key)
         cnet, ctwo = float(m[key + "_net"].sum()) + bnet, float(m[key + "_two"].sum()) + btwo
-        bv = by_vt(key); ar = allrate(key)
+        dr = dp.district_rates(md, key + "_net", key + "_two", rem)
+        P = dp.parts(rem, dr["rates"])
+        bv = {vt: (gg[key + "_net"].mean(), gg[key + "_two"].mean()) for vt, gg in m.groupby("vt")}
+        ar = allrate(key)
         sc = []
         for u in (0, 0.4, 1.0):
-            parts = {"early": (R["early_rem"], bv["Early Voting"]), "absentee": (R["abs_rem"], bv["Absentee"]),
-                     "unreturned": (R["unreturned"] * u, bv["Absentee"]), "questioned": (R["questioned_assumed"], ar)}
-            pn = {k: n * a for k, (n, (a, b)) in parts.items()}
-            pt = {k: n * b for k, (n, (a, b)) in parts.items()}
-            rnet, rtwo = sum(pn.values()), sum(pt.values())
+            pa, pb = dp.project(P, cnet, u, "A"), dp.project(P, cnet, u, "B")
+            pt = pa["parts_two"]
             e2, a2 = pt["early"], pt["absentee"] + pt["unreturned"]
-            gapB = e2 * GAP_EARLY + a2 * GAP_ABS
             gapBraw = e2 * GAP_EARLY_RAW + a2 * GAP_ABS_RAW
-            A = cnet + rnet
-            sc.append({"u": int(u * 100), "parts_net": {k: round(v) for k, v in pn.items()},
-                       "parts_two": {k: round(v) for k, v in pt.items()}, "remaining_net": round(rnet),
-                       "remaining_two": round(rtwo), "early_two": round(e2), "abs_two": round(a2),
-                       "gapB": round(gapB), "gapB_raw": round(gapBraw), "A": round(A), "B": round(A + gapB),
-                       "B_raw": round(A + gapBraw), "flipA": round(-A / rtwo * 100, 2), "flipB": round(-(A + gapB) / rtwo * 100, 2)})
+            A = pa["total_net"]
+            sc.append({"u": int(u * 100), "parts_net": pa["parts_net"], "parts_two": pt, "remaining_net": pa["remaining_net"],
+                       "remaining_two": pa["remaining_two"], "early_two": round(e2), "abs_two": round(a2),
+                       "gapB": pb["gapB"], "gapB_raw": round(gapBraw), "A": A, "B": pb["total_net"],
+                       "B_raw": round(A + gapBraw), "flipA": pa["flip_shift_pts"], "flipB": pb["flip_shift_pts"]})
         proj["rows"][key] = {"cvr_net": int(m[key + "_net"].sum()), "cvr_two": int(m[key + "_two"].sum()),
                              "batch_net": round(bnet), "batch_two": round(btwo), "batch_rate": brate,
                              "batch_net_rural": round(rnet_), "batch_rate_rural": rrate,
                              "counted": round(cnet), "counted_two": round(ctwo),
                              "rates": {vt: [round(a, 4), round(b, 4)] for vt, (a, b) in bv.items()}, "all_rate": [round(ar[0], 4), round(ar[1], 4)],
-                             "sc": sc}
+                             "borrowed": dr["borrowed"], "sc": sc}
         print(key, "counted", round(cnet), [(s["u"], s["A"], s["B"]) for s in sc], "batch rural", round(rnet_), "vs", round(bnet))
 
     # ---------- scenarios ----------

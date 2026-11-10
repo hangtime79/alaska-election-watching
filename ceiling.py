@@ -13,15 +13,16 @@ Writes ceiling.json.
 """
 import json
 import pandas as pd
+import cvr2026
 
 RACES = [
     ("2022", "House", "Peltola", "2026-11-05_14-31_rctab_cvr-2022-house.csv", ["Peltola, Mary S."], ["Palin, Sarah", "Begich, Nick"]),
     ("2022", "Governor", "Gara + Walker", "2026-11-05_14-33_rctab_cvr-2022-governor.csv", ["Gara/Cook", "Walker/Drygas"], ["Dunleavy/Dahlstrom", "Pierce/Grunwald"]),
     ("2024", "House", "Peltola", "2026-11-04_23-29_rctab_cvr.csv", ["Peltola, Mary S."], ["Begich, Nick"]),
     ("2024", "President", "Harris", "2026-11-05_14-34_rctab_cvr-2024-president.csv", ["Harris/Walz"], ["Trump/Vance"]),
-    ("2026", "Senate", "Peltola", "2026-11-05_00-56_rctab_cvr-senate.csv", ["Peltola, Mary"], ["Sullivan, Dan S."]),
-    ("2026", "Governor", "Kreiss-Tomkins", "2026-11-05_14-36_rctab_cvr-2026-governor.csv", ["Kreiss-Tomkins/Johnson"], ["Wilson/Shower", "Bronson/Church", "Taylor/English"]),
-    ("2026", "House", "Hill + Hafner", "2026-11-04_23-33_rctab_cvr.csv", ["Hill, Bill", "Hafner, Eric"], ["Begich, Nick"]),
+    ("2026", "Senate", "Peltola", cvr2026.SENATE, ["Peltola, Mary"], ["Sullivan, Dan S."]),
+    ("2026", "Governor", "Kreiss-Tomkins", cvr2026.GOVERNOR, ["Kreiss-Tomkins/Johnson"], ["Wilson/Shower", "Bronson/Church", "Taylor/English"]),
+    ("2026", "House", "Hill + Hafner", cvr2026.HOUSE, ["Hill, Bill", "Hafner, Eric"], ["Begich, Nick"]),
 ]
 PAT = r"^(\d+)-\d+ "
 

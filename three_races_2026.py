@@ -19,10 +19,11 @@ import json
 from pathlib import Path
 
 import pandas as pd
+import cvr2026
 
 HERE = Path(__file__).parent
-FILES = {"House": "2026-11-04_23-33_rctab_cvr.csv", "Senate": "2026-11-05_00-56_rctab_cvr-senate.csv",
-         "Governor": "2026-11-05_14-36_rctab_cvr-2026-governor.csv"}
+FILES = {"House": cvr2026.HOUSE, "Senate": cvr2026.SENATE,
+         "Governor": cvr2026.GOVERNOR}
 RANKS = [f"Rank {i}" for i in range(1, 6)]
 SHORT = {"Begich, Nick": "Begich", "Hill, Bill": "Hill", "Hafner, Eric": "Hafner", 'McDermott, James C. "Jim"': "McDermott",
          "Sullivan, Dan S.": "Sullivan", "Peltola, Mary": "Peltola", "Heikes, Gerald L.": "Heikes",

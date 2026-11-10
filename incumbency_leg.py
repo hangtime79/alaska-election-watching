@@ -33,6 +33,7 @@ import numpy as np
 import pandas as pd
 
 from legislative import party_sides
+import cvr2026
 
 HERE = Path(__file__).parent
 DL = Path(os.environ.get("AK_DATA_DIR", "data"))
@@ -41,8 +42,8 @@ BASE = {
            "US House": ("2026-11-05_14-31_rctab_cvr-2022-house.csv", ("Peltola",), ("Palin", "Begich"))},
     2024: {"president": ("2026-11-05_14-34_rctab_cvr-2024-president.csv", ("Harris",), ("Trump",)),
            "US House": ("2026-11-04_23-29_rctab_cvr.csv", ("Peltola",), ("Begich",))},
-    2026: {"governor": ("2026-11-05_14-36_rctab_cvr-2026-governor.csv", ("Kreiss-Tomkins",), ("Wilson", "Bronson", "Taylor")),
-           "US House": ("2026-11-04_23-33_rctab_cvr.csv", ("Hill", "Hafner"), ("Begich",))},
+    2026: {"governor": (cvr2026.GOVERNOR, ("Kreiss-Tomkins",), ("Wilson", "Bronson", "Taylor")),
+           "US House": (cvr2026.HOUSE, ("Hill", "Hafner"), ("Begich",))},
 }
 MIN_BALLOTS = 500
 

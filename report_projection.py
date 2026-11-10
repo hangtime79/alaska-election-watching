@@ -17,6 +17,7 @@ import re
 from pathlib import Path
 
 import project
+import cvr2026
 
 HERE = Path(__file__).parent
 ROWS = ["MAIL", "ONLINE", "FAX", "IN-PERSON", "SPECIAL NEEDS", "ABSENTEE TOTAL", "EARLY VOTE", "QUESTIONED"]
@@ -40,7 +41,7 @@ def parse_report(path: Path) -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("report", type=Path)
-    ap.add_argument("cvr", type=Path, nargs="?", default=HERE / "2026-11-04_23-33_rctab_cvr.csv")
+    ap.add_argument("cvr", type=Path, nargs="?", default=HERE / cvr2026.HOUSE)
     ap.add_argument("--late-batch-r1", type=float, default=0.351, help="Begich first-choice share of ballots counted after the CVR")
     ap.add_argument("--transfer-lift", type=float, default=0.037, help="points ranked-choice transfers add to Begich's two-way share")
     ap.add_argument("--questioned", type=int, default=8000)

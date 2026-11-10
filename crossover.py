@@ -18,10 +18,11 @@ import pandas as pd
 
 import project
 import rcv
+import cvr2026
 
 HERE = Path(__file__).parent
-HOUSE = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "2026-11-04_23-33_rctab_cvr.csv"
-SENATE = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / "2026-11-05_00-56_rctab_cvr-senate.csv"
+HOUSE = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / cvr2026.HOUSE
+SENATE = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / cvr2026.SENATE
 H2024 = Path(sys.argv[3]) if len(sys.argv) > 3 else HERE / "2026-11-04_23-29_rctab_cvr.csv"
 ELIM_H = {"Write-in", 'McDermott, James C. "Jim"', "Hafner, Eric"}
 ELIM_S = {"Write-in", "Sullivan, Daniel J. Jr.", "Heikes, Gerald L."}

@@ -16,10 +16,11 @@ import json
 from pathlib import Path
 
 import pandas as pd
+import cvr2026
 
 HERE = Path(__file__).parent
-SEN = HERE / "2026-11-05_00-56_rctab_cvr-senate.csv"
-GOV = HERE / "2026-11-05_14-36_rctab_cvr-2026-governor.csv"
+SEN = HERE / cvr2026.SENATE
+GOV = HERE / cvr2026.GOVERNOR
 SHORT = {"Sullivan, Dan S.": "Sullivan", "Peltola, Mary": "Peltola", "Heikes, Gerald L.": "Heikes",
          "Sullivan, Daniel J. Jr.": "Sullivan Jr.", "Write-in": "Write-in"}
 RANKS = [f"Rank {i}" for i in range(1, 6)]

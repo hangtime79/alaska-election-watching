@@ -19,6 +19,7 @@ from pathlib import Path
 import pandas as pd
 
 from begich_pairwise import RANKS, side
+import cvr2026
 
 HERE = Path(__file__).parent
 
@@ -46,8 +47,8 @@ def margins(h, o):
 def main():
     out = {}
     # 2026: House final Hill against Begich, Senate final Peltola against Sullivan
-    h26 = final("2026-11-04_23-33_rctab_cvr.csv", ["Begich, Nick"], ["Hill, Bill"]).rename(columns={"e": "H"})
-    s26 = final("2026-11-05_00-56_rctab_cvr-senate.csv", ["Sullivan, Dan S."], ["Peltola, Mary"]).rename(columns={"e": "S"})
+    h26 = final(cvr2026.HOUSE, ["Begich, Nick"], ["Hill, Bill"]).rename(columns={"e": "H"})
+    s26 = final(cvr2026.SENATE, ["Sullivan, Dan S."], ["Peltola, Mary"]).rename(columns={"e": "S"})
     m26 = h26.merge(s26, on="id")
     out["stopped_2026"] = margins(m26.H, m26.S)
     # 2024: House final Peltola against Begich, president final Harris against Trump
@@ -70,7 +71,7 @@ def main():
     # Heikes voters who chose Kreiss-Tomkins (protest voters), and a broader set (anything but Peltola AND
     # Kreiss-Tomkins). Each set is taken out of the continued margin.
     x = pd.read_csv(HERE / "crossover_2026.csv", dtype=str, keep_default_na=False)[["RCTab CVR Id", "S1"]].rename(columns={"RCTab CVR Id": "id"})
-    g = pd.read_csv(HERE / "2026-11-05_14-36_rctab_cvr-2026-governor.csv", usecols=["RCTab CVR Id", "Rank 1"], dtype=str, keep_default_na=False).rename(columns={"RCTab CVR Id": "id"})
+    g = pd.read_csv(HERE / cvr2026.GOVERNOR, usecols=["RCTab CVR Id", "Rank 1"], dtype=str, keep_default_na=False).rename(columns={"RCTab CVR Id": "id"})
 
     def gv(v):
         if v in ("", "undervote"):

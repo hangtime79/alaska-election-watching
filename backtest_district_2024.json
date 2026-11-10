@@ -1,0 +1,44 @@
+{
+ "actual_final": -7878,
+ "counted_10nov": -14021,
+ "by_type": {
+  "Absentee": {
+   "late_ballots": 40551,
+   "actual": 5183,
+   "district": 9470,
+   "statewide": 8501,
+   "miss_district": -4287,
+   "miss_statewide": -3318
+  },
+  "Early Voting": {
+   "late_ballots": 21165,
+   "actual": -520,
+   "district": -1830,
+   "statewide": -2118,
+   "miss_district": 1310,
+   "miss_statewide": 1598
+  },
+  "Election Day": {
+   "late_ballots": 12479,
+   "actual": 3068,
+   "district": 1164,
+   "statewide": -1109,
+   "miss_district": 1904,
+   "miss_statewide": 4177
+  },
+  "Other": {
+   "late_ballots": 16305,
+   "actual": -1588,
+   "district": -931,
+   "statewide": -1332,
+   "miss_district": -657,
+   "miss_statewide": -256
+  }
+ },
+ "projected_district": -6148,
+ "projected_statewide": -10079,
+ "miss_district": -1730,
+ "miss_statewide": 2201,
+ "miss_early_absentee_district": -2977,
+ "miss_early_absentee_statewide": -1720
+}

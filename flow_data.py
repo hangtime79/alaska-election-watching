@@ -13,10 +13,11 @@ from collections import Counter
 from pathlib import Path
 
 import rcv
+import cvr2026
 
 HERE = Path(__file__).parent
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "flow.json"
-F2026 = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / "2026-11-04_23-33_rctab_cvr.csv"
+F2026 = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / cvr2026.HOUSE
 MULTI = Path(sys.argv[3]) if len(sys.argv) > 3 else HERE / "2026-11-04_23-57_rctab_cvr.csv"
 DONE = "No more rankings"  # ran out of rankings, plus the few overvote / double-skip ballots
 SNAPSHOTS_2024 = [("10 Nov", "20241110"), ("12 Nov", "20241112"), ("13 Nov", "20241113"), ("14 Nov", "20241114"), ("Final", "alaska-2024")]

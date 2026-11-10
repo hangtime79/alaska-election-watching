@@ -26,9 +26,10 @@ from pathlib import Path
 import pandas as pd
 
 import rcv
+import cvr2026
 
 HERE = Path(__file__).parent
-F2026 = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "2026-11-04_23-33_rctab_cvr.csv"
+F2026 = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / cvr2026.HOUSE
 MULTI = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / "2026-11-04_23-57_rctab_cvr.csv"
 OUT = Path(sys.argv[3]) if len(sys.argv) > 3 else HERE / "projection.json"
 ABS_LIKE = ["Absentee", "Question", "Overseas"]

@@ -1,87 +1,87 @@
 {
- "as_of": "11/4/2026 11:06:20 AM",
+ "as_of": "11/9/2026 2:09:48 PM",
  "totals": {
   "MAIL": {
-   "accept_full": 27477,
-   "accept_partial": 150,
-   "reject": 359,
-   "received": 27985,
-   "undeliverable": 638,
-   "applications": 42490,
-   "sent": 42448
+   "accept_full": 29986,
+   "accept_partial": 184,
+   "reject": 426,
+   "received": 30595,
+   "undeliverable": 687,
+   "applications": 42478,
+   "sent": 42435
   },
   "ONLINE": {
-   "accept_full": 2883,
-   "accept_partial": 52,
-   "reject": 42,
-   "received": 2977,
+   "accept_full": 3752,
+   "accept_partial": 87,
+   "reject": 92,
+   "received": 3931,
    "undeliverable": 0,
    "applications": 8060,
    "sent": 8060
   },
   "FAX": {
-   "accept_full": 10,
+   "accept_full": 13,
    "accept_partial": 0,
    "reject": 0,
-   "received": 10,
+   "received": 13,
    "undeliverable": 0,
-   "applications": 21,
-   "sent": 21
+   "applications": 22,
+   "sent": 22
   },
   "IN-PERSON": {
-   "accept_full": 7629,
-   "accept_partial": 986,
-   "reject": 127,
-   "received": 8742,
+   "accept_full": 11240,
+   "accept_partial": 1555,
+   "reject": 247,
+   "received": 13042,
    "undeliverable": 0,
-   "applications": 0,
+   "applications": 4,
    "sent": 0
   },
   "SPECIAL NEEDS": {
-   "accept_full": 275,
-   "accept_partial": 7,
-   "reject": 4,
-   "received": 286,
+   "accept_full": 593,
+   "accept_partial": 33,
+   "reject": 16,
+   "received": 642,
    "undeliverable": 0,
    "applications": 0,
    "sent": 0
   },
   "ABSENTEE TOTAL": {
-   "accept_full": 38278,
-   "accept_partial": 1197,
-   "reject": 534,
-   "received": 40008,
-   "undeliverable": 638,
-   "applications": 50578,
-   "sent": 50536
+   "accept_full": 45587,
+   "accept_partial": 1859,
+   "reject": 781,
+   "received": 48226,
+   "undeliverable": 687,
+   "applications": 50567,
+   "sent": 50520
   },
   "EARLY VOTE": {
-   "accept_full": 70261,
+   "accept_full": 70276,
    "accept_partial": 0,
    "reject": 0,
-   "received": 70261,
+   "received": 70276,
    "undeliverable": 0,
    "applications": 0,
    "sent": 0
   },
   "QUESTIONED": {
-   "accept_full": 46,
-   "accept_partial": 79,
-   "reject": 18,
-   "received": 143,
+   "accept_full": 2307,
+   "accept_partial": 4274,
+   "reject": 1008,
+   "received": 7589,
    "undeliverable": 0,
    "applications": 0,
    "sent": 0
   }
  },
  "counted_early": 48292,
- "counted_abs": 8480,
- "accepted_abs": 39475,
- "accepted_early": 70261,
- "early_rem": 21969,
- "abs_rem": 30995,
- "unreturned": 18919,
- "questioned_assumed": 8000,
+ "counted_abs": 13267,
+ "accepted_abs": 47446,
+ "accepted_early": 70276,
+ "early_rem": 21984,
+ "abs_rem": 34179,
+ "unreturned": 15291,
+ "questioned_assumed": 6581,
  "late_batch_r1": 0.351,
  "late_batch_final": 0.38799999999999996,
  "shift_2024_r1": -6.92,
@@ -90,74 +90,74 @@
   {
    "late": "Vote like 2026's counted ballots of the same type",
    "unreturned_pct": 0,
-   "ballots": 265494,
-   "r1_pct": 48.7,
-   "final_pct": 52.24,
-   "margin": 11258
+   "ballots": 273688,
+   "r1_pct": 47.71,
+   "final_pct": 51.17,
+   "margin": 6058
   },
   {
    "late": "Vote like 2026's counted ballots of the same type",
    "unreturned_pct": 40,
-   "ballots": 273062,
-   "r1_pct": 48.53,
-   "final_pct": 52.06,
-   "margin": 10674
-  },
-  {
-   "late": "Vote like 2026's counted ballots of the same type",
-   "unreturned_pct": 100,
-   "ballots": 284413,
-   "r1_pct": 48.3,
-   "final_pct": 51.82,
-   "margin": 9798
-  },
-  {
-   "late": "Shift from the early count as much as 2024's late ballots did",
-   "unreturned_pct": 0,
-   "ballots": 265494,
-   "r1_pct": 48.88,
-   "final_pct": 52.66,
-   "margin": 13381
-  },
-  {
-   "late": "Shift from the early count as much as 2024's late ballots did",
-   "unreturned_pct": 40,
-   "ballots": 273062,
-   "r1_pct": 48.72,
-   "final_pct": 52.51,
-   "margin": 13001
-  },
-  {
-   "late": "Shift from the early count as much as 2024's late ballots did",
-   "unreturned_pct": 100,
-   "ballots": 284413,
-   "r1_pct": 48.51,
-   "final_pct": 52.31,
-   "margin": 12433
-  },
-  {
-   "late": "Vote like the batch counted since the CVR",
-   "unreturned_pct": 0,
-   "ballots": 265494,
-   "r1_pct": 47.23,
+   "ballots": 279804,
+   "r1_pct": 47.51,
    "final_pct": 50.95,
-   "margin": 4801
+   "margin": 5047
+  },
+  {
+   "late": "Vote like 2026's counted ballots of the same type",
+   "unreturned_pct": 100,
+   "ballots": 288979,
+   "r1_pct": 47.22,
+   "final_pct": 50.64,
+   "margin": 3530
+  },
+  {
+   "late": "Shift from the early count as much as 2024's late ballots did",
+   "unreturned_pct": 0,
+   "ballots": 273688,
+   "r1_pct": 48.3,
+   "final_pct": 52.06,
+   "margin": 10687
+  },
+  {
+   "late": "Shift from the early count as much as 2024's late ballots did",
+   "unreturned_pct": 40,
+   "ballots": 279804,
+   "r1_pct": 48.18,
+   "final_pct": 51.95,
+   "margin": 10315
+  },
+  {
+   "late": "Shift from the early count as much as 2024's late ballots did",
+   "unreturned_pct": 100,
+   "ballots": 288979,
+   "r1_pct": 48.01,
+   "final_pct": 51.78,
+   "margin": 9758
+  },
+  {
+   "late": "Vote like the batch counted since the CVR",
+   "unreturned_pct": 0,
+   "ballots": 273688,
+   "r1_pct": 46.72,
+   "final_pct": 50.42,
+   "margin": 2187
   },
   {
    "late": "Vote like the batch counted since the CVR",
    "unreturned_pct": 40,
-   "ballots": 273062,
-   "r1_pct": 46.9,
-   "final_pct": 50.62,
-   "margin": 3196
+   "ballots": 279804,
+   "r1_pct": 46.47,
+   "final_pct": 50.17,
+   "margin": 890
   },
   {
    "late": "Vote like the batch counted since the CVR",
    "unreturned_pct": 100,
-   "ballots": 284413,
-   "r1_pct": 46.43,
-   "final_pct": 50.15,
-   "margin": 788
+   "ballots": 288979,
+   "r1_pct": 46.11,
+   "final_pct": 49.81,
+   "margin": -1055
   }
  ]
 }

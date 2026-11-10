@@ -27,6 +27,7 @@ import pandas as pd
 import project
 import rcv
 from legislative import leg_first
+import cvr2026
 
 HERE = Path(__file__).parent
 DL = Path(os.environ.get("AK_DATA_DIR", "data"))
@@ -36,9 +37,9 @@ RACES = {
            ("Governor head to head, Gara − Dunleavy", "2026-11-05_14-33_rctab_cvr-2022-governor.csv", "Gara", "Dunleavy", "two")],
     2024: [("House final, Peltola − Begich", "2026-11-04_23-29_rctab_cvr.csv", "Peltola", "Begich", "two"),
            ("President, Harris − Trump", "2026-11-05_14-34_rctab_cvr-2024-president.csv", "Harris", "Trump", "two")],
-    2026: [("House final, Hill − Begich", "2026-11-04_23-33_rctab_cvr.csv", "Hill", "Begich", "two"),
-           ("Senate final, Peltola − Sullivan", "2026-11-05_00-56_rctab_cvr-senate.csv", "Peltola, Mary", "Sullivan, Dan S.", "two"),
-           ("Governor first choice, Kreiss-Tomkins − Republicans", "2026-11-05_14-36_rctab_cvr-2026-governor.csv", "Kreiss-Tomkins", ("Wilson", "Bronson", "Taylor"), "bloc")],
+    2026: [("House final, Hill − Begich", cvr2026.HOUSE, "Hill", "Begich", "two"),
+           ("Senate final, Peltola − Sullivan", cvr2026.SENATE, "Peltola, Mary", "Sullivan, Dan S.", "two"),
+           ("Governor first choice, Kreiss-Tomkins − Republicans", cvr2026.GOVERNOR, "Kreiss-Tomkins", ("Wilson", "Bronson", "Taylor"), "bloc")],
 }
 norm = lambda r: rcv.SKIP if r == "undervote" else (rcv.OVER if "\n" in r else r)
 
