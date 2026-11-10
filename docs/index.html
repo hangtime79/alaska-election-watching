@@ -290,9 +290,9 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
 <section class="es" id="summary" aria-label="Executive summary">
   <h2>Executive summary</h2>
   <p class="es-q">A claim about votes matters only if it changes the winner. Each bar runs from the projection on Peltola's own 2024 late-ballot pattern to the projection where each district's late ballots vote like its counted ones; the dot is the midpoint. No reading crosses into a Sullivan win, Trump's method included.</p>
-  <div class="chart" tabindex="0" data-name="where-it-lands" title="Click to enlarge" role="img" aria-label="Projected final under each scenario. Every unreturned absentee arrives, 13,869 to 17,625. Alaska's rules 12,166 to 14,988, the best guess. Broad confusion 8,915 to 11,737. Stress test 7,060 to 9,882. Trump's method 3,057 to 5,879. Peltola ahead in every row.">
-    <svg id="rp-summary" viewBox="0 0 1000 340"></svg>
-    <div class="legend"><span style="--c:var(--dem)">Peltola ahead</span><span style="--c:var(--rep)">Sullivan ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span><span style="--c:var(--hi)">best guess: Alaska's rules, between the two late-ballot models</span></div>
+  <div class="chart" tabindex="0" data-name="where-it-lands" title="Click to enlarge" role="img" aria-label="Projected final under each scenario. Every unreturned absentee arrives, 13,869 to 17,625. Alaska's rules 12,166 to 14,988, the best guess. Broad confusion 8,915 to 11,737. Stress test 7,060 to 9,882. Trump's method 3,057 to 5,879. Peltola ahead in every row. Grey bars show each row in the 8 Nov version; the last best guess was 6,046 to 8,579.">
+    <svg id="rp-summary" viewBox="0 0 1000 430"></svg>
+    <div class="legend"><span style="--c:var(--dem)">Peltola ahead</span><span style="--c:var(--rep)">Sullivan ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span><span style="--c:var(--hi)">best guess: Alaska's rules, between the two late-ballot models</span><span style="--c:var(--muted)">grey bar: the same row in the last version (8 Nov)</span><span style="--c:color-mix(in srgb, var(--thead) 30%, transparent)">last best guess (8 Nov)</span></div>
   </div>
   <p>The table gives each figure and links to where it is worked out.</p>
   <div class="tw"><table class="outcome">
@@ -927,33 +927,44 @@ table.outcome tr.pos th, table.outcome tr.pos td { background: color-mix(in srgb
     el("text", { x: W - R, y: 352, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
   })();
 
-  // summary range plot
+  // summary range plot: current ranges, previous version in grey, both best-guess bands
   (function () {
     const svg = document.getElementById("rp-summary"); if (!svg) return;
-    const W = 1000, H = 340, L = 330, R = 70, T = 30, B = 40, lo = -4000, hi = 20000;
+    const W = 1000, H = 430, L = 330, R = 40, T = 54, B = 40, lo = -4000, hi = 20000, step = 4000;
+    const PREV = "8 Nov", PB = [6046, 8579], CB = [12166, 14988];
     const x = v => L + (v - lo) / (hi - lo) * (W - L - R);
     const g = el("g", { class: "grid" }, svg);
-    for (let v = -4000; v <= 20000; v += 4000) { el("line", { x1: x(v), x2: x(v), y1: T - 8, y2: H - B }, g); el("text", { x: x(v), y: H - B + 18, "text-anchor": "middle" }, svg).textContent = fmt(v); }
-    el("rect", { x: x(12166), y: T - 8, width: x(14988) - x(12166), height: H - B - T + 8, fill: "var(--hi)", opacity: 0.9 }, svg);
-    el("text", { x: (x(12166) + x(14988)) / 2, y: H - B - 6, "text-anchor": "middle", style: "fill:var(--fg2);font-weight:700;font-size:11px" }, svg).textContent = "best guess: +12,166 to +14,988, centre about +13,600";
+    for (let v = lo; v <= hi; v += step) { el("line", { x1: x(v), x2: x(v), y1: T - 8, y2: H - B }, g); el("text", { x: x(v), y: H - B + 18, "text-anchor": "middle" }, svg).textContent = fmt(v); }
+    el("rect", { x: x(PB[0]), y: T - 8, width: x(PB[1]) - x(PB[0]), height: H - B - T + 8, fill: "color-mix(in srgb, var(--thead) 14%, transparent)", stroke: "var(--thead)", "stroke-opacity": 0.5, "stroke-dasharray": "4 3" }, svg);
+    el("rect", { x: x(CB[0]), y: T - 8, width: x(CB[1]) - x(CB[0]), height: H - B - T + 8, fill: "var(--hi)", opacity: 0.9 }, svg);
+    el("text", { x: (x(CB[0]) + x(CB[1])) / 2, y: H - B - 6, "text-anchor": "middle", style: "fill:var(--fg2);font-weight:700;font-size:11px" }, svg).textContent = "best guess now: +12,166 to +14,988, centre about +13,600";
+    el("text", { x: (x(PB[0]) + x(PB[1])) / 2, y: T - 32, "text-anchor": "middle", style: "fill:var(--thead);font-weight:700;font-size:11px" }, svg).textContent = "last best guess (8 Nov): +6,046 to +8,579";
     el("line", { x1: x(0), x2: x(0), y1: T - 8, y2: H - B, class: "zero" }, svg);
     el("text", { x: x(0) - 8, y: T - 14, "text-anchor": "end", style: "fill:var(--rep);font-weight:700" }, svg).textContent = "← Sullivan wins";
     el("text", { x: x(0) + 8, y: T - 14, style: "fill:var(--dem);font-weight:700" }, svg).textContent = "Peltola wins →";
     const rows = [
-      ["All unreturned absentees arrive", 13869, 17625],
-      ["Alaska's rules (40% arrive)", 12166, 14988],
-      ["Broad confusion", 8915, 11737],
-      ["Stress test: all Sullivan Jr.", 7060, 9882],
-      ["Trump's method: Sullivan Jr. + Heikes", 3057, 5879]
+      ["All unreturned absentees arrive", 13869, 17625, 6566, 10253],
+      ["Alaska's rules (40% arrive)", 12166, 14988, 6046, 8579],
+      ["Broad confusion", 8915, 11737, 2749, 5282],
+      ["Stress test: all Sullivan Jr.", 7060, 9882, 906, 3439],
+      ["Trump's method: Sullivan Jr. + Heikes", 3057, 5879, -3124, -591]
     ];
     const rh = (H - B - T) / rows.length;
     rows.forEach((r, i) => {
-      const yy = T + rh * i + rh * 0.62, a = r[1], b = r[2], c = r[2] < 0 ? "var(--rep)" : "var(--dem)", mid = (a + b) / 2;
-      const lx = b < 0 ? x(b) + 10 : (a > 12000 ? x(a) - 10 : x(b) + 10), anchor = (b >= 0 && a > 12000) ? "end" : "start";
+      const yy = T + rh * i + rh * 0.5, a = r[1], b = r[2], mid = (a + b) / 2, c = mid < 0 ? "var(--rep)" : "var(--dem)";
       el("text", { x: L - 14, y: yy + 4, "text-anchor": "end", style: "fill:var(--fg)" }, svg).textContent = r[0];
-      if (a !== b) el("rect", { x: x(a), y: yy - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: b < 0 ? "var(--rep)" : "var(--dem2)", opacity: b < 0 ? 0.45 : 1 }, svg);
+      if (r[3] !== undefined) {
+        const pa = r[3], pb = r[4];
+        el("rect", { x: x(pa), y: yy + 10, width: Math.max(2, x(pb) - x(pa)), height: 6, rx: 3, fill: "var(--muted)", opacity: 0.6 }, svg);
+        el("circle", { cx: x((pa + pb) / 2), cy: yy + 13, r: 3.5, fill: "var(--muted)" }, svg);
+        el("text", { x: x(pb) + 6, y: yy + 17, style: "fill:var(--muted);font-size:11px" }, svg).textContent = PREV + ": " + fmt(pa) + " to " + fmt(pb);
+      }
+      if (a < 0 && b > 0) {
+        el("rect", { x: x(a), y: yy - 5, width: x(0) - x(a), height: 10, fill: "var(--rep)", opacity: 0.45 }, svg);
+        el("rect", { x: x(0), y: yy - 5, width: x(b) - x(0), height: 10, fill: "var(--dem2)" }, svg);
+      } else el("rect", { x: x(a), y: yy - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: a >= 0 ? "var(--dem2)" : "var(--rep)", opacity: a >= 0 ? 1 : 0.45 }, svg);
       el("circle", { cx: x(mid), cy: yy, r: 6, fill: c }, svg);
-      el("text", { x: b < 0 ? x(a) : x(mid), y: yy - 12, "text-anchor": b < 0 ? "start" : "middle", style: "fill:" + c + ";font-weight:700" }, svg).textContent = fmt(a) + " to " + fmt(b);
+      el("text", { x: x(mid), y: yy - 11, "text-anchor": "middle", style: "fill:" + c + ";font-weight:700" }, svg).textContent = fmt(a) + " to " + fmt(b);
     });
     el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
   })();
