@@ -278,6 +278,18 @@ table.grouped2 thead tr:nth-child(2) th, table.grouped3 thead tr:nth-child(2) th
 .cd2 { color: var(--dem2); }
 tr.callD th { box-shadow: inset 4px 0 0 var(--dem); } tr.callD td.n:nth-of-type(2) { color: var(--dem); }
 .running a { color: inherit; }
+
+/* summary chart switch and best-guess marking */
+:root { --hiedge: #c99a12; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --hiedge: #e0b43a; } }
+:root[data-theme="dark"] { --hiedge: #e0b43a; }
+.cvr-switch { display: inline-flex; flex-wrap: wrap; justify-self: start; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.cvr-switch button { font-family: var(--f-mono); font-size: 12px; padding: 6px 12px; border: 0; background: var(--panel); color: var(--fg2); cursor: pointer; }
+.cvr-switch button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+.cvr-switch button:focus-visible { outline: 2px solid var(--dem); outline-offset: -2px; }
+table.outcome tr.best th, table.outcome tr.best td { background: var(--hi); }
+table.outcome tr.best th { box-shadow: inset 5px 0 0 var(--hiedge); }
+.bg-tag { display: inline-block; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; background: var(--hiedge); color: var(--bg); padding: 1px 6px; border-radius: 3px; margin-right: 8px; vertical-align: 1px; }
 </style>
 
 <main>
@@ -299,9 +311,10 @@ tr.callD th { box-shadow: inset 4px 0 0 var(--dem); } tr.callD td.n:nth-of-type(
 <section class="es" id="summary" aria-label="Executive summary">
   <h2>Executive summary</h2>
   <p class="es-q">Under Alaska's rules Begich still leads on both late-ballot models, by less than the count suggests. Each bar runs from Model B, where late ballots follow the pattern of Peltola's 2024 race against Begich, to Model A, where each district's late ballots vote like that district's counted ballots of the same type. The dot is the midpoint. Two bars reach a Hill win, and both rest on ballots Alaska's rules count for no one.</p>
-  <div class="chart" tabindex="0" data-name="where-it-lands" title="Click to enlarge" role="img" aria-label="Projected final under each reading, Model B to Model A, on the 10 Nov count. Stopped ballots follow their Senate vote, plus 3,165 to plus 6,562, a Hill win. Both sides with the Senate final-round test, minus 1,858 to plus 1,501. Every unreturned absentee arrives, minus 6,508 to minus 2,393. Both sides with the Senate first-choice test, minus 6,711 to minus 3,396. Alaska's rules, minus 7,499 to minus 4,278, the best guess. No unreturned absentee arrives and questioned ballots follow 2024, minus 8,476 to minus 5,852. Grey bars show each row on the two earlier CVRs, 9 Nov and 4 Nov (election night); their best guesses were minus 5,318 to minus 2,620 and minus 10,982 to minus 8,590.">
+  <div class="cvr-switch" id="cvr-switch" role="group" aria-label="Choose the CVR to show"><button type="button" id="cvr-0" data-i="0" aria-pressed="true">10 Nov CVR (now)</button><button type="button" id="cvr-1" data-i="1" aria-pressed="false">9 Nov</button><button type="button" id="cvr-2" data-i="2" aria-pressed="false">4 Nov, election night</button></div>
+  <div class="chart" tabindex="0" data-name="where-it-lands" title="Click to enlarge" role="img" aria-label="Projected final under each reading, Model B to Model A, on the 10 Nov count. Stopped ballots follow their Senate vote, plus 3,165 to plus 6,562, a Hill win. Both sides with the Senate final-round test, minus 1,858 to plus 1,501. Every unreturned absentee arrives, minus 6,508 to minus 2,393. Both sides with the Senate first-choice test, minus 6,711 to minus 3,396. Alaska's rules, minus 7,499 to minus 4,278, the best guess. No unreturned absentee arrives and questioned ballots follow 2024, minus 8,476 to minus 5,852. A switch shows the 9 Nov or 4 Nov (election night) CVR instead; a dotted trail on each row marks its earlier midpoints, and a strip at the bottom shows the earlier best guesses, minus 5,318 to minus 2,620 and minus 10,982 to minus 8,590.">
     <svg id="rp-summary" viewBox="0 0 1000 560"></svg>
-    <div class="legend"><span style="--c:var(--rep)">Begich ahead</span><span style="--c:var(--dem)">Hill ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span><span style="--c:var(--hi)">best guess now: Alaska's rules, between the two late-ballot models</span><span style="--c:var(--muted)">grey bars: the same row on the 9 Nov CVR (darker) and the 4 Nov election-night CVR (lighter)</span><span style="--c:color-mix(in srgb, var(--thead) 30%, transparent)">dashed bands: the earlier CVRs' best guesses</span></div>
+    <div class="legend"><span style="--c:var(--rep)">Begich ahead</span><span style="--c:var(--dem)">Hill ahead</span><span style="--c:var(--fg2)">● midpoint of the two late-ballot models</span><span style="--c:var(--hi)">yellow band: the best-guess range for the CVR shown</span><span style="--c:var(--muted)">dotted trail: where each row's midpoint sat on earlier CVRs (○ 4 Nov, ◇ 9 Nov)</span><span style="--c:var(--muted)">bottom strip: the earlier best guesses</span></div>
   </div>
   <p>The table gives each figure and links to where it is worked out. Rows run from the reading best for Hill to the reading best for Begich, under Model A.</p>
   <div class="tw"><table class="outcome">
@@ -311,7 +324,7 @@ tr.callD th { box-shadow: inset 4px 0 0 var(--dem); } tr.callD td.n:nth-of-type(
       <tr class="trump"><th><a role="link" tabindex="0" data-go="ceiling">Both sides, Senate final-round test: stopped ballots follow their Senate vote, Hill voters who chose Sullivan come off</a><small class="fx">count −7,427 + remaining +8,928; Model B 1,501 − 3,359</small></th><td class="res cd"><span class="v">+1,501</span><span class="w">Hill</span></td><td class="res alt cr"><span class="v">−1,858</span><span class="w">Begich</span></td></tr>
       <tr class="pos"><th><a role="link" tabindex="0" data-go="scenarios">Every unreturned absentee arrives</a><small class="fx">−11,733 + 9,340; Model B −2,393 − 4,115</small></th><td class="res cr"><span class="v">−2,393</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−6,508</span><span class="w">Begich</span></td></tr>
       <tr><th><a role="link" tabindex="0" data-go="ceiling">Both sides, Senate first-choice test: stopped ballots follow their Senate vote, Hill voters outside the Democratic ticket come off</a><small class="fx">count −11,717 + remaining +8,321; Model B −3,396 − 3,315</small></th><td class="res cr"><span class="v">−3,396</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−6,711</span><span class="w">Begich</span></td></tr>
-      <tr class="key"><th><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked (best guess)</a><small class="fx">count as it stands + ballots still to count == −11,733 + 7,455; Model B −4,278 − 3,221</small></th><td class="res cr"><span class="v">−4,278</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−7,499</span><span class="w">Begich</span></td></tr>
+      <tr class="key best"><th><span class="bg-tag">Best guess</span><a role="link" tabindex="0" data-go="reality">Alaska's rules: each ballot counted as ranked (best guess)</a><small class="fx">count as it stands + ballots still to count == −11,733 + 7,455; Model B −4,278 − 3,221</small></th><td class="res cr"><span class="v">−4,278</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−7,499</span><span class="w">Begich</span></td></tr>
       <tr><th><a role="link" tabindex="0" data-go="scenarios">No unreturned absentee arrives, and questioned ballots follow 2024</a><small class="fx">−5,535 − 317; Model B −8,159 − 317</small></th><td class="res cr"><span class="v">−5,852</span><span class="w">Begich</span></td><td class="res alt cr"><span class="v">−8,476</span><span class="w">Begich</span></td></tr>
     </tbody>
   </table></div>
@@ -961,55 +974,80 @@ tr.callD th { box-shadow: inset 4px 0 0 var(--dem); } tr.callD td.n:nth-of-type(
     el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = WMT;
   })();
 
-  // summary range plot: the current CVR's ranges, the two earlier CVRs in grey, each CVR's best-guess band
+  // summary range plot: one CVR at a time (switch), faint trail to earlier CVRs, earlier best guesses in a strip, best-guess range tinted for the CVR shown
   (function () {
     const svg = document.getElementById("rp-summary"); if (!svg) return;
-    const W = 1000, H = 560, L = 360, R = 30, T = 96, B = 44, lo = -12000, hi = 10000, step = 4000;
-    const V = [  // CVR, best guess [Model B, Model A], band style
-      { n: "10 Nov CVR (now)", b: [-7499, -4278] },
-      { n: "9 Nov CVR", b: [-5318, -2620] },
-      { n: "4 Nov CVR, election night", b: [-10982, -8590] }];
-    const x = v => L + (v - lo) / (hi - lo) * (W - L - R);
-    const g = el("g", { class: "grid" }, svg);
-    for (let v = lo; v <= hi; v += step) { el("line", { x1: x(v), x2: x(v), y1: T - 8, y2: H - B }, g); el("text", { x: x(v), y: H - B + 18, "text-anchor": "middle" }, svg).textContent = fmt(v); }
-    const band = (b, st) => el("rect", Object.assign({ x: x(b[0]), y: T - 8, width: x(b[1]) - x(b[0]), height: H - B - T + 8 }, st), svg);
-    band(V[2].b, { fill: "color-mix(in srgb, var(--thead) 7%, transparent)", stroke: "var(--thead)", "stroke-opacity": 0.35, "stroke-dasharray": "2 3" });
-    band(V[0].b, { fill: "var(--hi)", opacity: 0.9 });
-    band(V[1].b, { fill: "color-mix(in srgb, var(--thead) 14%, transparent)", stroke: "var(--thead)", "stroke-opacity": 0.6, "stroke-dasharray": "4 3" });
-    const key = [[V[0], "var(--hi)", "var(--fg2)"], [V[1], "color-mix(in srgb, var(--thead) 30%, transparent)", "var(--thead)"], [V[2], "color-mix(in srgb, var(--thead) 12%, transparent)", "var(--thead)"]];
-    key.forEach((k, i) => {
-      const yy = 14 + i * 17;
-      el("rect", { x: L, y: yy - 10, width: 14, height: 12, fill: k[1], stroke: i ? "var(--thead)" : "none", "stroke-dasharray": i === 1 ? "4 3" : "2 3" }, svg);
-      el("text", { x: L + 20, y: yy, style: "fill:" + k[2] + ";font-weight:700;font-size:11px" }, svg).textContent = "best guess, " + k[0].n + ": " + fmt(k[0].b[0]) + " to " + fmt(k[0].b[1]);
-    });
-    el("line", { x1: x(0), x2: x(0), y1: T - 8, y2: H - B, class: "zero" }, svg);
-    el("text", { x: x(0) - 8, y: T - 14, "text-anchor": "end", style: "fill:var(--rep);font-weight:700" }, svg).textContent = "← Begich wins";
-    el("text", { x: x(0) + 8, y: T - 14, style: "fill:var(--dem);font-weight:700" }, svg).textContent = "Hill wins →";
-    const rows = [  // label, now [B, A], 9 Nov CVR [B, A], 4 Nov CVR [B, A]
-      ["Stopped ballots follow Senate vote", 3165, 6562, 5036, 7898, -756, 1812],
-      ["Both sides, Senate final-round test", -1858, 1501, 147, 2972, -5581, -3040],
-      ["All unreturned absentees arrive", -6508, -2393, -4271, -677, -11209, -7715],
-      ["Both sides, Senate first-choice test", -6711, -3396, -4280, -1489, -10225, -7728],
-      ["Alaska's rules (40% arrive)", -7499, -4278, -5318, -2620, -10982, -8590],
-      ["No more absentees, questioned as 2024", -8476, -5852, -6414, -4312, -11315, -9658]
+    const CV = ["10 Nov CVR", "9 Nov CVR", "4 Nov CVR, election night"];
+    const ROWS = [
+      ["Stopped ballots follow Senate vote", [3165, 6562], [5036, 7898], [-756, 1812]],
+      ["Both sides, Senate final-round test", [-1858, 1501], [147, 2972], [-5581, -3040]],
+      ["All unreturned absentees arrive", [-6508, -2393], [-4271, -677], [-11209, -7715]],
+      ["Both sides, Senate first-choice test", [-6711, -3396], [-4280, -1489], [-10225, -7728]],
+      ["Alaska's rules (40% arrive)", [-7499, -4278], [-5318, -2620], [-10982, -8590]],
+      ["No more absentees, questioned as 2024", [-8476, -5852], [-6414, -4312], [-11315, -9658]]
     ];
-    const rh = (H - B - T) / rows.length;
-    rows.forEach((r, i) => {
-      const yy = T + rh * i + rh * 0.36, a = r[1], b = r[2], mid = (a + b) / 2, c = mid < 0 ? "var(--rep)" : "var(--dem)";
-      el("text", { x: L - 14, y: yy + 4, "text-anchor": "end", style: "fill:var(--fg)" }, svg).textContent = r[0];
-      [[r[3], r[4], V[1].n, 0.65, 13], [r[5], r[6], V[2].n, 0.35, 26]].forEach(([pa, pb, nm, op, dy]) => {
-        el("rect", { x: x(pa), y: yy + dy - 3, width: Math.max(2, x(pb) - x(pa)), height: 6, rx: 3, fill: "var(--muted)", opacity: op }, svg);
-        el("circle", { cx: x((pa + pb) / 2), cy: yy + dy, r: 3, fill: "var(--muted)", opacity: op + 0.2 }, svg);
-        el("text", x(pb) > W - R - 230 ? { x: x(pa) - 6, y: yy + dy + 4, "text-anchor": "end", style: "fill:var(--muted);font-size:10.5px" } : { x: x(pb) + 6, y: yy + dy + 4, style: "fill:var(--muted);font-size:10.5px" }, svg).textContent = nm.replace(", election night", "") + ": " + fmt(pa) + " to " + fmt(pb);
+    const BEST = 4, lo = -12000, hi = 10000, step = 4000, W = 1000, L = 360, R = 30, T = 40, RH = 44, SR = 24;
+    const H = T + RH * ROWS.length + 48 + SR * 2 + 40;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    const x = v => L + (v - lo) / (hi - lo) * (W - L - R);
+    const yRow = i => T + RH * (i + 0.5), yStrip = T + RH * ROWS.length + 48, yAxis = H - 40;
+    const mid = p => (p[0] + p[1]) / 2;
+    function draw(k) {
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      const bg = ROWS[BEST][k + 1];
+      el("rect", { x: x(bg[0]), y: T - 6, width: x(bg[1]) - x(bg[0]), height: yAxis - T + 6, fill: "var(--hi)" }, svg);
+      el("rect", { x: 0, y: yRow(BEST) - RH / 2, width: W, height: RH, fill: "var(--hi)", opacity: 0.55 }, svg);
+      el("rect", { x: 0, y: yRow(BEST) - RH / 2, width: 5, height: RH, fill: "var(--hiedge)" }, svg);
+      const g = el("g", { class: "grid" }, svg);
+      for (let v = lo; v <= hi; v += step) { el("line", { x1: x(v), x2: x(v), y1: T - 6, y2: yAxis }, g); el("text", { x: x(v), y: yAxis + 18, "text-anchor": "middle" }, svg).textContent = fmt(v); }
+      el("line", { x1: x(0), x2: x(0), y1: T - 6, y2: yAxis, class: "zero" }, svg);
+      el("text", { x: x(0) - 8, y: T - 14, "text-anchor": "end", style: "fill:var(--rep);font-weight:700" }, svg).textContent = "← Begich wins";
+      el("text", { x: x(0) + 8, y: T - 14, style: "fill:var(--dem);font-weight:700" }, svg).textContent = "Hill wins →";
+      el("text", { x: W - R, y: T - 14, "text-anchor": "end", style: "fill:var(--fg);font-weight:700" }, svg).textContent = CV[k];
+      ROWS.forEach((r, i) => {
+        const y = yRow(i), cur = r[k + 1], a = cur[0], b = cur[1], m = mid(cur), c = m < 0 ? "var(--rep)" : "var(--dem)";
+        if (i === BEST) {
+          el("rect", { x: 14, y: y - 8, width: 86, height: 16, rx: 3, fill: "var(--hiedge)" }, svg);
+          el("text", { x: 57, y: y + 4, "text-anchor": "middle", style: "fill:var(--bg);font-weight:700;font-size:10px;letter-spacing:.08em" }, svg).textContent = "BEST GUESS";
+        }
+        el("text", { x: L - 14, y: y + 4, "text-anchor": "end", style: "fill:var(--fg)" + (i === BEST ? ";font-weight:700" : "") }, svg).textContent = r[0];
+        const pts = [];
+        for (let j = 2; j > k; j--) pts.push(x(mid(r[j + 1])));
+        if (pts.length) el("path", { d: "M" + pts.concat([x(m)]).map(p => p + " " + y).join(" L"), fill: "none", stroke: "var(--muted)", "stroke-width": 1.2, "stroke-dasharray": "3 3" }, svg);
+        if (a < 0 && b > 0) {
+          el("rect", { x: x(a), y: y - 5, width: x(0) - x(a), height: 10, fill: "var(--rep)", opacity: 0.45 }, svg);
+          el("rect", { x: x(0), y: y - 5, width: x(b) - x(0), height: 10, fill: "var(--dem2)" }, svg);
+        } else el("rect", { x: x(a), y: y - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: a >= 0 ? "var(--dem2)" : "var(--rep)", opacity: a >= 0 ? 1 : 0.45 }, svg);
+        for (let j = 2; j > k; j--) {
+          const px = x(mid(r[j + 1]));
+          if (j === 2) el("circle", { cx: px, cy: y, r: 4, fill: "var(--bg)", stroke: "var(--muted)", "stroke-width": 1.5 }, svg);
+          else el("rect", { x: px - 4, y: y - 4, width: 8, height: 8, transform: "rotate(45 " + px + " " + y + ")", fill: "var(--bg)", stroke: "var(--fg2)", "stroke-width": 1.5 }, svg);
+        }
+        el("circle", { cx: x(m), cy: y, r: 6, fill: c }, svg);
+        el("text", { x: x(m), y: y - 11, "text-anchor": "middle", style: "fill:" + c + ";font-weight:700" }, svg).textContent = fmt(a) + " to " + fmt(b);
       });
-      if (a < 0 && b > 0) {
-        el("rect", { x: x(a), y: yy - 5, width: x(0) - x(a), height: 10, fill: "var(--rep)", opacity: 0.45 }, svg);
-        el("rect", { x: x(0), y: yy - 5, width: x(b) - x(0), height: 10, fill: "var(--dem2)" }, svg);
-      } else el("rect", { x: x(a), y: yy - 5, width: Math.max(2, x(b) - x(a)), height: 10, rx: 5, fill: a >= 0 ? "var(--dem2)" : "var(--rep)", opacity: a >= 0 ? 1 : 0.45 }, svg);
-      el("circle", { cx: x(mid), cy: yy, r: 6, fill: c }, svg);
-      el("text", { x: x(mid), y: yy - 11, "text-anchor": "middle", style: "fill:" + c + ";font-weight:700" }, svg).textContent = fmt(a) + " to " + fmt(b);
-    });
-    el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
+      el("line", { x1: 14, x2: W - R, y1: yStrip - 38, y2: yStrip - 38, stroke: "var(--rule)" }, svg);
+      el("text", { x: 14, y: yStrip - 18, style: "fill:var(--fg);font-weight:700" }, svg).textContent = "Earlier best guesses";
+      el("text", { x: 190, y: yStrip - 18, style: "font-size:10.5px" }, svg).textContent = "Alaska's rules, Model B to Model A";
+      let n = 0;
+      for (let j = 2; j > k; j--, n++) {
+        const y = yStrip + n * SR, p = ROWS[BEST][j + 1];
+        el("text", { x: L - 14, y: y + 4, "text-anchor": "end", style: "fill:var(--muted)" }, svg).textContent = CV[j];
+        el("rect", { x: x(p[0]), y: y - 4, width: Math.max(2, x(p[1]) - x(p[0])), height: 8, rx: 4, fill: "var(--muted)", opacity: 0.45 }, svg);
+        if (j === 2) el("circle", { cx: x(mid(p)), cy: y, r: 4, fill: "var(--bg)", stroke: "var(--muted)", "stroke-width": 1.5 }, svg);
+        else el("rect", { x: x(mid(p)) - 4, y: y - 4, width: 8, height: 8, transform: "rotate(45 " + x(mid(p)) + " " + y + ")", fill: "var(--bg)", stroke: "var(--fg2)", "stroke-width": 1.5 }, svg);
+        const rt = x(p[1]) > W - R - 170;
+        el("text", rt ? { x: x(p[0]) - 8, y: y + 4, "text-anchor": "end", style: "fill:var(--muted)" } : { x: x(p[1]) + 8, y: y + 4, style: "fill:var(--muted)" }, svg).textContent = fmt(p[0]) + " to " + fmt(p[1]);
+      }
+      if (!n) el("text", { x: L - 14, y: yStrip + 4, "text-anchor": "end", style: "fill:var(--muted)" }, svg).textContent = "none: this is the first CVR";
+      el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "wm" }, svg).textContent = "Grant Case - grant@aicriticalityindex.com";
+    }
+    document.querySelectorAll("#cvr-switch button").forEach(b => b.addEventListener("click", e => {
+      e.stopPropagation();
+      document.querySelectorAll("#cvr-switch button").forEach(o => o.setAttribute("aria-pressed", o === b ? "true" : "false"));
+      draw(+b.dataset.i);
+    }));
+    draw(0);
   })();
 
   // Timeline
