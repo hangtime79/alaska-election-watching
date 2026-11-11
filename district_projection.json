@@ -6,9 +6,9 @@
   "House": {
    "dem": "Hill",
    "rep": "Begich",
-   "cvr_net": -13671,
+   "cvr_net": -13544,
    "batch_net": 1811,
-   "counted_net": -11860,
+   "counted_net": -11733,
    "borrowed": {
     "early": [
      1,
@@ -26,12 +26,10 @@
      3,
      5,
      6,
-     8,
      29,
      30,
      36,
      37,
-     38,
      39,
      40
     ]
@@ -41,133 +39,133 @@
      "model": "A",
      "unreturned_pct": 0,
      "parts_net": {
-      "early": 2607,
-      "absentee": 5472,
+      "early": 924,
+      "absentee": 4875,
       "unreturned": 0,
-      "questioned": -133
+      "questioned": 398
      },
      "parts_two": {
-      "early": 19352,
-      "absentee": 32293,
+      "early": 2468,
+      "absentee": 26883,
       "unreturned": 0,
-      "questioned": 6214
+      "questioned": 4966
      },
      "gapB": 0,
-     "remaining_net": 7946,
-     "remaining_two": 57860,
-     "remaining_margin_pct": 13.73,
-     "total_net": -3914,
-     "flip_shift_pts": 6.77
+     "remaining_net": 6198,
+     "remaining_two": 34316,
+     "remaining_margin_pct": 18.06,
+     "total_net": -5535,
+     "flip_shift_pts": 16.13
     },
     {
      "model": "A",
      "unreturned_pct": 40,
      "parts_net": {
-      "early": 2607,
-      "absentee": 5472,
-      "unreturned": 1295,
-      "questioned": -133
+      "early": 924,
+      "absentee": 4875,
+      "unreturned": 1257,
+      "questioned": 398
      },
      "parts_two": {
-      "early": 19352,
-      "absentee": 32293,
-      "unreturned": 5765,
-      "questioned": 6214
+      "early": 2468,
+      "absentee": 26883,
+      "unreturned": 5763,
+      "questioned": 4966
      },
      "gapB": 0,
-     "remaining_net": 9241,
-     "remaining_two": 63625,
-     "remaining_margin_pct": 14.52,
-     "total_net": -2619,
-     "flip_shift_pts": 4.12
+     "remaining_net": 7455,
+     "remaining_two": 40079,
+     "remaining_margin_pct": 18.6,
+     "total_net": -4278,
+     "flip_shift_pts": 10.67
     },
     {
      "model": "A",
      "unreturned_pct": 100,
      "parts_net": {
-      "early": 2607,
-      "absentee": 5472,
-      "unreturned": 3237,
-      "questioned": -133
+      "early": 924,
+      "absentee": 4875,
+      "unreturned": 3142,
+      "questioned": 398
      },
      "parts_two": {
-      "early": 19352,
-      "absentee": 32293,
-      "unreturned": 14412,
-      "questioned": 6214
+      "early": 2468,
+      "absentee": 26883,
+      "unreturned": 14408,
+      "questioned": 4966
      },
      "gapB": 0,
-     "remaining_net": 11183,
-     "remaining_two": 72272,
-     "remaining_margin_pct": 15.47,
-     "total_net": -677,
-     "flip_shift_pts": 0.94
+     "remaining_net": 9340,
+     "remaining_two": 48724,
+     "remaining_margin_pct": 19.17,
+     "total_net": -2393,
+     "flip_shift_pts": 4.91
     },
     {
      "model": "B",
      "unreturned_pct": 0,
      "parts_net": {
-      "early": 2607,
-      "absentee": 5472,
+      "early": 924,
+      "absentee": 4875,
       "unreturned": 0,
-      "questioned": -133
+      "questioned": 398
      },
      "parts_two": {
-      "early": 19352,
-      "absentee": 32293,
+      "early": 2468,
+      "absentee": 26883,
       "unreturned": 0,
-      "questioned": 6214
+      "questioned": 4966
      },
-     "gapB": -2102,
-     "remaining_net": 5844,
-     "remaining_two": 57860,
-     "remaining_margin_pct": 10.1,
-     "total_net": -6016,
-     "flip_shift_pts": 10.4
+     "gapB": -2624,
+     "remaining_net": 3574,
+     "remaining_two": 34316,
+     "remaining_margin_pct": 10.41,
+     "total_net": -8159,
+     "flip_shift_pts": 23.78
     },
     {
      "model": "B",
      "unreturned_pct": 40,
      "parts_net": {
-      "early": 2607,
-      "absentee": 5472,
-      "unreturned": 1295,
-      "questioned": -133
+      "early": 924,
+      "absentee": 4875,
+      "unreturned": 1257,
+      "questioned": 398
      },
      "parts_two": {
-      "early": 19352,
-      "absentee": 32293,
-      "unreturned": 5765,
-      "questioned": 6214
+      "early": 2468,
+      "absentee": 26883,
+      "unreturned": 5763,
+      "questioned": 4966
      },
-     "gapB": -2699,
-     "remaining_net": 6542,
-     "remaining_two": 63625,
-     "remaining_margin_pct": 10.28,
-     "total_net": -5318,
-     "flip_shift_pts": 8.36
+     "gapB": -3221,
+     "remaining_net": 4234,
+     "remaining_two": 40079,
+     "remaining_margin_pct": 10.56,
+     "total_net": -7499,
+     "flip_shift_pts": 18.71
     },
     {
      "model": "B",
      "unreturned_pct": 100,
      "parts_net": {
-      "early": 2607,
-      "absentee": 5472,
-      "unreturned": 3237,
-      "questioned": -133
+      "early": 924,
+      "absentee": 4875,
+      "unreturned": 3142,
+      "questioned": 398
      },
      "parts_two": {
-      "early": 19352,
-      "absentee": 32293,
-      "unreturned": 14412,
-      "questioned": 6214
+      "early": 2468,
+      "absentee": 26883,
+      "unreturned": 14408,
+      "questioned": 4966
      },
-     "gapB": -3594,
-     "remaining_net": 7589,
-     "remaining_two": 72272,
-     "remaining_margin_pct": 10.5,
-     "total_net": -4271,
-     "flip_shift_pts": 5.91
+     "gapB": -4115,
+     "remaining_net": 5225,
+     "remaining_two": 48724,
+     "remaining_margin_pct": 10.72,
+     "total_net": -6508,
+     "flip_shift_pts": 13.36
     }
    ],
    "by_district": [
@@ -177,8 +175,8 @@
      "absentee": 1895,
      "unreturned": 306,
      "questioned": 148,
-     "abs_margin_pct": 8.5,
-     "early_margin_pct": 8.1
+     "abs_margin_pct": 7.3,
+     "early_margin_pct": 6.5
     },
     {
      "dist": 2,
@@ -187,7 +185,7 @@
      "unreturned": 422,
      "questioned": 85,
      "abs_margin_pct": 23.2,
-     "early_margin_pct": 37.4
+     "early_margin_pct": 36.0
     },
     {
      "dist": 3,
@@ -195,17 +193,17 @@
      "absentee": 1429,
      "unreturned": 619,
      "questioned": 205,
-     "abs_margin_pct": 49.6,
+     "abs_margin_pct": 49.8,
      "early_margin_pct": 48.6
     },
     {
      "dist": 4,
-     "early": 1315,
-     "absentee": 666,
+     "early": 32,
+     "absentee": 189,
      "unreturned": 377,
      "questioned": 305,
-     "abs_margin_pct": 59.9,
-     "early_margin_pct": 63.5
+     "abs_margin_pct": 57.9,
+     "early_margin_pct": 56.4
     },
     {
      "dist": 5,
@@ -213,8 +211,8 @@
      "absentee": 1577,
      "unreturned": 495,
      "questioned": 132,
-     "abs_margin_pct": 24.2,
-     "early_margin_pct": 23.6
+     "abs_margin_pct": 23.0,
+     "early_margin_pct": 22.1
     },
     {
      "dist": 6,
@@ -222,138 +220,138 @@
      "absentee": 1279,
      "unreturned": 526,
      "questioned": 168,
-     "abs_margin_pct": 26.3,
+     "abs_margin_pct": 26.6,
      "early_margin_pct": 25.6
     },
     {
      "dist": 7,
-     "early": 701,
-     "absentee": 403,
+     "early": 0,
+     "absentee": 29,
      "unreturned": 259,
-     "questioned": 218,
-     "abs_margin_pct": -32.7,
-     "early_margin_pct": -19.6
+     "questioned": 0,
+     "abs_margin_pct": -30.4,
+     "early_margin_pct": -22.3
     },
     {
      "dist": 8,
-     "early": 442,
-     "absentee": 1539,
+     "early": 3,
+     "absentee": 41,
      "unreturned": 310,
-     "questioned": 136,
-     "abs_margin_pct": -39.3,
-     "early_margin_pct": -39.0
+     "questioned": 0,
+     "abs_margin_pct": -25.5,
+     "early_margin_pct": -40.1
     },
     {
      "dist": 9,
-     "early": 579,
+     "early": 32,
      "absentee": 1218,
      "unreturned": 776,
      "questioned": 146,
      "abs_margin_pct": 29.9,
-     "early_margin_pct": 21.7
+     "early_margin_pct": 19.1
     },
     {
      "dist": 10,
-     "early": 445,
+     "early": 23,
      "absentee": 689,
      "unreturned": 440,
      "questioned": 149,
      "abs_margin_pct": 20.9,
-     "early_margin_pct": 19.2
+     "early_margin_pct": 19.9
     },
     {
      "dist": 11,
-     "early": 463,
+     "early": 14,
      "absentee": 939,
      "unreturned": 566,
      "questioned": 149,
      "abs_margin_pct": 26.5,
-     "early_margin_pct": 16.3
+     "early_margin_pct": 15.5
     },
     {
      "dist": 12,
-     "early": 539,
+     "early": 12,
      "absentee": 848,
      "unreturned": 469,
      "questioned": 130,
      "abs_margin_pct": 38.8,
-     "early_margin_pct": 24.8
+     "early_margin_pct": 23.1
     },
     {
      "dist": 13,
-     "early": 568,
+     "early": 12,
      "absentee": 564,
      "unreturned": 351,
      "questioned": 136,
      "abs_margin_pct": 42.8,
-     "early_margin_pct": 27.8
+     "early_margin_pct": 25.7
     },
     {
      "dist": 14,
-     "early": 633,
+     "early": 18,
      "absentee": 629,
      "unreturned": 423,
      "questioned": 242,
      "abs_margin_pct": 46.8,
-     "early_margin_pct": 47.3
+     "early_margin_pct": 44.2
     },
     {
      "dist": 15,
-     "early": 511,
+     "early": 13,
      "absentee": 747,
      "unreturned": 523,
      "questioned": 187,
      "abs_margin_pct": 29.3,
-     "early_margin_pct": 22.0
+     "early_margin_pct": 20.1
     },
     {
      "dist": 16,
-     "early": 618,
+     "early": 18,
      "absentee": 672,
      "unreturned": 575,
      "questioned": 130,
      "abs_margin_pct": 36.8,
-     "early_margin_pct": 46.8
+     "early_margin_pct": 41.9
     },
     {
      "dist": 17,
-     "early": 670,
+     "early": 14,
      "absentee": 797,
      "unreturned": 485,
      "questioned": 229,
      "abs_margin_pct": 53.0,
-     "early_margin_pct": 57.0
+     "early_margin_pct": 52.7
     },
     {
      "dist": 18,
-     "early": 181,
+     "early": 3,
      "absentee": 320,
      "unreturned": 331,
      "questioned": 103,
      "abs_margin_pct": 35.8,
-     "early_margin_pct": 35.6
+     "early_margin_pct": 30.0
     },
     {
      "dist": 19,
-     "early": 340,
+     "early": 10,
      "absentee": 369,
      "unreturned": 248,
      "questioned": 182,
      "abs_margin_pct": 36.0,
-     "early_margin_pct": 58.7
+     "early_margin_pct": 50.7
     },
     {
      "dist": 20,
-     "early": 476,
+     "early": 13,
      "absentee": 739,
      "unreturned": 330,
      "questioned": 188,
      "abs_margin_pct": 38.0,
-     "early_margin_pct": 37.2
+     "early_margin_pct": 37.0
     },
     {
      "dist": 21,
-     "early": 458,
+     "early": 7,
      "absentee": 868,
      "unreturned": 489,
      "questioned": 198,
@@ -362,156 +360,156 @@
     },
     {
      "dist": 22,
-     "early": 324,
+     "early": 8,
      "absentee": 386,
      "unreturned": 284,
      "questioned": 132,
      "abs_margin_pct": 18.6,
-     "early_margin_pct": 26.5
+     "early_margin_pct": 27.0
     },
     {
      "dist": 23,
-     "early": 855,
+     "early": 16,
      "absentee": 687,
      "unreturned": 789,
      "questioned": 135,
      "abs_margin_pct": 12.3,
-     "early_margin_pct": -4.8
+     "early_margin_pct": -7.9
     },
     {
      "dist": 24,
-     "early": 761,
+     "early": 21,
      "absentee": 550,
      "unreturned": 604,
      "questioned": 191,
      "abs_margin_pct": -5.1,
-     "early_margin_pct": -13.7
+     "early_margin_pct": -17.7
     },
     {
      "dist": 25,
-     "early": 716,
+     "early": 3,
      "absentee": 473,
      "unreturned": 285,
-     "questioned": 272,
+     "questioned": 1,
      "abs_margin_pct": -13.6,
      "early_margin_pct": -13.7
     },
     {
      "dist": 26,
-     "early": 738,
+     "early": 1,
      "absentee": 365,
      "unreturned": 228,
-     "questioned": 161,
+     "questioned": 0,
      "abs_margin_pct": -31.2,
-     "early_margin_pct": -47.3
+     "early_margin_pct": -47.4
     },
     {
      "dist": 27,
-     "early": 879,
+     "early": 2,
      "absentee": 377,
      "unreturned": 202,
-     "questioned": 119,
+     "questioned": 0,
      "abs_margin_pct": -24.8,
-     "early_margin_pct": -43.9
+     "early_margin_pct": -44.2
     },
     {
      "dist": 28,
-     "early": 715,
+     "early": 1,
      "absentee": 344,
      "unreturned": 189,
-     "questioned": 208,
+     "questioned": 0,
      "abs_margin_pct": -15.0,
-     "early_margin_pct": -38.2
+     "early_margin_pct": -39.2
     },
     {
      "dist": 29,
-     "early": 675,
+     "early": 0,
      "absentee": 1392,
      "unreturned": 274,
-     "questioned": 181,
-     "abs_margin_pct": -31.3,
-     "early_margin_pct": -31.2
+     "questioned": 0,
+     "abs_margin_pct": -33.7,
+     "early_margin_pct": -34.2
     },
     {
      "dist": 30,
-     "early": 363,
-     "absentee": 2460,
+     "early": 0,
+     "absentee": 2266,
      "unreturned": 311,
      "questioned": 185,
-     "abs_margin_pct": -16.4,
-     "early_margin_pct": -16.5
+     "abs_margin_pct": -17.6,
+     "early_margin_pct": -18.1
     },
     {
      "dist": 31,
-     "early": 640,
-     "absentee": 392,
+     "early": 3,
+     "absentee": 63,
      "unreturned": 187,
      "questioned": 172,
-     "abs_margin_pct": 16.9,
-     "early_margin_pct": 25.0
+     "abs_margin_pct": 10.2,
+     "early_margin_pct": 26.8
     },
     {
      "dist": 32,
-     "early": 285,
-     "absentee": 276,
+     "early": 4,
+     "absentee": 47,
      "unreturned": 139,
      "questioned": 140,
-     "abs_margin_pct": -9.1,
-     "early_margin_pct": -0.2
+     "abs_margin_pct": -15.9,
+     "early_margin_pct": 6.0
     },
     {
      "dist": 33,
-     "early": 388,
-     "absentee": 414,
+     "early": 2,
+     "absentee": 24,
      "unreturned": 218,
      "questioned": 153,
-     "abs_margin_pct": -19.9,
-     "early_margin_pct": -17.1
+     "abs_margin_pct": -20.2,
+     "early_margin_pct": -13.3
     },
     {
      "dist": 34,
-     "early": 583,
-     "absentee": 523,
+     "early": 0,
+     "absentee": 52,
      "unreturned": 294,
      "questioned": 142,
-     "abs_margin_pct": 19.3,
-     "early_margin_pct": 18.6
+     "abs_margin_pct": 7.2,
+     "early_margin_pct": 19.5
     },
     {
      "dist": 35,
-     "early": 747,
-     "absentee": 517,
+     "early": 0,
+     "absentee": 67,
      "unreturned": 272,
      "questioned": 180,
-     "abs_margin_pct": 36.8,
-     "early_margin_pct": 36.6
+     "abs_margin_pct": 29.0,
+     "early_margin_pct": 35.3
     },
     {
      "dist": 36,
-     "early": 243,
+     "early": 18,
      "absentee": 1634,
      "unreturned": 416,
      "questioned": 233,
-     "abs_margin_pct": 13.9,
-     "early_margin_pct": 13.4
+     "abs_margin_pct": 12.8,
+     "early_margin_pct": 11.9
     },
     {
      "dist": 37,
-     "early": 46,
-     "absentee": 901,
+     "early": 0,
+     "absentee": 117,
      "unreturned": 235,
      "questioned": 83,
-     "abs_margin_pct": 53.2,
-     "early_margin_pct": 52.2
+     "abs_margin_pct": 55.2,
+     "early_margin_pct": 53.9
     },
     {
      "dist": 38,
      "early": 74,
-     "absentee": 573,
+     "absentee": 52,
      "unreturned": 191,
      "questioned": 157,
-     "abs_margin_pct": 61.0,
-     "early_margin_pct": 59.9
+     "abs_margin_pct": 40.8,
+     "early_margin_pct": 58.6
     },
     {
      "dist": 39,
@@ -519,8 +517,8 @@
      "absentee": 230,
      "unreturned": 492,
      "questioned": 108,
-     "abs_margin_pct": 42.7,
-     "early_margin_pct": 41.9
+     "abs_margin_pct": 41.5,
+     "early_margin_pct": 40.4
     },
     {
      "dist": 40,
@@ -528,8 +526,8 @@
      "absentee": 258,
      "unreturned": 224,
      "questioned": 63,
-     "abs_margin_pct": 50.1,
-     "early_margin_pct": 49.1
+     "abs_margin_pct": 48.9,
+     "early_margin_pct": 47.6
     },
     {
      "dist": 99,
@@ -545,9 +543,9 @@
   "Senate": {
    "dem": "Peltola",
    "rep": "Sullivan",
-   "cvr_net": -2364,
+   "cvr_net": -666,
    "batch_net": 3864,
-   "counted_net": 1500,
+   "counted_net": 3198,
    "borrowed": {
     "early": [
      1,
@@ -565,12 +563,10 @@
      3,
      5,
      6,
-     8,
      29,
      30,
      36,
      37,
-     38,
      39,
      40
     ]
@@ -580,133 +576,133 @@
      "model": "A",
      "unreturned_pct": 0,
      "parts_net": {
-      "early": 3579,
-      "absentee": 7893,
+      "early": 1076,
+      "absentee": 7046,
       "unreturned": 0,
-      "questioned": 258
+      "questioned": 767
      },
      "parts_two": {
-      "early": 19892,
-      "absentee": 33565,
+      "early": 2523,
+      "absentee": 27892,
       "unreturned": 0,
-      "questioned": 6432
+      "questioned": 5169
      },
      "gapB": 0,
-     "remaining_net": 11730,
-     "remaining_two": 59888,
-     "remaining_margin_pct": 19.59,
-     "total_net": 13230,
-     "flip_shift_pts": -22.09
+     "remaining_net": 8888,
+     "remaining_two": 35584,
+     "remaining_margin_pct": 24.98,
+     "total_net": 12086,
+     "flip_shift_pts": -33.97
     },
     {
      "model": "A",
      "unreturned_pct": 40,
      "parts_net": {
-      "early": 3579,
-      "absentee": 7893,
-      "unreturned": 1758,
-      "questioned": 258
+      "early": 1076,
+      "absentee": 7046,
+      "unreturned": 1732,
+      "questioned": 767
      },
      "parts_two": {
-      "early": 19892,
-      "absentee": 33565,
-      "unreturned": 6020,
-      "questioned": 6432
+      "early": 2523,
+      "absentee": 27892,
+      "unreturned": 6012,
+      "questioned": 5169
      },
      "gapB": 0,
-     "remaining_net": 13488,
-     "remaining_two": 65908,
-     "remaining_margin_pct": 20.46,
-     "total_net": 14988,
-     "flip_shift_pts": -22.74
+     "remaining_net": 10620,
+     "remaining_two": 41596,
+     "remaining_margin_pct": 25.53,
+     "total_net": 13818,
+     "flip_shift_pts": -33.22
     },
     {
      "model": "A",
      "unreturned_pct": 100,
      "parts_net": {
-      "early": 3579,
-      "absentee": 7893,
-      "unreturned": 4395,
-      "questioned": 258
+      "early": 1076,
+      "absentee": 7046,
+      "unreturned": 4330,
+      "questioned": 767
      },
      "parts_two": {
-      "early": 19892,
-      "absentee": 33565,
-      "unreturned": 15050,
-      "questioned": 6432
+      "early": 2523,
+      "absentee": 27892,
+      "unreturned": 15030,
+      "questioned": 5169
      },
      "gapB": 0,
-     "remaining_net": 16125,
-     "remaining_two": 74938,
-     "remaining_margin_pct": 21.52,
-     "total_net": 17625,
-     "flip_shift_pts": -23.52
+     "remaining_net": 13218,
+     "remaining_two": 50614,
+     "remaining_margin_pct": 26.11,
+     "total_net": 16416,
+     "flip_shift_pts": -32.43
     },
     {
      "model": "B",
      "unreturned_pct": 0,
      "parts_net": {
-      "early": 3579,
-      "absentee": 7893,
+      "early": 1076,
+      "absentee": 7046,
       "unreturned": 0,
-      "questioned": 258
+      "questioned": 767
      },
      "parts_two": {
-      "early": 19892,
-      "absentee": 33565,
+      "early": 2523,
+      "absentee": 27892,
       "unreturned": 0,
-      "questioned": 6432
+      "questioned": 5169
      },
-     "gapB": -2199,
-     "remaining_net": 9531,
-     "remaining_two": 59888,
-     "remaining_margin_pct": 15.91,
-     "total_net": 11031,
-     "flip_shift_pts": -18.42
+     "gapB": -2725,
+     "remaining_net": 6163,
+     "remaining_two": 35584,
+     "remaining_margin_pct": 17.32,
+     "total_net": 9361,
+     "flip_shift_pts": -26.31
     },
     {
      "model": "B",
      "unreturned_pct": 40,
      "parts_net": {
-      "early": 3579,
-      "absentee": 7893,
-      "unreturned": 1758,
-      "questioned": 258
+      "early": 1076,
+      "absentee": 7046,
+      "unreturned": 1732,
+      "questioned": 767
      },
      "parts_two": {
-      "early": 19892,
-      "absentee": 33565,
-      "unreturned": 6020,
-      "questioned": 6432
+      "early": 2523,
+      "absentee": 27892,
+      "unreturned": 6012,
+      "questioned": 5169
      },
-     "gapB": -2822,
-     "remaining_net": 10666,
-     "remaining_two": 65908,
-     "remaining_margin_pct": 16.18,
-     "total_net": 12166,
-     "flip_shift_pts": -18.46
+     "gapB": -3347,
+     "remaining_net": 7273,
+     "remaining_two": 41596,
+     "remaining_margin_pct": 17.48,
+     "total_net": 10471,
+     "flip_shift_pts": -25.17
     },
     {
      "model": "B",
      "unreturned_pct": 100,
      "parts_net": {
-      "early": 3579,
-      "absentee": 7893,
-      "unreturned": 4395,
-      "questioned": 258
+      "early": 1076,
+      "absentee": 7046,
+      "unreturned": 4330,
+      "questioned": 767
      },
      "parts_two": {
-      "early": 19892,
-      "absentee": 33565,
-      "unreturned": 15050,
-      "questioned": 6432
+      "early": 2523,
+      "absentee": 27892,
+      "unreturned": 15030,
+      "questioned": 5169
      },
-     "gapB": -3757,
-     "remaining_net": 12369,
-     "remaining_two": 74938,
-     "remaining_margin_pct": 16.5,
-     "total_net": 13869,
-     "flip_shift_pts": -18.51
+     "gapB": -4281,
+     "remaining_net": 8937,
+     "remaining_two": 50614,
+     "remaining_margin_pct": 17.66,
+     "total_net": 12135,
+     "flip_shift_pts": -23.98
     }
    ],
    "by_district": [
@@ -716,7 +712,7 @@
      "absentee": 1895,
      "unreturned": 306,
      "questioned": 148,
-     "abs_margin_pct": 19.9,
+     "abs_margin_pct": 19.7,
      "early_margin_pct": 17.2
     },
     {
@@ -734,17 +730,17 @@
      "absentee": 1429,
      "unreturned": 619,
      "questioned": 205,
-     "abs_margin_pct": 55.6,
+     "abs_margin_pct": 55.5,
      "early_margin_pct": 52.8
     },
     {
      "dist": 4,
-     "early": 1315,
-     "absentee": 666,
+     "early": 32,
+     "absentee": 189,
      "unreturned": 377,
      "questioned": 305,
-     "abs_margin_pct": 66.2,
-     "early_margin_pct": 67.3
+     "abs_margin_pct": 63.8,
+     "early_margin_pct": 61.5
     },
     {
      "dist": 5,
@@ -752,7 +748,7 @@
      "absentee": 1577,
      "unreturned": 495,
      "questioned": 132,
-     "abs_margin_pct": 32.8,
+     "abs_margin_pct": 32.7,
      "early_margin_pct": 30.1
     },
     {
@@ -761,296 +757,296 @@
      "absentee": 1279,
      "unreturned": 526,
      "questioned": 168,
-     "abs_margin_pct": 30.0,
+     "abs_margin_pct": 29.9,
      "early_margin_pct": 27.3
     },
     {
      "dist": 7,
-     "early": 701,
-     "absentee": 403,
+     "early": 0,
+     "absentee": 29,
      "unreturned": 259,
-     "questioned": 218,
-     "abs_margin_pct": -28.8,
-     "early_margin_pct": -13.3
+     "questioned": 0,
+     "abs_margin_pct": -26.6,
+     "early_margin_pct": -16.3
     },
     {
      "dist": 8,
-     "early": 442,
-     "absentee": 1539,
+     "early": 3,
+     "absentee": 41,
      "unreturned": 310,
-     "questioned": 136,
-     "abs_margin_pct": -32.3,
-     "early_margin_pct": -34.9
+     "questioned": 0,
+     "abs_margin_pct": -21.2,
+     "early_margin_pct": -36.8
     },
     {
      "dist": 9,
-     "early": 579,
+     "early": 32,
      "absentee": 1218,
      "unreturned": 776,
      "questioned": 146,
      "abs_margin_pct": 33.2,
-     "early_margin_pct": 24.5
+     "early_margin_pct": 23.0
     },
     {
      "dist": 10,
-     "early": 445,
+     "early": 23,
      "absentee": 689,
      "unreturned": 440,
      "questioned": 149,
      "abs_margin_pct": 26.2,
-     "early_margin_pct": 24.8
+     "early_margin_pct": 25.1
     },
     {
      "dist": 11,
-     "early": 463,
+     "early": 14,
      "absentee": 939,
      "unreturned": 566,
      "questioned": 149,
      "abs_margin_pct": 29.5,
-     "early_margin_pct": 20.1
+     "early_margin_pct": 20.2
     },
     {
      "dist": 12,
-     "early": 539,
+     "early": 12,
      "absentee": 848,
      "unreturned": 469,
      "questioned": 130,
      "abs_margin_pct": 44.9,
-     "early_margin_pct": 31.0
+     "early_margin_pct": 30.0
     },
     {
      "dist": 13,
-     "early": 568,
+     "early": 12,
      "absentee": 564,
      "unreturned": 351,
      "questioned": 136,
      "abs_margin_pct": 46.1,
-     "early_margin_pct": 34.4
+     "early_margin_pct": 34.1
     },
     {
      "dist": 14,
-     "early": 633,
+     "early": 18,
      "absentee": 629,
      "unreturned": 423,
      "questioned": 242,
      "abs_margin_pct": 51.0,
-     "early_margin_pct": 50.7
+     "early_margin_pct": 49.1
     },
     {
      "dist": 15,
-     "early": 511,
+     "early": 13,
      "absentee": 747,
      "unreturned": 523,
      "questioned": 187,
      "abs_margin_pct": 35.3,
-     "early_margin_pct": 24.4
+     "early_margin_pct": 22.9
     },
     {
      "dist": 16,
-     "early": 618,
+     "early": 18,
      "absentee": 672,
      "unreturned": 575,
      "questioned": 130,
      "abs_margin_pct": 40.6,
-     "early_margin_pct": 48.5
+     "early_margin_pct": 45.2
     },
     {
      "dist": 17,
-     "early": 670,
+     "early": 14,
      "absentee": 797,
      "unreturned": 485,
      "questioned": 229,
      "abs_margin_pct": 55.5,
-     "early_margin_pct": 59.5
+     "early_margin_pct": 56.3
     },
     {
      "dist": 18,
-     "early": 181,
+     "early": 3,
      "absentee": 320,
      "unreturned": 331,
      "questioned": 103,
      "abs_margin_pct": 50.7,
-     "early_margin_pct": 43.2
+     "early_margin_pct": 37.5
     },
     {
      "dist": 19,
-     "early": 340,
+     "early": 10,
      "absentee": 369,
      "unreturned": 248,
      "questioned": 182,
      "abs_margin_pct": 44.0,
-     "early_margin_pct": 65.3
+     "early_margin_pct": 59.8
     },
     {
      "dist": 20,
-     "early": 476,
+     "early": 13,
      "absentee": 739,
      "unreturned": 330,
      "questioned": 188,
      "abs_margin_pct": 46.2,
-     "early_margin_pct": 41.0
+     "early_margin_pct": 41.4
     },
     {
      "dist": 21,
-     "early": 458,
+     "early": 7,
      "absentee": 868,
      "unreturned": 489,
      "questioned": 198,
      "abs_margin_pct": 35.3,
-     "early_margin_pct": 35.7
+     "early_margin_pct": 35.9
     },
     {
      "dist": 22,
-     "early": 324,
+     "early": 8,
      "absentee": 386,
      "unreturned": 284,
      "questioned": 132,
      "abs_margin_pct": 30.6,
-     "early_margin_pct": 34.6
+     "early_margin_pct": 34.2
     },
     {
      "dist": 23,
-     "early": 855,
+     "early": 16,
      "absentee": 687,
      "unreturned": 789,
      "questioned": 135,
      "abs_margin_pct": 17.2,
-     "early_margin_pct": 0.0
+     "early_margin_pct": -2.7
     },
     {
      "dist": 24,
-     "early": 761,
+     "early": 21,
      "absentee": 550,
      "unreturned": 604,
      "questioned": 191,
      "abs_margin_pct": 2.7,
-     "early_margin_pct": -9.6
+     "early_margin_pct": -13.3
     },
     {
      "dist": 25,
-     "early": 716,
+     "early": 3,
      "absentee": 473,
      "unreturned": 285,
-     "questioned": 272,
+     "questioned": 1,
      "abs_margin_pct": -8.8,
-     "early_margin_pct": -7.3
+     "early_margin_pct": -7.4
     },
     {
      "dist": 26,
-     "early": 738,
+     "early": 1,
      "absentee": 365,
      "unreturned": 228,
-     "questioned": 161,
+     "questioned": 0,
      "abs_margin_pct": -22.5,
-     "early_margin_pct": -42.9
+     "early_margin_pct": -42.7
     },
     {
      "dist": 27,
-     "early": 879,
+     "early": 2,
      "absentee": 377,
      "unreturned": 202,
-     "questioned": 119,
+     "questioned": 0,
      "abs_margin_pct": -16.2,
-     "early_margin_pct": -40.3
+     "early_margin_pct": -40.0
     },
     {
      "dist": 28,
-     "early": 715,
+     "early": 1,
      "absentee": 344,
      "unreturned": 189,
-     "questioned": 208,
+     "questioned": 0,
      "abs_margin_pct": -10.8,
-     "early_margin_pct": -34.0
+     "early_margin_pct": -34.8
     },
     {
      "dist": 29,
-     "early": 675,
+     "early": 0,
      "absentee": 1392,
      "unreturned": 274,
-     "questioned": 181,
-     "abs_margin_pct": -25.1,
-     "early_margin_pct": -27.7
+     "questioned": 0,
+     "abs_margin_pct": -27.6,
+     "early_margin_pct": -30.0
     },
     {
      "dist": 30,
-     "early": 363,
-     "absentee": 2460,
+     "early": 0,
+     "absentee": 2266,
      "unreturned": 311,
      "questioned": 185,
-     "abs_margin_pct": -13.7,
-     "early_margin_pct": -16.3
+     "abs_margin_pct": -14.0,
+     "early_margin_pct": -16.4
     },
     {
      "dist": 31,
-     "early": 640,
-     "absentee": 392,
+     "early": 3,
+     "absentee": 63,
      "unreturned": 187,
      "questioned": 172,
-     "abs_margin_pct": 23.8,
-     "early_margin_pct": 30.8
+     "abs_margin_pct": 18.7,
+     "early_margin_pct": 33.6
     },
     {
      "dist": 32,
-     "early": 285,
-     "absentee": 276,
+     "early": 4,
+     "absentee": 47,
      "unreturned": 139,
      "questioned": 140,
-     "abs_margin_pct": 4.8,
-     "early_margin_pct": 5.3
+     "abs_margin_pct": -5.6,
+     "early_margin_pct": 13.3
     },
     {
      "dist": 33,
-     "early": 388,
-     "absentee": 414,
+     "early": 2,
+     "absentee": 24,
      "unreturned": 218,
      "questioned": 153,
-     "abs_margin_pct": -10.3,
-     "early_margin_pct": -12.9
+     "abs_margin_pct": -13.7,
+     "early_margin_pct": -9.3
     },
     {
      "dist": 34,
-     "early": 583,
-     "absentee": 523,
+     "early": 0,
+     "absentee": 52,
      "unreturned": 294,
      "questioned": 142,
-     "abs_margin_pct": 26.0,
-     "early_margin_pct": 19.6
+     "abs_margin_pct": 15.2,
+     "early_margin_pct": 19.9
     },
     {
      "dist": 35,
-     "early": 747,
-     "absentee": 517,
+     "early": 0,
+     "absentee": 67,
      "unreturned": 272,
      "questioned": 180,
-     "abs_margin_pct": 40.7,
-     "early_margin_pct": 39.6
+     "abs_margin_pct": 33.8,
+     "early_margin_pct": 38.9
     },
     {
      "dist": 36,
-     "early": 243,
+     "early": 18,
      "absentee": 1634,
      "unreturned": 416,
      "questioned": 233,
-     "abs_margin_pct": 18.9,
-     "early_margin_pct": 16.2
+     "abs_margin_pct": 18.7,
+     "early_margin_pct": 16.1
     },
     {
      "dist": 37,
-     "early": 46,
-     "absentee": 901,
+     "early": 0,
+     "absentee": 117,
      "unreturned": 235,
      "questioned": 83,
-     "abs_margin_pct": 43.5,
-     "early_margin_pct": 40.8
+     "abs_margin_pct": 56.4,
+     "early_margin_pct": 53.8
     },
     {
      "dist": 38,
      "early": 74,
-     "absentee": 573,
+     "absentee": 52,
      "unreturned": 191,
      "questioned": 157,
-     "abs_margin_pct": 75.4,
-     "early_margin_pct": 72.6
+     "abs_margin_pct": 61.1,
+     "early_margin_pct": 72.7
     },
     {
      "dist": 39,
@@ -1067,7 +1063,7 @@
      "absentee": 258,
      "unreturned": 224,
      "questioned": 63,
-     "abs_margin_pct": 53.8,
+     "abs_margin_pct": 53.7,
      "early_margin_pct": 51.0
     },
     {
@@ -1083,9 +1079,9 @@
   }
  },
  "remaining": {
-  "early": 20164,
-  "absentee": 34179,
+  "early": 2570,
+  "absentee": 28462,
   "unreturned": 15291,
-  "questioned": 6581
+  "questioned": 5287
  }
 }

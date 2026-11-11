@@ -1,151 +1,151 @@
 {
  "A_2026": {
   "Begich": {
-   "n": 1090,
-   "all_D": 471,
-   "all_D_with_leg": 403,
-   "all_R": 134,
-   "senate_ranked_2plus": 997,
-   "gov_ranked_2plus": 896,
-   "either_2plus": 1023,
-   "allD_and_ranked_2plus_elsewhere": 425,
+   "n": 1219,
+   "all_D": 524,
+   "all_D_with_leg": 452,
+   "all_R": 148,
+   "senate_ranked_2plus": 1108,
+   "gov_ranked_2plus": 997,
+   "either_2plus": 1144,
+   "allD_and_ranked_2plus_elsewhere": 475,
    "house_n": {
-    "2": 249,
-    "3": 200,
-    "4": 620,
-    "5": 21
+    "2": 274,
+    "3": 228,
+    "4": 689,
+    "5": 28
    }
   },
   "Hill": {
-   "n": 7186,
-   "all_D": 5312,
-   "all_D_with_leg": 4383,
-   "all_R": 66,
-   "senate_ranked_2plus": 5185,
-   "gov_ranked_2plus": 3419,
-   "either_2plus": 5333,
-   "allD_and_ranked_2plus_elsewhere": 3752,
+   "n": 8275,
+   "all_D": 6181,
+   "all_D_with_leg": 5076,
+   "all_R": 74,
+   "senate_ranked_2plus": 6001,
+   "gov_ranked_2plus": 3984,
+   "either_2plus": 6173,
+   "allD_and_ranked_2plus_elsewhere": 4394,
    "house_n": {
-    "2": 2382,
-    "3": 1814,
-    "4": 2833,
-    "5": 157
+    "2": 2703,
+    "3": 2075,
+    "4": 3309,
+    "5": 188
    }
   },
   "stops": {
-   "n": 7493,
-   "all_D": 5485,
-   "all_D_with_leg": 4265,
-   "all_R": 145,
-   "senate_ranked_2plus": 1173,
-   "gov_ranked_2plus": 352,
-   "either_2plus": 1296,
-   "allD_and_ranked_2plus_elsewhere": 817,
+   "n": 8524,
+   "all_D": 6339,
+   "all_D_with_leg": 4924,
+   "all_R": 159,
+   "senate_ranked_2plus": 1314,
+   "gov_ranked_2plus": 399,
+   "either_2plus": 1454,
+   "allD_and_ranked_2plus_elsewhere": 932,
    "house_n": {
-    "1": 6789,
-    "2": 663,
-    "3": 14,
-    "4": 27
+    "1": 7711,
+    "2": 762,
+    "3": 17,
+    "4": 34
    }
   },
   "only_hafner": {
-   "n": 6789,
-   "all_D": 5014,
-   "all_D_with_leg": 3903,
-   "all_R": 126,
-   "senate_ranked_2plus": 802,
-   "gov_ranked_2plus": 183,
-   "either_2plus": 898,
-   "allD_and_ranked_2plus_elsewhere": 584,
+   "n": 7711,
+   "all_D": 5776,
+   "all_D_with_leg": 4494,
+   "all_R": 138,
+   "senate_ranked_2plus": 892,
+   "gov_ranked_2plus": 203,
+   "either_2plus": 1000,
+   "allD_and_ranked_2plus_elsewhere": 654,
    "house_n": {
-    "1": 6789
+    "1": 7711
    }
   }
  },
  "baseline_2026": {
   "Hill": {
-   "n": 84273,
-   "house_only_one": 49786,
-   "senate_2plus": 37692,
-   "gov_2plus": 21443
+   "n": 94642,
+   "house_only_one": 55757,
+   "senate_2plus": 42308,
+   "gov_2plus": 24079
   },
   "Begich": {
-   "n": 104088,
-   "house_only_one": 80155,
-   "senate_2plus": 48007,
-   "gov_2plus": 69616
+   "n": 115277,
+   "house_only_one": 88684,
+   "senate_2plus": 53206,
+   "gov_2plus": 77091
   },
   "Hafner": {
-   "n": 15133,
-   "house_only_one": 6807,
-   "senate_2plus": 6839,
-   "gov_2plus": 4254
+   "n": 17305,
+   "house_only_one": 7734,
+   "senate_2plus": 7846,
+   "gov_2plus": 4923
   },
   "McDermott": {
-   "n": 5597,
-   "house_only_one": 1779,
-   "senate_2plus": 3353,
-   "gov_2plus": 3096
+   "n": 6242,
+   "house_only_one": 1968,
+   "senate_2plus": 3738,
+   "gov_2plus": 3447
   }
  },
  "B_2026": {
   "hill_first_choice": {
-   "n": 84273,
+   "n": 94642,
    "senate_x_gov": {
-    "Heikes | Kreiss-Tomkins": 431,
-    "Heikes | Republican": 626,
-    "Heikes | none": 16,
+    "Heikes | Kreiss-Tomkins": 482,
+    "Heikes | Republican": 698,
+    "Heikes | none": 20,
     "Heikes | other": 8,
-    "Peltola | Kreiss-Tomkins": 75768,
-    "Peltola | Republican": 2274,
-    "Peltola | none": 464,
-    "Peltola | other": 123,
-    "Sullivan | Kreiss-Tomkins": 1256,
-    "Sullivan | Republican": 1487,
-    "Sullivan | none": 55,
-    "Sullivan | other": 12,
-    "Sullivan Jr. | Kreiss-Tomkins": 925,
-    "Sullivan Jr. | Republican": 335,
-    "Sullivan Jr. | none": 28,
-    "Sullivan Jr. | other": 18,
-    "other/blank | Kreiss-Tomkins": 310,
-    "other/blank | Republican": 73,
-    "other/blank | none": 32,
-    "other/blank | other": 32
+    "Peltola | Kreiss-Tomkins": 85142,
+    "Peltola | Republican": 2537,
+    "Peltola | none": 538,
+    "Peltola | other": 142,
+    "Sullivan | Kreiss-Tomkins": 1371,
+    "Sullivan | Republican": 1626,
+    "Sullivan | none": 61,
+    "Sullivan | other": 13,
+    "Sullivan Jr. | Kreiss-Tomkins": 1052,
+    "Sullivan Jr. | Republican": 365,
+    "Sullivan Jr. | none": 31,
+    "Sullivan Jr. | other": 21,
+    "other/blank | Kreiss-Tomkins": 369,
+    "other/blank | Republican": 90,
+    "other/blank | none": 38,
+    "other/blank | other": 38
    },
-   "all_R_elsewhere": 1916,
-   "all_R_with_leg": 1618,
-   "sullivan_and_R_gov": 1487,
-   "ranked_begich_2nd": 4892
+   "all_R_elsewhere": 2103,
+   "all_R_with_leg": 1748,
+   "sullivan_and_R_gov": 1626,
+   "ranked_begich_2nd": 5389
   },
   "hill_final_round": {
-   "n": 93017,
+   "n": 104638,
    "senate_x_gov": {
-    "Heikes | Kreiss-Tomkins": 563,
-    "Heikes | Republican": 835,
-    "Heikes | none": 21,
+    "Heikes | Kreiss-Tomkins": 623,
+    "Heikes | Republican": 929,
+    "Heikes | none": 25,
     "Heikes | other": 10,
-    "Peltola | Kreiss-Tomkins": 83048,
-    "Peltola | Republican": 2618,
-    "Peltola | none": 529,
-    "Peltola | other": 148,
-    "Sullivan | Kreiss-Tomkins": 1336,
-    "Sullivan | Republican": 1673,
-    "Sullivan | none": 57,
-    "Sullivan | other": 16,
-    "Sullivan Jr. | Kreiss-Tomkins": 1111,
-    "Sullivan Jr. | Republican": 436,
-    "Sullivan Jr. | none": 34,
-    "Sullivan Jr. | other": 27,
-    "other/blank | Kreiss-Tomkins": 340,
-    "other/blank | Republican": 101,
-    "other/blank | none": 40,
-    "other/blank | other": 74
+    "Peltola | Kreiss-Tomkins": 93504,
+    "Peltola | Republican": 2941,
+    "Peltola | none": 608,
+    "Peltola | other": 173,
+    "Sullivan | Kreiss-Tomkins": 1459,
+    "Sullivan | Republican": 1827,
+    "Sullivan | none": 63,
+    "Sullivan | other": 17,
+    "Sullivan Jr. | Kreiss-Tomkins": 1267,
+    "Sullivan Jr. | Republican": 477,
+    "Sullivan Jr. | none": 37,
+    "Sullivan Jr. | other": 30,
+    "other/blank | Kreiss-Tomkins": 402,
+    "other/blank | Republican": 115,
+    "other/blank | none": 46,
+    "other/blank | other": 85
    },
-   "all_R_elsewhere": 2301,
-   "all_R_with_leg": 1935,
-   "sullivan_and_R_gov": 1673,
-   "ranked_begich_2nd": 4880
+   "all_R_elsewhere": 2524,
+   "all_R_with_leg": 2091,
+   "sullivan_and_R_gov": 1827,
+   "ranked_begich_2nd": 5372
   }
  },
  "hafner_2024": {

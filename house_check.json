@@ -3,37 +3,37 @@
   "rounds": [
    {
     "active": {
-     "Begich": 104004,
-     "Hill": 84215,
-     "Hafner": 15076,
-     "McDermott": 5563,
-     "Write-in": 310
+     "Begich": 115179,
+     "Hill": 94564,
+     "Hafner": 17232,
+     "McDermott": 6202,
+     "Write-in": 349
     },
-    "inactive": 1776
+    "inactive": 2035
    },
    {
     "active": {
-     "Begich": 104032,
-     "Hill": 84283,
-     "Hafner": 15093,
-     "McDermott": 5588
+     "Begich": 115211,
+     "Hill": 94640,
+     "Hafner": 17252,
+     "McDermott": 6230
     },
-    "inactive": 1948
+    "inactive": 2228
    },
    {
     "active": {
-     "Begich": 105598,
-     "Hill": 85831,
-     "Hafner": 15769
+     "Begich": 116963,
+     "Hill": 96363,
+     "Hafner": 18018
     },
-    "inactive": 3746
+    "inactive": 4217
    },
    {
     "active": {
-     "Begich": 106688,
-     "Hill": 93017
+     "Begich": 118182,
+     "Hill": 104638
     },
-    "inactive": 11239
+    "inactive": 12741
    }
   ],
   "order": [
@@ -44,595 +44,600 @@
   "steps": [
    {
     "out": "Write-in",
-    "ballots": 310,
+    "ballots": 349,
     "to": {
-     "stops": 172,
-     "Hill": 68,
-     "Begich": 28,
-     "McDermott": 25,
-     "Hafner": 17
+     "stops": 193,
+     "Hill": 76,
+     "Begich": 32,
+     "McDermott": 28,
+     "Hafner": 20
     },
-    "net": 40
+    "net": 44
    },
    {
     "out": "McDermott",
-    "ballots": 5588,
+    "ballots": 6230,
     "to": {
-     "stops": 1798,
-     "Begich": 1566,
-     "Hill": 1548,
-     "Hafner": 676
+     "stops": 1989,
+     "Begich": 1752,
+     "Hill": 1723,
+     "Hafner": 766
     },
-    "net": -18
+    "net": -29
    },
    {
     "out": "Hafner",
-    "ballots": 15769,
+    "ballots": 18018,
     "to": {
-     "stops": 7493,
-     "Hill": 7186,
-     "Begich": 1090
+     "stops": 8524,
+     "Hill": 8275,
+     "Begich": 1219
     },
-    "net": 6096
+    "net": 7056
    }
   ],
-  "first_net": -19789,
-  "cvr_final_net": -13671,
-  "ballots": 210944
+  "first_net": -20615,
+  "cvr_final_net": -13544,
+  "ballots": 235561
  },
  "hill_adj": {
-  "stopped": 11239,
-  "stopped_to_hill": 8661,
-  "stopped_to_begich": 1295,
-  "stopped_none": 1283,
-  "grant_set": 7427,
-  "symmetric_set": 3860,
-  "protest": 1665,
+  "stopped": 12741,
+  "stopped_to_hill": 9855,
+  "stopped_to_begich": 1444,
+  "stopped_none": 1442,
+  "grant_set": 8286,
+  "symmetric_set": 4238,
+  "protest": 1878,
   "grant_by": {
-   "Heikes | Kreiss-Tomkins": 559,
-   "Heikes | Republican": 826,
-   "Heikes | blank": 34,
+   "Heikes | Kreiss-Tomkins": 619,
+   "Heikes | Republican": 919,
+   "Heikes | blank": 39,
    "Heikes | overvote": 1,
    "Heikes | write-in": 9,
-   "No more rankings | Kreiss-Tomkins": 200,
-   "No more rankings | Republican": 36,
-   "No more rankings | blank": 43,
+   "No more rankings | Kreiss-Tomkins": 235,
+   "No more rankings | Republican": 46,
+   "No more rankings | blank": 50,
+   "No more rankings | overvote": 1,
    "No more rankings | write-in": 2,
-   "Peltola | blank": 583,
-   "Peltola | overvote": 23,
-   "Peltola | write-in": 147,
-   "Sullivan | Kreiss-Tomkins": 1332,
-   "Sullivan | Republican": 1662,
-   "Sullivan | blank": 69,
+   "Peltola | blank": 676,
+   "Peltola | overvote": 26,
+   "Peltola | write-in": 172,
+   "Sullivan | Kreiss-Tomkins": 1454,
+   "Sullivan | Republican": 1814,
+   "Sullivan | blank": 78,
    "Sullivan | overvote": 3,
-   "Sullivan | write-in": 16,
-   "Sullivan Jr. | Kreiss-Tomkins": 1106,
-   "Sullivan Jr. | Republican": 431,
-   "Sullivan Jr. | blank": 43,
+   "Sullivan | write-in": 17,
+   "Sullivan Jr. | Kreiss-Tomkins": 1259,
+   "Sullivan Jr. | Republican": 471,
+   "Sullivan Jr. | blank": 50,
    "Sullivan Jr. | no race (overseas federal ballot)": 1,
-   "Sullivan Jr. | write-in": 27,
-   "Write-in | Kreiss-Tomkins": 132,
-   "Write-in | Republican": 64,
-   "Write-in | blank": 6,
-   "Write-in | write-in": 72
+   "Sullivan Jr. | write-in": 30,
+   "Write-in | Kreiss-Tomkins": 157,
+   "Write-in | Republican": 66,
+   "Write-in | blank": 7,
+   "Write-in | overvote": 1,
+   "Write-in | write-in": 83
   },
   "cvr_net": {
-   "as_counted": -13671,
-   "stopped": -6305,
-   "both": -13732,
-   "both_no_protest": -12067,
-   "both_symmetric": -10165
+   "as_counted": -13544,
+   "stopped": -5133,
+   "both": -13419,
+   "both_no_protest": -11541,
+   "both_symmetric": -9371
   },
   "cvr_two": {
-   "as_counted": 199705,
-   "stopped": 209661,
-   "both": 202234,
-   "both_no_protest": 203899,
-   "both_symmetric": 205801
+   "as_counted": 222820,
+   "stopped": 234119,
+   "both": 225833,
+   "both_no_protest": 227711,
+   "both_symmetric": 229881
   },
   "stopped_from": {
-   "Hafner": 7493,
-   "earlier": 3746
+   "Hafner": 8524,
+   "earlier": 4217
   }
  },
  "minors": {
   "Hafner": {
-   "held": 15769,
-   "first_choice": 15076,
+   "held": 18018,
+   "first_choice": 17232,
    "dest": {
     "Begich": {
-     "n": 1090,
+     "n": 1219,
      "sen": {
-      "Peltola": 875,
-      "Sullivan": 201,
-      "none": 14
+      "Peltola": 978,
+      "Sullivan": 225,
+      "none": 16
      },
      "gov": {
-      "Kreiss-Tomkins": 758,
-      "Republican": 305,
-      "blank": 16,
-      "write-in": 6,
+      "Kreiss-Tomkins": 850,
+      "Republican": 339,
+      "blank": 18,
+      "write-in": 7,
       "overvote": 2
      },
      "leg": {
-      "D": 546,
-      "R": 379,
-      "both": 41,
-      "none": 124
+      "D": 610,
+      "R": 422,
+      "both": 46,
+      "none": 141
      },
      "vt": {
       "Election Day": 880,
-      "Early Voting": 150,
-      "Absentee": 50,
-      "Judicial-split": 7,
+      "Early Voting": 255,
+      "Absentee": 59,
+      "Judicial-split": 15,
+      "Question": 7,
       "Overseas": 3
      },
-     "rural": 53
+     "rural": 59
     },
     "Hill": {
-     "n": 7186,
+     "n": 8275,
      "sen": {
-      "Peltola": 7003,
-      "Sullivan": 150,
-      "none": 33
+      "Peltola": 8070,
+      "Sullivan": 166,
+      "none": 39
      },
      "gov": {
-      "Kreiss-Tomkins": 6766,
-      "Republican": 319,
-      "blank": 49,
-      "write-in": 23,
+      "Kreiss-Tomkins": 7790,
+      "Republican": 374,
+      "blank": 56,
+      "write-in": 26,
       "overvote": 0
      },
      "leg": {
-      "D": 4651,
-      "R": 1374,
-      "both": 123,
-      "none": 1038
+      "D": 5385,
+      "R": 1516,
+      "both": 139,
+      "none": 1235
      },
      "vt": {
       "Election Day": 4999,
-      "Early Voting": 1457,
-      "Absentee": 640,
-      "Judicial-split": 61,
+      "Early Voting": 2211,
+      "Absentee": 868,
+      "Judicial-split": 122,
+      "Question": 46,
       "Overseas": 29
      },
-     "rural": 198
+     "rural": 258
     },
     "stops": {
-     "n": 7493,
+     "n": 8524,
      "sen": {
-      "Peltola": 7080,
-      "Sullivan": 203,
-      "none": 210
+      "Peltola": 8073,
+      "Sullivan": 226,
+      "none": 225
      },
      "gov": {
-      "Kreiss-Tomkins": 6750,
-      "Republican": 492,
-      "blank": 181,
-      "write-in": 21,
-      "overvote": 5
+      "Kreiss-Tomkins": 7699,
+      "Republican": 549,
+      "blank": 203,
+      "write-in": 23,
+      "overvote": 6
      },
      "leg": {
-      "D": 4639,
-      "R": 1293,
-      "both": 111,
-      "none": 1450
+      "D": 5337,
+      "R": 1386,
+      "both": 127,
+      "none": 1674
      },
      "vt": {
       "Election Day": 5413,
-      "Early Voting": 1418,
-      "Absentee": 579,
-      "Overseas": 44,
-      "Judicial-split": 39
+      "Early Voting": 2106,
+      "Absentee": 806,
+      "Judicial-split": 96,
+      "Question": 59,
+      "Overseas": 44
      },
-     "rural": 204
+     "rural": 260
     }
    },
    "orders": [
     {
      "order": "Hafner",
      "dest": "stops",
-     "n": 6956,
-     "first_other": 167,
+     "n": 7902,
+     "first_other": 191,
      "sen": {
-      "Peltola": 6573,
-      "Sullivan": 192,
-      "none": 191
+      "Peltola": 7487,
+      "Sullivan": 212,
+      "none": 203
      },
      "gov": {
-      "Kreiss-Tomkins": 6266,
-      "Republican": 457,
-      "blank": 171,
-      "write-in": 17,
-      "overvote": 3
+      "Kreiss-Tomkins": 7134,
+      "Republican": 511,
+      "blank": 192,
+      "write-in": 19,
+      "overvote": 4
      },
      "leg": {
-      "D": 4311,
-      "R": 1198,
-      "both": 98,
-      "none": 1349
+      "D": 4950,
+      "R": 1283,
+      "both": 114,
+      "none": 1555
      }
     },
     {
      "order": "Hafner > Hill",
      "dest": "Hill",
-     "n": 2537,
-     "first_other": 155,
+     "n": 2872,
+     "first_other": 169,
      "sen": {
-      "Peltola": 2501,
+      "Peltola": 2834,
       "Sullivan": 18,
-      "none": 18
+      "none": 20
      },
      "gov": {
-      "Kreiss-Tomkins": 2445,
-      "Republican": 57,
-      "blank": 19,
-      "write-in": 6,
+      "Kreiss-Tomkins": 2767,
+      "Republican": 65,
+      "blank": 23,
+      "write-in": 7,
       "overvote": 0
      },
      "leg": {
-      "D": 1650,
-      "R": 403,
-      "both": 34,
-      "none": 450
+      "D": 1883,
+      "R": 434,
+      "both": 36,
+      "none": 519
      }
     },
     {
      "order": "Hafner > Hill > McDermott > Begich",
      "dest": "Hill",
-     "n": 1659,
-     "first_other": 2,
+     "n": 1921,
+     "first_other": 3,
      "sen": {
-      "Peltola": 1619,
-      "Sullivan": 35,
+      "Peltola": 1877,
+      "Sullivan": 39,
       "none": 5
      },
      "gov": {
-      "Kreiss-Tomkins": 1557,
-      "Republican": 73,
-      "blank": 16,
-      "write-in": 6,
+      "Kreiss-Tomkins": 1805,
+      "Republican": 85,
+      "blank": 17,
+      "write-in": 7,
       "overvote": 0
      },
      "leg": {
-      "D": 1096,
-      "R": 364,
-      "both": 38,
-      "none": 161
+      "D": 1275,
+      "R": 407,
+      "both": 44,
+      "none": 195
      }
     },
     {
      "order": "Hafner > Hill > McDermott",
      "dest": "Hill",
-     "n": 1098,
+     "n": 1252,
      "first_other": 1,
      "sen": {
-      "Peltola": 1087,
-      "Sullivan": 10,
+      "Peltola": 1240,
+      "Sullivan": 11,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 1064,
-      "Republican": 26,
-      "blank": 2,
+      "Kreiss-Tomkins": 1214,
+      "Republican": 29,
+      "blank": 3,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 728,
-      "R": 180,
-      "both": 13,
-      "none": 177
+      "D": 833,
+      "R": 195,
+      "both": 15,
+      "none": 209
      }
     },
     {
      "order": "Hafner > McDermott > Hill > Begich",
      "dest": "Hill",
-     "n": 648,
+     "n": 779,
      "first_other": 3,
      "sen": {
-      "Peltola": 622,
-      "Sullivan": 23,
-      "none": 3
+      "Peltola": 748,
+      "Sullivan": 25,
+      "none": 6
      },
      "gov": {
-      "Kreiss-Tomkins": 591,
-      "Republican": 46,
+      "Kreiss-Tomkins": 712,
+      "Republican": 56,
       "blank": 7,
       "write-in": 3,
       "overvote": 0
      },
      "leg": {
-      "D": 417,
-      "R": 148,
+      "D": 499,
+      "R": 176,
       "both": 16,
-      "none": 67
+      "none": 88
      }
     },
     {
      "order": "Hafner > McDermott",
      "dest": "stops",
-     "n": 441,
+     "n": 509,
      "first_other": 1,
      "sen": {
-      "Peltola": 424,
-      "Sullivan": 6,
-      "none": 11
+      "Peltola": 490,
+      "Sullivan": 7,
+      "none": 12
      },
      "gov": {
-      "Kreiss-Tomkins": 408,
+      "Kreiss-Tomkins": 476,
       "Republican": 21,
       "blank": 8,
       "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 269,
-      "R": 80,
+      "D": 316,
+      "R": 85,
       "both": 9,
-      "none": 83
+      "none": 99
      }
     },
     {
      "order": "Hafner > McDermott > Hill",
      "dest": "Hill",
-     "n": 429,
+     "n": 506,
      "first_other": 0,
      "sen": {
-      "Peltola": 421,
-      "Sullivan": 7,
+      "Peltola": 497,
+      "Sullivan": 8,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 415,
-      "Republican": 12,
+      "Kreiss-Tomkins": 486,
+      "Republican": 17,
       "blank": 2,
-      "write-in": 0,
+      "write-in": 1,
       "overvote": 0
      },
      "leg": {
-      "D": 290,
-      "R": 68,
-      "both": 4,
-      "none": 67
+      "D": 348,
+      "R": 72,
+      "both": 5,
+      "none": 81
      }
     },
     {
      "order": "Hafner > Hill > Begich",
      "dest": "Hill",
-     "n": 322,
-     "first_other": 220,
+     "n": 367,
+     "first_other": 253,
      "sen": {
-      "Peltola": 284,
-      "Sullivan": 37,
-      "none": 1
+      "Peltola": 322,
+      "Sullivan": 43,
+      "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 261,
-      "Republican": 55,
+      "Kreiss-Tomkins": 295,
+      "Republican": 66,
       "blank": 1,
       "write-in": 4,
       "overvote": 0
      },
      "leg": {
-      "D": 174,
-      "R": 103,
-      "both": 5,
-      "none": 40
+      "D": 193,
+      "R": 114,
+      "both": 9,
+      "none": 51
      }
     },
     {
      "order": "Hafner > Begich",
      "dest": "Begich",
-     "n": 281,
-     "first_other": 32,
+     "n": 312,
+     "first_other": 38,
      "sen": {
-      "Peltola": 221,
-      "Sullivan": 54,
-      "none": 6
+      "Peltola": 242,
+      "Sullivan": 63,
+      "none": 7
      },
      "gov": {
-      "Kreiss-Tomkins": 188,
-      "Republican": 82,
+      "Kreiss-Tomkins": 210,
+      "Republican": 91,
       "blank": 9,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 122,
-      "R": 110,
-      "both": 15,
-      "none": 34
+      "D": 134,
+      "R": 122,
+      "both": 16,
+      "none": 40
      }
     },
     {
      "order": "Hafner > Hill > Begich > McDermott",
      "dest": "Hill",
-     "n": 261,
+     "n": 303,
      "first_other": 1,
      "sen": {
-      "Peltola": 244,
-      "Sullivan": 15,
+      "Peltola": 285,
+      "Sullivan": 16,
       "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 220,
-      "Republican": 40,
+      "Kreiss-Tomkins": 256,
+      "Republican": 46,
       "blank": 0,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 147,
-      "R": 79,
-      "both": 9,
-      "none": 26
-     }
-    },
-    {
-     "order": "Hafner > Begich > McDermott > Hill",
-     "dest": "Begich",
-     "n": 196,
-     "first_other": 3,
-     "sen": {
-      "Peltola": 162,
-      "Sullivan": 32,
-      "none": 2
-     },
-     "gov": {
-      "Kreiss-Tomkins": 137,
-      "Republican": 53,
-      "blank": 4,
-      "write-in": 2,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 96,
-      "R": 65,
-      "both": 6,
-      "none": 29
+      "D": 176,
+      "R": 87,
+      "both": 10,
+      "none": 30
      }
     },
     {
      "order": "Hafner > Begich > Hill > McDermott",
      "dest": "Begich",
-     "n": 194,
+     "n": 215,
      "first_other": 0,
      "sen": {
-      "Peltola": 158,
-      "Sullivan": 35,
+      "Peltola": 177,
+      "Sullivan": 37,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 137,
-      "Republican": 54,
+      "Kreiss-Tomkins": 153,
+      "Republican": 59,
       "blank": 0,
       "write-in": 0,
       "overvote": 2
      },
      "leg": {
+      "D": 115,
+      "R": 75,
+      "both": 11,
+      "none": 14
+     }
+    },
+    {
+     "order": "Hafner > Begich > McDermott > Hill",
+     "dest": "Begich",
+     "n": 213,
+     "first_other": 3,
+     "sen": {
+      "Peltola": 177,
+      "Sullivan": 34,
+      "none": 2
+     },
+     "gov": {
+      "Kreiss-Tomkins": 150,
+      "Republican": 56,
+      "blank": 5,
+      "write-in": 2,
+      "overvote": 0
+     },
+     "leg": {
       "D": 105,
-      "R": 67,
-      "both": 10,
-      "none": 12
+      "R": 70,
+      "both": 7,
+      "none": 31
      }
     },
     {
      "order": "Hafner > Begich > Hill",
      "dest": "Begich",
-     "n": 152,
-     "first_other": 89,
+     "n": 172,
+     "first_other": 102,
      "sen": {
-      "Peltola": 106,
-      "Sullivan": 44,
+      "Peltola": 119,
+      "Sullivan": 51,
       "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 91,
-      "Republican": 58,
+      "Kreiss-Tomkins": 99,
+      "Republican": 70,
       "blank": 1,
       "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 67,
-      "R": 59,
-      "both": 3,
-      "none": 23
+      "D": 72,
+      "R": 70,
+      "both": 4,
+      "none": 26
      }
     },
     {
      "order": "Hafner > McDermott > Begich > Hill",
      "dest": "Begich",
-     "n": 139,
-     "first_other": 1,
+     "n": 157,
+     "first_other": 2,
      "sen": {
-      "Peltola": 127,
-      "Sullivan": 11,
+      "Peltola": 143,
+      "Sullivan": 13,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 109,
-      "Republican": 29,
+      "Kreiss-Tomkins": 125,
+      "Republican": 30,
       "blank": 0,
-      "write-in": 1,
+      "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 88,
-      "R": 32,
+      "D": 102,
+      "R": 34,
       "both": 5,
-      "none": 14
+      "none": 16
      }
     },
     {
      "order": "Hafner > McDermott > Begich",
      "dest": "Begich",
-     "n": 68,
+     "n": 80,
      "first_other": 0,
      "sen": {
-      "Peltola": 57,
+      "Peltola": 68,
       "Sullivan": 10,
-      "none": 1
+      "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 57,
-      "Republican": 10,
-      "blank": 1,
+      "Kreiss-Tomkins": 67,
+      "Republican": 11,
+      "blank": 2,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 39,
-      "R": 23,
+      "D": 48,
+      "R": 25,
       "both": 1,
-      "none": 5
+      "none": 6
      }
     },
     {
      "order": "Hafner > Hill > McDermott > Write-in > Begich",
      "dest": "Hill",
-     "n": 47,
+     "n": 58,
      "first_other": 0,
      "sen": {
-      "Peltola": 46,
+      "Peltola": 57,
       "Sullivan": 0,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 40,
+      "Kreiss-Tomkins": 51,
       "Republican": 5,
       "blank": 0,
       "write-in": 1,
       "overvote": 0
      },
      "leg": {
-      "D": 34,
-      "R": 8,
+      "D": 41,
+      "R": 9,
       "both": 1,
-      "none": 4
+      "none": 7
      }
     },
     {
      "order": "Hafner > Begich > McDermott",
      "dest": "Begich",
-     "n": 34,
+     "n": 37,
      "first_other": 0,
      "sen": {
-      "Peltola": 27,
+      "Peltola": 30,
       "Sullivan": 6,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 23,
-      "Republican": 10,
+      "Kreiss-Tomkins": 25,
+      "Republican": 11,
       "blank": 1,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 17,
-      "R": 13,
+      "D": 19,
+      "R": 14,
       "both": 1,
       "none": 3
      }
@@ -640,71 +645,71 @@
     {
      "order": "Hafner > Write-in",
      "dest": "stops",
-     "n": 32,
+     "n": 36,
      "first_other": 1,
      "sen": {
-      "Peltola": 27,
+      "Peltola": 31,
       "Sullivan": 3,
       "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 26,
+      "Kreiss-Tomkins": 30,
       "Republican": 4,
       "blank": 0,
       "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 20,
+      "D": 23,
       "R": 2,
       "both": 1,
-      "none": 9
+      "none": 10
      }
     },
     {
      "order": "Hafner > Hill > Write-in",
      "dest": "Hill",
-     "n": 28,
+     "n": 32,
      "first_other": 3,
      "sen": {
-      "Peltola": 27,
+      "Peltola": 31,
       "Sullivan": 0,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 25,
+      "Kreiss-Tomkins": 29,
       "Republican": 0,
       "blank": 1,
       "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 19,
+      "D": 22,
       "R": 4,
       "both": 0,
-      "none": 5
+      "none": 6
      }
     },
     {
      "order": "Hafner > overvote",
      "dest": "stops",
-     "n": 27,
+     "n": 32,
      "first_other": 2,
      "sen": {
-      "Peltola": 19,
-      "Sullivan": 2,
-      "none": 6
+      "Peltola": 20,
+      "Sullivan": 4,
+      "none": 8
      },
      "gov": {
-      "Kreiss-Tomkins": 17,
-      "Republican": 7,
-      "blank": 1,
+      "Kreiss-Tomkins": 18,
+      "Republican": 10,
+      "blank": 2,
       "write-in": 0,
       "overvote": 2
      },
      "leg": {
-      "D": 16,
-      "R": 6,
+      "D": 18,
+      "R": 9,
       "both": 2,
       "none": 3
      }
@@ -712,53 +717,77 @@
     {
      "order": "Hafner > Hill > McDermott > Write-in",
      "dest": "Hill",
-     "n": 24,
+     "n": 28,
      "first_other": 0,
      "sen": {
-      "Peltola": 24,
+      "Peltola": 28,
       "Sullivan": 0,
       "none": 0
      },
      "gov": {
-      "Kreiss-Tomkins": 23,
+      "Kreiss-Tomkins": 27,
       "Republican": 0,
       "blank": 1,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 13,
+      "D": 16,
       "R": 2,
       "both": 1,
-      "none": 8
+      "none": 9
+     }
+    },
+    {
+     "order": "Hafner > McDermott > Hill > Write-in > Begich",
+     "dest": "Hill",
+     "n": 23,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 23,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 22,
+      "Republican": 0,
+      "blank": 1,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 16,
+      "R": 1,
+      "both": 1,
+      "none": 5
      }
     },
     {
      "order": "Hafner > Begich",
      "dest": "stops",
-     "n": 20,
+     "n": 22,
      "first_other": 1,
      "sen": {
-      "Peltola": 20,
+      "Peltola": 22,
       "Sullivan": 0,
       "none": 0
      },
      "gov": {
-      "Kreiss-Tomkins": 18,
+      "Kreiss-Tomkins": 20,
       "Republican": 1,
       "blank": 1,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 13,
+      "D": 15,
       "R": 4,
       "both": 1,
       "none": 2
      }
     },
     {
-     "order": "Hafner > McDermott > Hill > Write-in > Begich",
+     "order": "Hafner > Hill > Write-in > McDermott > Begich",
      "dest": "Hill",
      "n": 18,
      "first_other": 0,
@@ -775,19 +804,67 @@
       "overvote": 0
      },
      "leg": {
-      "D": 13,
-      "R": 1,
-      "both": 1,
-      "none": 3
+      "D": 12,
+      "R": 2,
+      "both": 0,
+      "none": 4
      }
     },
     {
      "order": "Hafner > Write-in > Hill > McDermott > Begich",
      "dest": "Hill",
+     "n": 18,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 18,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 17,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 12,
+      "R": 1,
+      "both": 0,
+      "none": 5
+     }
+    },
+    {
+     "order": "Hafner > Hill > McDermott > Begich > Write-in",
+     "dest": "Hill",
      "n": 16,
      "first_other": 0,
      "sen": {
-      "Peltola": 16,
+      "Peltola": 13,
+      "Sullivan": 3,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 14,
+      "Republican": 2,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 10,
+      "R": 2,
+      "both": 0,
+      "none": 4
+     }
+    },
+    {
+     "order": "Hafner > McDermott > Hill > Write-in",
+     "dest": "Hill",
+     "n": 15,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 15,
       "Sullivan": 0,
       "none": 0
      },
@@ -799,106 +876,82 @@
       "overvote": 0
      },
      "leg": {
-      "D": 11,
-      "R": 1,
-      "both": 0,
-      "none": 4
-     }
-    },
-    {
-     "order": "Hafner > Hill > Write-in > McDermott > Begich",
-     "dest": "Hill",
-     "n": 14,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 14,
-      "Sullivan": 0,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 14,
-      "Republican": 0,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 9,
-      "R": 1,
-      "both": 0,
-      "none": 4
-     }
-    },
-    {
-     "order": "Hafner > Hill > McDermott > Begich > Write-in",
-     "dest": "Hill",
-     "n": 12,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 10,
-      "Sullivan": 2,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 10,
-      "Republican": 2,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 8,
+      "D": 10,
       "R": 2,
       "both": 0,
-      "none": 2
-     }
-    },
-    {
-     "order": "Hafner > McDermott > Hill > Write-in",
-     "dest": "Hill",
-     "n": 12,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 12,
-      "Sullivan": 0,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 12,
-      "Republican": 0,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 8,
-      "R": 2,
-      "both": 0,
-      "none": 2
+      "none": 3
      }
     },
     {
      "order": "Hafner > Write-in > McDermott > Hill > Begich",
      "dest": "Hill",
-     "n": 11,
+     "n": 13,
      "first_other": 0,
      "sen": {
-      "Peltola": 10,
+      "Peltola": 12,
       "Sullivan": 1,
       "none": 0
      },
      "gov": {
-      "Kreiss-Tomkins": 10,
+      "Kreiss-Tomkins": 12,
       "Republican": 1,
       "blank": 0,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 6,
+      "D": 7,
       "R": 1,
       "both": 0,
-      "none": 4
+      "none": 5
+     }
+    },
+    {
+     "order": "Hafner > Hill > Write-in > Begich",
+     "dest": "Hill",
+     "n": 7,
+     "first_other": 5,
+     "sen": {
+      "Peltola": 6,
+      "Sullivan": 1,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 6,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 1,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 5,
+      "R": 0,
+      "both": 0,
+      "none": 2
+     }
+    },
+    {
+     "order": "Hafner > Hill > overvote",
+     "dest": "Hill",
+     "n": 7,
+     "first_other": 1,
+     "sen": {
+      "Peltola": 6,
+      "Sullivan": 1,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 6,
+      "Republican": 1,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 2,
+      "R": 3,
+      "both": 0,
+      "none": 2
      }
     },
     {
@@ -926,75 +979,51 @@
      }
     },
     {
-     "order": "Hafner > Hill > Write-in > Begich",
-     "dest": "Hill",
-     "n": 6,
-     "first_other": 4,
-     "sen": {
-      "Peltola": 5,
-      "Sullivan": 1,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 5,
-      "Republican": 0,
-      "blank": 0,
-      "write-in": 1,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 4,
-      "R": 0,
-      "both": 0,
-      "none": 2
-     }
-    },
-    {
-     "order": "Hafner > Hill > overvote",
-     "dest": "Hill",
-     "n": 6,
-     "first_other": 1,
-     "sen": {
-      "Peltola": 5,
-      "Sullivan": 1,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 5,
-      "Republican": 1,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 1,
-      "R": 3,
-      "both": 0,
-      "none": 2
-     }
-    },
-    {
      "order": "Hafner > Begich > overvote",
      "dest": "Begich",
-     "n": 5,
+     "n": 6,
      "first_other": 0,
      "sen": {
-      "Peltola": 5,
+      "Peltola": 6,
       "Sullivan": 0,
       "none": 0
      },
      "gov": {
-      "Kreiss-Tomkins": 4,
+      "Kreiss-Tomkins": 5,
       "Republican": 1,
       "blank": 0,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 4,
+      "D": 5,
       "R": 0,
       "both": 0,
       "none": 1
+     }
+    },
+    {
+     "order": "Hafner > McDermott > Write-in",
+     "dest": "stops",
+     "n": 6,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 6,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 5,
+      "Republican": 1,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 2,
+      "R": 2,
+      "both": 0,
+      "none": 2
      }
     },
     {
@@ -1070,7 +1099,31 @@
      }
     },
     {
-     "order": "Hafner > McDermott > Write-in",
+     "order": "Hafner > McDermott > Write-in > Hill > Begich",
+     "dest": "Hill",
+     "n": 5,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 5,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 5,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 4,
+      "R": 1,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
+     "order": "Hafner > McDermott > overvote",
      "dest": "stops",
      "n": 5,
      "first_other": 0,
@@ -1087,15 +1140,39 @@
       "overvote": 0
      },
      "leg": {
-      "D": 2,
-      "R": 2,
+      "D": 4,
+      "R": 0,
       "both": 0,
       "none": 1
      }
     },
     {
-     "order": "Hafner > McDermott > Write-in > Hill > Begich",
-     "dest": "Hill",
+     "order": "Hafner > Begich > McDermott > Hill > Write-in",
+     "dest": "Begich",
+     "n": 4,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 2,
+      "Sullivan": 2,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 2,
+      "Republican": 2,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 2,
+      "R": 2,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
+     "order": "Hafner > Hill",
+     "dest": "stops",
      "n": 4,
      "first_other": 0,
      "sen": {
@@ -1118,27 +1195,27 @@
      }
     },
     {
-     "order": "Hafner > Begich > McDermott > Hill > Write-in",
+     "order": "Hafner > Write-in > McDermott > Begich > Hill",
      "dest": "Begich",
-     "n": 3,
+     "n": 4,
      "first_other": 0,
      "sen": {
-      "Peltola": 2,
-      "Sullivan": 1,
+      "Peltola": 4,
+      "Sullivan": 0,
       "none": 0
      },
      "gov": {
-      "Kreiss-Tomkins": 2,
-      "Republican": 1,
+      "Kreiss-Tomkins": 4,
+      "Republican": 0,
       "blank": 0,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 2,
-      "R": 1,
+      "D": 3,
+      "R": 0,
       "both": 0,
-      "none": 0
+      "none": 1
      }
     },
     {
@@ -1166,30 +1243,6 @@
      }
     },
     {
-     "order": "Hafner > Hill",
-     "dest": "stops",
-     "n": 3,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 3,
-      "Sullivan": 0,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 3,
-      "Republican": 0,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 2,
-      "R": 1,
-      "both": 0,
-      "none": 0
-     }
-    },
-    {
      "order": "Hafner > Hill > Write-in > McDermott",
      "dest": "Hill",
      "n": 3,
@@ -1214,26 +1267,26 @@
      }
     },
     {
-     "order": "Hafner > Write-in > McDermott > Begich > Hill",
+     "order": "Hafner > Begich > McDermott > Write-in",
      "dest": "Begich",
-     "n": 3,
+     "n": 2,
      "first_other": 0,
      "sen": {
-      "Peltola": 3,
-      "Sullivan": 0,
+      "Peltola": 0,
+      "Sullivan": 2,
       "none": 0
      },
      "gov": {
-      "Kreiss-Tomkins": 3,
-      "Republican": 0,
+      "Kreiss-Tomkins": 0,
+      "Republican": 2,
       "blank": 0,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 3,
-      "R": 0,
-      "both": 0,
+      "D": 0,
+      "R": 1,
+      "both": 1,
       "none": 0
      }
     },
@@ -1334,8 +1387,8 @@
      }
     },
     {
-     "order": "Hafner > McDermott > overvote",
-     "dest": "stops",
+     "order": "Hafner > Write-in > McDermott > Hill",
+     "dest": "Hill",
      "n": 2,
      "first_other": 0,
      "sen": {
@@ -1344,8 +1397,32 @@
       "none": 0
      },
      "gov": {
+      "Kreiss-Tomkins": 2,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 2,
+      "R": 0,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
+     "order": "Hafner > Begich > Hill",
+     "dest": "stops",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
       "Kreiss-Tomkins": 1,
-      "Republican": 1,
+      "Republican": 0,
       "blank": 0,
       "write-in": 0,
       "overvote": 0
@@ -1354,7 +1431,31 @@
       "D": 1,
       "R": 0,
       "both": 0,
-      "none": 1
+      "none": 0
+     }
+    },
+    {
+     "order": "Hafner > Begich > Hill > McDermott > Write-in",
+     "dest": "Begich",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 1,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 1,
+      "R": 0,
+      "both": 0,
+      "none": 0
      }
     },
     {
@@ -1427,30 +1528,6 @@
       "R": 0,
       "both": 0,
       "none": 1
-     }
-    },
-    {
-     "order": "Hafner > Begich > McDermott > Write-in",
-     "dest": "Begich",
-     "n": 1,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 0,
-      "Sullivan": 1,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 0,
-      "Republican": 1,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 0,
-      "R": 1,
-      "both": 0,
-      "none": 0
      }
     },
     {
@@ -1617,6 +1694,54 @@
      "leg": {
       "D": 1,
       "R": 0,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
+     "order": "Hafner > McDermott > Begich > Hill > Write-in",
+     "dest": "Begich",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 1,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 1,
+      "R": 0,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
+     "order": "Hafner > McDermott > Begich > Write-in > Hill",
+     "dest": "Begich",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 1,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 0,
+      "R": 1,
       "both": 0,
       "none": 0
      }
@@ -1812,557 +1937,537 @@
       "both": 0,
       "none": 0
      }
-    },
-    {
-     "order": "Hafner > Write-in > McDermott > Hill",
-     "dest": "Hill",
-     "n": 1,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 1,
-      "Sullivan": 0,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 1,
-      "Republican": 0,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 1,
-      "R": 0,
-      "both": 0,
-      "none": 0
-     }
     }
    ],
    "only": {
-    "n": 6789,
+    "n": 7711,
     "sen": {
-     "Peltola": 6426,
-     "Sullivan": 181,
-     "none": 182
+     "Peltola": 7318,
+     "Sullivan": 200,
+     "none": 193
     },
     "gov": {
-     "Kreiss-Tomkins": 6132,
-     "Republican": 433,
-     "blank": 168,
-     "write-in": 12,
-     "overvote": 3
+     "Kreiss-Tomkins": 6977,
+     "Republican": 486,
+     "blank": 189,
+     "write-in": 14,
+     "overvote": 4
     },
     "leg": {
-     "D": 4227,
-     "R": 1157,
-     "both": 93,
-     "none": 1312
+     "D": 4854,
+     "R": 1239,
+     "both": 109,
+     "none": 1509
     },
     "vt": {
      "Election Day": 4875,
-     "Early Voting": 1302,
-     "Absentee": 535,
-     "Overseas": 41,
-     "Judicial-split": 36
+     "Early Voting": 1910,
+     "Absentee": 742,
+     "Judicial-split": 91,
+     "Question": 52,
+     "Overseas": 41
     },
-    "rural": 188
+    "rural": 239
    }
   },
   "McDermott": {
-   "held": 5588,
-   "first_choice": 5563,
+   "held": 6230,
+   "first_choice": 6202,
    "dest": {
     "Begich": {
-     "n": 1687,
+     "n": 1892,
      "sen": {
-      "Peltola": 337,
-      "Sullivan": 1305,
-      "none": 45
+      "Peltola": 380,
+      "Sullivan": 1456,
+      "none": 56
      },
      "gov": {
-      "Kreiss-Tomkins": 295,
-      "Republican": 1341,
-      "blank": 31,
-      "write-in": 18,
+      "Kreiss-Tomkins": 328,
+      "Republican": 1506,
+      "blank": 36,
+      "write-in": 20,
       "overvote": 2
      },
      "leg": {
-      "D": 186,
-      "R": 1198,
-      "both": 69,
-      "none": 234
+      "D": 215,
+      "R": 1325,
+      "both": 73,
+      "none": 279
      },
      "vt": {
       "Election Day": 1443,
-      "Early Voting": 198,
-      "Absentee": 38,
-      "Judicial-split": 8
+      "Early Voting": 332,
+      "Absentee": 76,
+      "Question": 21,
+      "Judicial-split": 20
      },
-     "rural": 28
+     "rural": 35
     },
     "Hill": {
-     "n": 1936,
+     "n": 2158,
      "sen": {
-      "Peltola": 1436,
-      "Sullivan": 405,
-      "none": 95
+      "Peltola": 1611,
+      "Sullivan": 445,
+      "none": 102
      },
      "gov": {
-      "Kreiss-Tomkins": 1242,
-      "Republican": 616,
-      "blank": 37,
-      "write-in": 38,
+      "Kreiss-Tomkins": 1393,
+      "Republican": 681,
+      "blank": 38,
+      "write-in": 43,
       "overvote": 3
      },
      "leg": {
-      "D": 765,
-      "R": 754,
-      "both": 71,
-      "none": 346
+      "D": 861,
+      "R": 822,
+      "both": 80,
+      "none": 395
      },
      "vt": {
       "Election Day": 1596,
-      "Early Voting": 234,
-      "Absentee": 91,
-      "Judicial-split": 15
+      "Early Voting": 388,
+      "Absentee": 127,
+      "Judicial-split": 25,
+      "Question": 22
      },
-     "rural": 49
+     "rural": 57
     },
     "stops": {
-     "n": 1965,
+     "n": 2180,
      "sen": {
-      "Peltola": 883,
-      "Sullivan": 571,
-      "none": 511
+      "Peltola": 990,
+      "Sullivan": 629,
+      "none": 561
      },
      "gov": {
-      "Kreiss-Tomkins": 847,
-      "Republican": 995,
-      "blank": 89,
+      "Kreiss-Tomkins": 947,
+      "Republican": 1097,
+      "blank": 102,
       "write-in": 31,
       "overvote": 2
      },
      "leg": {
-      "D": 553,
-      "R": 980,
-      "both": 58,
-      "none": 374
+      "D": 619,
+      "R": 1063,
+      "both": 65,
+      "none": 433
      },
      "vt": {
       "Election Day": 1644,
-      "Early Voting": 232,
-      "Absentee": 80,
-      "Judicial-split": 8,
+      "Early Voting": 374,
+      "Absentee": 112,
+      "Question": 26,
+      "Judicial-split": 23,
       "Overseas": 1
      },
-     "rural": 48
+     "rural": 57
     }
    },
    "orders": [
     {
      "order": "McDermott",
      "dest": "stops",
-     "n": 1767,
-     "first_other": 2,
+     "n": 1955,
+     "first_other": 3,
      "sen": {
-      "Peltola": 726,
-      "Sullivan": 555,
-      "none": 486
+      "Peltola": 808,
+      "Sullivan": 612,
+      "none": 535
      },
      "gov": {
-      "Kreiss-Tomkins": 704,
-      "Republican": 954,
-      "blank": 83,
+      "Kreiss-Tomkins": 778,
+      "Republican": 1055,
+      "blank": 96,
       "write-in": 25,
       "overvote": 1
      },
      "leg": {
-      "D": 463,
-      "R": 926,
-      "both": 51,
-      "none": 327
+      "D": 515,
+      "R": 1005,
+      "both": 58,
+      "none": 377
      }
     },
     {
      "order": "McDermott > Begich",
      "dest": "Begich",
-     "n": 892,
+     "n": 983,
      "first_other": 2,
      "sen": {
-      "Peltola": 100,
-      "Sullivan": 758,
-      "none": 34
+      "Peltola": 106,
+      "Sullivan": 836,
+      "none": 41
      },
      "gov": {
-      "Kreiss-Tomkins": 100,
-      "Republican": 766,
-      "blank": 21,
-      "write-in": 5,
+      "Kreiss-Tomkins": 108,
+      "Republican": 843,
+      "blank": 25,
+      "write-in": 7,
       "overvote": 0
      },
      "leg": {
-      "D": 52,
-      "R": 715,
+      "D": 59,
+      "R": 778,
       "both": 28,
-      "none": 97
+      "none": 118
      }
     },
     {
      "order": "McDermott > Hill",
      "dest": "Hill",
-     "n": 521,
+     "n": 581,
      "first_other": 4,
      "sen": {
-      "Peltola": 380,
-      "Sullivan": 79,
-      "none": 62
+      "Peltola": 429,
+      "Sullivan": 85,
+      "none": 67
      },
      "gov": {
-      "Kreiss-Tomkins": 359,
-      "Republican": 133,
+      "Kreiss-Tomkins": 404,
+      "Republican": 147,
       "blank": 16,
-      "write-in": 10,
+      "write-in": 11,
       "overvote": 3
      },
      "leg": {
-      "D": 193,
-      "R": 197,
-      "both": 21,
-      "none": 110
+      "D": 223,
+      "R": 213,
+      "both": 22,
+      "none": 123
      }
     },
     {
      "order": "McDermott > Hill > Hafner > Begich",
      "dest": "Hill",
-     "n": 340,
-     "first_other": 2,
+     "n": 384,
+     "first_other": 4,
      "sen": {
-      "Peltola": 297,
-      "Sullivan": 42,
-      "none": 1
+      "Peltola": 335,
+      "Sullivan": 47,
+      "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 232,
-      "Republican": 95,
-      "blank": 8,
-      "write-in": 5,
+      "Kreiss-Tomkins": 261,
+      "Republican": 107,
+      "blank": 9,
+      "write-in": 7,
       "overvote": 0
      },
      "leg": {
-      "D": 154,
-      "R": 117,
-      "both": 12,
-      "none": 57
+      "D": 174,
+      "R": 133,
+      "both": 15,
+      "none": 62
      }
     },
     {
      "order": "McDermott > Begich > Hill",
      "dest": "Begich",
-     "n": 241,
+     "n": 274,
      "first_other": 1,
      "sen": {
-      "Peltola": 34,
-      "Sullivan": 205,
-      "none": 2
+      "Peltola": 40,
+      "Sullivan": 231,
+      "none": 3
      },
      "gov": {
-      "Kreiss-Tomkins": 36,
-      "Republican": 200,
+      "Kreiss-Tomkins": 40,
+      "Republican": 229,
       "blank": 3,
       "write-in": 1,
       "overvote": 1
      },
      "leg": {
-      "D": 24,
-      "R": 175,
-      "both": 4,
-      "none": 38
+      "D": 28,
+      "R": 197,
+      "both": 5,
+      "none": 44
      }
     },
     {
      "order": "McDermott > Hill > Begich > Hafner",
      "dest": "Hill",
-     "n": 241,
+     "n": 264,
      "first_other": 1,
      "sen": {
-      "Peltola": 132,
-      "Sullivan": 105,
+      "Peltola": 147,
+      "Sullivan": 113,
       "none": 4
      },
      "gov": {
-      "Kreiss-Tomkins": 95,
-      "Republican": 140,
+      "Kreiss-Tomkins": 107,
+      "Republican": 151,
       "blank": 4,
       "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 68,
-      "R": 119,
+      "D": 75,
+      "R": 126,
       "both": 20,
-      "none": 34
-     }
-    },
-    {
-     "order": "McDermott > Hill > Begich",
-     "dest": "Hill",
-     "n": 226,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 103,
-      "Sullivan": 114,
-      "none": 9
-     },
-     "gov": {
-      "Kreiss-Tomkins": 78,
-      "Republican": 145,
-      "blank": 2,
-      "write-in": 1,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 53,
-      "R": 134,
-      "both": 7,
-      "none": 32
+      "none": 43
      }
     },
     {
      "order": "McDermott > Hafner > Hill > Begich",
      "dest": "Hill",
-     "n": 219,
+     "n": 252,
      "first_other": 3,
      "sen": {
-      "Peltola": 189,
-      "Sullivan": 29,
+      "Peltola": 217,
+      "Sullivan": 34,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 170,
-      "Republican": 44,
+      "Kreiss-Tomkins": 195,
+      "Republican": 52,
       "blank": 1,
       "write-in": 4,
       "overvote": 0
      },
      "leg": {
-      "D": 112,
-      "R": 74,
-      "both": 4,
-      "none": 29
+      "D": 124,
+      "R": 82,
+      "both": 7,
+      "none": 39
+     }
+    },
+    {
+     "order": "McDermott > Hill > Begich",
+     "dest": "Hill",
+     "n": 247,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 110,
+      "Sullivan": 127,
+      "none": 10
+     },
+     "gov": {
+      "Kreiss-Tomkins": 84,
+      "Republican": 159,
+      "blank": 2,
+      "write-in": 2,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 57,
+      "R": 145,
+      "both": 7,
+      "none": 38
      }
     },
     {
      "order": "McDermott > Begich > Hill > Hafner",
      "dest": "Begich",
-     "n": 204,
+     "n": 236,
      "first_other": 2,
      "sen": {
-      "Peltola": 55,
-      "Sullivan": 148,
+      "Peltola": 62,
+      "Sullivan": 173,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 43,
-      "Republican": 159,
+      "Kreiss-Tomkins": 46,
+      "Republican": 188,
       "blank": 2,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 29,
-      "R": 132,
-      "both": 17,
-      "none": 26
-     }
-    },
-    {
-     "order": "McDermott > Hill > Hafner",
-     "dest": "Hill",
-     "n": 164,
-     "first_other": 2,
-     "sen": {
-      "Peltola": 142,
-      "Sullivan": 16,
-      "none": 6
-     },
-     "gov": {
-      "Kreiss-Tomkins": 132,
-      "Republican": 27,
-      "blank": 2,
-      "write-in": 3,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 70,
-      "R": 56,
-      "both": 4,
-      "none": 34
+      "D": 32,
+      "R": 148,
+      "both": 19,
+      "none": 37
      }
     },
     {
      "order": "McDermott > Hafner",
      "dest": "stops",
-     "n": 163,
+     "n": 188,
      "first_other": 0,
      "sen": {
-      "Peltola": 145,
-      "Sullivan": 10,
-      "none": 8
+      "Peltola": 168,
+      "Sullivan": 11,
+      "none": 9
      },
      "gov": {
-      "Kreiss-Tomkins": 133,
-      "Republican": 24,
+      "Kreiss-Tomkins": 157,
+      "Republican": 25,
       "blank": 3,
       "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 82,
-      "R": 39,
+      "D": 95,
+      "R": 42,
       "both": 5,
-      "none": 37
+      "none": 46
+     }
+    },
+    {
+     "order": "McDermott > Hill > Hafner",
+     "dest": "Hill",
+     "n": 184,
+     "first_other": 2,
+     "sen": {
+      "Peltola": 162,
+      "Sullivan": 16,
+      "none": 6
+     },
+     "gov": {
+      "Kreiss-Tomkins": 149,
+      "Republican": 30,
+      "blank": 2,
+      "write-in": 3,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 85,
+      "R": 59,
+      "both": 4,
+      "none": 36
      }
     },
     {
      "order": "McDermott > Hafner > Hill",
      "dest": "Hill",
-     "n": 153,
+     "n": 166,
      "first_other": 0,
      "sen": {
-      "Peltola": 141,
+      "Peltola": 154,
       "Sullivan": 8,
       "none": 4
      },
      "gov": {
-      "Kreiss-Tomkins": 133,
-      "Republican": 16,
+      "Kreiss-Tomkins": 145,
+      "Republican": 17,
       "blank": 3,
       "write-in": 1,
       "overvote": 0
      },
      "leg": {
-      "D": 86,
-      "R": 34,
-      "both": 3,
-      "none": 30
+      "D": 90,
+      "R": 39,
+      "both": 4,
+      "none": 33
      }
     },
     {
      "order": "McDermott > Begich > Hafner > Hill",
      "dest": "Begich",
-     "n": 139,
+     "n": 156,
      "first_other": 3,
      "sen": {
-      "Peltola": 55,
-      "Sullivan": 83,
-      "none": 1
+      "Peltola": 63,
+      "Sullivan": 91,
+      "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 43,
-      "Republican": 89,
-      "blank": 1,
+      "Kreiss-Tomkins": 49,
+      "Republican": 99,
+      "blank": 2,
       "write-in": 5,
       "overvote": 1
      },
      "leg": {
-      "D": 30,
-      "R": 71,
+      "D": 36,
+      "R": 80,
       "both": 10,
-      "none": 28
+      "none": 30
      }
     },
     {
      "order": "McDermott > Hafner > Begich > Hill",
      "dest": "Begich",
-     "n": 87,
+     "n": 100,
      "first_other": 3,
      "sen": {
-      "Peltola": 53,
-      "Sullivan": 33,
+      "Peltola": 60,
+      "Sullivan": 39,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 41,
-      "Republican": 43,
+      "Kreiss-Tomkins": 46,
+      "Republican": 51,
       "blank": 1,
       "write-in": 2,
       "overvote": 0
      },
      "leg": {
-      "D": 33,
-      "R": 35,
+      "D": 35,
+      "R": 45,
       "both": 2,
-      "none": 17
+      "none": 18
      }
     },
     {
      "order": "McDermott > Begich > Hafner",
      "dest": "Begich",
-     "n": 46,
+     "n": 52,
      "first_other": 0,
      "sen": {
-      "Peltola": 16,
-      "Sullivan": 29,
+      "Peltola": 21,
+      "Sullivan": 30,
       "none": 1
      },
      "gov": {
-      "Kreiss-Tomkins": 16,
-      "Republican": 29,
+      "Kreiss-Tomkins": 18,
+      "Republican": 33,
       "blank": 1,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 7,
+      "D": 11,
       "R": 27,
-      "both": 3,
-      "none": 9
+      "both": 4,
+      "none": 10
      }
     },
     {
      "order": "McDermott > Hafner > Begich",
      "dest": "Begich",
-     "n": 32,
+     "n": 38,
      "first_other": 0,
      "sen": {
-      "Peltola": 21,
-      "Sullivan": 10,
-      "none": 1
+      "Peltola": 24,
+      "Sullivan": 12,
+      "none": 2
      },
      "gov": {
-      "Kreiss-Tomkins": 14,
-      "Republican": 17,
+      "Kreiss-Tomkins": 19,
+      "Republican": 18,
       "blank": 1,
       "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 10,
-      "R": 13,
+      "D": 12,
+      "R": 16,
       "both": 5,
-      "none": 4
+      "none": 5
      }
     },
     {
      "order": "McDermott > Begich > Write-in",
      "dest": "Begich",
-     "n": 22,
+     "n": 23,
      "first_other": 0,
      "sen": {
       "Peltola": 0,
       "Sullivan": 20,
-      "none": 2
+      "none": 3
      },
      "gov": {
       "Kreiss-Tomkins": 0,
-      "Republican": 18,
+      "Republican": 19,
       "blank": 0,
       "write-in": 4,
       "overvote": 0
      },
      "leg": {
       "D": 0,
-      "R": 13,
+      "R": 14,
       "both": 0,
       "none": 9
      }
@@ -2370,22 +2475,22 @@
     {
      "order": "McDermott > Write-in",
      "dest": "stops",
-     "n": 14,
+     "n": 15,
      "first_other": 0,
      "sen": {
-      "Peltola": 3,
+      "Peltola": 4,
       "Sullivan": 2,
       "none": 9
      },
      "gov": {
-      "Kreiss-Tomkins": 4,
+      "Kreiss-Tomkins": 5,
       "Republican": 6,
       "blank": 0,
       "write-in": 4,
       "overvote": 0
      },
      "leg": {
-      "D": 1,
+      "D": 2,
       "R": 8,
       "both": 1,
       "none": 4
@@ -2440,6 +2545,30 @@
      }
     },
     {
+     "order": "McDermott > Hill > Begich > Write-in > Hafner",
+     "dest": "Hill",
+     "n": 8,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 5,
+      "Sullivan": 3,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 5,
+      "Republican": 1,
+      "blank": 0,
+      "write-in": 2,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 3,
+      "R": 2,
+      "both": 1,
+      "none": 2
+     }
+    },
+    {
      "order": "McDermott > Hill > Hafner > Write-in > Begich",
      "dest": "Hill",
      "n": 8,
@@ -2464,49 +2593,49 @@
      }
     },
     {
-     "order": "McDermott > Hill > Begich > Write-in > Hafner",
-     "dest": "Hill",
-     "n": 6,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 3,
-      "Sullivan": 3,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 3,
-      "Republican": 1,
-      "blank": 0,
-      "write-in": 2,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 2,
-      "R": 2,
-      "both": 0,
-      "none": 2
-     }
-    },
-    {
      "order": "McDermott > Hill > Write-in > Begich > Hafner",
      "dest": "Hill",
-     "n": 6,
+     "n": 7,
      "first_other": 0,
      "sen": {
       "Peltola": 4,
-      "Sullivan": 2,
+      "Sullivan": 3,
       "none": 0
      },
      "gov": {
       "Kreiss-Tomkins": 4,
       "Republican": 2,
       "blank": 0,
-      "write-in": 0,
+      "write-in": 1,
       "overvote": 0
      },
      "leg": {
       "D": 2,
       "R": 2,
+      "both": 0,
+      "none": 3
+     }
+    },
+    {
+     "order": "McDermott > Begich > Hill > Write-in > Hafner",
+     "dest": "Begich",
+     "n": 6,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 5,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 0,
+      "Republican": 6,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 0,
+      "R": 4,
       "both": 0,
       "none": 2
      }
@@ -2536,7 +2665,31 @@
      }
     },
     {
-     "order": "McDermott > Begich > Hill > Write-in > Hafner",
+     "order": "McDermott > Hafner > Hill > Write-in > Begich",
+     "dest": "Hill",
+     "n": 5,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 4,
+      "Sullivan": 1,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 4,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 1,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 3,
+      "R": 0,
+      "both": 0,
+      "none": 2
+     }
+    },
+    {
+     "order": "McDermott > Begich > Hill > Write-in",
      "dest": "Begich",
      "n": 4,
      "first_other": 0,
@@ -2584,7 +2737,7 @@
      }
     },
     {
-     "order": "McDermott > Hafner > Hill > Write-in > Begich",
+     "order": "McDermott > Hill > Hafner > Begich > Write-in",
      "dest": "Hill",
      "n": 4,
      "first_other": 0,
@@ -2594,17 +2747,17 @@
       "none": 0
      },
      "gov": {
-      "Kreiss-Tomkins": 3,
-      "Republican": 0,
+      "Kreiss-Tomkins": 2,
+      "Republican": 2,
       "blank": 0,
-      "write-in": 1,
+      "write-in": 0,
       "overvote": 0
      },
      "leg": {
-      "D": 2,
-      "R": 0,
+      "D": 1,
+      "R": 3,
       "both": 0,
-      "none": 2
+      "none": 0
      }
     },
     {
@@ -2656,6 +2809,30 @@
      }
     },
     {
+     "order": "McDermott > Write-in > Hill > Begich > Hafner",
+     "dest": "Hill",
+     "n": 4,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 3,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 0,
+      "Republican": 3,
+      "blank": 0,
+      "write-in": 1,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 1,
+      "R": 2,
+      "both": 0,
+      "none": 1
+     }
+    },
+    {
      "order": "McDermott > Write-in > Hill > Hafner > Begich",
      "dest": "Hill",
      "n": 4,
@@ -2675,30 +2852,6 @@
      "leg": {
       "D": 3,
       "R": 1,
-      "both": 0,
-      "none": 0
-     }
-    },
-    {
-     "order": "McDermott > Begich > Hill > Write-in",
-     "dest": "Begich",
-     "n": 3,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 1,
-      "Sullivan": 2,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 0,
-      "Republican": 3,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 0,
-      "R": 3,
       "both": 0,
       "none": 0
      }
@@ -2728,30 +2881,6 @@
      }
     },
     {
-     "order": "McDermott > Hill > Hafner > Begich > Write-in",
-     "dest": "Hill",
-     "n": 3,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 2,
-      "Sullivan": 1,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 1,
-      "Republican": 2,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 0,
-      "R": 3,
-      "both": 0,
-      "none": 0
-     }
-    },
-    {
      "order": "McDermott > Hill > Hafner > Write-in",
      "dest": "Hill",
      "n": 3,
@@ -2771,6 +2900,30 @@
      "leg": {
       "D": 1,
       "R": 1,
+      "both": 0,
+      "none": 1
+     }
+    },
+    {
+     "order": "McDermott > Write-in > Begich > Hill > Hafner",
+     "dest": "Begich",
+     "n": 3,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 0,
+      "Sullivan": 3,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 0,
+      "Republican": 3,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 0,
+      "R": 2,
       "both": 0,
       "none": 1
      }
@@ -2896,30 +3049,6 @@
      }
     },
     {
-     "order": "McDermott > Write-in > Begich > Hill > Hafner",
-     "dest": "Begich",
-     "n": 2,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 0,
-      "Sullivan": 2,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 0,
-      "Republican": 2,
-      "blank": 0,
-      "write-in": 0,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 0,
-      "R": 1,
-      "both": 0,
-      "none": 1
-     }
-    },
-    {
      "order": "McDermott > Write-in > Hafner > Begich > Hill",
      "dest": "Begich",
      "n": 2,
@@ -2968,30 +3097,6 @@
      }
     },
     {
-     "order": "McDermott > Write-in > Hill > Begich > Hafner",
-     "dest": "Hill",
-     "n": 2,
-     "first_other": 0,
-     "sen": {
-      "Peltola": 1,
-      "Sullivan": 1,
-      "none": 0
-     },
-     "gov": {
-      "Kreiss-Tomkins": 0,
-      "Republican": 1,
-      "blank": 0,
-      "write-in": 1,
-      "overvote": 0
-     },
-     "leg": {
-      "D": 0,
-      "R": 1,
-      "both": 0,
-      "none": 1
-     }
-    },
-    {
      "order": "McDermott > Begich",
      "dest": "stops",
      "n": 1,
@@ -3016,6 +3121,30 @@
      }
     },
     {
+     "order": "McDermott > Begich > Hafner > Write-in > Hill",
+     "dest": "Begich",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 0,
+      "Republican": 1,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 1,
+      "R": 0,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
      "order": "McDermott > Begich > Hill",
      "dest": "stops",
      "n": 1,
@@ -3035,6 +3164,30 @@
      "leg": {
       "D": 1,
       "R": 0,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
+     "order": "McDermott > Begich > Write-in > Hafner",
+     "dest": "Begich",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 0,
+      "Sullivan": 1,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 0,
+      "Republican": 1,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 0,
+      "R": 1,
       "both": 0,
       "none": 0
      }
@@ -3184,6 +3337,30 @@
      }
     },
     {
+     "order": "McDermott > Hill > Begich > Hafner > Write-in",
+     "dest": "Hill",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 1,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 0,
+      "R": 1,
+      "both": 0,
+      "none": 0
+     }
+    },
+    {
      "order": "McDermott > Hill > Hafner > overvote",
      "dest": "Hill",
      "n": 1,
@@ -3229,6 +3406,30 @@
       "R": 0,
       "both": 0,
       "none": 1
+     }
+    },
+    {
+     "order": "McDermott > Hill > overvote",
+     "dest": "stops",
+     "n": 1,
+     "first_other": 0,
+     "sen": {
+      "Peltola": 1,
+      "Sullivan": 0,
+      "none": 0
+     },
+     "gov": {
+      "Kreiss-Tomkins": 1,
+      "Republican": 0,
+      "blank": 0,
+      "write-in": 0,
+      "overvote": 0
+     },
+     "leg": {
+      "D": 0,
+      "R": 1,
+      "both": 0,
+      "none": 0
      }
     },
     {
@@ -3305,63 +3506,64 @@
     }
    ],
    "only": {
-    "n": 1765,
+    "n": 1952,
     "sen": {
-     "Peltola": 725,
-     "Sullivan": 555,
-     "none": 485
+     "Peltola": 807,
+     "Sullivan": 611,
+     "none": 534
     },
     "gov": {
-     "Kreiss-Tomkins": 704,
-     "Republican": 953,
-     "blank": 83,
+     "Kreiss-Tomkins": 778,
+     "Republican": 1053,
+     "blank": 96,
      "write-in": 24,
      "overvote": 1
     },
     "leg": {
-     "D": 463,
-     "R": 925,
-     "both": 51,
-     "none": 326
+     "D": 515,
+     "R": 1004,
+     "both": 58,
+     "none": 375
     },
     "vt": {
      "Election Day": 1484,
-     "Early Voting": 202,
-     "Absentee": 72,
-     "Judicial-split": 7
+     "Early Voting": 322,
+     "Absentee": 100,
+     "Question": 24,
+     "Judicial-split": 22
     },
-    "rural": 43
+    "rural": 52
    }
   },
   "context": {
    "Hill": {
-    "n": 93017,
+    "n": 104638,
     "sen": {
-     "Peltola": 87835,
-     "Sullivan": 3860,
-     "none": 1322
+     "Peltola": 98924,
+     "Sullivan": 4238,
+     "none": 1476
     },
     "gov": {
-     "Kreiss-Tomkins": 86298,
-     "Republican": 5564,
-     "blank": 778,
-     "write-in": 273,
-     "overvote": 27
+     "Kreiss-Tomkins": 97141,
+     "Republican": 6175,
+     "blank": 900,
+     "write-in": 313,
+     "overvote": 32
     }
    },
    "Begich": {
-    "n": 106688,
+    "n": 118182,
     "sen": {
-     "Peltola": 5465,
-     "Sullivan": 99170,
-     "none": 2053
+     "Peltola": 6071,
+     "Sullivan": 109834,
+     "none": 2277
     },
     "gov": {
-     "Kreiss-Tomkins": 7466,
-     "Republican": 97552,
-     "blank": 1367,
-     "write-in": 159,
-     "overvote": 136
+     "Kreiss-Tomkins": 8223,
+     "Republican": 108060,
+     "blank": 1537,
+     "write-in": 184,
+     "overvote": 170
     }
    }
   }
@@ -3370,10 +3572,10 @@
   "inputs": {
    "report": "combined-ballot-report-20261109.html",
    "as_of": "11/9/2026 2:09:48 PM",
-   "early_rem": 20164,
-   "abs_rem": 34179,
+   "early_rem": 2570,
+   "abs_rem": 28462,
    "unreturned": 15291,
-   "questioned": 6581,
+   "questioned": 5287,
    "batch": {
     "Begich": 3129,
     "Hafner": 883,
@@ -3385,8 +3587,8 @@
   },
   "rows": {
    "as_counted": {
-    "cvr_net": -13671,
-    "cvr_two": 199705,
+    "cvr_net": -13544,
+    "cvr_two": 222820,
     "batch_net": 1811,
     "batch_two": 8388,
     "batch_rate": {
@@ -3404,33 +3606,37 @@
      "McDermott": 0.1681,
      "Write-in": -0.125
     },
-    "counted": -11860,
-    "counted_two": 208093,
+    "counted": -11733,
+    "counted_two": 231208,
     "rates": {
      "Absentee": [
-      0.1653,
-      0.9444
+      0.1199,
+      0.9429
      ],
      "Early Voting": [
-      0.1086,
-      0.9612
+      0.0889,
+      0.9557
      ],
      "Election Day": [
       -0.1435,
       0.9422
      ],
      "Judicial-split": [
-      0.0121,
-      0.9681
+      0.03,
+      0.9566
      ],
      "Overseas": [
       0.5308,
       0.6538
+     ],
+     "Question": [
+      -0.3698,
+      0.9153
      ]
     },
     "all_rate": [
-     -0.0648,
-     0.9467
+     -0.0575,
+     0.9459
     ],
     "borrowed": {
      "early": [
@@ -3449,12 +3655,10 @@
       3,
       5,
       6,
-      8,
       29,
       30,
       36,
       37,
-      38,
       39,
       40
      ]
@@ -3463,86 +3667,86 @@
      {
       "u": 0,
       "parts_net": {
-       "early": 2607,
-       "absentee": 5472,
+       "early": 924,
+       "absentee": 4875,
        "unreturned": 0,
-       "questioned": -133
+       "questioned": 398
       },
       "parts_two": {
-       "early": 19352,
-       "absentee": 32293,
+       "early": 2468,
+       "absentee": 26883,
        "unreturned": 0,
-       "questioned": 6214
+       "questioned": 4966
       },
-      "remaining_net": 7946,
-      "remaining_two": 57860,
-      "early_two": 19352,
-      "abs_two": 32293,
-      "gapB": -2102,
-      "gapB_raw": -1151,
-      "A": -3915,
-      "B": -6017,
-      "B_raw": -5066,
-      "flipA": 6.77,
-      "flipB": 10.4
+      "remaining_net": 6198,
+      "remaining_two": 34316,
+      "early_two": 2468,
+      "abs_two": 26883,
+      "gapB": -2624,
+      "gapB_raw": -2004,
+      "A": -5535,
+      "B": -8159,
+      "B_raw": -7539,
+      "flipA": 16.13,
+      "flipB": 23.78
      },
      {
       "u": 40,
       "parts_net": {
-       "early": 2607,
-       "absentee": 5472,
-       "unreturned": 1295,
-       "questioned": -133
+       "early": 924,
+       "absentee": 4875,
+       "unreturned": 1257,
+       "questioned": 398
       },
       "parts_two": {
-       "early": 19352,
-       "absentee": 32293,
-       "unreturned": 5765,
-       "questioned": 6214
+       "early": 2468,
+       "absentee": 26883,
+       "unreturned": 5763,
+       "questioned": 4966
       },
-      "remaining_net": 9241,
-      "remaining_two": 63625,
-      "early_two": 19352,
-      "abs_two": 38058,
-      "gapB": -2699,
-      "gapB_raw": -1621,
-      "A": -2620,
-      "B": -5318,
-      "B_raw": -4241,
-      "flipA": 4.12,
-      "flipB": 8.36
+      "remaining_net": 7455,
+      "remaining_two": 40079,
+      "early_two": 2468,
+      "abs_two": 32646,
+      "gapB": -3221,
+      "gapB_raw": -2475,
+      "A": -4278,
+      "B": -7499,
+      "B_raw": -6753,
+      "flipA": 10.67,
+      "flipB": 18.71
      },
      {
       "u": 100,
       "parts_net": {
-       "early": 2607,
-       "absentee": 5472,
-       "unreturned": 3237,
-       "questioned": -133
+       "early": 924,
+       "absentee": 4875,
+       "unreturned": 3142,
+       "questioned": 398
       },
       "parts_two": {
-       "early": 19352,
-       "absentee": 32293,
-       "unreturned": 14412,
-       "questioned": 6214
+       "early": 2468,
+       "absentee": 26883,
+       "unreturned": 14408,
+       "questioned": 4966
       },
-      "remaining_net": 11183,
-      "remaining_two": 72272,
-      "early_two": 19352,
-      "abs_two": 46705,
-      "gapB": -3594,
-      "gapB_raw": -2327,
-      "A": -677,
-      "B": -4271,
-      "B_raw": -3004,
-      "flipA": 0.94,
-      "flipB": 5.91
+      "remaining_net": 9340,
+      "remaining_two": 48724,
+      "early_two": 2468,
+      "abs_two": 41291,
+      "gapB": -4115,
+      "gapB_raw": -3180,
+      "A": -2393,
+      "B": -6508,
+      "B_raw": -5573,
+      "flipA": 4.91,
+      "flipB": 13.36
      }
     ]
    },
    "stopped": {
-    "cvr_net": -6305,
-    "cvr_two": 209661,
+    "cvr_net": -5133,
+    "cvr_two": 234119,
     "batch_net": 2222,
     "batch_two": 8893,
     "batch_rate": {
@@ -3560,32 +3764,36 @@
      "McDermott": 0.2832,
      "Write-in": 0.25
     },
-    "counted": -4083,
-    "counted_two": 218554,
+    "counted": -2911,
+    "counted_two": 243012,
     "rates": {
      "Absentee": [
-      0.2106,
-      0.9961
+      0.1658,
+      0.9958
      ],
      "Early Voting": [
-      0.1386,
-      0.9975
+      0.1221,
+      0.9965
      ],
      "Election Day": [
       -0.108,
       0.9925
      ],
      "Judicial-split": [
-      0.0341,
-      0.9967
+      0.0586,
+      0.9956
      ],
      "Overseas": [
       0.8692,
       0.9923
+     ],
+     "Question": [
+      -0.3382,
+      0.9869
      ]
     },
     "all_rate": [
-     -0.0299,
+     -0.0218,
      0.9939
     ],
     "borrowed": {
@@ -3605,12 +3813,10 @@
       3,
       5,
       6,
-      8,
       29,
       30,
       36,
       37,
-      38,
       39,
       40
      ]
@@ -3619,86 +3825,86 @@
      {
       "u": 0,
       "parts_net": {
-       "early": 3230,
-       "absentee": 7047,
+       "early": 1007,
+       "absentee": 6279,
        "unreturned": 0,
-       "questioned": 113
+       "questioned": 623
       },
       "parts_two": {
-       "early": 20109,
-       "absentee": 34020,
+       "early": 2559,
+       "absentee": 28316,
        "unreturned": 0,
-       "questioned": 6539
+       "questioned": 5252
       },
-      "remaining_net": 10390,
-      "remaining_two": 60668,
-      "early_two": 20109,
-      "abs_two": 34020,
-      "gapB": -2232,
-      "gapB_raw": -1234,
-      "A": 6307,
-      "B": 4074,
-      "B_raw": 5073,
-      "flipA": -10.4,
-      "flipB": -6.72
+      "remaining_net": 7909,
+      "remaining_two": 36127,
+      "early_two": 2559,
+      "abs_two": 28316,
+      "gapB": -2767,
+      "gapB_raw": -2114,
+      "A": 4997,
+      "B": 2231,
+      "B_raw": 2883,
+      "flipA": -13.83,
+      "flipB": -6.17
      },
      {
       "u": 40,
       "parts_net": {
-       "early": 3230,
-       "absentee": 7047,
-       "unreturned": 1592,
-       "questioned": 113
+       "early": 1007,
+       "absentee": 6279,
+       "unreturned": 1564,
+       "questioned": 623
       },
       "parts_two": {
-       "early": 20109,
-       "absentee": 34020,
-       "unreturned": 6092,
-       "questioned": 6539
+       "early": 2559,
+       "absentee": 28316,
+       "unreturned": 6090,
+       "questioned": 5252
       },
-      "remaining_net": 11982,
-      "remaining_two": 66759,
-      "early_two": 20109,
-      "abs_two": 40112,
-      "gapB": -2863,
-      "gapB_raw": -1731,
-      "A": 7898,
-      "B": 5036,
-      "B_raw": 6167,
-      "flipA": -11.83,
-      "flipB": -7.54
+      "remaining_net": 9473,
+      "remaining_two": 42218,
+      "early_two": 2559,
+      "abs_two": 34406,
+      "gapB": -3397,
+      "gapB_raw": -2611,
+      "A": 6562,
+      "B": 3165,
+      "B_raw": 3951,
+      "flipA": -15.54,
+      "flipB": -7.5
      },
      {
       "u": 100,
       "parts_net": {
-       "early": 3230,
-       "absentee": 7047,
-       "unreturned": 3980,
-       "questioned": 113
+       "early": 1007,
+       "absentee": 6279,
+       "unreturned": 3911,
+       "questioned": 623
       },
       "parts_two": {
-       "early": 20109,
-       "absentee": 34020,
-       "unreturned": 15229,
-       "questioned": 6539
+       "early": 2559,
+       "absentee": 28316,
+       "unreturned": 15226,
+       "questioned": 5252
       },
-      "remaining_net": 14369,
-      "remaining_two": 75897,
-      "early_two": 20109,
-      "abs_two": 49249,
-      "gapB": -3808,
-      "gapB_raw": -2476,
-      "A": 10286,
-      "B": 6478,
-      "B_raw": 7810,
-      "flipA": -13.55,
-      "flipB": -8.54
+      "remaining_net": 11820,
+      "remaining_two": 51353,
+      "early_two": 2559,
+      "abs_two": 43542,
+      "gapB": -4343,
+      "gapB_raw": -3357,
+      "A": 8909,
+      "B": 4566,
+      "B_raw": 5552,
+      "flipA": -17.35,
+      "flipB": -8.89
      }
     ]
    },
    "both": {
-    "cvr_net": -13732,
-    "cvr_two": 202234,
+    "cvr_net": -13419,
+    "cvr_two": 225833,
     "batch_net": 1702,
     "batch_two": 8374,
     "batch_rate": {
@@ -3716,32 +3922,36 @@
      "McDermott": 0.1681,
      "Write-in": 0.25
     },
-    "counted": -12030,
-    "counted_two": 210608,
+    "counted": -11717,
+    "counted_two": 234207,
     "rates": {
      "Absentee": [
-      0.1882,
-      0.9737
+      0.1404,
+      0.9704
      ],
      "Early Voting": [
-      0.1184,
-      0.9773
+      0.0988,
+      0.9732
      ],
      "Election Day": [
       -0.1494,
       0.9511
      ],
      "Judicial-split": [
-      0.0115,
-      0.9742
+      0.0224,
+      0.9595
      ],
      "Overseas": [
       0.8615,
       0.9846
+     ],
+     "Question": [
+      -0.396,
+      0.9291
      ]
     },
     "all_rate": [
-     -0.0651,
+     -0.057,
      0.9587
     ],
     "borrowed": {
@@ -3761,12 +3971,10 @@
       3,
       5,
       6,
-      8,
       29,
       30,
       36,
       37,
-      38,
       39,
       40
      ]
@@ -3775,86 +3983,86 @@
      {
       "u": 0,
       "parts_net": {
-       "early": 2812,
-       "absentee": 6397,
+       "early": 933,
+       "absentee": 5564,
        "unreturned": 0,
-       "questioned": -133
+       "questioned": 417
       },
       "parts_two": {
-       "early": 19685,
-       "absentee": 33208,
+       "early": 2487,
+       "absentee": 27633,
        "unreturned": 0,
-       "questioned": 6293
+       "questioned": 5047
       },
-      "remaining_net": 9076,
-      "remaining_two": 59186,
-      "early_two": 19685,
-      "abs_two": 33208,
-      "gapB": -2175,
-      "gapB_raw": -1200,
-      "A": -2954,
-      "B": -5129,
-      "B_raw": -4154,
-      "flipA": 4.99,
-      "flipB": 8.67
+      "remaining_net": 6914,
+      "remaining_two": 35167,
+      "early_two": 2487,
+      "abs_two": 27633,
+      "gapB": -2701,
+      "gapB_raw": -2064,
+      "A": -4803,
+      "B": -7503,
+      "B_raw": -6867,
+      "flipA": 13.66,
+      "flipB": 21.34
      },
      {
       "u": 40,
       "parts_net": {
-       "early": 2812,
-       "absentee": 6397,
-       "unreturned": 1464,
-       "questioned": -133
+       "early": 933,
+       "absentee": 5564,
+       "unreturned": 1407,
+       "questioned": 417
       },
       "parts_two": {
-       "early": 19685,
-       "absentee": 33208,
-       "unreturned": 5946,
-       "questioned": 6293
+       "early": 2487,
+       "absentee": 27633,
+       "unreturned": 5936,
+       "questioned": 5047
       },
-      "remaining_net": 10540,
-      "remaining_two": 65132,
-      "early_two": 19685,
-      "abs_two": 39154,
-      "gapB": -2791,
-      "gapB_raw": -1685,
-      "A": -1489,
-      "B": -4280,
-      "B_raw": -3174,
-      "flipA": 2.29,
-      "flipB": 6.57
+      "remaining_net": 8321,
+      "remaining_two": 41103,
+      "early_two": 2487,
+      "abs_two": 33569,
+      "gapB": -3315,
+      "gapB_raw": -2548,
+      "A": -3396,
+      "B": -6711,
+      "B_raw": -5944,
+      "flipA": 8.26,
+      "flipB": 16.33
      },
      {
       "u": 100,
       "parts_net": {
-       "early": 2812,
-       "absentee": 6397,
-       "unreturned": 3661,
-       "questioned": -133
+       "early": 933,
+       "absentee": 5564,
+       "unreturned": 3517,
+       "questioned": 417
       },
       "parts_two": {
-       "early": 19685,
-       "absentee": 33208,
-       "unreturned": 14864,
-       "questioned": 6293
+       "early": 2487,
+       "absentee": 27633,
+       "unreturned": 14841,
+       "questioned": 5047
       },
-      "remaining_net": 12737,
-      "remaining_two": 74050,
-      "early_two": 19685,
-      "abs_two": 48072,
-      "gapB": -3714,
-      "gapB_raw": -2413,
-      "A": 707,
-      "B": -3006,
-      "B_raw": -1706,
-      "flipA": -0.96,
-      "flipB": 4.06
+      "remaining_net": 10431,
+      "remaining_two": 50008,
+      "early_two": 2487,
+      "abs_two": 42474,
+      "gapB": -4237,
+      "gapB_raw": -3275,
+      "A": -1286,
+      "B": -5522,
+      "B_raw": -4561,
+      "flipA": 2.57,
+      "flipB": 11.04
      }
     ]
    },
    "both_no_protest": {
-    "cvr_net": -12067,
-    "cvr_two": 203899,
+    "cvr_net": -11541,
+    "cvr_two": 227711,
     "batch_net": 1814,
     "batch_two": 8485,
     "batch_rate": {
@@ -3872,33 +4080,37 @@
      "McDermott": 0.177,
      "Write-in": 0.25
     },
-    "counted": -10253,
-    "counted_two": 212384,
+    "counted": -9727,
+    "counted_two": 236196,
     "rates": {
      "Absentee": [
-      0.1938,
-      0.9794
+      0.1474,
+      0.9775
      ],
      "Early Voting": [
-      0.1236,
-      0.9825
+      0.1049,
+      0.9793
      ],
      "Election Day": [
       -0.1404,
       0.9601
      ],
      "Judicial-split": [
-      0.0159,
-      0.9786
+      0.0268,
+      0.9639
      ],
      "Overseas": [
       0.8615,
       0.9846
+     ],
+     "Question": [
+      -0.386,
+      0.9391
      ]
     },
     "all_rate": [
-     -0.0572,
-     0.9666
+     -0.049,
+     0.9667
     ],
     "borrowed": {
      "early": [
@@ -3917,12 +4129,10 @@
       3,
       5,
       6,
-      8,
       29,
       30,
       36,
       37,
-      38,
       39,
       40
      ]
@@ -3931,86 +4141,86 @@
      {
       "u": 0,
       "parts_net": {
-       "early": 2920,
-       "absentee": 6570,
+       "early": 954,
+       "absentee": 5780,
        "unreturned": 0,
-       "questioned": -77
+       "questioned": 465
       },
       "parts_two": {
-       "early": 19795,
-       "absentee": 33415,
+       "early": 2506,
+       "absentee": 27813,
        "unreturned": 0,
-       "questioned": 6348
+       "questioned": 5095
       },
-      "remaining_net": 9413,
-      "remaining_two": 59559,
-      "early_two": 19795,
-      "abs_two": 33415,
-      "gapB": -2190,
-      "gapB_raw": -1208,
-      "A": -840,
-      "B": -3030,
-      "B_raw": -2048,
-      "flipA": 1.41,
-      "flipB": 5.09
+      "remaining_net": 7200,
+      "remaining_two": 35414,
+      "early_two": 2506,
+      "abs_two": 27813,
+      "gapB": -2718,
+      "gapB_raw": -2077,
+      "A": -2527,
+      "B": -5245,
+      "B_raw": -4604,
+      "flipA": 7.14,
+      "flipB": 14.81
      },
      {
       "u": 40,
       "parts_net": {
-       "early": 2920,
-       "absentee": 6570,
-       "unreturned": 1496,
-       "questioned": -77
+       "early": 954,
+       "absentee": 5780,
+       "unreturned": 1450,
+       "questioned": 465
       },
       "parts_two": {
-       "early": 19795,
-       "absentee": 33415,
-       "unreturned": 5982,
-       "questioned": 6348
+       "early": 2506,
+       "absentee": 27813,
+       "unreturned": 5976,
+       "questioned": 5095
       },
-      "remaining_net": 10909,
-      "remaining_two": 65540,
-      "early_two": 19795,
-      "abs_two": 39397,
-      "gapB": -2809,
-      "gapB_raw": -1697,
-      "A": 656,
-      "B": -2152,
-      "B_raw": -1041,
-      "flipA": -1.0,
-      "flipB": 3.28
+      "remaining_net": 8650,
+      "remaining_two": 41390,
+      "early_two": 2506,
+      "abs_two": 33789,
+      "gapB": -3336,
+      "gapB_raw": -2565,
+      "A": -1077,
+      "B": -4414,
+      "B_raw": -3642,
+      "flipA": 2.6,
+      "flipB": 10.66
      },
      {
       "u": 100,
       "parts_net": {
-       "early": 2920,
-       "absentee": 6570,
-       "unreturned": 3741,
-       "questioned": -77
+       "early": 954,
+       "absentee": 5780,
+       "unreturned": 3626,
+       "questioned": 465
       },
       "parts_two": {
-       "early": 19795,
-       "absentee": 33415,
-       "unreturned": 14954,
-       "questioned": 6348
+       "early": 2506,
+       "absentee": 27813,
+       "unreturned": 14939,
+       "questioned": 5095
       },
-      "remaining_net": 13154,
-      "remaining_two": 74513,
-      "early_two": 19795,
-      "abs_two": 48369,
-      "gapB": -3737,
-      "gapB_raw": -2429,
-      "A": 2901,
-      "B": -836,
-      "B_raw": 472,
-      "flipA": -3.89,
-      "flipB": 1.12
+      "remaining_net": 10826,
+      "remaining_two": 50353,
+      "early_two": 2506,
+      "abs_two": 42752,
+      "gapB": -4264,
+      "gapB_raw": -3296,
+      "A": 1099,
+      "B": -3166,
+      "B_raw": -2197,
+      "flipA": -2.18,
+      "flipB": 6.29
      }
     ]
    },
    "both_symmetric": {
-    "cvr_net": -10165,
-    "cvr_two": 205801,
+    "cvr_net": -9371,
+    "cvr_two": 229881,
     "batch_net": 1944,
     "batch_two": 8615,
     "batch_rate": {
@@ -4028,33 +4238,37 @@
      "McDermott": 0.2124,
      "Write-in": 0.25
     },
-    "counted": -8221,
-    "counted_two": 214416,
+    "counted": -7427,
+    "counted_two": 238496,
     "rates": {
      "Absentee": [
-      0.2013,
-      0.9869
+      0.1552,
+      0.9853
      ],
      "Early Voting": [
-      0.1295,
-      0.9884
+      0.112,
+      0.9864
      ],
      "Election Day": [
       -0.1302,
       0.9703
      ],
      "Judicial-split": [
-      0.0192,
-      0.9819
+      0.0367,
+      0.9738
      ],
      "Overseas": [
       0.8692,
       0.9923
+     ],
+     "Question": [
+      -0.3706,
+      0.9545
      ]
     },
     "all_rate": [
-     -0.0482,
-     0.9756
+     -0.0398,
+     0.9759
     ],
     "borrowed": {
      "early": [
@@ -4073,12 +4287,10 @@
       3,
       5,
       6,
-      8,
       29,
       30,
       36,
       37,
-      38,
       39,
       40
      ]
@@ -4087,80 +4299,80 @@
      {
       "u": 0,
       "parts_net": {
-       "early": 3039,
-       "absentee": 6647,
+       "early": 978,
+       "absentee": 5939,
        "unreturned": 0,
-       "questioned": -15
+       "questioned": 519
       },
       "parts_two": {
-       "early": 19918,
-       "absentee": 33608,
+       "early": 2531,
+       "absentee": 28000,
        "unreturned": 0,
-       "questioned": 6411
+       "questioned": 5149
       },
-      "remaining_net": 9670,
-      "remaining_two": 59937,
-      "early_two": 19918,
-      "abs_two": 33608,
-      "gapB": -2202,
-      "gapB_raw": -1215,
-      "A": 1449,
-      "B": -753,
-      "B_raw": 234,
-      "flipA": -2.42,
-      "flipB": 1.26
+      "remaining_net": 7436,
+      "remaining_two": 35679,
+      "early_two": 2531,
+      "abs_two": 28000,
+      "gapB": -2736,
+      "gapB_raw": -2091,
+      "A": 8,
+      "B": -2728,
+      "B_raw": -2083,
+      "flipA": -0.02,
+      "flipB": 7.64
      },
      {
       "u": 40,
       "parts_net": {
-       "early": 3039,
-       "absentee": 6647,
-       "unreturned": 1523,
-       "questioned": -15
+       "early": 978,
+       "absentee": 5939,
+       "unreturned": 1492,
+       "questioned": 519
       },
       "parts_two": {
-       "early": 19918,
-       "absentee": 33608,
-       "unreturned": 6022,
-       "questioned": 6411
+       "early": 2531,
+       "absentee": 28000,
+       "unreturned": 6021,
+       "questioned": 5149
       },
-      "remaining_net": 11194,
-      "remaining_two": 65959,
-      "early_two": 19918,
-      "abs_two": 39630,
-      "gapB": -2825,
-      "gapB_raw": -1706,
-      "A": 2972,
-      "B": 147,
-      "B_raw": 1266,
-      "flipA": -4.51,
-      "flipB": -0.22
+      "remaining_net": 8928,
+      "remaining_two": 41701,
+      "early_two": 2531,
+      "abs_two": 34021,
+      "gapB": -3359,
+      "gapB_raw": -2582,
+      "A": 1501,
+      "B": -1858,
+      "B_raw": -1081,
+      "flipA": -3.6,
+      "flipB": 4.46
      },
      {
       "u": 100,
       "parts_net": {
-       "early": 3039,
-       "absentee": 6647,
-       "unreturned": 3809,
-       "questioned": -15
+       "early": 978,
+       "absentee": 5939,
+       "unreturned": 3731,
+       "questioned": 519
       },
       "parts_two": {
-       "early": 19918,
-       "absentee": 33608,
-       "unreturned": 15055,
-       "questioned": 6411
+       "early": 2531,
+       "absentee": 28000,
+       "unreturned": 15053,
+       "questioned": 5149
       },
-      "remaining_net": 13479,
-      "remaining_two": 74992,
-      "early_two": 19918,
-      "abs_two": 48663,
-      "gapB": -3760,
-      "gapB_raw": -2443,
-      "A": 5258,
-      "B": 1498,
-      "B_raw": 2815,
-      "flipA": -7.01,
-      "flipB": -2.0
+      "remaining_net": 11167,
+      "remaining_two": 50732,
+      "early_two": 2531,
+      "abs_two": 43053,
+      "gapB": -4294,
+      "gapB_raw": -3319,
+      "A": 3739,
+      "B": -554,
+      "B_raw": 420,
+      "flipA": -7.37,
+      "flipB": 1.09
      }
     ]
    }

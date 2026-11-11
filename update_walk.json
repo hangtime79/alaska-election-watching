@@ -1,0 +1,485 @@
+{
+ "old_cvr": "2026-11-10_14-13_rctab_cvr-2026-1109-house.csv",
+ "old_ballots": 210944,
+ "new_ballots": 24617,
+ "new_by_type": {
+  "Early Voting": 16968,
+  "Absentee": 4739,
+  "Judicial-split": 1612,
+  "Question": 1298
+ },
+ "races": {
+  "House": [
+   {
+    "model": "A",
+    "unreturned_pct": 0,
+    "previous_total": -3914,
+    "new_actual": 127,
+    "new_expected": 1643,
+    "surprise": -1516,
+    "reforecast": -105,
+    "current_total": -5535,
+    "previous_remaining": 7946,
+    "current_remaining": 6198,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": -28,
+      "expected": 83,
+      "surprise": -111
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 554,
+      "expected": 1675,
+      "surprise": -1121
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -480,
+      "expected": -492,
+      "surprise": 12
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 81,
+      "expected": 377,
+      "surprise": -296
+     }
+    }
+   },
+   {
+    "model": "A",
+    "unreturned_pct": 40,
+    "previous_total": -2619,
+    "new_actual": 127,
+    "new_expected": 1643,
+    "surprise": -1516,
+    "reforecast": -143,
+    "current_total": -4278,
+    "previous_remaining": 9241,
+    "current_remaining": 7455,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": -28,
+      "expected": 83,
+      "surprise": -111
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 554,
+      "expected": 1675,
+      "surprise": -1121
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -480,
+      "expected": -492,
+      "surprise": 12
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 81,
+      "expected": 377,
+      "surprise": -296
+     }
+    }
+   },
+   {
+    "model": "A",
+    "unreturned_pct": 100,
+    "previous_total": -677,
+    "new_actual": 127,
+    "new_expected": 1643,
+    "surprise": -1516,
+    "reforecast": -200,
+    "current_total": -2393,
+    "previous_remaining": 11183,
+    "current_remaining": 9340,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": -28,
+      "expected": 83,
+      "surprise": -111
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 554,
+      "expected": 1675,
+      "surprise": -1121
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -480,
+      "expected": -492,
+      "surprise": 12
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 81,
+      "expected": 377,
+      "surprise": -296
+     }
+    }
+   },
+   {
+    "model": "B",
+    "unreturned_pct": 0,
+    "previous_total": -6016,
+    "new_actual": 127,
+    "new_expected": 2327,
+    "surprise": -2200,
+    "reforecast": 57,
+    "current_total": -8159,
+    "previous_remaining": 5844,
+    "current_remaining": 3574,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": -28,
+      "expected": -378,
+      "surprise": 350
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 554,
+      "expected": 2718,
+      "surprise": -2164
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -480,
+      "expected": -492,
+      "surprise": 12
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 81,
+      "expected": 479,
+      "surprise": -398
+     }
+    }
+   },
+   {
+    "model": "B",
+    "unreturned_pct": 40,
+    "previous_total": -5318,
+    "new_actual": 127,
+    "new_expected": 2327,
+    "surprise": -2200,
+    "reforecast": 19,
+    "current_total": -7499,
+    "previous_remaining": 6542,
+    "current_remaining": 4234,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": -28,
+      "expected": -378,
+      "surprise": 350
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 554,
+      "expected": 2718,
+      "surprise": -2164
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -480,
+      "expected": -492,
+      "surprise": 12
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 81,
+      "expected": 479,
+      "surprise": -398
+     }
+    }
+   },
+   {
+    "model": "B",
+    "unreturned_pct": 100,
+    "previous_total": -4271,
+    "new_actual": 127,
+    "new_expected": 2327,
+    "surprise": -2200,
+    "reforecast": -37,
+    "current_total": -6508,
+    "previous_remaining": 7589,
+    "current_remaining": 5225,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": -28,
+      "expected": -378,
+      "surprise": 350
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 554,
+      "expected": 2718,
+      "surprise": -2164
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -480,
+      "expected": -492,
+      "surprise": 12
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 81,
+      "expected": 479,
+      "surprise": -398
+     }
+    }
+   }
+  ],
+  "Senate": [
+   {
+    "model": "A",
+    "unreturned_pct": 0,
+    "previous_total": 13230,
+    "new_actual": 1698,
+    "new_expected": 2805,
+    "surprise": -1107,
+    "reforecast": -37,
+    "current_total": 12086,
+    "previous_remaining": 11730,
+    "current_remaining": 8888,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": 312,
+      "expected": 467,
+      "surprise": -155
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 1693,
+      "expected": 2503,
+      "surprise": -810
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -430,
+      "expected": -450,
+      "surprise": 20
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 123,
+      "expected": 285,
+      "surprise": -162
+     }
+    }
+   },
+   {
+    "model": "A",
+    "unreturned_pct": 40,
+    "previous_total": 14988,
+    "new_actual": 1698,
+    "new_expected": 2805,
+    "surprise": -1107,
+    "reforecast": -63,
+    "current_total": 13818,
+    "previous_remaining": 13488,
+    "current_remaining": 10620,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": 312,
+      "expected": 467,
+      "surprise": -155
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 1693,
+      "expected": 2503,
+      "surprise": -810
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -430,
+      "expected": -450,
+      "surprise": 20
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 123,
+      "expected": 285,
+      "surprise": -162
+     }
+    }
+   },
+   {
+    "model": "A",
+    "unreturned_pct": 100,
+    "previous_total": 17625,
+    "new_actual": 1698,
+    "new_expected": 2805,
+    "surprise": -1107,
+    "reforecast": -102,
+    "current_total": 16416,
+    "previous_remaining": 16125,
+    "current_remaining": 13218,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": 312,
+      "expected": 467,
+      "surprise": -155
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 1693,
+      "expected": 2503,
+      "surprise": -810
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -430,
+      "expected": -450,
+      "surprise": 20
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 123,
+      "expected": 285,
+      "surprise": -162
+     }
+    }
+   },
+   {
+    "model": "B",
+    "unreturned_pct": 0,
+    "previous_total": 11031,
+    "new_actual": 1698,
+    "new_expected": 3498,
+    "surprise": -1800,
+    "reforecast": 130,
+    "current_total": 9361,
+    "previous_remaining": 9531,
+    "current_remaining": 6163,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": 312,
+      "expected": -17,
+      "surprise": 329
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 1693,
+      "expected": 3577,
+      "surprise": -1884
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -430,
+      "expected": -450,
+      "surprise": 20
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 123,
+      "expected": 388,
+      "surprise": -265
+     }
+    }
+   },
+   {
+    "model": "B",
+    "unreturned_pct": 40,
+    "previous_total": 12166,
+    "new_actual": 1698,
+    "new_expected": 3498,
+    "surprise": -1800,
+    "reforecast": 105,
+    "current_total": 10471,
+    "previous_remaining": 10666,
+    "current_remaining": 7273,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": 312,
+      "expected": -17,
+      "surprise": 329
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 1693,
+      "expected": 3577,
+      "surprise": -1884
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -430,
+      "expected": -450,
+      "surprise": 20
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 123,
+      "expected": 388,
+      "surprise": -265
+     }
+    }
+   },
+   {
+    "model": "B",
+    "unreturned_pct": 100,
+    "previous_total": 13869,
+    "new_actual": 1698,
+    "new_expected": 3498,
+    "surprise": -1800,
+    "reforecast": 66,
+    "current_total": 12135,
+    "previous_remaining": 12369,
+    "current_remaining": 8937,
+    "other_new_ballots": 0,
+    "by_type": {
+     "Absentee": {
+      "ballots": 4739,
+      "actual": 312,
+      "expected": -17,
+      "surprise": 329
+     },
+     "Early Voting": {
+      "ballots": 16968,
+      "actual": 1693,
+      "expected": 3577,
+      "surprise": -1884
+     },
+     "Question": {
+      "ballots": 1298,
+      "actual": -430,
+      "expected": -450,
+      "surprise": 20
+     },
+     "Judicial-split": {
+      "ballots": 1612,
+      "actual": 123,
+      "expected": 388,
+      "surprise": -265
+     }
+    }
+   }
+  ]
+ }
+}

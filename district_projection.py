@@ -14,7 +14,8 @@ Remaining, per House district, from the Combined Ballot Report (accepted full + 
   early      accepted early - CVR early                        x district early rate
   absentee   accepted absentee - CVR absentee                  x district absentee rate
   unreturned (sent - received - undeliverable), mail/online/fax x district absentee rate x arrival share (0/40/100%)
-  questioned accepted questioned (none are in the CVR yet)     x district all-ballot rate
+  questioned accepted questioned - CVR questioned               x district all-ballot rate
+             (the first 1,298, in the 10 Nov export, came in at -480 against -481 from this rate)
 Judicial-split CVR rows (HD30, 36, 37, 39: mixed early/absentee/questioned) are taken off early first, then absentee.
 Rates are final-round net and two-way votes per ballot (Alaska's rules, from crossover_2026.csv). A district with
 fewer than MIN counted ballots of a type borrows its election-day rate plus the median within-district gap
@@ -73,7 +74,7 @@ def remaining(rep: dict, x: pd.DataFrame) -> dict:
         js = int(c.get("Judicial-split", 0))
         take = min(js, max(e, 0)); e -= take; a -= min(js - take, max(a, 0))
         unret = sum(r[k][6] - r[k][3] - r[k][4] for k in ["MAIL", "ONLINE", "FAX"])
-        rem[d] = {"early": max(e, 0), "absentee": max(a, 0), "unreturned": max(unret, 0), "questioned": acc("QUESTIONED")}
+        rem[d] = {"early": max(e, 0), "absentee": max(a, 0), "unreturned": max(unret, 0), "questioned": max(acc("QUESTIONED") - int(c.get("Question", 0)), 0)}
     return rem
 
 

@@ -1,38 +1,38 @@
 {
  "hafner_D_2026": {
-  "n": 13797,
+  "n": 15813,
   "final": {
-   "Hill": 6569,
-   "stops": 6557,
-   "Begich": 671
+   "Hill": 7571,
+   "stops": 7493,
+   "Begich": 749
   }
  },
  "otherwise_R": {
   "Hill (House)": {
-   "voters": 84240,
-   "other_two_R": 2440
+   "voters": 94597,
+   "other_two_R": 2682
   },
   "Peltola (Senate)": {
-   "voters": 99972,
-   "other_two_R": 1583
+   "voters": 112598,
+   "other_two_R": 1775
   },
   "Kreiss-Tomkins (governor)": {
-   "voters": 102087,
-   "other_two_R": 4134
+   "voters": 114807,
+   "other_two_R": 4545
   }
  },
  "otherwise_R_strict": {
   "Hill (House): Senate Dan Sullivan + R governor": {
-   "voters": 84240,
-   "n": 1484
+   "voters": 94597,
+   "n": 1621
   },
   "Peltola (Senate): Begich + R governor": {
-   "voters": 99972,
-   "n": 1583
+   "voters": 112598,
+   "n": 1775
   },
   "Kreiss-Tomkins (governor): Begich + Senate Dan Sullivan": {
-   "voters": 102087,
-   "n": 3735
+   "voters": 114807,
+   "n": 4114
   }
  }
 }
