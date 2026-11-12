@@ -1,0 +1,86 @@
+{
+  "tabulatorVersion": "2.1.0",
+  "outputSettings": {
+    "contestName": "Alaska US Senate 2026 (11 Nov export)",
+    "outputDirectory": "/opt/github/election-watching/rctab-output/alaska-2026-1111-senate",
+    "contestDate": "",
+    "contestJurisdiction": "",
+    "contestOffice": "",
+    "tabulateByBatch": false,
+    "tabulateByPrecinct": false,
+    "generateCdfJson": false
+  },
+  "cvrFileSources": [
+    {
+      "filePath": "../data/alaska-2026-1111",
+      "contestId": "6",
+      "firstVoteColumnIndex": "",
+      "firstVoteRowIndex": "",
+      "idColumnIndex": "",
+      "batchColumnIndex": "",
+      "precinctColumnIndex": "",
+      "overvoteDelimiter": "",
+      "provider": "dominion",
+      "overvoteLabel": "",
+      "undeclaredWriteInLabel": "",
+      "treatBlankAsUndeclaredWriteIn": false
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Heikes, Gerald L.",
+      "excluded": false,
+      "aliases": [
+        "524"
+      ]
+    },
+    {
+      "name": "Peltola, Mary",
+      "excluded": false,
+      "aliases": [
+        "525"
+      ]
+    },
+    {
+      "name": "Sullivan, Daniel J. Jr.",
+      "excluded": false,
+      "aliases": [
+        "526"
+      ]
+    },
+    {
+      "name": "Sullivan, Dan S.",
+      "excluded": false,
+      "aliases": [
+        "527"
+      ]
+    },
+    {
+      "name": "Write-in",
+      "excluded": false,
+      "aliases": [
+        "373"
+      ]
+    }
+  ],
+  "rules": {
+    "tiebreakMode": "random",
+    "overvoteRule": "exhaustImmediately",
+    "winnerElectionMode": "singleWinnerMajority",
+    "randomSeed": "5656",
+    "numberOfWinners": "1",
+    "multiSeatBottomsUpPercentageThreshold": "",
+    "decimalPlacesForVoteArithmetic": "4",
+    "maxSkippedRanksAllowed": "1",
+    "maxRankingsAllowed": "max",
+    "nonIntegerWinningThreshold": false,
+    "doesFirstRoundDetermineThreshold": false,
+    "hareQuota": false,
+    "batchElimination": false,
+    "cutoffElimination": false,
+    "continueUntilTwoCandidatesRemain": false,
+    "stopTabulationEarlyAfterRound": "",
+    "exhaustOnDuplicateCandidate": false,
+    "rulesDescription": ""
+  }
+}
