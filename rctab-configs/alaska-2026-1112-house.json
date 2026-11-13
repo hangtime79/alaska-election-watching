@@ -1,0 +1,86 @@
+{
+  "tabulatorVersion": "2.1.0",
+  "outputSettings": {
+    "contestName": "Alaska US House 2026 (12 Nov export)",
+    "outputDirectory": "/opt/github/election-watching/rctab-output/alaska-2026-1112-house",
+    "contestDate": "",
+    "contestJurisdiction": "",
+    "contestOffice": "",
+    "tabulateByBatch": false,
+    "tabulateByPrecinct": false,
+    "generateCdfJson": false
+  },
+  "cvrFileSources": [
+    {
+      "filePath": "../data/alaska-2026-1112",
+      "contestId": "7",
+      "firstVoteColumnIndex": "",
+      "firstVoteRowIndex": "",
+      "idColumnIndex": "",
+      "batchColumnIndex": "",
+      "precinctColumnIndex": "",
+      "overvoteDelimiter": "",
+      "provider": "dominion",
+      "overvoteLabel": "",
+      "undeclaredWriteInLabel": "",
+      "treatBlankAsUndeclaredWriteIn": false
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Begich, Nick",
+      "excluded": false,
+      "aliases": [
+        "528"
+      ]
+    },
+    {
+      "name": "Hafner, Eric",
+      "excluded": false,
+      "aliases": [
+        "529"
+      ]
+    },
+    {
+      "name": "Hill, Bill",
+      "excluded": false,
+      "aliases": [
+        "530"
+      ]
+    },
+    {
+      "name": "McDermott, James C. \"Jim\"",
+      "excluded": false,
+      "aliases": [
+        "531"
+      ]
+    },
+    {
+      "name": "Write-in",
+      "excluded": false,
+      "aliases": [
+        "374"
+      ]
+    }
+  ],
+  "rules": {
+    "tiebreakMode": "random",
+    "overvoteRule": "exhaustImmediately",
+    "winnerElectionMode": "singleWinnerMajority",
+    "randomSeed": "5656",
+    "numberOfWinners": "1",
+    "multiSeatBottomsUpPercentageThreshold": "",
+    "decimalPlacesForVoteArithmetic": "4",
+    "maxSkippedRanksAllowed": "1",
+    "maxRankingsAllowed": "max",
+    "nonIntegerWinningThreshold": false,
+    "doesFirstRoundDetermineThreshold": false,
+    "hareQuota": false,
+    "batchElimination": false,
+    "cutoffElimination": false,
+    "continueUntilTwoCandidatesRemain": false,
+    "stopTabulationEarlyAfterRound": "",
+    "exhaustOnDuplicateCandidate": false,
+    "rulesDescription": ""
+  }
+}

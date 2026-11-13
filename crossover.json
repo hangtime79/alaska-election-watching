@@ -1,46 +1,46 @@
 {
- "ballots": 244705,
+ "ballots": 250434,
  "final": {
   "Begich": {
-   "Peltola": 6728,
-   "Sullivan": 113268,
-   "No more rankings": 2409
+   "Peltola": 6865,
+   "Sullivan": 115060,
+   "No more rankings": 2448
   },
   "Hill": {
-   "Peltola": 102863,
-   "Sullivan": 4463,
-   "No more rankings": 1591
+   "Peltola": 106155,
+   "Sullivan": 4547,
+   "No more rankings": 1632
   },
   "No more rankings": {
-   "Peltola": 10342,
-   "Sullivan": 1492,
-   "No more rankings": 1549
+   "Peltola": 10631,
+   "Sullivan": 1514,
+   "No more rankings": 1582
   }
  },
- "house_margin": 13488,
- "senate_margin": -710,
+ "house_margin": 12039,
+ "senate_margin": -2530,
  "decomp": {
-  "split": 4530,
-  "house_done": 8850,
-  "senate_done": 818
+  "split": 4636,
+  "house_done": 9117,
+  "senate_done": 816
  },
- "hafner_peltola": 16942,
+ "hafner_peltola": 17406,
  "r1": {
-  "Peltola": 117505,
-  "Hill": 98465
+  "Peltola": 121176,
+  "Hill": 101632
  },
  "vote_type": [
   {
    "vote_type": "Absentee",
-   "ballots": 20536,
-   "hill_final": 54.1,
-   "peltola_final": 57.3
+   "ballots": 24868,
+   "hill_final": 55.8,
+   "peltola_final": 58.9
   },
   {
    "vote_type": "Early Voting",
-   "ballots": 65334,
-   "hill_final": 54.7,
-   "peltola_final": 57.2
+   "ballots": 66426,
+   "hill_final": 54.8,
+   "peltola_final": 57.3
   },
   {
    "vote_type": "Election Day",
@@ -62,53 +62,53 @@
   },
   {
    "vote_type": "Question",
-   "ballots": 1298,
-   "hill_final": 29.8,
-   "peltola_final": 32.6
+   "ballots": 1603,
+   "hill_final": 36.2,
+   "peltola_final": 40.3
   }
  ],
  "district": [
   {
    "district": 1,
-   "ballots": 4605,
-   "hill_final": 39.7,
-   "peltola_final": 45.9,
-   "peltola_minus_hill": 6.2
+   "ballots": 5346,
+   "hill_final": 41.5,
+   "peltola_final": 47.4,
+   "peltola_minus_hill": 5.9
   },
   {
    "district": 2,
-   "ballots": 4330,
-   "hill_final": 54.7,
-   "peltola_final": 58.5,
-   "peltola_minus_hill": 3.8
+   "ballots": 5351,
+   "hill_final": 57.2,
+   "peltola_final": 60.7,
+   "peltola_minus_hill": 3.5
   },
   {
    "district": 3,
-   "ballots": 6189,
-   "hill_final": 61.3,
-   "peltola_final": 63.9,
-   "peltola_minus_hill": 2.6
+   "ballots": 8310,
+   "hill_final": 63.2,
+   "peltola_final": 65.4,
+   "peltola_minus_hill": 2.2
   },
   {
    "district": 4,
-   "ballots": 7545,
-   "hill_final": 74.4,
-   "peltola_final": 77.2,
-   "peltola_minus_hill": 2.8
+   "ballots": 7850,
+   "hill_final": 74.0,
+   "peltola_final": 77.0,
+   "peltola_minus_hill": 3.0
   },
   {
    "district": 5,
-   "ballots": 3969,
-   "hill_final": 47.9,
-   "peltola_final": 52.6,
-   "peltola_minus_hill": 4.7
+   "ballots": 5059,
+   "hill_final": 50.8,
+   "peltola_final": 55.3,
+   "peltola_minus_hill": 4.5
   },
   {
    "district": 6,
-   "ballots": 7791,
-   "hill_final": 46.7,
-   "peltola_final": 47.8,
-   "peltola_minus_hill": 1.1
+   "ballots": 8242,
+   "hill_final": 47.0,
+   "peltola_final": 48.3,
+   "peltola_minus_hill": 1.3
   },
   {
    "district": 7,
@@ -359,8 +359,8 @@
  "peltola_same_loc": [
   {
    "vote_type": "All",
-   "h2024": 48.51,
-   "s2026": 50.15
+   "h2024": 48.52,
+   "s2026": 50.52
   },
   {
    "vote_type": "Election Day",
@@ -370,12 +370,12 @@
   {
    "vote_type": "Early Voting",
    "h2024": 46.01,
-   "s2026": 57.17
+   "s2026": 57.29
   },
   {
    "vote_type": "Absentee",
    "h2024": 58.37,
-   "s2026": 57.33
+   "s2026": 58.86
   }
  ]
 }

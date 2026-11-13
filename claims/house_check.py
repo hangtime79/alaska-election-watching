@@ -38,7 +38,7 @@ import district_projection as dp  # noqa: E402
 HERE = Path(".")
 HOUSE = HERE / cvr2026.HOUSE
 GOV = HERE / cvr2026.GOVERNOR
-REPORT = HERE / "combined-ballot-report-20261109.html"
+REPORT = HERE / "combined-ballot-report-20261112.html"
 RANKS = rcv.RANKS
 SHORT = {"Begich, Nick": "Begich", "Hill, Bill": "Hill", "Hafner, Eric": "Hafner",
          'McDermott, James C. "Jim"': "McDermott", "Write-in": "Write-in"}

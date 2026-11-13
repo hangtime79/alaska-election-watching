@@ -1,14 +1,14 @@
 {
  "release": "release_20261104_1309.json",
- "early_rem": 4942,
- "abs_rem": 26780,
- "unreturned": 15291,
- "questioned": 6581,
+ "early_rem": 3850,
+ "abs_rem": 29139,
+ "unreturned": 10864,
+ "questioned": 6998,
  "races": {
   "House": {
    "dem": "Hill",
    "rep": "Begich",
-   "cvr_net": -13488,
+   "cvr_net": -12039,
    "batch_first_choices": 5355,
    "batch_shares": {
     "Begich": 36.9,
@@ -19,41 +19,41 @@
    },
    "batch_net": 873,
    "batch_margin_pct": 17.4,
-   "counted_net": -12615,
+   "counted_net": -11166,
    "scenarios": [
     {
      "unreturned_pct": 0,
-     "remaining_net": 2174,
-     "remaining_two": 36233,
-     "remaining_margin_pct": 6.0,
-     "total_net": -10441,
-     "total_pct_dem": 48.08,
-     "flip_shift_pts": 28.82
+     "remaining_net": 3187,
+     "remaining_two": 37809,
+     "remaining_margin_pct": 8.43,
+     "total_net": -7979,
+     "total_pct_dem": 48.57,
+     "flip_shift_pts": 21.1
     },
     {
      "unreturned_pct": 40,
-     "remaining_net": 2653,
-     "remaining_two": 42009,
-     "remaining_margin_pct": 6.31,
-     "total_net": -9963,
-     "total_pct_dem": 48.21,
-     "flip_shift_pts": 23.72
+     "remaining_net": 3660,
+     "remaining_two": 41913,
+     "remaining_margin_pct": 8.73,
+     "total_net": -7507,
+     "total_pct_dem": 48.68,
+     "flip_shift_pts": 17.91
     },
     {
      "unreturned_pct": 100,
-     "remaining_net": 3371,
-     "remaining_two": 50673,
-     "remaining_margin_pct": 6.65,
-     "total_net": -9245,
-     "total_pct_dem": 48.39,
-     "flip_shift_pts": 18.24
+     "remaining_net": 4369,
+     "remaining_two": 48068,
+     "remaining_margin_pct": 9.09,
+     "total_net": -6798,
+     "total_pct_dem": 48.83,
+     "flip_shift_pts": 14.14
     }
    ]
   },
   "Senate": {
    "dem": "Peltola",
    "rep": "Sullivan",
-   "cvr_net": 710,
+   "cvr_net": 2530,
    "batch_first_choices": 5720,
    "batch_shares": {
     "Heikes": 4.9,
@@ -64,34 +64,34 @@
    },
    "batch_net": 2138,
    "batch_margin_pct": 38.57,
-   "counted_net": 2848,
+   "counted_net": 4668,
    "scenarios": [
     {
      "unreturned_pct": 0,
-     "remaining_net": 4576,
-     "remaining_two": 37619,
-     "remaining_margin_pct": 12.16,
-     "total_net": 7424,
-     "total_pct_dem": 51.31,
-     "flip_shift_pts": -19.73
+     "remaining_net": 5699,
+     "remaining_two": 39263,
+     "remaining_margin_pct": 14.51,
+     "total_net": 10367,
+     "total_pct_dem": 51.79,
+     "flip_shift_pts": -26.4
     },
     {
      "unreturned_pct": 40,
-     "remaining_net": 5457,
-     "remaining_two": 43631,
-     "remaining_margin_pct": 12.51,
-     "total_net": 8305,
-     "total_pct_dem": 51.44,
-     "flip_shift_pts": -19.04
+     "remaining_net": 6456,
+     "remaining_two": 43533,
+     "remaining_margin_pct": 14.83,
+     "total_net": 11124,
+     "total_pct_dem": 51.89,
+     "flip_shift_pts": -25.55
     },
     {
      "unreturned_pct": 100,
-     "remaining_net": 6779,
-     "remaining_two": 52648,
-     "remaining_margin_pct": 12.88,
-     "total_net": 9627,
-     "total_pct_dem": 51.62,
-     "flip_shift_pts": -18.29
+     "remaining_net": 7591,
+     "remaining_two": 49938,
+     "remaining_margin_pct": 15.2,
+     "total_net": 12259,
+     "total_pct_dem": 52.04,
+     "flip_shift_pts": -24.55
     }
    ]
   }

@@ -35,7 +35,7 @@ import rcv  # noqa: E402
 HERE = Path(".")
 SEN = HERE / cvr2026.SENATE
 GOV = HERE / cvr2026.GOVERNOR
-REPORT = HERE / "combined-ballot-report-20261109.html"
+REPORT = HERE / "combined-ballot-report-20261112.html"
 REL = HERE / "release_20261104_1309.json"
 SHORT = {"Sullivan, Dan S.": "Sullivan", "Peltola, Mary": "Peltola", "Heikes, Gerald L.": "Heikes",
          "Sullivan, Daniel J. Jr.": "Sullivan Jr.", "Write-in": "Write-in"}

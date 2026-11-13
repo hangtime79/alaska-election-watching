@@ -1,40 +1,40 @@
 {
  "walk1": {
-  "ballots": 244705,
+  "ballots": 250434,
   "rounds": [
    {
     "active": {
-     "Peltola": 117505,
-     "Sullivan": 115917,
-     "Heikes": 5155,
-     "Sullivan Jr.": 3992,
-     "Write-in": 773
+     "Peltola": 121176,
+     "Sullivan": 117765,
+     "Heikes": 5221,
+     "Sullivan Jr.": 4094,
+     "Write-in": 780
     },
-    "inactive": 1363
+    "inactive": 1398
    },
    {
     "active": {
-     "Peltola": 117656,
-     "Sullivan": 116023,
-     "Heikes": 5272,
-     "Sullivan Jr.": 4055
+     "Peltola": 121329,
+     "Sullivan": 117873,
+     "Heikes": 5338,
+     "Sullivan Jr.": 4157
     },
-    "inactive": 1699
+    "inactive": 1737
    },
    {
     "active": {
-     "Peltola": 118830,
-     "Sullivan": 116678,
-     "Heikes": 6014
+     "Peltola": 122533,
+     "Sullivan": 118543,
+     "Heikes": 6095
     },
-    "inactive": 3183
+    "inactive": 3263
    },
    {
     "active": {
-     "Peltola": 119933,
-     "Sullivan": 119223
+     "Peltola": 123651,
+     "Sullivan": 121121
     },
-    "inactive": 5549
+    "inactive": 5662
    }
   ],
   "order": [
@@ -45,41 +45,41 @@
   "steps": [
    {
     "out": "Write-in",
-    "ballots": 773,
+    "ballots": 780,
     "to": {
-     "stops": 336,
-     "Peltola": 151,
+     "stops": 339,
+     "Peltola": 153,
      "Heikes": 117,
-     "Sullivan": 106,
+     "Sullivan": 108,
      "Sullivan Jr.": 63
     },
     "net": 45
    },
    {
     "out": "Sullivan Jr.",
-    "ballots": 4055,
+    "ballots": 4157,
     "to": {
-     "stops": 1484,
-     "Peltola": 1174,
-     "Heikes": 742,
-     "Sullivan": 655
+     "stops": 1526,
+     "Peltola": 1204,
+     "Heikes": 757,
+     "Sullivan": 670
     },
-    "net": 519
+    "net": 534
    },
    {
     "out": "Heikes",
-    "ballots": 6014,
+    "ballots": 6095,
     "to": {
-     "Sullivan": 2545,
-     "stops": 2366,
-     "Peltola": 1103
+     "Sullivan": 2578,
+     "stops": 2399,
+     "Peltola": 1118
     },
-    "net": -1442
+    "net": -1460
    }
   ],
-  "first_net": 1588,
-  "cvr_final_net": 710,
-  "cvr_two": 239156,
+  "first_net": 3411,
+  "cvr_final_net": 2530,
+  "cvr_two": 244772,
   "batch": {
    "first_choices": 5720,
    "by": {
@@ -100,72 +100,72 @@
    "two": 5543,
    "margin": 0.3857
   },
-  "counted": 2848
+  "counted": 4668
  },
  "first_choice": {
   "Heikes": {
-   "n": 5169,
-   "peltola": 880,
-   "sullivan": 2201,
-   "stops": 2088,
-   "net": -1321
+   "n": 5236,
+   "peltola": 892,
+   "sullivan": 2228,
+   "stops": 2116,
+   "net": -1336
   },
   "Peltola": {
-   "n": 117562,
-   "peltola": 117505,
+   "n": 121234,
+   "peltola": 121176,
    "sullivan": 0,
-   "stops": 57,
-   "net": 117505
+   "stops": 58,
+   "net": 121176
   },
   "Sullivan": {
-   "n": 115944,
+   "n": 117792,
    "peltola": 0,
-   "sullivan": 115917,
+   "sullivan": 117765,
    "stops": 27,
-   "net": -115917
+   "net": -117765
   },
   "Sullivan Jr.": {
-   "n": 4007,
-   "peltola": 1341,
-   "sullivan": 920,
-   "stops": 1746,
-   "net": 421
+   "n": 4110,
+   "peltola": 1374,
+   "sullivan": 941,
+   "stops": 1795,
+   "net": 433
   },
   "Write-in": {
-   "n": 776,
-   "peltola": 207,
-   "sullivan": 185,
-   "stops": 384,
+   "n": 783,
+   "peltola": 209,
+   "sullivan": 187,
+   "stops": 387,
    "net": 22
   },
   "blank": {
-   "n": 898,
+   "n": 917,
    "peltola": 0,
    "sullivan": 0,
-   "stops": 898,
+   "stops": 917,
    "net": 0
   },
   "both Sullivans": {
-   "n": 89,
+   "n": 92,
    "peltola": 0,
    "sullivan": 0,
-   "stops": 89,
+   "stops": 92,
    "net": 0
   },
   "overvote": {
-   "n": 260,
+   "n": 270,
    "peltola": 0,
    "sullivan": 0,
-   "stops": 260,
+   "stops": 270,
    "net": 0
   }
  },
  "sort": {
   "below_peltola": {
-   "n": 574,
-   "D": 237,
-   "C": 253,
-   "R": 84
+   "n": 583,
+   "D": 239,
+   "C": 258,
+   "R": 86
   },
   "overvote": {
    "n": 17,
@@ -174,32 +174,32 @@
    "R": 11
   },
   "stops": {
-   "n": 1715,
-   "D": 295,
-   "C": 560,
-   "R": 860
+   "n": 1764,
+   "D": 306,
+   "C": 573,
+   "R": 885
   },
   "sullivan_ahead": {
-   "n": 926,
-   "D": 106,
-   "C": 326,
-   "R": 494
+   "n": 947,
+   "D": 110,
+   "C": 333,
+   "R": 504
   },
   "to_peltola": {
-   "n": 775,
-   "D": 461,
-   "C": 256,
-   "R": 58
+   "n": 799,
+   "D": 474,
+   "C": 266,
+   "R": 59
   }
  },
  "orders": [
   {
    "grp": "below_peltola",
    "order": "Jr > Heikes > Peltola > Sullivan",
-   "n": 123,
+   "n": 125,
    "D": 46,
    "LD": 15,
-   "E": 14,
+   "E": 16,
    "LR": 18,
    "R": 30
   },
@@ -236,12 +236,12 @@
   {
    "grp": "below_peltola",
    "order": "Jr > Peltola > Heikes > Sullivan",
-   "n": 198,
-   "D": 92,
+   "n": 201,
+   "D": 94,
    "LD": 53,
    "E": 21,
    "LR": 14,
-   "R": 18
+   "R": 19
   },
   {
    "grp": "below_peltola",
@@ -276,12 +276,12 @@
   {
    "grp": "below_peltola",
    "order": "Jr > Peltola > Sullivan > Heikes",
-   "n": 139,
+   "n": 143,
    "D": 43,
-   "LD": 38,
-   "E": 18,
+   "LD": 40,
+   "E": 19,
    "LR": 21,
-   "R": 19
+   "R": 20
   },
   {
    "grp": "below_peltola",
@@ -416,22 +416,22 @@
   {
    "grp": "stops",
    "order": "Jr",
-   "n": 1447,
-   "D": 254,
-   "LD": 136,
-   "E": 131,
-   "LR": 221,
-   "R": 705
+   "n": 1489,
+   "D": 263,
+   "LD": 141,
+   "E": 135,
+   "LR": 223,
+   "R": 727
   },
   {
    "grp": "stops",
    "order": "Jr > Heikes",
-   "n": 240,
-   "D": 32,
-   "LD": 16,
+   "n": 246,
+   "D": 33,
+   "LD": 18,
    "E": 11,
    "LR": 36,
-   "R": 145
+   "R": 148
   },
   {
    "grp": "stops",
@@ -446,8 +446,8 @@
   {
    "grp": "stops",
    "order": "Jr > WI",
-   "n": 12,
-   "D": 6,
+   "n": 13,
+   "D": 7,
    "LD": 1,
    "E": 1,
    "LR": 2,
@@ -466,22 +466,22 @@
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Heikes > Sullivan",
-   "n": 109,
-   "D": 9,
+   "n": 112,
+   "D": 10,
    "LD": 3,
    "E": 9,
    "LR": 11,
-   "R": 77
+   "R": 79
   },
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Heikes > Sullivan > Peltola",
-   "n": 145,
-   "D": 25,
+   "n": 148,
+   "D": 26,
    "LD": 16,
    "E": 15,
-   "LR": 31,
-   "R": 58
+   "LR": 32,
+   "R": 59
   },
   {
    "grp": "sullivan_ahead",
@@ -516,32 +516,32 @@
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Sullivan",
-   "n": 213,
-   "D": 23,
-   "LD": 13,
+   "n": 216,
+   "D": 24,
+   "LD": 14,
    "E": 19,
    "LR": 31,
-   "R": 127
+   "R": 128
   },
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Sullivan > Heikes",
-   "n": 160,
+   "n": 163,
    "D": 9,
    "LD": 4,
    "E": 6,
    "LR": 29,
-   "R": 112
+   "R": 115
   },
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Sullivan > Heikes > Peltola",
-   "n": 143,
+   "n": 147,
    "D": 11,
    "LD": 17,
    "E": 14,
-   "LR": 36,
-   "R": 65
+   "LR": 38,
+   "R": 67
   },
   {
    "grp": "sullivan_ahead",
@@ -556,8 +556,8 @@
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Sullivan > Heikes > WI",
-   "n": 3,
-   "D": 0,
+   "n": 4,
+   "D": 1,
    "LD": 0,
    "E": 0,
    "LR": 1,
@@ -576,20 +576,20 @@
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Sullivan > Peltola",
-   "n": 42,
+   "n": 45,
    "D": 11,
-   "LD": 5,
+   "LD": 6,
    "E": 5,
-   "LR": 9,
-   "R": 12
+   "LR": 10,
+   "R": 13
   },
   {
    "grp": "sullivan_ahead",
    "order": "Jr > Sullivan > Peltola > Heikes",
-   "n": 69,
+   "n": 70,
    "D": 11,
    "LD": 14,
-   "E": 17,
+   "E": 18,
    "LR": 13,
    "R": 14
   },
@@ -716,9 +716,9 @@
   {
    "grp": "to_peltola",
    "order": "Jr > Heikes > Peltola",
-   "n": 50,
+   "n": 51,
    "D": 13,
-   "LD": 5,
+   "LD": 6,
    "E": 8,
    "LR": 5,
    "R": 19
@@ -746,19 +746,19 @@
   {
    "grp": "to_peltola",
    "order": "Jr > Peltola",
-   "n": 595,
-   "D": 368,
-   "LD": 110,
+   "n": 617,
+   "D": 381,
+   "LD": 117,
    "E": 53,
-   "LR": 36,
-   "R": 28
+   "LR": 37,
+   "R": 29
   },
   {
    "grp": "to_peltola",
    "order": "Jr > Peltola > Heikes",
-   "n": 82,
+   "n": 83,
    "D": 45,
-   "LD": 15,
+   "LD": 16,
    "E": 4,
    "LR": 12,
    "R": 6
@@ -835,38 +835,38 @@
   }
  ],
  "confusion_counted": {
-  "R": -1144,
+  "R": -1175,
   "R_parts": {
-   "below_peltola": -168,
-   "to_peltola": -116,
-   "stops": -860
+   "below_peltola": -172,
+   "to_peltola": -118,
+   "stops": -885
   },
-  "both": -89,
-  "C": -1578,
+  "both": -92,
+  "C": -1621,
   "C_parts": {
-   "below_peltola": -506,
-   "to_peltola": -512,
-   "stops": -560
+   "below_peltola": -516,
+   "to_peltola": -532,
+   "stops": -573
   },
-  "D": -1691,
+  "D": -1732,
   "D_parts": {
-   "below_peltola": -474,
-   "to_peltola": -922,
-   "stops": -295
+   "below_peltola": -478,
+   "to_peltola": -948,
+   "stops": -306
   },
-  "clearly_R_total": 1704,
-  "plus_both": 1615,
-  "broad": 37,
-  "stress": -1654
+  "clearly_R_total": 3493,
+  "plus_both": 3401,
+  "broad": 1780,
+  "stress": 48
  },
  "proj": {
-  "report": "combined-ballot-report-20261109.html",
-  "as_of": "11/9/2026 2:09:48 PM",
+  "report": "combined-ballot-report-20261112.html",
+  "as_of": "11/12/2026 1:46:06 PM",
   "remaining": {
-   "early": 2296,
-   "absentee": 23357,
-   "unreturned": 15291,
-   "questioned": 5287
+   "early": 1204,
+   "absentee": 25704,
+   "unreturned": 10864,
+   "questioned": 5395
   },
   "borrowed": {
    "early": [
@@ -880,10 +880,6 @@
     40
    ],
    "absentee": [
-    1,
-    3,
-    5,
-    6,
     30,
     36,
     37,
@@ -891,145 +887,145 @@
     40
    ]
   },
-  "counted": 2848,
+  "counted": 4668,
   "scenarios": {
    "A0": {
     "model": "A",
     "unreturned_pct": 0,
     "parts_net": {
-     "early": 907,
-     "absentee": 7835,
+     "early": 343,
+     "absentee": 8453,
      "unreturned": 0,
-     "questioned": 806
+     "questioned": 709
     },
     "parts_two": {
-     "early": 2254,
-     "absentee": 22896,
+     "early": 1187,
+     "absentee": 25291,
      "unreturned": 0,
-     "questioned": 5165
+     "questioned": 5264
     },
     "gapB": 0,
-    "remaining_net": 9548,
-    "remaining_two": 30315,
-    "remaining_margin_pct": 31.5,
-    "total_net": 12396,
-    "flip_shift_pts": -40.89
+    "remaining_net": 9506,
+    "remaining_two": 31742,
+    "remaining_margin_pct": 29.95,
+    "total_net": 14174,
+    "flip_shift_pts": -44.65
    },
    "A40": {
     "model": "A",
     "unreturned_pct": 40,
     "parts_net": {
-     "early": 907,
-     "absentee": 7835,
-     "unreturned": 1773,
-     "questioned": 806
+     "early": 343,
+     "absentee": 8453,
+     "unreturned": 1163,
+     "questioned": 709
     },
     "parts_two": {
-     "early": 2254,
-     "absentee": 22896,
-     "unreturned": 6002,
-     "questioned": 5165
+     "early": 1187,
+     "absentee": 25291,
+     "unreturned": 4262,
+     "questioned": 5264
     },
     "gapB": 0,
-    "remaining_net": 11322,
-    "remaining_two": 36317,
-    "remaining_margin_pct": 31.17,
-    "total_net": 14170,
-    "flip_shift_pts": -39.02
+    "remaining_net": 10669,
+    "remaining_two": 36004,
+    "remaining_margin_pct": 29.63,
+    "total_net": 15337,
+    "flip_shift_pts": -42.6
    },
    "A100": {
     "model": "A",
     "unreturned_pct": 100,
     "parts_net": {
-     "early": 907,
-     "absentee": 7835,
-     "unreturned": 4433,
-     "questioned": 806
+     "early": 343,
+     "absentee": 8453,
+     "unreturned": 2907,
+     "questioned": 709
     },
     "parts_two": {
-     "early": 2254,
-     "absentee": 22896,
-     "unreturned": 15005,
-     "questioned": 5165
+     "early": 1187,
+     "absentee": 25291,
+     "unreturned": 10655,
+     "questioned": 5264
     },
     "gapB": 0,
-    "remaining_net": 13982,
-    "remaining_two": 45321,
-    "remaining_margin_pct": 30.85,
-    "total_net": 16830,
-    "flip_shift_pts": -37.13
+    "remaining_net": 12413,
+    "remaining_two": 42397,
+    "remaining_margin_pct": 29.28,
+    "total_net": 17081,
+    "flip_shift_pts": -40.29
    },
    "B0": {
     "model": "B",
     "unreturned_pct": 0,
     "parts_net": {
-     "early": 907,
-     "absentee": 7835,
+     "early": 343,
+     "absentee": 8453,
      "unreturned": 0,
-     "questioned": 806
+     "questioned": 709
     },
     "parts_two": {
-     "early": 2254,
-     "absentee": 22896,
+     "early": 1187,
+     "absentee": 25291,
      "unreturned": 0,
-     "questioned": 5165
+     "questioned": 5264
     },
-    "gapB": -2225,
-    "remaining_net": 7323,
-    "remaining_two": 30315,
-    "remaining_margin_pct": 24.16,
-    "total_net": 10171,
-    "flip_shift_pts": -33.55
+    "gapB": -2541,
+    "remaining_net": 6964,
+    "remaining_two": 31742,
+    "remaining_margin_pct": 21.94,
+    "total_net": 11632,
+    "flip_shift_pts": -36.65
    },
    "B40": {
     "model": "B",
     "unreturned_pct": 40,
     "parts_net": {
-     "early": 907,
-     "absentee": 7835,
-     "unreturned": 1773,
-     "questioned": 806
+     "early": 343,
+     "absentee": 8453,
+     "unreturned": 1163,
+     "questioned": 709
     },
     "parts_two": {
-     "early": 2254,
-     "absentee": 22896,
-     "unreturned": 6002,
-     "questioned": 5165
+     "early": 1187,
+     "absentee": 25291,
+     "unreturned": 4262,
+     "questioned": 5264
     },
-    "gapB": -2847,
-    "remaining_net": 8475,
-    "remaining_two": 36317,
-    "remaining_margin_pct": 23.34,
-    "total_net": 11323,
-    "flip_shift_pts": -31.18
+    "gapB": -2983,
+    "remaining_net": 7686,
+    "remaining_two": 36004,
+    "remaining_margin_pct": 21.35,
+    "total_net": 12354,
+    "flip_shift_pts": -34.31
    },
    "B100": {
     "model": "B",
     "unreturned_pct": 100,
     "parts_net": {
-     "early": 907,
-     "absentee": 7835,
-     "unreturned": 4433,
-     "questioned": 806
+     "early": 343,
+     "absentee": 8453,
+     "unreturned": 2907,
+     "questioned": 709
     },
     "parts_two": {
-     "early": 2254,
-     "absentee": 22896,
-     "unreturned": 15005,
-     "questioned": 5165
+     "early": 1187,
+     "absentee": 25291,
+     "unreturned": 10655,
+     "questioned": 5264
     },
-    "gapB": -3778,
-    "remaining_net": 10203,
-    "remaining_two": 45321,
-    "remaining_margin_pct": 22.51,
-    "total_net": 13051,
-    "flip_shift_pts": -28.8
+    "gapB": -3644,
+    "remaining_net": 8768,
+    "remaining_two": 42397,
+    "remaining_margin_pct": 20.68,
+    "total_net": 13437,
+    "flip_shift_pts": -31.69
    }
   },
-  "A": 14170,
-  "B": 11323,
-  "gapB": -2847,
-  "two": 36317,
+  "A": 15337,
+  "B": 12354,
+  "gapB": -2983,
+  "two": 36004,
   "unseen": {
    "rows": [
     {
@@ -1051,141 +1047,141 @@
     },
     {
      "name": "early",
-     "ballots": 2296,
-     "jr_share": 1.39,
-     "jr": 32,
-     "R_per_1000": 4.53,
-     "C_per_1000": 4.53,
-     "R": -10,
-     "C": -10,
+     "ballots": 1204,
+     "jr_share": 1.4,
+     "jr": 17,
+     "R_per_1000": 4.56,
+     "C_per_1000": 4.5,
+     "R": -5,
+     "C": -5,
      "heikes_share": 1.03,
-     "heikes": 24,
-     "heikes_net": -194,
-     "heikes_n": 675,
+     "heikes": 12,
+     "heikes_net": -197,
+     "heikes_n": 687,
      "heikes_net_per": -0.287,
      "heikes_extra": 0.713,
-     "heikes_effect": -17
+     "heikes_effect": -9
     },
     {
      "name": "absentee",
-     "ballots": 29473,
-     "jr_share": 1.4,
-     "jr": 413,
-     "R_per_1000": 3.8,
-     "C_per_1000": 5.5,
-     "R": -112,
-     "C": -162,
-     "heikes_share": 1.32,
-     "heikes": 389,
-     "heikes_net": -65,
-     "heikes_n": 271,
-     "heikes_net_per": -0.24,
-     "heikes_extra": 0.76,
-     "heikes_effect": -296
+     "ballots": 30050,
+     "jr_share": 1.46,
+     "jr": 437,
+     "R_per_1000": 4.1,
+     "C_per_1000": 5.99,
+     "R": -123,
+     "C": -180,
+     "heikes_share": 1.26,
+     "heikes": 379,
+     "heikes_net": -78,
+     "heikes_n": 314,
+     "heikes_net_per": -0.248,
+     "heikes_extra": 0.752,
+     "heikes_effect": -285
     },
     {
      "name": "questioned",
-     "ballots": 5287,
+     "ballots": 5395,
      "jr_share": 1.64,
-     "jr": 87,
-     "R_per_1000": 4.68,
-     "C_per_1000": 6.45,
+     "jr": 89,
+     "R_per_1000": 4.69,
+     "C_per_1000": 6.47,
      "R": -25,
-     "C": -34,
-     "heikes_share": 2.11,
-     "heikes": 112,
-     "heikes_net": -1321,
-     "heikes_n": 5169,
-     "heikes_net_per": -0.256,
-     "heikes_extra": 0.744,
-     "heikes_effect": -83
+     "C": -35,
+     "heikes_share": 2.09,
+     "heikes": 113,
+     "heikes_net": -1336,
+     "heikes_n": 5236,
+     "heikes_net_per": -0.255,
+     "heikes_extra": 0.745,
+     "heikes_effect": -84
     }
    ],
-   "ballots": 42776,
-   "R": -175,
-   "C": -250,
+   "ballots": 42369,
+   "R": -182,
+   "C": -264,
    "both": -16,
-   "jr": 645,
-   "hard": -713,
-   "jr_net_per": 0.1051,
-   "heikes": 804,
-   "heikes_effect": -607
+   "jr": 656,
+   "hard": -725,
+   "jr_net_per": 0.1054,
+   "heikes": 785,
+   "heikes_effect": -589
   },
-  "broad": 10919,
-  "stress": 8955,
-  "stress_rest": -272,
+  "broad": 11988,
+  "stress": 9992,
+  "stress_rest": -264,
   "trump": {
-   "jr_counted": -4428,
-   "jr_unseen": -713,
-   "heikes_counted": -3848,
-   "heikes_unseen": -607,
-   "total": 4575,
-   "jr_only": 9029,
-   "heikes_only": 9715
+   "jr_counted": -4543,
+   "jr_unseen": -725,
+   "heikes_counted": -3900,
+   "heikes_unseen": -589,
+   "total": 5580,
+   "jr_only": 10069,
+   "heikes_only": 10848
   },
   "B_rows": {
-   "rules": 11323,
-   "broad": 8072,
-   "stress": 6108,
-   "trump": 1728
+   "rules": 12354,
+   "broad": 9005,
+   "stress": 7009,
+   "trump": 2597
   },
-  "gapB_raw": -2185,
+  "gapB_raw": -2320,
   "sens": {
    "5": {
-    "rules": 15986,
-    "broad": 12735,
-    "stress": 10771
+    "rules": 17137,
+    "broad": 13788,
+    "stress": 11792
    },
    "2.5": {
-    "rules": 15078,
-    "broad": 11827,
-    "stress": 9863
+    "rules": 16237,
+    "broad": 12888,
+    "stress": 10892
    },
    "0": {
-    "rules": 14170,
-    "broad": 10919,
-    "stress": 8955
+    "rules": 15337,
+    "broad": 11988,
+    "stress": 9992
    },
    "-2.5": {
-    "rules": 13262,
-    "broad": 10011,
-    "stress": 8048
+    "rules": 14437,
+    "broad": 11088,
+    "stress": 9092
    },
    "-5": {
-    "rules": 12354,
-    "broad": 9103,
-    "stress": 7140
+    "rules": 13537,
+    "broad": 10188,
+    "stress": 8192
    },
    "-7.5": {
-    "rules": 11446,
-    "broad": 8195,
-    "stress": 6232
+    "rules": 12637,
+    "broad": 9288,
+    "stress": 7292
    },
    "-10": {
-    "rules": 10538,
-    "broad": 7287,
-    "stress": 5324
+    "rules": 11737,
+    "broad": 8388,
+    "stress": 6392
    },
    "-15": {
-    "rules": 8722,
-    "broad": 5471,
-    "stress": 3508
+    "rules": 9936,
+    "broad": 6588,
+    "stress": 4591
    },
    "-20": {
-    "rules": 6907,
-    "broad": 3656,
-    "stress": 1692
+    "rules": 8136,
+    "broad": 4787,
+    "stress": 2791
    }
   },
   "flip": {
-   "rules": 39.0,
-   "broad": 30.1,
-   "stress": 24.7
+   "rules": 42.6,
+   "broad": 33.3,
+   "stress": 27.8
   },
   "flip_B": {
-   "rules": 31.2,
-   "broad": 22.2,
-   "stress": 16.8
+   "rules": 34.3,
+   "broad": 25.0,
+   "stress": 19.5
   }
  }
 }

@@ -33,7 +33,7 @@ import district_projection as dp  # noqa: E402
 
 import argparse
 ap = argparse.ArgumentParser()
-ap.add_argument("old"); ap.add_argument("report", nargs="?", default="combined-ballot-report-20261109.html")
+ap.add_argument("old"); ap.add_argument("report", nargs="?", default="combined-ballot-report-20261112.html")
 ap.add_argument("--old-batch", nargs=2, type=int); ap.add_argument("--out", default="update_walk.json")
 A = ap.parse_args()
 OLD, REPORT = Path(A.old), Path(A.report)

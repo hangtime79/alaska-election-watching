@@ -26,7 +26,7 @@ Model B adds Peltola's 2024 late-against-early gaps (late_2024.py, district-weig
 two-way votes, as house_check.py does.
 
 Sign convention: D positive (Hill - Begich, Peltola - Sullivan).
-Usage: uv run district_projection.py [REPORT_HTML]   (default combined-ballot-report-20261109.html)
+Usage: uv run district_projection.py [REPORT_HTML]   (default combined-ballot-report-20261112.html)
 Writes district_projection.json.
 """
 import html
@@ -38,7 +38,7 @@ from pathlib import Path
 import pandas as pd
 
 HERE = Path(__file__).parent
-REPORT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "combined-ballot-report-20261109.html"
+REPORT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "combined-ballot-report-20261112.html"
 MIN = 100
 GAP_EARLY, GAP_ABS = 0.0641, -0.1035
 RACES = {"House": ("HF", "Hill", "Begich"), "Senate": ("SF", "Peltola", "Sullivan")}
